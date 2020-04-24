@@ -24,11 +24,28 @@
 .markdown-preview.markdown-preview {
   font-family: 微软正黑体, 微软雅黑;
 }
+.markdown-preview.markdown-preview a[href='#'] {
+  text-decoration: none;
+  cursor: inherit;
+  pointer-events: none;
+}
 .markdown-preview.markdown-preview .text-center {
   text-align: center;
 }
 .markdown-preview.markdown-preview .flex-table {
   display: inline-flex;
+}
+.markdown-preview.markdown-preview .width-full {
+  width: 100%;
+}
+.markdown-preview.markdown-preview .child-width-half > pre {
+  width: calc(100% / 2);
+}
+.markdown-preview.markdown-preview .flex-table.child-width-half > pre {
+  border-right: 2px solid white;
+}
+.markdown-preview.markdown-preview .flex-table.child-width-half > pre:nth-last-child(1) {
+  border-right: 0 solid white;
 }
 
       </style>
@@ -38,12 +55,8 @@
       <h1 class="mume-header" id="%E4%BA%82%E6%95%B8%E9%9A%A8%E6%A9%9F%E6%96%B9%E6%B3%95">&#x4E82;&#x6578;&#x96A8;&#x6A5F;&#x65B9;&#x6CD5;</h1>
 
 <ul>
-<li>
-<p><code>(Math.random() * 31)</code> &#x610F;&#x601D;&#x662F; <code>0 ~ 30</code></p>
-</li>
-<li>
-<p><code>(Math.random() * 30) + 1</code> &#x610F;&#x601D;&#x662F; <code>1 ~ 30</code></p>
-</li>
+<li><code>(Math.random() * 31)</code> &#x610F;&#x601D;&#x662F; <code>0 ~ 30</code></li>
+<li><code>(Math.random() * 30) + 1</code> &#x610F;&#x601D;&#x662F; <code>1 ~ 30</code></li>
 </ul>
 
       </div>

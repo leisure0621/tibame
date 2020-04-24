@@ -1,5 +1,5 @@
 <!DOCTYPE html><html><head>
-      <title>2-1.JAVA &#x958B;&#x767C;&#x74B0;&#x5883;&#x5EFA;&#x7ACB;</title>
+      <title>2-1.JAVA&#x958B;&#x767C;&#x74B0;&#x5883;&#x5EFA;&#x7ACB;</title>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       
@@ -24,11 +24,28 @@
 .markdown-preview.markdown-preview {
   font-family: 微软正黑体, 微软雅黑;
 }
+.markdown-preview.markdown-preview a[href='#'] {
+  text-decoration: none;
+  cursor: inherit;
+  pointer-events: none;
+}
 .markdown-preview.markdown-preview .text-center {
   text-align: center;
 }
 .markdown-preview.markdown-preview .flex-table {
   display: inline-flex;
+}
+.markdown-preview.markdown-preview .flex-table.child-width-half > pre {
+  border-right: 2px solid white;
+}
+.markdown-preview.markdown-preview .flex-table.child-width-half > pre:nth-last-child(1) {
+  border-right: 0 solid white;
+}
+.markdown-preview.markdown-preview .width-full {
+  width: 100%;
+}
+.markdown-preview.markdown-preview .child-width-half > pre {
+  width: calc(100% / 2);
 }
 
       </style>

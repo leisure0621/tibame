@@ -24,11 +24,28 @@
 .markdown-preview.markdown-preview {
   font-family: 微软正黑体, 微软雅黑;
 }
+.markdown-preview.markdown-preview a[href='#'] {
+  text-decoration: none;
+  cursor: inherit;
+  pointer-events: none;
+}
 .markdown-preview.markdown-preview .text-center {
   text-align: center;
 }
 .markdown-preview.markdown-preview .flex-table {
   display: inline-flex;
+}
+.markdown-preview.markdown-preview .flex-table.child-width-half > pre {
+  border-right: 2px solid white;
+}
+.markdown-preview.markdown-preview .flex-table.child-width-half > pre:nth-last-child(1) {
+  border-right: 0 solid white;
+}
+.markdown-preview.markdown-preview .width-full {
+  width: 100%;
+}
+.markdown-preview.markdown-preview .child-width-half > pre {
+  width: calc(100% / 2);
 }
 
       </style>
@@ -95,6 +112,19 @@
 <li>&#x65B9;&#x6CD5; 2: <code>&#x9078;&#x4E2D;&#x6587;&#x4EF6;</code> &gt; <code>F2</code> &gt; <code>&#x8F38;&#x5165;&#x65B0;&#x6587;&#x4EF6;&#x540D;</code></li>
 <li>&#x65B9;&#x6CD5; 3: <code>&#x9078;&#x4E2D;&#x6587;&#x4EF6;</code> &gt; <code>ALT+SHIFT+R</code> &gt; <code>&#x8F38;&#x5165;&#x65B0;&#x6587;&#x4EF6;&#x540D;</code></li>
 </ul>
+<h1 class="mume-header" id="eclipse-%E8%87%AA%E5%8B%95%E7%94%A2%E7%94%9F%E6%96%B9%E6%B3%95%E7%9A%84%E5%8A%9F%E8%83%BD">Eclipse &#x81EA;&#x52D5;&#x7522;&#x751F;&#x65B9;&#x6CD5;&#x7684;&#x529F;&#x80FD;</h1>
+
+<ul>
+<li>
+<p>&#x5728;<a href="https://leisure0621.github.io/tibame/3.JAVA%E7%A8%8B%E5%BC%8F%E8%A8%AD%E8%A8%88/10.%E7%B9%BC%E6%89%BF%E8%88%87%E5%A4%9A%E5%9E%8B/1.%E7%B9%BC%E6%89%BF(Inheritance)%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5.html">&#x5DF2;&#x7D93;&#x5BEB;&#x597D;&#x7684;&#x65B9;&#x6CD5;</a>(ex.<code>speak</code>&#xFF0C;&#x53EA;&#x8981;&#x6253;&#x597D;&#x9019;&#x6A23;&#x5C31;&#x53EF;)&#x4E0A;&#x4F7F;&#x7528;</p>
+<pre data-role="codeBlock" data-info="cs" class="language-csharp">Alt <span class="token operator">+</span> <span class="token operator">/</span>
+</pre><pre data-role="codeBlock" data-info="java" class="language-java"><span class="token annotation punctuation">@Override</span> <span class="token comment">// JDK5&#x6642;&#x52A0;&#x5165;&#x7684;&#x529F;&#x80FD;(Annotation &#x6A19;&#x8A3B;)</span>
+<span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">speak</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token comment">// TODO Auto-generated method stub</span>
+  <span class="token keyword">super</span><span class="token punctuation">.</span><span class="token function">speak</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</pre></li>
+</ul>
 <h1 class="mume-header" id="%E6%B3%A8%E6%84%8F">&#x6CE8;&#x610F;</h1>
 
 <ul>
@@ -111,6 +141,7 @@
       <div class="md-sidebar-toc"><ul>
 <li><a href="#%E5%AF%AB%E5%80%8B-helloword">&#x5BEB;&#x500B; HelloWord</a></li>
 <li><a href="#%E4%BF%AE%E6%94%B9%E6%AA%94%E5%90%8D%E6%96%B9%E6%B3%95">&#x4FEE;&#x6539;&#x6A94;&#x540D;&#x65B9;&#x6CD5;</a></li>
+<li><a href="#eclipse-%E8%87%AA%E5%8B%95%E7%94%A2%E7%94%9F%E6%96%B9%E6%B3%95%E7%9A%84%E5%8A%9F%E8%83%BD">Eclipse &#x81EA;&#x52D5;&#x7522;&#x751F;&#x65B9;&#x6CD5;&#x7684;&#x529F;&#x80FD;</a></li>
 <li><a href="#%E6%B3%A8%E6%84%8F">&#x6CE8;&#x610F;</a></li>
 </ul>
 </div>

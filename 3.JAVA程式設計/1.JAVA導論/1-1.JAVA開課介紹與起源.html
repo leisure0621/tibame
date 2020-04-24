@@ -24,11 +24,27 @@
 .markdown-preview.markdown-preview {
   font-family: 微软正黑体, 微软雅黑;
 }
+.markdown-preview.markdown-preview a[href='#'] {
+  text-decoration: none;
+  cursor: inherit;
+}
 .markdown-preview.markdown-preview .text-center {
   text-align: center;
 }
 .markdown-preview.markdown-preview .flex-table {
   display: inline-flex;
+}
+.markdown-preview.markdown-preview .width-full {
+  width: 100%;
+}
+.markdown-preview.markdown-preview .child-width-half > pre {
+  width: calc(100% / 2);
+}
+.markdown-preview.markdown-preview .flex-table.child-width-half > pre {
+  border-right: 2px solid white;
+}
+.markdown-preview.markdown-preview .flex-table.child-width-half > pre:nth-last-child(1) {
+  border-right: 0 solid white;
 }
 
       </style>
