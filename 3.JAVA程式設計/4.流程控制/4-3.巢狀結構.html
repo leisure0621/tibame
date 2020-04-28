@@ -3,7 +3,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       
-      <link rel="stylesheet" href="file:///c:\Users\USER\.vscode\extensions\shd101wyy.markdown-preview-enhanced-0.5.3\node_modules\@shd101wyy\mume\dependencies\katex\katex.min.css">
+      <link rel="stylesheet" href="file:///c:\Users\leisure\.vscode\extensions\shd101wyy.markdown-preview-enhanced-0.5.3\node_modules\@shd101wyy\mume\dependencies\katex\katex.min.css">
       
       
 
@@ -25,27 +25,40 @@
   font-family: 微软正黑体, 微软雅黑;
 }
 .markdown-preview.markdown-preview a[href='#'] {
+  pointer-events: none;
   text-decoration: none;
   cursor: inherit;
-  pointer-events: none;
+}
+.markdown-preview.markdown-preview .ans,
+.markdown-preview.markdown-preview pre {
+  overflow-x: auto;
 }
 .markdown-preview.markdown-preview .text-center {
   text-align: center;
 }
+.markdown-preview.markdown-preview .width-full {
+  width: 100%;
+}
 .markdown-preview.markdown-preview .flex-table {
-  display: inline-flex;
+  display: flex;
 }
 .markdown-preview.markdown-preview .flex-table.child-width-half > pre {
   border-right: 2px solid white;
 }
-.markdown-preview.markdown-preview .flex-table.child-width-half > pre:nth-last-child(1) {
-  border-right: 0 solid white;
-}
-.markdown-preview.markdown-preview .width-full {
-  width: 100%;
-}
 .markdown-preview.markdown-preview .child-width-half > pre {
   width: calc(100% / 2);
+}
+.markdown-preview.markdown-preview .ans {
+  background-color: #f8f8f8;
+  padding: 10px;
+  border-radius: 2px;
+}
+.markdown-preview.markdown-preview .ans > * {
+  opacity: 0;
+  transition: 0.3s;
+}
+.markdown-preview.markdown-preview .ans:hover > * {
+  opacity: 1;
 }
 
       </style>
@@ -97,32 +110,15 @@
 </ul>
 
       </div>
-      <div class="md-sidebar-toc"><ul>
-<li><a href="#%E5%B7%A2%E7%8B%80nested%E7%B5%90%E6%A7%8B%E8%AA%AA%E6%98%8E">&#x5DE2;&#x72C0;(Nested)&#x7D50;&#x69CB;&#x8AAA;&#x660E;</a></li>
-<li><a href="#%E5%AF%A6%E9%9A%9B%E7%94%A8%E4%BE%8B">&#x5BE6;&#x969B;&#x7528;&#x4F8B;</a></li>
-</ul>
-</div>
-      <a id="sidebar-toc-btn">&#x2261;</a>
-    
-    
-    
-    
-    
-    
-    
-    
-<script>
-
-var sidebarTOCBtn = document.getElementById('sidebar-toc-btn')
-sidebarTOCBtn.addEventListener('click', function(event) {
-  event.stopPropagation()
-  if (document.body.hasAttribute('html-show-sidebar-toc')) {
-    document.body.removeAttribute('html-show-sidebar-toc')
-  } else {
-    document.body.setAttribute('html-show-sidebar-toc', true)
-  }
-})
-</script>
       
+      
+    
+    
+    
+    
+    
+    
+    
+    
   
     </body></html>

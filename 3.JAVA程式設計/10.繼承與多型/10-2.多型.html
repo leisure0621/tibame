@@ -3,7 +3,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       
-      <link rel="stylesheet" href="file:///c:\Users\USER\.vscode\extensions\shd101wyy.markdown-preview-enhanced-0.5.3\node_modules\@shd101wyy\mume\dependencies\katex\katex.min.css">
+      <link rel="stylesheet" href="file:///c:\Users\leisure\.vscode\extensions\shd101wyy.markdown-preview-enhanced-0.5.3\node_modules\@shd101wyy\mume\dependencies\katex\katex.min.css">
       
       
 
@@ -25,27 +25,40 @@
   font-family: 微软正黑体, 微软雅黑;
 }
 .markdown-preview.markdown-preview a[href='#'] {
+  pointer-events: none;
   text-decoration: none;
   cursor: inherit;
-  pointer-events: none;
+}
+.markdown-preview.markdown-preview .ans,
+.markdown-preview.markdown-preview pre {
+  overflow-x: auto;
 }
 .markdown-preview.markdown-preview .text-center {
   text-align: center;
 }
+.markdown-preview.markdown-preview .width-full {
+  width: 100%;
+}
 .markdown-preview.markdown-preview .flex-table {
-  display: inline-flex;
+  display: flex;
 }
 .markdown-preview.markdown-preview .flex-table.child-width-half > pre {
   border-right: 2px solid white;
 }
-.markdown-preview.markdown-preview .flex-table.child-width-half > pre:nth-last-child(1) {
-  border-right: 0 solid white;
-}
-.markdown-preview.markdown-preview .width-full {
-  width: 100%;
-}
 .markdown-preview.markdown-preview .child-width-half > pre {
   width: calc(100% / 2);
+}
+.markdown-preview.markdown-preview .ans {
+  background-color: #f8f8f8;
+  padding: 10px;
+  border-radius: 2px;
+}
+.markdown-preview.markdown-preview .ans > * {
+  opacity: 0;
+  transition: 0.3s;
+}
+.markdown-preview.markdown-preview .ans:hover > * {
+  opacity: 1;
 }
 
       </style>
@@ -72,41 +85,46 @@
 </pre><pre data-role="codeBlock" data-info="java" class="language-java"><span class="token class-name">Employee</span> e1 <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">PartTimeEmployee</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// &#x578B;&#x5225;&#x6649;&#x5347;</span>
 </pre></li>
 </ul>
-<div class="flex-table">
-  <div style="
-    background: rgba(66, 185, 130, 0.1);
-    width: 590px;
-    border-radius: 50%;
-    text-align: center;
-    padding: 30px;
-  ">
-    <div>Employee</div>
-    <div>
-      <div style="
-        padding: 35px 10px;
-        margin: 35px;
+<div style="overflow: auto; margin: 15px;">
+  <div style="max-width: 652px; min-width: 652px;">
+    <div style="
         background: rgba(66, 185, 130, 0.1);
+        width: 590px;
         border-radius: 50%;
-        width: 210px;
-      ">FullTimeEmployee
+        text-align: center;
+        padding: 30px;
+      ">
+      <div>Employee</div>
+      <div>
         <div style="
-          padding: 35px 10px;
-          background: rgba(66, 185, 130, 0.1);
-          border-radius: 50%;
-          width: 100px;
-          margin: 15px auto;
-        ">Manager
+            padding: 35px 10px;
+            margin: 35px;
+            background: rgba(66, 185, 130, 0.1);
+            border-radius: 50%;
+            width: 210px;
+          ">
+          FullTimeEmployee
+          <div style="
+              padding: 35px 10px;
+              background: rgba(66, 185, 130, 0.1);
+              border-radius: 50%;
+              width: 100px;
+              margin: 15px auto;
+            ">
+            Manager
+          </div>
+        </div>
+        <div style="
+            padding: 85px 10px;
+            margin: 35px;
+            background: rgba(66, 185, 130, 0.1);
+            border-radius: 50%;
+            width: 210px;
+          ">
+          PartTimeEmployee
         </div>
       </div>
-      <div style="
-        padding: 85px 10px;
-        margin: 35px;
-        background: rgba(66, 185, 130, 0.1);
-        border-radius: 50%;
-        width: 210px;
-      ">PartTimeEmployee
-      </div>
-    </div>    
+    </div>
   </div>
 </div>
 <h1 class="mume-header" id="%E8%BD%89%E5%9E%8B">&#x8F49;&#x578B;</h1>
@@ -193,7 +211,12 @@
 <li>
 <p>&#x7528;&#x7236;&#x985E;&#x5225;&#x7684;&#x578B;&#x5225;(&#x53C3;&#x8003;)&#xFF0C;&#x6307;&#x5411;&#x5B50;&#x985E;&#x5225;&#x7684;&#x7269;&#x4EF6;&#xFF0C;&#x4E26;&#x5C0D;&#x61C9;&#x5230;&#x5B50;&#x985E;&#x5225;(Overriding)&#x7684;&#x65B9;&#x6CD5;</p>
 <ul>
-<li>&#x4E0D;&#x540C;&#x578B;&#x5225;&#xFF0C;&#x4E0D;&#x80FD;&#x4E00;&#x81F4;&#x7684;&#x8655;&#x88E1;&#x8CC7;&#x6599;</li>
+<li>
+<p><strong>&#x57F7;&#x884C;&#x6642;&#x671F;</strong>&#x7236;&#x985E;&#x5225;&#x6703;&#x5148;&#x5224;&#x65B7;&#x5BE6;&#x969B;&#x7684;&#x5B50;&#x985E;&#x5225;&#x7269;&#x4EF6;&#x662F;&#x54EA;&#x4E00;&#x500B;&#xFF0C;&#x518D;&#x547C;&#x53EB;&#x6B64;&#x5B50;&#x985E;&#x5225;&#x88E1;&#x5C0D;&#x61C9;&#x7684; <code>Overriding</code> &#x65B9;&#x6CD5;&#xFF0C;&#x6B64;&#x6A5F;&#x5236;&#x5728;&#x7269;&#x4EF6;&#x5C0E;&#x5411;&#x88E1;&#x7A31;&#x70BA; <code>dynamic binding</code> &#x6216; <code>late binding</code></p>
+</li>
+<li>
+<p>&#x4E0D;&#x540C;&#x578B;&#x5225;&#xFF0C;&#x4E0D;&#x80FD;&#x4E00;&#x81F4;&#x7684;&#x8655;&#x88E1;&#x8CC7;&#x6599;</p>
+</li>
 </ul>
 <pre data-role="codeBlock" data-info="java" class="language-java"><span class="token class-name">ManagerPoly</span> e0 <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ManagerPoly</span><span class="token punctuation">(</span><span class="token number">7003</span> <span class="token punctuation">,</span><span class="token string">&quot;merry&quot;</span><span class="token punctuation">,</span> <span class="token number">50000.0</span> <span class="token punctuation">,</span> <span class="token number">10000.0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 </pre><ul>
@@ -209,7 +232,7 @@ e<span class="token punctuation">[</span><span class="token number">0</span><spa
 e<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ManagerPoly</span><span class="token punctuation">(</span><span class="token number">7003</span> <span class="token punctuation">,</span><span class="token string">&quot;merry&quot;</span><span class="token punctuation">,</span> <span class="token number">50000.0</span> <span class="token punctuation">,</span> <span class="token number">10000.0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 e<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">PartTimeEmployeePoly</span><span class="token punctuation">(</span><span class="token number">7004</span> <span class="token punctuation">,</span> <span class="token string">&quot;John&quot;</span> <span class="token punctuation">,</span> <span class="token number">1000.0</span><span class="token punctuation">,</span> <span class="token number">8</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 
-<span class="token comment">// &#x56E0;&#x70BA;&#x7C21;&#x5316;&#x4E86;&#x524D;&#x9762;&#x7684;&#x5BE6;&#x9AD4;&#x5316;&#x4F5C;&#x6CD5;&#xFF0C;&#x6545;&#x5728;&#x6B64;&#x53EF;&#x4EE5;&#x4E00;&#x6B21;&#x8655;&#x88E1;&#x6240;&#x6709; getSalary() &#x65B9;&#x6CD5;</span>
+<span class="token comment">// &#x56E0;&#x70BA;&#x7C21;&#x5316;&#x4E86;&#x524D;&#x9762;&#x7684;&#x5BE6;&#x9AD4;&#x5316;&#x4F5C;&#x6CD5;&#xFF0C;&#x6545;&#x5728;&#x6B64;&#x53EF;&#x4EE5;&#x4E00;&#x6B21;&#x8655;&#x88E1;&#x6240;&#x6709; getSalary() &#x65B9;&#x6CD5;&#xFF0C;&#x4E14;&#x6703;&#x78BA;&#x8A8D;&#x7269;&#x4EF6;&#x662F;&#x5426;&#x771F;&#x7684;&#x5B58;&#x5728;(&#x7269;&#x4EF6;&#x57F7;&#x884C;&#x5230;new&#x4E86;&#x5F8C;&#x624D;&#x5B58;&#x5728;)</span>
 <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> e<span class="token punctuation">.</span>length<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span>
   <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>e<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">getSalary</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 
@@ -219,40 +242,42 @@ e<span class="token punctuation">[</span><span class="token number">2</span><spa
     <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot;yes&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
   <span class="token keyword">else</span>
     <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot;no&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</pre><ul>
+<li>
+<p>Java &#x81EA;&#x52D5;&#x5224;&#x65B7;&#x7E7C;&#x627F;&#x95DC;&#x4FC2;</p>
+<ul>
+<li>
+<p>&#x7DE8;&#x8B6F;&#x6642;&#x671F;&#xFF0C;Java &#x6703;&#x6839;&#x64DA;&#x6211;&#x5011;&#x5BA3;&#x544A;&#x4F7F;&#x7528;&#x7684;&#x985E;&#x5225;&#x4F86;&#x6AA2;&#x67E5;&#x547C;&#x53EB;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x6216;&#x662F;&#x5B58;&#x53D6;&#x7684;&#x5C6C;&#x6027;&#x662F;&#x5426;&#x5B58;&#x5728;(&#x8EAB;&#x5206;(&#x8CC7;&#x6599;&#x578B;&#x5225;)&#x6C7A;&#x5B9A;&#x4F60;&#x7684;&#x884C;&#x70BA;&#x8207;&#x7279;&#x5FB5;)</p>
+</li>
+<li>
+<p>&#x7236;&#x985E;&#x5225;&#x7684;&#x65B9;&#x6CD5;&#x4E0D;&#x80FD;&#x7701;&#x53BB;&#xFF0C;&#x5426;&#x5247;&#x6703;&#x7121;&#x6CD5;&#x9032;&#x884C;&#x5C0D;&#x61C9;&#x9020;&#x6210;&#x932F;&#x8AA4;</p>
+</li>
+</ul>
+</li>
+</ul>
+<pre data-role="codeBlock" data-info="java" class="language-java"><span class="token class-name">EmployeePoly</span><span class="token punctuation">[</span><span class="token punctuation">]</span> e <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">EmployeePoly</span><span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token class-name">FullTimeEmployeePoly</span> e0 <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">FullTimeEmployeePoly</span><span class="token punctuation">(</span><span class="token number">7002</span><span class="token punctuation">,</span> <span class="token string">&quot;peter&quot;</span><span class="token punctuation">,</span> <span class="token number">40000.0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token class-name">ManagerPoly</span> e1 <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ManagerPoly</span><span class="token punctuation">(</span><span class="token number">7003</span><span class="token punctuation">,</span> <span class="token string">&quot;merry&quot;</span><span class="token punctuation">,</span> <span class="token number">50000.0</span><span class="token punctuation">,</span> <span class="token number">10000.0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token class-name">PartTimeEmployeePoly</span> e2 <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">PartTimeEmployeePoly</span><span class="token punctuation">(</span><span class="token number">7004</span><span class="token punctuation">,</span> <span class="token string">&quot;John&quot;</span><span class="token punctuation">,</span> <span class="token number">1000.0</span><span class="token punctuation">,</span> <span class="token number">8</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+e<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">=</span> e0<span class="token punctuation">;</span> <span class="token comment">// JAVA&#x6703;&#x81EA;&#x52D5;&#x5224;&#x65B7;&#x985E;&#x5225;&#x9593;&#x6709;&#x6C92;&#x6709;&#x7E7C;&#x627F;&#x95DC;&#x4FC2;&#xFF0C;&#x7B26;&#x5408;&#x5C31;&#x53EF;Polymorphism</span>
+e<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">=</span> e1<span class="token punctuation">;</span>
+e<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span> <span class="token operator">=</span> e2<span class="token punctuation">;</span>
+<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> e<span class="token punctuation">.</span>length<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span>
+  <span class="token comment">// &#x7236;&#x985E;&#x5225;&#x7684;&#x65B9;&#x6CD5; getSalary &#x4E0D;&#x80FD;&#x96A8;&#x610F;&#x7701;&#x7565;</span>
+  <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>e<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">getSalary</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 </pre></li>
 </ul>
 
       </div>
-      <div class="md-sidebar-toc"><ul>
-<li><a href="#%E5%A4%9A%E5%9E%8Bpolymorphism">&#x591A;&#x578B;(Polymorphism)</a></li>
-<li><a href="#%E6%99%89%E5%8D%87">&#x6649;&#x5347;</a></li>
-<li><a href="#%E8%BD%89%E5%9E%8B">&#x8F49;&#x578B;</a></li>
-<li><a href="#instancef-%E9%81%8B%E7%AE%97%E5%AD%90">instancef &#x904B;&#x7B97;&#x5B50;</a></li>
-<li><a href="#%E5%A4%9A%E5%9E%8B%E7%9A%84-overriding">&#x591A;&#x578B;&#x7684; Overriding</a></li>
-<li><a href="#%E7%B0%A1%E5%8C%96%E5%AF%A6%E9%AB%94%E5%8C%96%E5%81%9A%E6%B3%95">&#x7C21;&#x5316;&#x5BE6;&#x9AD4;&#x5316;&#x505A;&#x6CD5;</a></li>
-</ul>
-</div>
-      <a id="sidebar-toc-btn">&#x2261;</a>
-    
-    
-    
-    
-    
-    
-    
-    
-<script>
-
-var sidebarTOCBtn = document.getElementById('sidebar-toc-btn')
-sidebarTOCBtn.addEventListener('click', function(event) {
-  event.stopPropagation()
-  if (document.body.hasAttribute('html-show-sidebar-toc')) {
-    document.body.removeAttribute('html-show-sidebar-toc')
-  } else {
-    document.body.setAttribute('html-show-sidebar-toc', true)
-  }
-})
-</script>
       
+      
+    
+    
+    
+    
+    
+    
+    
+    
   
     </body></html>

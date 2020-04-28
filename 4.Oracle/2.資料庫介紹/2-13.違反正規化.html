@@ -3,7 +3,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       
-      <link rel="stylesheet" href="file:///c:\Users\USER\.vscode\extensions\shd101wyy.markdown-preview-enhanced-0.5.3\node_modules\@shd101wyy\mume\dependencies\katex\katex.min.css">
+      <link rel="stylesheet" href="file:///c:\Users\leisure\.vscode\extensions\shd101wyy.markdown-preview-enhanced-0.5.3\node_modules\@shd101wyy\mume\dependencies\katex\katex.min.css">
       
       
 
@@ -24,11 +24,41 @@
 .markdown-preview.markdown-preview {
   font-family: 微软正黑体, 微软雅黑;
 }
+.markdown-preview.markdown-preview a[href='#'] {
+  pointer-events: none;
+  text-decoration: none;
+  cursor: inherit;
+}
+.markdown-preview.markdown-preview .ans,
+.markdown-preview.markdown-preview pre {
+  overflow-x: auto;
+}
 .markdown-preview.markdown-preview .text-center {
   text-align: center;
 }
+.markdown-preview.markdown-preview .width-full {
+  width: 100%;
+}
 .markdown-preview.markdown-preview .flex-table {
-  display: inline-flex;
+  display: flex;
+}
+.markdown-preview.markdown-preview .flex-table.child-width-half > pre {
+  border-right: 2px solid white;
+}
+.markdown-preview.markdown-preview .child-width-half > pre {
+  width: calc(100% / 2);
+}
+.markdown-preview.markdown-preview .ans {
+  background-color: #f8f8f8;
+  padding: 10px;
+  border-radius: 2px;
+}
+.markdown-preview.markdown-preview .ans > * {
+  opacity: 0;
+  transition: 0.3s;
+}
+.markdown-preview.markdown-preview .ans:hover > * {
+  opacity: 1;
 }
 
       </style>
@@ -43,8 +73,6 @@
 </li>
 <li>
 <p>&#x9664;&#x975E;&#x8981;&#x8A08;&#x7B97;&#x7684;&#x8CC7;&#x6599;&#x975E;&#x5E38;&#x82B1;&#x6642;&#x9593;&#xFF0C;&#x624D;&#x6703;&#x5EFA;&#x7ACB;&#x6B04;&#x4F4D;&#x52A0;&#x4EE5;&#x5132;&#x5B58;&#xFF0C;&#x4EE5;&#x907F;&#x514D;&#x8981;&#x7528;&#x5230;&#x8A72;&#x8CC7;&#x6599;&#x6642;&#xFF0C;&#x90FD;&#x5F97;&#x518D;&#x6B21;&#x6D6A;&#x8CBB;&#x6642;&#x9593;&#x53BB;&#x8A08;&#x7B97;</p>
-</li>
-</ul>
 <table>
 <thead>
 <tr>
@@ -79,6 +107,8 @@
 </tr>
 </tbody>
 </table>
+</li>
+</ul>
 <h1 class="mume-header" id="%E9%81%95%E5%8F%8D%E6%AD%A3%E8%A6%8F%E5%8C%96%E6%A1%88%E4%BE%8B">&#x9055;&#x53CD;&#x6B63;&#x898F;&#x5316;&#x6848;&#x4F8B;</h1>
 
 <ul>
@@ -103,32 +133,15 @@
 </ul>
 
       </div>
-      <div class="md-sidebar-toc"><ul>
-<li><a href="#%E9%81%95%E5%8F%8D%E6%AD%A3%E8%A6%8F%E5%8C%96">&#x9055;&#x53CD;&#x6B63;&#x898F;&#x5316;</a></li>
-<li><a href="#%E9%81%95%E5%8F%8D%E6%AD%A3%E8%A6%8F%E5%8C%96%E6%A1%88%E4%BE%8B">&#x9055;&#x53CD;&#x6B63;&#x898F;&#x5316;&#x6848;&#x4F8B;</a></li>
-</ul>
-</div>
-      <a id="sidebar-toc-btn">&#x2261;</a>
-    
-    
-    
-    
-    
-    
-    
-    
-<script>
-
-var sidebarTOCBtn = document.getElementById('sidebar-toc-btn')
-sidebarTOCBtn.addEventListener('click', function(event) {
-  event.stopPropagation()
-  if (document.body.hasAttribute('html-show-sidebar-toc')) {
-    document.body.removeAttribute('html-show-sidebar-toc')
-  } else {
-    document.body.setAttribute('html-show-sidebar-toc', true)
-  }
-})
-</script>
       
+      
+    
+    
+    
+    
+    
+    
+    
+    
   
     </body></html>

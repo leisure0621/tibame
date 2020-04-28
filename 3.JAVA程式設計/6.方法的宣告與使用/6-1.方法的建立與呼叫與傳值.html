@@ -3,7 +3,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       
-      <link rel="stylesheet" href="file:///c:\Users\USER\.vscode\extensions\shd101wyy.markdown-preview-enhanced-0.5.3\node_modules\@shd101wyy\mume\dependencies\katex\katex.min.css">
+      <link rel="stylesheet" href="file:///c:\Users\leisure\.vscode\extensions\shd101wyy.markdown-preview-enhanced-0.5.3\node_modules\@shd101wyy\mume\dependencies\katex\katex.min.css">
       
       
 
@@ -25,27 +25,40 @@
   font-family: 微软正黑体, 微软雅黑;
 }
 .markdown-preview.markdown-preview a[href='#'] {
+  pointer-events: none;
   text-decoration: none;
   cursor: inherit;
-  pointer-events: none;
+}
+.markdown-preview.markdown-preview .ans,
+.markdown-preview.markdown-preview pre {
+  overflow-x: auto;
 }
 .markdown-preview.markdown-preview .text-center {
   text-align: center;
 }
+.markdown-preview.markdown-preview .width-full {
+  width: 100%;
+}
 .markdown-preview.markdown-preview .flex-table {
-  display: inline-flex;
+  display: flex;
 }
 .markdown-preview.markdown-preview .flex-table.child-width-half > pre {
   border-right: 2px solid white;
 }
-.markdown-preview.markdown-preview .flex-table.child-width-half > pre:nth-last-child(1) {
-  border-right: 0 solid white;
-}
-.markdown-preview.markdown-preview .width-full {
-  width: 100%;
-}
 .markdown-preview.markdown-preview .child-width-half > pre {
   width: calc(100% / 2);
+}
+.markdown-preview.markdown-preview .ans {
+  background-color: #f8f8f8;
+  padding: 10px;
+  border-radius: 2px;
+}
+.markdown-preview.markdown-preview .ans > * {
+  opacity: 0;
+  transition: 0.3s;
+}
+.markdown-preview.markdown-preview .ans:hover > * {
+  opacity: 1;
 }
 
       </style>
@@ -121,10 +134,12 @@
 
 <span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">TestCalculator</span> <span class="token punctuation">{</span>
   <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token class-name">Calculator</span> myCalculator <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Calculator</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 1. &#x5EFA;&#x7ACB; Calculator &#x578B;&#x614B;&#x7684;&#x7269;&#x4EF6;&#x5F62;&#x9AD4;</span>
-
-    <span class="token keyword">int</span> sum1 <span class="token operator">=</span> myCalculator<span class="token punctuation">.</span><span class="token function">sum</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 2. &#x547C;&#x53EB; Calculator &#x7684;&#x65B9;&#x6CD5; sum &#xFF0C; &#x6709;&#x9806;&#x5E8F;&#x7684;&#x63D0;&#x4F9B;&#x5C0D;&#x61C9;&#x7684;&#x53C3;&#x6578;&#x503C;</span>
-    <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>sum1<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 4. &#x5217;&#x5370;&#x503C;</span>
+    <span class="token comment">// 1. &#x5EFA;&#x7ACB; Calculator &#x578B;&#x614B;&#x7684;&#x7269;&#x4EF6;&#x5F62;&#x9AD4;</span>
+    <span class="token class-name">Calculator</span> myCalculator <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Calculator</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token comment">// 2. &#x547C;&#x53EB; Calculator &#x7684;&#x65B9;&#x6CD5; sum &#xFF0C; &#x6709;&#x9806;&#x5E8F;&#x7684;&#x63D0;&#x4F9B;&#x5C0D;&#x61C9;&#x7684;&#x53C3;&#x6578;&#x503C;</span>
+    <span class="token keyword">int</span> sum1 <span class="token operator">=</span> myCalculator<span class="token punctuation">.</span><span class="token function">sum</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token comment">// 4. &#x5217;&#x5370;&#x503C;</span>
+    <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>sum1<span class="token punctuation">)</span><span class="token punctuation">;</span>
   <span class="token punctuation">}</span>
 <span class="token punctuation">}</span>
 </pre><hr>
@@ -132,7 +147,8 @@
 
   <span class="token keyword">public</span> <span class="token keyword">int</span> <span class="token function">sum</span><span class="token punctuation">(</span><span class="token keyword">int</span> x<span class="token punctuation">,</span> <span class="token keyword">int</span> y<span class="token punctuation">)</span> <span class="token punctuation">{</span>
     <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot;method-1&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token keyword">return</span> x <span class="token operator">+</span> y<span class="token punctuation">;</span> <span class="token comment">// 3. &#x56DE;&#x50B3;&#x76F8;&#x52A0;&#x5F8C;&#x7684;&#x503C;</span>
+    <span class="token comment">// 3. &#x56DE;&#x50B3;&#x76F8;&#x52A0;&#x5F8C;&#x7684;&#x503C;</span>
+    <span class="token keyword">return</span> x <span class="token operator">+</span> y<span class="token punctuation">;</span>
   <span class="token punctuation">}</span>
 <span class="token punctuation">}</span>
 </pre></li>
@@ -142,11 +158,12 @@
 
 <span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">TestCalculator</span> <span class="token punctuation">{</span>
   <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token keyword">int</span> sum1 <span class="token operator">=</span> <span class="token function">sum</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// &#x76F4;&#x63A5;&#x4F7F;&#x7528;&#x65B9;&#x6CD5;(&#x5982;&#x679C;&#x5F8C;&#x9762;&#x9084;&#x6709;&#x8981;&#x7528;&#x5230;&#x9019;&#x65B9;&#x6CD5;&#x57F7;&#x884C;&#x5B8C;&#x7684;&#x7D50;&#x679C;&#xFF0C;&#x53EF;&#x4EE5;&#x7528;&#x500B;&#x8B8A;&#x6578;&#x4FDD;&#x5B58;)</span>
+    <span class="token comment">// &#x76F4;&#x63A5;&#x4F7F;&#x7528;&#x65B9;&#x6CD5;(&#x5982;&#x679C;&#x5F8C;&#x9762;&#x9084;&#x6709;&#x8981;&#x7528;&#x5230;&#x9019;&#x65B9;&#x6CD5;&#x57F7;&#x884C;&#x5B8C;&#x7684;&#x7D50;&#x679C;&#xFF0C;&#x53EF;&#x4EE5;&#x7528;&#x500B;&#x8B8A;&#x6578;&#x4FDD;&#x5B58;)</span>
+    <span class="token keyword">int</span> sum1 <span class="token operator">=</span> <span class="token function">sum</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
     <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>sum1<span class="token punctuation">)</span><span class="token punctuation">;</span>
   <span class="token punctuation">}</span>
 
-  <span class="token keyword">public</span> <span class="token keyword">int</span> <span class="token function">sum</span><span class="token punctuation">(</span><span class="token keyword">int</span> x<span class="token punctuation">,</span> <span class="token keyword">int</span> y<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">static</span> <span class="token keyword">int</span> <span class="token function">sum</span><span class="token punctuation">(</span><span class="token keyword">int</span> x<span class="token punctuation">,</span> <span class="token keyword">int</span> y<span class="token punctuation">)</span> <span class="token punctuation">{</span>
     <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot;method-1&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
     <span class="token keyword">return</span> x <span class="token operator">+</span> y<span class="token punctuation">;</span>
   <span class="token punctuation">}</span>
@@ -160,31 +177,15 @@
 </ul>
 
       </div>
-      <div class="md-sidebar-toc"><ul>
-<li><a href="#%E6%96%B9%E6%B3%95%E7%9A%84%E5%AE%9A%E7%BE%A9%E8%88%87%E5%91%BC%E5%8F%AB">&#x65B9;&#x6CD5;&#x7684;&#x5B9A;&#x7FA9;&#x8207;&#x547C;&#x53EB;</a></li>
-</ul>
-</div>
-      <a id="sidebar-toc-btn">&#x2261;</a>
-    
-    
-    
-    
-    
-    
-    
-    
-<script>
-
-var sidebarTOCBtn = document.getElementById('sidebar-toc-btn')
-sidebarTOCBtn.addEventListener('click', function(event) {
-  event.stopPropagation()
-  if (document.body.hasAttribute('html-show-sidebar-toc')) {
-    document.body.removeAttribute('html-show-sidebar-toc')
-  } else {
-    document.body.setAttribute('html-show-sidebar-toc', true)
-  }
-})
-</script>
       
+      
+    
+    
+    
+    
+    
+    
+    
+    
   
     </body></html>

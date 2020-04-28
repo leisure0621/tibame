@@ -3,7 +3,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       
-      <link rel="stylesheet" href="file:///c:\Users\USER\.vscode\extensions\shd101wyy.markdown-preview-enhanced-0.5.3\node_modules\@shd101wyy\mume\dependencies\katex\katex.min.css">
+      <link rel="stylesheet" href="file:///c:\Users\leisure\.vscode\extensions\shd101wyy.markdown-preview-enhanced-0.5.3\node_modules\@shd101wyy\mume\dependencies\katex\katex.min.css">
       
       
 
@@ -25,27 +25,40 @@
   font-family: 微软正黑体, 微软雅黑;
 }
 .markdown-preview.markdown-preview a[href='#'] {
+  pointer-events: none;
   text-decoration: none;
   cursor: inherit;
-  pointer-events: none;
+}
+.markdown-preview.markdown-preview .ans,
+.markdown-preview.markdown-preview pre {
+  overflow-x: auto;
 }
 .markdown-preview.markdown-preview .text-center {
   text-align: center;
 }
+.markdown-preview.markdown-preview .width-full {
+  width: 100%;
+}
 .markdown-preview.markdown-preview .flex-table {
-  display: inline-flex;
+  display: flex;
 }
 .markdown-preview.markdown-preview .flex-table.child-width-half > pre {
   border-right: 2px solid white;
 }
-.markdown-preview.markdown-preview .flex-table.child-width-half > pre:nth-last-child(1) {
-  border-right: 0 solid white;
-}
-.markdown-preview.markdown-preview .width-full {
-  width: 100%;
-}
 .markdown-preview.markdown-preview .child-width-half > pre {
   width: calc(100% / 2);
+}
+.markdown-preview.markdown-preview .ans {
+  background-color: #f8f8f8;
+  padding: 10px;
+  border-radius: 2px;
+}
+.markdown-preview.markdown-preview .ans > * {
+  opacity: 0;
+  transition: 0.3s;
+}
+.markdown-preview.markdown-preview .ans:hover > * {
+  opacity: 1;
 }
 
       </style>
@@ -69,89 +82,73 @@
 </ol>
 <h1 class="mume-header" id="%E5%81%9A%E6%B3%95%E5%AF%A6%E7%8F%BE">&#x505A;&#x6CD5;&#x5BE6;&#x73FE;</h1>
 
-<pre class="language-text">```java
-public class HK1 {
-	public static void main(String[] args) {
-		// &#x984C;&#x76EE;1: &#x8ACB;&#x8A2D;&#x8A08;&#x4E00;&#x96BB;Java&#x7A0B;&#x5F0F;,&#x8A08;&#x7B97;12,6&#x9019;&#x5169;&#x500B;&#x6578;&#x503C;&#x7684;&#x548C;&#x8207;&#x7A4D;
-		int num1 = 12, num2 = 6;
-		int sum = num1 + num2, primary = num1 * num2;
+<ul>
+<li>
+<pre data-role="codeBlock" data-info="java" class="language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> HK1 <span class="token punctuation">{</span>
+<span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token comment">// &#x984C;&#x76EE; 1: &#x8ACB;&#x8A2D;&#x8A08;&#x4E00;&#x96BB; Java &#x7A0B;&#x5F0F;,&#x8A08;&#x7B97; 12,6 &#x9019;&#x5169;&#x500B;&#x6578;&#x503C;&#x7684;&#x548C;&#x8207;&#x7A4D;</span>
+  <span class="token keyword">int</span> num1 <span class="token operator">=</span> <span class="token number">12</span><span class="token punctuation">,</span> num2 <span class="token operator">=</span> <span class="token number">6</span><span class="token punctuation">;</span>
+  <span class="token keyword">int</span> sum <span class="token operator">=</span> num1 <span class="token operator">+</span> num2<span class="token punctuation">,</span> primary <span class="token operator">=</span> num1 \<span class="token operator">*</span> num2<span class="token punctuation">;</span>
 
-		System.out.printf(&quot;&#x5169;&#x6578;&#x4E4B;&#x548C; = %d%n&#x5169;&#x6578;&#x4E4B;&#x57FA; = %d %n&quot;, sum, primary);
-		System.out.println(&quot;------------------------------&quot;);
+  <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;&#x5169;&#x6578;&#x4E4B;&#x548C; = %d%n&#x5169;&#x6578;&#x4E4B;&#x57FA; = %d %n&quot;</span><span class="token punctuation">,</span> sum<span class="token punctuation">,</span> primary<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot;------------------------------&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 
-		// &#x984C;&#x76EE;2: &#x8ACB;&#x8A2D;&#x8A08;&#x4E00;&#x96BB;Java&#x7A0B;&#x5F0F;,&#x8A08;&#x7B97;200&#x9846;&#x86CB;&#x5171;&#x662F;&#x5E7E;&#x6253;&#x5E7E;&#x9846;? (&#x4E00;&#x6253;&#x70BA;12&#x9846;)
-		int eggs = 200;
-		int dozen = eggs / 12;
-		eggs = eggs % 12;
+  <span class="token comment">// &#x984C;&#x76EE;2: &#x8ACB;&#x8A2D;&#x8A08;&#x4E00;&#x96BB;Java&#x7A0B;&#x5F0F;,&#x8A08;&#x7B97;200&#x9846;&#x86CB;&#x5171;&#x662F;&#x5E7E;&#x6253;&#x5E7E;&#x9846;? (&#x4E00;&#x6253;&#x70BA;12&#x9846;)</span>
+  <span class="token keyword">int</span> eggs <span class="token operator">=</span> <span class="token number">200</span><span class="token punctuation">;</span>
+  <span class="token keyword">int</span> dozen <span class="token operator">=</span> eggs <span class="token operator">/</span> <span class="token number">12</span><span class="token punctuation">;</span>
+  eggs <span class="token operator">=</span> eggs <span class="token operator">%</span> <span class="token number">12</span><span class="token punctuation">;</span>
 
-		System.out.println(&quot;&#x5171;&#x662F; &quot; + dozen + &quot; &#x6253;  &quot; + eggs + &quot; &#x9846;&quot;);
-		System.out.println(&quot;------------------------------&quot;);
+  <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot;&#x5171;&#x662F; &quot;</span> <span class="token operator">+</span> dozen <span class="token operator">+</span> <span class="token string">&quot; &#x6253;  &quot;</span> <span class="token operator">+</span> eggs <span class="token operator">+</span> <span class="token string">&quot; &#x9846;&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot;------------------------------&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 
-		// &#x984C;&#x76EE;3: &#x8ACB;&#x7531;&#x7A0B;&#x5F0F;&#x7B97;&#x51FA;256559&#x79D2;&#x70BA;&#x591A;&#x5C11;&#x5929;&#x3001;&#x591A;&#x5C11;&#x5C0F;&#x6642;&#x3001;&#x591A;&#x5C11;&#x5206;&#x8207;&#x591A;&#x5C11;&#x79D2;
-		int second = 256559;
-		int days = second / 86400;
-		second = second % 86400;
-		int hours = second / 3600;
-		second = second % 3600;
-		int minutes = second / 60;
-		second = second % 60;
+  <span class="token comment">// &#x984C;&#x76EE;3: &#x8ACB;&#x7531;&#x7A0B;&#x5F0F;&#x7B97;&#x51FA;256559&#x79D2;&#x70BA;&#x591A;&#x5C11;&#x5929;&#x3001;&#x591A;&#x5C11;&#x5C0F;&#x6642;&#x3001;&#x591A;&#x5C11;&#x5206;&#x8207;&#x591A;&#x5C11;&#x79D2;</span>
+  <span class="token keyword">int</span> second <span class="token operator">=</span> <span class="token number">256559</span><span class="token punctuation">;</span>
+  <span class="token keyword">int</span> days <span class="token operator">=</span> second <span class="token operator">/</span> <span class="token number">86400</span><span class="token punctuation">;</span>
+  second <span class="token operator">=</span> second <span class="token operator">%</span> <span class="token number">86400</span><span class="token punctuation">;</span>
+  <span class="token keyword">int</span> hours <span class="token operator">=</span> second <span class="token operator">/</span> <span class="token number">3600</span><span class="token punctuation">;</span>
+  second <span class="token operator">=</span> second <span class="token operator">%</span> <span class="token number">3600</span><span class="token punctuation">;</span>
+  <span class="token keyword">int</span> minutes <span class="token operator">=</span> second <span class="token operator">/</span> <span class="token number">60</span><span class="token punctuation">;</span>
+  second <span class="token operator">=</span> second <span class="token operator">%</span> <span class="token number">60</span><span class="token punctuation">;</span>
 
-		System.out.println(days + &quot; &#x5929; &quot; + hours + &quot; &#x6642; &quot; + minutes + &quot; &#x5206; &quot; + second + &quot; &#x79D2;&quot;);
-		System.out.println(&quot;------------------------------&quot;);
+  <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>days <span class="token operator">+</span> <span class="token string">&quot; &#x5929; &quot;</span> <span class="token operator">+</span> hours <span class="token operator">+</span> <span class="token string">&quot; &#x6642; &quot;</span> <span class="token operator">+</span> minutes <span class="token operator">+</span> <span class="token string">&quot; &#x5206; &quot;</span> <span class="token operator">+</span> second <span class="token operator">+</span> <span class="token string">&quot; &#x79D2;&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot;------------------------------&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 
-		// &#x984C;&#x76EE;4: &#x8ACB;&#x7531;&#x7A0B;&#x5F0F;&#x7B97;&#x51FA;256559&#x79D2;&#x70BA;&#x591A;&#x5C11;&#x5929;&#x3001;&#x591A;&#x5C11;&#x5C0F;&#x6642;&#x3001;&#x591A;&#x5C11;&#x5206;&#x8207;&#x591A;&#x5C11;&#x79D2;
-		double halfDiameter = 5, circlePerimeter = halfDiameter * 2 * 3.1415,
-				circleArea = halfDiameter * halfDiameter * 3.1415;
-		System.out.printf(&quot;&#x5713;&#x9762;&#x7A4D;: %s, &#x5713;&#x5468;&#x9577;: %s%n&quot;, circleArea, circlePerimeter);
-		System.out.println(&quot;------------------------------&quot;);
+  <span class="token comment">// &#x984C;&#x76EE;4: &#x8ACB;&#x7531;&#x7A0B;&#x5F0F;&#x7B97;&#x51FA;256559&#x79D2;&#x70BA;&#x591A;&#x5C11;&#x5929;&#x3001;&#x591A;&#x5C11;&#x5C0F;&#x6642;&#x3001;&#x591A;&#x5C11;&#x5206;&#x8207;&#x591A;&#x5C11;&#x79D2;</span>
+  <span class="token keyword">double</span> halfDiameter <span class="token operator">=</span> <span class="token number">5</span><span class="token punctuation">,</span> circlePerimeter <span class="token operator">=</span> halfDiameter <span class="token operator">*</span> <span class="token number">2</span> <span class="token operator">*</span> <span class="token number">3.1415</span><span class="token punctuation">,</span>
+  circleArea <span class="token operator">=</span> halfDiameter <span class="token operator">*</span> halfDiameter <span class="token operator">*</span> <span class="token number">3.1415</span><span class="token punctuation">;</span>
+  <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;&#x5713;&#x9762;&#x7A4D;: %s, &#x5713;&#x5468;&#x9577;: %s%n&quot;</span><span class="token punctuation">,</span> circleArea<span class="token punctuation">,</span> circlePerimeter<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot;------------------------------&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 
-		// &#x984C;&#x76EE;5: &#x8ACB;&#x5B9A;&#x7FA9;&#x4E00;&#x500B;&#x5E38;&#x6578;&#x70BA;3.1415(&#x5713;&#x5468;&#x7387;),&#x4E26;&#x8A08;&#x7B97;&#x534A;&#x5F91;&#x70BA;5&#x7684;&#x5713;&#x9762;&#x7A4D;&#x8207;&#x5713;&#x5468;&#x9577;
-		int principal = 1500000;
-		double interestRate = 1.02;
-		double interest = principal * Math.pow(interestRate, 10);
+  <span class="token comment">// &#x984C;&#x76EE;5: &#x8ACB;&#x5B9A;&#x7FA9;&#x4E00;&#x500B;&#x5E38;&#x6578;&#x70BA;3.1415(&#x5713;&#x5468;&#x7387;),&#x4E26;&#x8A08;&#x7B97;&#x534A;&#x5F91;&#x70BA;5&#x7684;&#x5713;&#x9762;&#x7A4D;&#x8207;&#x5713;&#x5468;&#x9577;</span>
+  <span class="token keyword">int</span> principal <span class="token operator">=</span> <span class="token number">1500000</span><span class="token punctuation">;</span>
+  <span class="token keyword">double</span> interestRate <span class="token operator">=</span> <span class="token number">1.02</span><span class="token punctuation">;</span>
+  <span class="token keyword">double</span> interest <span class="token operator">=</span> principal <span class="token operator">*</span> <span class="token class-name">Math</span><span class="token punctuation">.</span><span class="token function">pow</span><span class="token punctuation">(</span>interestRate<span class="token punctuation">,</span> <span class="token number">10</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 
-		System.out.printf(&quot;&#x672C;&#x91D1;&#x52A0;&#x5229;&#x606F;: %.0f &#x5143;%n&quot;, interest);
-		System.out.println(&quot;------------------------------&quot;);
+  <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;&#x672C;&#x91D1;&#x52A0;&#x5229;&#x606F;: %.0f &#x5143;%n&quot;</span><span class="token punctuation">,</span> interest<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot;------------------------------&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 
-		// &#x984C;&#x76EE;6: &#x8ACB;&#x5BEB;&#x4E00;&#x96BB;&#x7A0B;&#x5F0F;,&#x5229;&#x7528;System.out.println()&#x5370;&#x51FA;&#x4EE5;&#x4E0B;&#x4E09;&#x500B;&#x904B;&#x7B97;&#x5F0F;&#x7D50;&#x679C;:
-		// 5 + 5
-		// 5 + &apos;5&apos;
-		// 5 + &quot;5&quot;
-		System.out.println(5 + 5); // 5+5 = 10; &#x6B63;&#x5E38;&#x7684;&#x5169;&#x6578;&#x4E4B;&#x5408;
-		System.out.println(5 + &apos;5&apos;); // 5+53 = 58; char&#x70BA;&#x4E00;&#x500B; Unicode &#x5B57;&#x5143;&#xFF0C;&#x6545; &apos;5&apos; &#x8F49;&#x6578;&#x5B57;&#x70BA;53
-		System.out.println(5 + &quot;5&quot;); // &quot;5&quot;+&quot;5&quot; = 55; &#x82E5;&#x5C07;&#x6578;&#x5B57;&#x8DDF;&#x5B57;&#x4E32;&#x76F8;&#x52A0;&#xFF0C;&#x5247;&#x5BE6;&#x70BA;&#x5169;&#x5B57;&#x4E32;&#x62FC;&#x63A5;&#xFF0C;&#x6545;&#x662F; 55
-	}
-}
-```
-</pre>
+  <span class="token comment">// &#x984C;&#x76EE;6: &#x8ACB;&#x5BEB;&#x4E00;&#x96BB;&#x7A0B;&#x5F0F;,&#x5229;&#x7528;System.out.println()&#x5370;&#x51FA;&#x4EE5;&#x4E0B;&#x4E09;&#x500B;&#x904B;&#x7B97;&#x5F0F;&#x7D50;&#x679C;:</span>
+  <span class="token comment">// 5 + 5</span>
+  <span class="token comment">// 5 + &apos;5&apos;</span>
+  <span class="token comment">// 5 + &quot;5&quot;</span>
+  <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token number">5</span> <span class="token operator">+</span> <span class="token number">5</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 5+5 = 10; &#x6B63;&#x5E38;&#x7684;&#x5169;&#x6578;&#x4E4B;&#x5408;</span>
+  <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token number">5</span> <span class="token operator">+</span> <span class="token string">&apos;5&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 5+53 = 58; char&#x70BA;&#x4E00;&#x500B; Unicode &#x5B57;&#x5143;&#xFF0C;&#x6545; &apos;5&apos; &#x8F49;&#x6578;&#x5B57;&#x70BA;53</span>
+  <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token number">5</span> <span class="token operator">+</span> <span class="token string">&quot;5&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// &quot;5&quot;+&quot;5&quot; = 55; &#x82E5;&#x5C07;&#x6578;&#x5B57;&#x8DDF;&#x5B57;&#x4E32;&#x76F8;&#x52A0;&#xFF0C;&#x5247;&#x5BE6;&#x70BA;&#x5169;&#x5B57;&#x4E32;&#x62FC;&#x63A5;&#xFF0C;&#x6545;&#x662F; 55</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</pre></li>
+</ul>
 
       </div>
-      <div class="md-sidebar-toc"><ul>
-<li><a href="#%E4%BD%9C%E6%A5%AD%E9%A1%8C%E7%9B%AE">&#x4F5C;&#x696D;&#x984C;&#x76EE;</a></li>
-<li><a href="#%E5%81%9A%E6%B3%95%E5%AF%A6%E7%8F%BE">&#x505A;&#x6CD5;&#x5BE6;&#x73FE;</a></li>
-</ul>
-</div>
-      <a id="sidebar-toc-btn">&#x2261;</a>
-    
-    
-    
-    
-    
-    
-    
-    
-<script>
-
-var sidebarTOCBtn = document.getElementById('sidebar-toc-btn')
-sidebarTOCBtn.addEventListener('click', function(event) {
-  event.stopPropagation()
-  if (document.body.hasAttribute('html-show-sidebar-toc')) {
-    document.body.removeAttribute('html-show-sidebar-toc')
-  } else {
-    document.body.setAttribute('html-show-sidebar-toc', true)
-  }
-})
-</script>
       
+      
+    
+    
+    
+    
+    
+    
+    
+    
   
     </body></html>

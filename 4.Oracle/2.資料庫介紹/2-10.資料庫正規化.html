@@ -3,7 +3,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       
-      <link rel="stylesheet" href="file:///c:\Users\USER\.vscode\extensions\shd101wyy.markdown-preview-enhanced-0.5.3\node_modules\@shd101wyy\mume\dependencies\katex\katex.min.css">
+      <link rel="stylesheet" href="file:///c:\Users\leisure\.vscode\extensions\shd101wyy.markdown-preview-enhanced-0.5.3\node_modules\@shd101wyy\mume\dependencies\katex\katex.min.css">
       
       
 
@@ -24,11 +24,41 @@
 .markdown-preview.markdown-preview {
   font-family: 微软正黑体, 微软雅黑;
 }
+.markdown-preview.markdown-preview a[href='#'] {
+  pointer-events: none;
+  text-decoration: none;
+  cursor: inherit;
+}
+.markdown-preview.markdown-preview .ans,
+.markdown-preview.markdown-preview pre {
+  overflow-x: auto;
+}
 .markdown-preview.markdown-preview .text-center {
   text-align: center;
 }
+.markdown-preview.markdown-preview .width-full {
+  width: 100%;
+}
 .markdown-preview.markdown-preview .flex-table {
-  display: inline-flex;
+  display: flex;
+}
+.markdown-preview.markdown-preview .flex-table.child-width-half > pre {
+  border-right: 2px solid white;
+}
+.markdown-preview.markdown-preview .child-width-half > pre {
+  width: calc(100% / 2);
+}
+.markdown-preview.markdown-preview .ans {
+  background-color: #f8f8f8;
+  padding: 10px;
+  border-radius: 2px;
+}
+.markdown-preview.markdown-preview .ans > * {
+  opacity: 0;
+  transition: 0.3s;
+}
+.markdown-preview.markdown-preview .ans:hover > * {
+  opacity: 1;
 }
 
       </style>
@@ -43,8 +73,6 @@
 </li>
 <li>
 <p>&#x539F;&#x59CB;&#x8868;&#x683C;</p>
-</li>
-</ul>
 <table>
 <thead>
 <tr>
@@ -76,9 +104,9 @@
 </tr>
 </tbody>
 </table>
-<ul>
-<li>&#x958B;&#x59CB;&#x62C6;&#x5206;&#x6210;&#x55AE;&#x4E00;&#x503C;</li>
-</ul>
+</li>
+<li>
+<p>&#x958B;&#x59CB;&#x62C6;&#x5206;&#x6210;&#x55AE;&#x4E00;&#x503C;</p>
 <table>
 <thead>
 <tr>
@@ -139,6 +167,8 @@
 </tr>
 </tbody>
 </table>
+</li>
+</ul>
 <h1 class="mume-header" id="%E7%AC%AC%E4%BA%8C%E6%AD%A3%E8%A6%8F%E5%8C%962nf">&#x7B2C;&#x4E8C;&#x6B63;&#x898F;&#x5316;(2NF)</h1>
 
 <ul>
@@ -149,12 +179,17 @@
 <h1 class="mume-header" id="%E7%AC%AC%E4%B8%89%E6%AD%A3%E8%A6%8F%E5%8C%963nf">&#x7B2C;&#x4E09;&#x6B63;&#x898F;&#x5316;(3NF)</h1>
 
 <ul>
-<li>&#x7B26;&#x5408;&#x7B2C;&#x4E8C;&#x6B63;&#x898F;&#x5316;</li>
-<li>&#x975E;&#x9375;&#x6B04;&#x4F4D;&#x5805;&#x4E0D;&#x61C9;&#x6709;&#x76F8;&#x4F9D;&#x6027;&#xFF0C;&#x5426;&#x5247;&#x61C9;&#x4E88;&#x79FB;&#x9664;
+<li>
+<p>&#x7B26;&#x5408;&#x7B2C;&#x4E8C;&#x6B63;&#x898F;&#x5316;</p>
+</li>
+<li>
+<p>&#x975E;&#x9375;&#x6B04;&#x4F4D;&#x5805;&#x4E0D;&#x61C9;&#x6709;&#x76F8;&#x4F9D;&#x6027;&#xFF0C;&#x5426;&#x5247;&#x61C9;&#x4E88;&#x79FB;&#x9664;</p>
 <ul>
-<li>SUB_TOTAL &#x6B04;&#x4F4D;&#x76F8;&#x4F9D;&#x65BC; 2 &#x500B;&#x975E;&#x9375;&#x6B04;&#x4F4D;&#xFF0C;PRICE&#x3001;QUANTITY&#xFF0C;&#x6240;&#x4EE5; SUB_TOTAL &#x61C9;&#x79FB;&#x9664;</li>
-<li>&#x6709;&#x6B04;&#x4F4D;&#x9700;&#x8981;&#x4F9D;&#x7167;&#x5176;&#x4ED6;&#x6B04;&#x4F4D;&#x7684;&#x503C;&#x66F4;&#x52D5;&#x800C;&#x66F4;&#x52D5;&#xFF0C;&#x9700;&#x79FB;&#x9664;</li>
-</ul>
+<li>
+<p>SUB_TOTAL &#x6B04;&#x4F4D;&#x76F8;&#x4F9D;&#x65BC; 2 &#x500B;&#x975E;&#x9375;&#x6B04;&#x4F4D;&#xFF0C;PRICE&#x3001;QUANTITY&#xFF0C;&#x6240;&#x4EE5; SUB_TOTAL &#x61C9;&#x79FB;&#x9664;</p>
+</li>
+<li>
+<p>&#x6709;&#x6B04;&#x4F4D;&#x9700;&#x8981;&#x4F9D;&#x7167;&#x5176;&#x4ED6;&#x6B04;&#x4F4D;&#x7684;&#x503C;&#x66F4;&#x52D5;&#x800C;&#x66F4;&#x52D5;&#xFF0C;&#x9700;&#x79FB;&#x9664;</p>
 </li>
 </ul>
 <table>
@@ -234,6 +269,8 @@
 </tr>
 </tbody>
 </table>
+</li>
+</ul>
 <h1 class="mume-header" id="%E7%B8%BD%E7%B5%90">&#x7E3D;&#x7D50;</h1>
 
 <ul>
@@ -263,35 +300,15 @@
 </ul>
 
       </div>
-      <div class="md-sidebar-toc"><ul>
-<li><a href="#%E7%AC%AC%E4%B8%80%E6%AD%A3%E8%A6%8F%E5%8C%961nf">&#x7B2C;&#x4E00;&#x6B63;&#x898F;&#x5316;(1NF)</a></li>
-<li><a href="#%E7%AC%AC%E4%BA%8C%E6%AD%A3%E8%A6%8F%E5%8C%962nf">&#x7B2C;&#x4E8C;&#x6B63;&#x898F;&#x5316;(2NF)</a></li>
-<li><a href="#%E7%AC%AC%E4%B8%89%E6%AD%A3%E8%A6%8F%E5%8C%963nf">&#x7B2C;&#x4E09;&#x6B63;&#x898F;&#x5316;(3NF)</a></li>
-<li><a href="#%E7%B8%BD%E7%B5%90">&#x7E3D;&#x7D50;</a></li>
-<li><a href="#%E7%B0%A1%E5%96%AE%E7%9A%84%E5%BD%A2%E5%AE%B9">&#x7C21;&#x55AE;&#x7684;&#x5F62;&#x5BB9;</a></li>
-</ul>
-</div>
-      <a id="sidebar-toc-btn">&#x2261;</a>
-    
-    
-    
-    
-    
-    
-    
-    
-<script>
-
-var sidebarTOCBtn = document.getElementById('sidebar-toc-btn')
-sidebarTOCBtn.addEventListener('click', function(event) {
-  event.stopPropagation()
-  if (document.body.hasAttribute('html-show-sidebar-toc')) {
-    document.body.removeAttribute('html-show-sidebar-toc')
-  } else {
-    document.body.setAttribute('html-show-sidebar-toc', true)
-  }
-})
-</script>
       
+      
+    
+    
+    
+    
+    
+    
+    
+    
   
     </body></html>

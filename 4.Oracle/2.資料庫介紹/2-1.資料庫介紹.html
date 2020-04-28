@@ -3,7 +3,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       
-      <link rel="stylesheet" href="file:///c:\Users\USER\.vscode\extensions\shd101wyy.markdown-preview-enhanced-0.5.3\node_modules\@shd101wyy\mume\dependencies\katex\katex.min.css">
+      <link rel="stylesheet" href="file:///c:\Users\leisure\.vscode\extensions\shd101wyy.markdown-preview-enhanced-0.5.3\node_modules\@shd101wyy\mume\dependencies\katex\katex.min.css">
       
       
 
@@ -24,11 +24,41 @@
 .markdown-preview.markdown-preview {
   font-family: 微软正黑体, 微软雅黑;
 }
+.markdown-preview.markdown-preview a[href='#'] {
+  pointer-events: none;
+  text-decoration: none;
+  cursor: inherit;
+}
+.markdown-preview.markdown-preview .ans,
+.markdown-preview.markdown-preview pre {
+  overflow-x: auto;
+}
 .markdown-preview.markdown-preview .text-center {
   text-align: center;
 }
+.markdown-preview.markdown-preview .width-full {
+  width: 100%;
+}
 .markdown-preview.markdown-preview .flex-table {
-  display: inline-flex;
+  display: flex;
+}
+.markdown-preview.markdown-preview .flex-table.child-width-half > pre {
+  border-right: 2px solid white;
+}
+.markdown-preview.markdown-preview .child-width-half > pre {
+  width: calc(100% / 2);
+}
+.markdown-preview.markdown-preview .ans {
+  background-color: #f8f8f8;
+  padding: 10px;
+  border-radius: 2px;
+}
+.markdown-preview.markdown-preview .ans > * {
+  opacity: 0;
+  transition: 0.3s;
+}
+.markdown-preview.markdown-preview .ans:hover > * {
+  opacity: 1;
 }
 
       </style>
@@ -251,37 +281,15 @@ Management System&#xFF0C;RDBMS)</li>
 </ul>
 
       </div>
-      <div class="md-sidebar-toc"><ul>
-<li><a href="#oracle-%E5%BB%BA%E7%AB%8B%E8%B3%87%E6%96%99%E5%BA%AB">Oracle &#x5EFA;&#x7ACB;&#x8CC7;&#x6599;&#x5EAB;</a></li>
-<li><a href="#%E8%B3%87%E6%96%99%E5%BA%AB%E7%AE%A1%E7%90%86%E7%B3%BB%E7%B5%B1">&#x8CC7;&#x6599;&#x5EAB;&#x7BA1;&#x7406;&#x7CFB;&#x7D71;</a></li>
-<li><a href="#%E7%A8%8B%E5%BC%8F%E7%94%A2%E7%B7%9A">&#x7A0B;&#x5F0F;&#x7522;&#x7DDA;</a></li>
-<li><a href="#%E6%8E%A5%E6%A1%88">&#x63A5;&#x6848;</a></li>
-<li><a href="#%E9%9D%A2%E8%A9%A6%E5%95%8F%E9%A1%8C">&#x9762;&#x8A66;&#x554F;&#x984C;</a></li>
-<li><a href="#%E7%82%BA%E4%BB%80%E9%BA%BC%E8%A6%81%E6%8E%A1%E7%94%A8%E9%97%9C%E8%81%AF%E5%BC%8F%E8%B3%87%E6%96%99%E5%BA%AB">&#x70BA;&#x4EC0;&#x9EBC;&#x8981;&#x63A1;&#x7528;&#x95DC;&#x806F;&#x5F0F;&#x8CC7;&#x6599;&#x5EAB;</a></li>
-<li><a href="#%E9%97%9C%E8%81%AF%E5%BC%8F%E8%B3%87%E6%96%99%E5%BA%AB%E8%88%87%E5%A4%A7%E6%95%B8%E6%93%9A%E8%B3%87%E6%96%99%E5%BA%AB">&#x95DC;&#x806F;&#x5F0F;&#x8CC7;&#x6599;&#x5EAB;&#x8207;&#x5927;&#x6578;&#x64DA;&#x8CC7;&#x6599;&#x5EAB;</a></li>
-</ul>
-</div>
-      <a id="sidebar-toc-btn">&#x2261;</a>
-    
-    
-    
-    
-    
-    
-    
-    
-<script>
-
-var sidebarTOCBtn = document.getElementById('sidebar-toc-btn')
-sidebarTOCBtn.addEventListener('click', function(event) {
-  event.stopPropagation()
-  if (document.body.hasAttribute('html-show-sidebar-toc')) {
-    document.body.removeAttribute('html-show-sidebar-toc')
-  } else {
-    document.body.setAttribute('html-show-sidebar-toc', true)
-  }
-})
-</script>
       
+      
+    
+    
+    
+    
+    
+    
+    
+    
   
     </body></html>

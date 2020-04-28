@@ -3,7 +3,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       
-      <link rel="stylesheet" href="file:///c:\Users\USER\.vscode\extensions\shd101wyy.markdown-preview-enhanced-0.5.3\node_modules\@shd101wyy\mume\dependencies\katex\katex.min.css">
+      <link rel="stylesheet" href="file:///c:\Users\leisure\.vscode\extensions\shd101wyy.markdown-preview-enhanced-0.5.3\node_modules\@shd101wyy\mume\dependencies\katex\katex.min.css">
       
       
 
@@ -24,11 +24,41 @@
 .markdown-preview.markdown-preview {
   font-family: 微软正黑体, 微软雅黑;
 }
+.markdown-preview.markdown-preview a[href='#'] {
+  pointer-events: none;
+  text-decoration: none;
+  cursor: inherit;
+}
+.markdown-preview.markdown-preview .ans,
+.markdown-preview.markdown-preview pre {
+  overflow-x: auto;
+}
 .markdown-preview.markdown-preview .text-center {
   text-align: center;
 }
+.markdown-preview.markdown-preview .width-full {
+  width: 100%;
+}
 .markdown-preview.markdown-preview .flex-table {
-  display: inline-flex;
+  display: flex;
+}
+.markdown-preview.markdown-preview .flex-table.child-width-half > pre {
+  border-right: 2px solid white;
+}
+.markdown-preview.markdown-preview .child-width-half > pre {
+  width: calc(100% / 2);
+}
+.markdown-preview.markdown-preview .ans {
+  background-color: #f8f8f8;
+  padding: 10px;
+  border-radius: 2px;
+}
+.markdown-preview.markdown-preview .ans > * {
+  opacity: 0;
+  transition: 0.3s;
+}
+.markdown-preview.markdown-preview .ans:hover > * {
+  opacity: 1;
 }
 
       </style>
@@ -113,35 +143,15 @@
 </ul>
 
       </div>
-      <div class="md-sidebar-toc"><ul>
-<li><a href="#%E8%80%81%E5%B8%AB%E8%88%87%E8%AA%B2%E7%A8%8B%E4%BB%8B%E7%B4%B9">&#x8001;&#x5E2B;&#x8207;&#x8AB2;&#x7A0B;&#x4ECB;&#x7D39;</a></li>
-<li><a href="#%E9%9B%B2%E7%AB%AF%E6%87%89%E7%94%A8%E7%9A%84%E5%84%AA%E7%BC%BA%E9%BB%9E">&#x96F2;&#x7AEF;&#x61C9;&#x7528;&#x7684;&#x512A;&#x7F3A;&#x9EDE;</a></li>
-<li><a href="#%E5%B8%B8%E8%A6%8B%E7%B6%B2%E8%B7%AF%E6%8A%80%E8%A1%93">&#x5E38;&#x898B;&#x7DB2;&#x8DEF;&#x6280;&#x8853;</a></li>
-<li><a href="#mvc-%E6%9E%B6%E6%A7%8B">MVC &#x67B6;&#x69CB;</a></li>
-<li><a href="#%E5%A5%BD%E7%94%A8%E5%B7%A5%E5%85%B7%E6%8E%A8%E8%96%A6">&#x597D;&#x7528;&#x5DE5;&#x5177;&#x63A8;&#x85A6;</a></li>
-</ul>
-</div>
-      <a id="sidebar-toc-btn">&#x2261;</a>
-    
-    
-    
-    
-    
-    
-    
-    
-<script>
-
-var sidebarTOCBtn = document.getElementById('sidebar-toc-btn')
-sidebarTOCBtn.addEventListener('click', function(event) {
-  event.stopPropagation()
-  if (document.body.hasAttribute('html-show-sidebar-toc')) {
-    document.body.removeAttribute('html-show-sidebar-toc')
-  } else {
-    document.body.setAttribute('html-show-sidebar-toc', true)
-  }
-})
-</script>
       
+      
+    
+    
+    
+    
+    
+    
+    
+    
   
     </body></html>

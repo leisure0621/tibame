@@ -3,7 +3,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       
-      <link rel="stylesheet" href="file:///c:\Users\USER\.vscode\extensions\shd101wyy.markdown-preview-enhanced-0.5.3\node_modules\@shd101wyy\mume\dependencies\katex\katex.min.css">
+      <link rel="stylesheet" href="file:///c:\Users\leisure\.vscode\extensions\shd101wyy.markdown-preview-enhanced-0.5.3\node_modules\@shd101wyy\mume\dependencies\katex\katex.min.css">
       
       
 
@@ -25,42 +25,47 @@
   font-family: 微软正黑体, 微软雅黑;
 }
 .markdown-preview.markdown-preview a[href='#'] {
+  pointer-events: none;
   text-decoration: none;
   cursor: inherit;
-  pointer-events: none;
+}
+.markdown-preview.markdown-preview .ans,
+.markdown-preview.markdown-preview pre {
+  overflow-x: auto;
 }
 .markdown-preview.markdown-preview .text-center {
   text-align: center;
 }
-.markdown-preview.markdown-preview .flex-table {
-  display: inline-flex;
-}
 .markdown-preview.markdown-preview .width-full {
   width: 100%;
 }
-.markdown-preview.markdown-preview .child-width-half > pre {
-  width: calc(100% / 2);
+.markdown-preview.markdown-preview .flex-table {
+  display: flex;
 }
 .markdown-preview.markdown-preview .flex-table.child-width-half > pre {
   border-right: 2px solid white;
 }
-.markdown-preview.markdown-preview .flex-table.child-width-half > pre:nth-last-child(1) {
-  border-right: 0 solid white;
+.markdown-preview.markdown-preview .child-width-half > pre {
+  width: calc(100% / 2);
+}
+.markdown-preview.markdown-preview .ans {
+  background-color: #f8f8f8;
+  padding: 10px;
+  border-radius: 2px;
+}
+.markdown-preview.markdown-preview .ans > * {
+  opacity: 0;
+  transition: 0.3s;
+}
+.markdown-preview.markdown-preview .ans:hover > * {
+  opacity: 1;
 }
 
       </style>
     </head>
     <body for="html-export">
       <div class="mume markdown-preview  ">
-      <h1>&#x76EE;&#x9304;</h1>
-<ul>
-<li><a href="#static-%E4%BF%AE%E9%A3%BE%E5%AD%90%E9%A1%9E%E5%88%A5%E8%AE%8A%E6%95%B8">static &#x4FEE;&#x98FE;&#x5B50;(&#x985E;&#x5225;&#x8B8A;&#x6578;)</a></li>
-<li><a href="#%E7%94%A8%E9%A1%9E%E5%88%A5%E5%90%8D%E7%A8%B1%E5%91%BC%E5%8F%AB%E9%A1%9E%E5%88%A5%E8%AE%8A%E6%95%B8">&#x7528;&#x985E;&#x5225;&#x540D;&#x7A31;&#x547C;&#x53EB;&#x985E;&#x5225;&#x8B8A;&#x6578;</a></li>
-<li><a href="#static-%E4%BF%AE%E9%A3%BE%E5%AD%90%E8%88%87%E5%AD%98%E5%8F%96%E6%8E%A7%E5%88%B6">static &#x4FEE;&#x98FE;&#x5B50;&#x8207;&#x5B58;&#x53D6;&#x63A7;&#x5236;</a></li>
-<li><a href="#%E8%83%BD%E5%A4%A0%E4%BD%BF%E7%94%A8-static-%E7%9A%84%E6%83%85%E5%A2%83">&#x80FD;&#x5920;&#x4F7F;&#x7528; static &#x7684;&#x60C5;&#x5883;</a></li>
-</ul>
-<hr>
-<h1 class="mume-header" id="static-%E4%BF%AE%E9%A3%BE%E5%AD%90%E9%A1%9E%E5%88%A5%E8%AE%8A%E6%95%B8">static &#x4FEE;&#x98FE;&#x5B50;(&#x985E;&#x5225;&#x8B8A;&#x6578;)</h1>
+      <h1 class="mume-header" id="static-%E4%BF%AE%E9%A3%BE%E5%AD%90%E9%A1%9E%E5%88%A5%E8%AE%8A%E6%95%B8">static &#x4FEE;&#x98FE;&#x5B50;(&#x985E;&#x5225;&#x8B8A;&#x6578;)</h1>
 
 <ul>
 <li>
@@ -277,7 +282,7 @@
 
 <ul>
 <li>
-<p>static &#x65B9;&#x6CD5;&#x4E2D;<strong>&#x6C92;&#x7528;&#x5230;&#x7269;&#x4EF6;&#x7684;&#x8CC7;&#x6E90;</strong>&#x5C31;&#x80FD;&#x8A2D;&#x5B9A;&#x6210; static</p>
+<p><strong>&#x65B9;&#x6CD5;</strong>&#x4E2D;<strong>&#x6C92;&#x7528;&#x5230;&#x7269;&#x4EF6;&#x7684;&#x8CC7;&#x6E90;</strong>&#x5C31;&#x80FD;&#x8A2D;&#x5B9A;&#x6210; static</p>
 <pre data-role="codeBlock" data-info="java" class="language-java"><span class="token keyword">package</span> ch09<span class="token punctuation">;</span>
 <span class="token comment">/*
 * &#x6B64;&#x7BC4;&#x4F8B;&#x70BA;&#x793A;&#x7BC4;static&#x65B9;&#x6CD5;&#x4F7F;&#x7528;
@@ -305,7 +310,12 @@
 <hr>
 <p>&#x8907;&#x7FD2;&#x91CD;&#x9EDE;</p>
 <ul>
-<li>get set &#x65B9;&#x6CD5;&#x7684;&#x4F7F;&#x7528;</li>
+<li>get set &#x65B9;&#x6CD5;&#x7684;&#x4F7F;&#x7528;
+<ul>
+<li>get &#x56DE;&#x50B3;&#x503C;&#x7528;</li>
+<li>set &#x8A2D;&#x5B9A;&#x503C;&#x7528;</li>
+</ul>
+</li>
 <li>&#x5EFA;&#x69CB;&#x5B50;&#x600E;&#x9EBC;&#x5206;&#x8FA8;/&#x7279;&#x6027;&#x4E0A;&#x7684;&#x4E0D;&#x540C;</li>
 <li>static</li>
 <li>this &#x7684;&#x4F7F;&#x7528;(&#x7269;&#x4EF6;&#x7684;&#x4EE3;&#x540D;&#x8A5E;)</li>
@@ -321,34 +331,15 @@
 </ul>
 
       </div>
-      <div class="md-sidebar-toc"><ul>
-<li><a href="#static-%E4%BF%AE%E9%A3%BE%E5%AD%90%E9%A1%9E%E5%88%A5%E8%AE%8A%E6%95%B8">static &#x4FEE;&#x98FE;&#x5B50;(&#x985E;&#x5225;&#x8B8A;&#x6578;)</a></li>
-<li><a href="#%E7%94%A8%E9%A1%9E%E5%88%A5%E5%90%8D%E7%A8%B1%E5%91%BC%E5%8F%AB%E9%A1%9E%E5%88%A5%E8%AE%8A%E6%95%B8">&#x7528;&#x985E;&#x5225;&#x540D;&#x7A31;&#x547C;&#x53EB;&#x985E;&#x5225;&#x8B8A;&#x6578;</a></li>
-<li><a href="#static-%E4%BF%AE%E9%A3%BE%E5%AD%90%E8%88%87%E5%AD%98%E5%8F%96%E6%8E%A7%E5%88%B6">static &#x4FEE;&#x98FE;&#x5B50;&#x8207;&#x5B58;&#x53D6;&#x63A7;&#x5236;</a></li>
-<li><a href="#%E8%83%BD%E5%A4%A0%E4%BD%BF%E7%94%A8-static-%E7%9A%84%E6%83%85%E5%A2%83">&#x80FD;&#x5920;&#x4F7F;&#x7528; static &#x7684;&#x60C5;&#x5883;</a></li>
-</ul>
-</div>
-      <a id="sidebar-toc-btn">&#x2261;</a>
-    
-    
-    
-    
-    
-    
-    
-    
-<script>
-
-var sidebarTOCBtn = document.getElementById('sidebar-toc-btn')
-sidebarTOCBtn.addEventListener('click', function(event) {
-  event.stopPropagation()
-  if (document.body.hasAttribute('html-show-sidebar-toc')) {
-    document.body.removeAttribute('html-show-sidebar-toc')
-  } else {
-    document.body.setAttribute('html-show-sidebar-toc', true)
-  }
-})
-</script>
       
+      
+    
+    
+    
+    
+    
+    
+    
+    
   
     </body></html>
