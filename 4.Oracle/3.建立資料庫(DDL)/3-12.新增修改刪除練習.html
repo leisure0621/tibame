@@ -1,5 +1,5 @@
 <!DOCTYPE html><html><head>
-      <title>0-1.&#x6DFA;&#x5165;Oracle</title>
+      <title>3-12.&#x65B0;&#x589E;&#x4FEE;&#x6539;&#x522A;&#x9664;&#x7DF4;&#x7FD2;</title>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       
@@ -80,20 +80,31 @@
     </head>
     <body for="html-export">
       <div class="mume markdown-preview  ">
-      <h1 class="mume-header" id="client-server-%E6%9E%B6%E6%9E%84">client server &#x67B6;&#x6784;</h1>
+      <h1 class="mume-header" id="%E6%96%B0%E5%A2%9E%E4%BF%AE%E6%94%B9%E5%88%AA%E9%99%A4%E7%B7%B4%E7%BF%92">&#x65B0;&#x589E;&#x4FEE;&#x6539;&#x522A;&#x9664;&#x7DF4;&#x7FD2;</h1>
 
 <ul>
-<li>client &#x7AEF; &gt; server &#x7AEF;</li>
-<li>server &#x7AEF;: server &gt; db</li>
-<li>client &#x7AEF;: PC</li>
+<li>
+<p>&#x5C0D; ORDER_DETAIL &#x505A;&#x6B04;&#x4F4D;&#x7684;&#x589E;&#x522A;&#x6539;&#xFF0C;&#x8207;&#x8868;&#x683C;&#x522A;&#x9664;</p>
+<pre data-role="codeBlock" data-info="sql" class="language-sql"><span class="token comment">-- &#x65B0;&#x589E;&#x6B04;&#x4F4D;</span>
+<span class="token keyword">ALTER</span> <span class="token keyword">TABLE</span> ORDER_DETAIL <span class="token keyword">ADD</span> <span class="token keyword">LANGUAGE</span> VARCHAR2<span class="token punctuation">(</span><span class="token number">40</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">-- &#x4FEE;&#x6539;&#x6B04;&#x4F4D;&#x540D;&#x7A31;</span>
+<span class="token keyword">ALTER</span> <span class="token keyword">TABLE</span> ORDER_DETAIL <span class="token keyword">RENAME</span> <span class="token keyword">COLUMN</span> <span class="token keyword">LANGUAGE</span> <span class="token keyword">TO</span> LANGUAGES<span class="token punctuation">;</span>
+
+<span class="token comment">-- &#x4FEE;&#x6539;&#x6B04;&#x4F4D;&#x985E;&#x578B;</span>
+<span class="token keyword">ALTER</span> <span class="token keyword">TABLE</span> ORDER_DETAIL <span class="token keyword">MODIFY</span> LANGUAGES VARCHAR2<span class="token punctuation">(</span><span class="token number">20</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">-- &#x522A;&#x9664;&#x6B04;&#x4F4D;</span>
+<span class="token keyword">ALTER</span> <span class="token keyword">TABLE</span> ORDER_DETAIL <span class="token keyword">DROP</span> <span class="token keyword">COLUMN</span> LANGUAGES<span class="token punctuation">;</span>
+
+<span class="token comment">-- &#x522A;&#x9664;&#x8868;&#x683C;</span>
+<span class="token keyword">DROP</span> <span class="token keyword">TABLE</span> ORDER_DETAIL<span class="token punctuation">;</span>
+</pre></li>
 </ul>
-<div style="text-align:center">
-  <img src="./image/0-1_01.png">
-</div>
 
       </div>
       <div class="md-sidebar-toc"><ul>
-<li><a href="#client-server-%E6%9E%B6%E6%9E%84">client server &#x67B6;&#x6784;</a></li>
+<li><a href="#%E6%96%B0%E5%A2%9E%E4%BF%AE%E6%94%B9%E5%88%AA%E9%99%A4%E7%B7%B4%E7%BF%92">&#x65B0;&#x589E;&#x4FEE;&#x6539;&#x522A;&#x9664;&#x7DF4;&#x7FD2;</a></li>
 </ul>
 </div>
       <a id="sidebar-toc-btn">&#x2261;</a>

@@ -1,5 +1,5 @@
 <!DOCTYPE html><html><head>
-      <title>0-1.&#x6DFA;&#x5165;Oracle</title>
+      <title>4-5.&#x522A;&#x9664;&#x8CC7;&#x6599;</title>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       
@@ -60,40 +60,35 @@
   opacity: 0;
   transition: 0.3s;
 }
-.markdown-preview.markdown-preview span.mark-red {
-  color: #e22222;
-}
-.markdown-preview.markdown-preview span.mark-green {
-  color: green;
-}
-.markdown-preview.markdown-preview span.mark-gray {
-  color: #8e908c;
-}
-.markdown-preview.markdown-preview span.mark-font-size {
-  font-size: 12px;
-}
-.markdown-preview.markdown-preview span.mark-font-weight {
-  font-weight: bold;
-}
 
       </style>
     </head>
     <body for="html-export">
       <div class="mume markdown-preview  ">
-      <h1 class="mume-header" id="client-server-%E6%9E%B6%E6%9E%84">client server &#x67B6;&#x6784;</h1>
+      <h1 class="mume-header" id="%E5%88%AA%E9%99%A4%E8%A1%A8%E5%96%AE%E6%89%80%E6%9C%89%E8%B3%87%E6%96%99">&#x522A;&#x9664;&#x8868;&#x55AE;&#x6240;&#x6709;&#x8CC7;&#x6599;</h1>
 
 <ul>
-<li>client &#x7AEF; &gt; server &#x7AEF;</li>
-<li>server &#x7AEF;: server &gt; db</li>
-<li>client &#x7AEF;: PC</li>
+<li>
+<p>&#x4E00;&#x822C;&#x5F88;&#x5C11;&#x76F4;&#x63A5;&#x522A;&#x9664;&#x8CC7;&#x6599;&#xFF0C;&#x5177;&#x9AD4;&#x90FD;&#x662F;<strong>&#x6539;&#x8B8A;&#x986F;&#x793A;&#x72C0;&#x614B;</strong>&#x800C;&#x5DF2;</p>
+<pre data-role="codeBlock" data-info="sql" class="language-sql"><span class="token keyword">DELETE</span> <span class="token keyword">FROM</span> PUBLISHER<span class="token punctuation">;</span>
+</pre></li>
 </ul>
-<div style="text-align:center">
-  <img src="./image/0-1_01.png">
-</div>
+<h1 class="mume-header" id="%E5%88%AA%E9%99%A4%E7%89%B9%E5%AE%9A%E6%A2%9D%E4%BB%B6%E8%B3%87%E6%96%99">&#x522A;&#x9664;&#x7279;&#x5B9A;&#x689D;&#x4EF6;&#x8CC7;&#x6599;</h1>
+
+<ul>
+<li>
+<p>&#x5177;&#x9AD4;&#x7528;&#x6CD5; <code>DELETE FROM [TableName] WHERE [DeleteCondition]</code></p>
+<pre data-role="codeBlock" data-info="sql" class="language-sql"><span class="token comment">-- DELETE</span>
+<span class="token comment">-- &#x88AB;&#x5916;&#x4F86;&#x9375;&#x53C3;&#x7167;&#x5230;&#x7684;&#x8CC7;&#x6599;&#x7121;&#x6CD5;&#x522A;&#x9664;</span>
+<span class="token keyword">DELETE</span> <span class="token keyword">FROM</span> PUBLISHER
+<span class="token keyword">WHERE</span> PUBLISHER_ID <span class="token operator">=</span> <span class="token string">&apos;P00X&apos;</span> <span class="token operator">OR</span> PUBLISHER_ID <span class="token operator">=</span> <span class="token string">&apos;P00Y&apos;</span><span class="token punctuation">;</span>
+</pre></li>
+</ul>
 
       </div>
       <div class="md-sidebar-toc"><ul>
-<li><a href="#client-server-%E6%9E%B6%E6%9E%84">client server &#x67B6;&#x6784;</a></li>
+<li><a href="#%E5%88%AA%E9%99%A4%E8%A1%A8%E5%96%AE%E6%89%80%E6%9C%89%E8%B3%87%E6%96%99">&#x522A;&#x9664;&#x8868;&#x55AE;&#x6240;&#x6709;&#x8CC7;&#x6599;</a></li>
+<li><a href="#%E5%88%AA%E9%99%A4%E7%89%B9%E5%AE%9A%E6%A2%9D%E4%BB%B6%E8%B3%87%E6%96%99">&#x522A;&#x9664;&#x7279;&#x5B9A;&#x689D;&#x4EF6;&#x8CC7;&#x6599;</a></li>
 </ul>
 </div>
       <a id="sidebar-toc-btn">&#x2261;</a>

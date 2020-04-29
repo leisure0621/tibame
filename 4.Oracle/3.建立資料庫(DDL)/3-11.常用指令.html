@@ -1,5 +1,5 @@
 <!DOCTYPE html><html><head>
-      <title>0-1.&#x6DFA;&#x5165;Oracle</title>
+      <title>3-11.&#x5E38;&#x7528;&#x6307;&#x4EE4;</title>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       
@@ -80,22 +80,126 @@
     </head>
     <body for="html-export">
       <div class="mume markdown-preview  ">
-      <h1 class="mume-header" id="client-server-%E6%9E%B6%E6%9E%84">client server &#x67B6;&#x6784;</h1>
-
+      <ul>
+<li>
+<p>&#x5EFA;&#x7ACB;&#x8868;&#x683C;&#x4E26;&#x8A2D;&#x5B9A;&#x6B04;&#x4F4D;</p>
+<pre data-role="codeBlock" data-info="sql" class="language-sql"><span class="token comment">-- CREATE TABLE - PK (&#x4E0D;&#x60F3;&#x81EA;&#x8A02;PK constraint&#x540D;&#x7A31;&#xFF0C;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x5728;&#x6B04;&#x4F4D;&#x5F8C;&#x9762;&#x52A0;PK&#x8A2D;&#x5B9A;)</span>
+<span class="token keyword">CREATE</span> <span class="token keyword">TABLE</span> PUBLISHER <span class="token punctuation">(</span>
+  PUBLISHER_ID VARCHAR2<span class="token punctuation">(</span><span class="token number">40</span><span class="token punctuation">)</span> <span class="token keyword">PRIMARY</span> <span class="token keyword">KEY</span> <span class="token operator">NOT</span> <span class="token boolean">NULL</span><span class="token punctuation">,</span>
+  PUBLISHER_NAME VARCHAR2<span class="token punctuation">(</span><span class="token number">40</span><span class="token punctuation">)</span> <span class="token operator">NOT</span> <span class="token boolean">NULL</span><span class="token punctuation">,</span>
+  CONTACT VARCHAR2<span class="token punctuation">(</span><span class="token number">40</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+  PHONE VARCHAR2<span class="token punctuation">(</span><span class="token number">40</span><span class="token punctuation">)</span> <span class="token operator">NOT</span> <span class="token boolean">NULL</span><span class="token punctuation">,</span>
+  CREATE_TIME <span class="token keyword">TIMESTAMP</span> <span class="token keyword">DEFAULT</span> <span class="token keyword">CURRENT_TIMESTAMP</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</pre><pre data-role="codeBlock" data-info="sql" class="language-sql"><span class="token comment">-- &#x8981;&#x5EFA;&#x7ACB;&#x8907;&#x5408;PK(&#x4EE5;&#x9017;&#x865F;&#x5340;&#x9694;)&#x6216;&#x81EA;&#x8A02;PK constraint&#x540D;&#x7A31;&#x5FC5;&#x9808;&#x5217;&#x5728;&#x5F8C;&#x9762;</span>
+<span class="token keyword">CREATE</span> <span class="token keyword">TABLE</span> PUBLISHER <span class="token punctuation">(</span>
+  PUBLISHER_ID VARCHAR2<span class="token punctuation">(</span><span class="token number">40</span><span class="token punctuation">)</span> <span class="token operator">NOT</span> <span class="token boolean">NULL</span><span class="token punctuation">,</span>
+  PUBLISHER_NAME VARCHAR2<span class="token punctuation">(</span><span class="token number">40</span><span class="token punctuation">)</span> <span class="token operator">NOT</span> <span class="token boolean">NULL</span><span class="token punctuation">,</span>
+  CONTACT VARCHAR2<span class="token punctuation">(</span><span class="token number">40</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+  PHONE VARCHAR2<span class="token punctuation">(</span><span class="token number">40</span><span class="token punctuation">)</span> <span class="token operator">NOT</span> <span class="token boolean">NULL</span><span class="token punctuation">,</span>
+  CREATE_TIME <span class="token keyword">TIMESTAMP</span> <span class="token keyword">DEFAULT</span> <span class="token keyword">CURRENT_TIMESTAMP</span><span class="token punctuation">,</span>
+  <span class="token keyword">CONSTRAINT</span> PK_PUBLISHER <span class="token keyword">PRIMARY</span> <span class="token keyword">KEY</span> <span class="token punctuation">(</span>PUBLISHER_ID<span class="token punctuation">)</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</pre></li>
+<li>
+<p>&#x986F;&#x793A;&#x6307;&#x5B9A;&#x8868;&#x683C;&#x5B9A;&#x7FA9;</p>
+<pre data-role="codeBlock" data-info="sql" class="language-sql"><span class="token comment">-- &#x986F;&#x793A;&#x6307;&#x5B9A;&#x8868;&#x683C;&#x5B9A;&#x7FA9;</span>
+<span class="token keyword">DESCRIBE</span> PUBLISHER<span class="token punctuation">;</span>
+</pre></li>
+<li>
+<p>&#x5217;&#x51FA;&#x7576;&#x524D;&#x7528;&#x6236;&#x6240;&#x6709;&#x8868;&#x683C;</p>
+<pre data-role="codeBlock" data-info="sql" class="language-sql"><span class="token comment">-- &#x5217;&#x51FA;&#x7576;&#x524D;&#x7528;&#x6236;&#x6240;&#x6709;&#x8868;&#x683C;</span>
+<span class="token keyword">SELECT</span> table_name <span class="token keyword">FROM</span> user_tables<span class="token punctuation">;</span>
+</pre></li>
+<li>
+<p>&#x5EFA;&#x7ACB;&#x8868;&#x683C;</p>
+<pre data-role="codeBlock" data-info="sql" class="language-sql"><span class="token comment">-- CREATE TABLE - FK (&#x8981;&#x81EA;&#x8A02;FK constraint&#x540D;&#x7A31;&#x5FC5;&#x9808;&#x5217;&#x5728;&#x5F8C;&#x9762;)</span>
+<span class="token keyword">CREATE</span> <span class="token keyword">TABLE</span> BOOK <span class="token punctuation">(</span>
+  ISBN <span class="token keyword">CHAR</span><span class="token punctuation">(</span><span class="token number">13</span><span class="token punctuation">)</span> <span class="token keyword">PRIMARY</span> <span class="token keyword">KEY</span> <span class="token operator">NOT</span> <span class="token boolean">NULL</span><span class="token punctuation">,</span>
+  BOOK_NAME VARCHAR2<span class="token punctuation">(</span><span class="token number">200</span><span class="token punctuation">)</span> <span class="token operator">NOT</span> <span class="token boolean">NULL</span><span class="token punctuation">,</span>
+  PRICE NUMBER<span class="token punctuation">(</span><span class="token number">8</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">)</span> <span class="token keyword">CHECK</span> <span class="token punctuation">(</span>PRICE <span class="token operator">&gt;=</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+  AUTHOR VARCHAR2<span class="token punctuation">(</span><span class="token number">200</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+  PUBLICATION_DATE <span class="token keyword">DATE</span><span class="token punctuation">,</span>
+  PUBLISHER_ID VARCHAR2<span class="token punctuation">(</span><span class="token number">40</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+  <span class="token keyword">CONSTRAINT</span> FK_BOOK_PUBLISHER
+  <span class="token keyword">FOREIGN</span> <span class="token keyword">KEY</span> <span class="token punctuation">(</span>PUBLISHER_ID<span class="token punctuation">)</span> <span class="token keyword">REFERENCES</span> PUBLISHER<span class="token punctuation">(</span>PUBLISHER_ID<span class="token punctuation">)</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</pre><pre data-role="codeBlock" data-info="sql" class="language-sql"><span class="token comment">-- &#x4E0D;&#x60F3;&#x81EA;&#x8A02;FK constraint&#x540D;&#x7A31;&#xFF0C;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x5728;&#x6B04;&#x4F4D;&#x5F8C;&#x9762;&#x52A0;REFERENCES&#x8A2D;&#x5B9A;</span>
+<span class="token keyword">CREATE</span> <span class="token keyword">TABLE</span> BOOK <span class="token punctuation">(</span>
+  ISBN <span class="token keyword">CHAR</span><span class="token punctuation">(</span><span class="token number">13</span><span class="token punctuation">)</span> <span class="token keyword">PRIMARY</span> <span class="token keyword">KEY</span> <span class="token operator">NOT</span> <span class="token boolean">NULL</span><span class="token punctuation">,</span>
+  BOOK_NAME VARCHAR2<span class="token punctuation">(</span><span class="token number">200</span><span class="token punctuation">)</span> <span class="token operator">NOT</span> <span class="token boolean">NULL</span><span class="token punctuation">,</span>
+  PRICE NUMBER<span class="token punctuation">(</span><span class="token number">8</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">)</span> <span class="token keyword">CHECK</span> <span class="token punctuation">(</span>PRICE <span class="token operator">&gt;=</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+  AUTHOR VARCHAR2<span class="token punctuation">(</span><span class="token number">200</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+  PUBLICATION_DATE <span class="token keyword">DATE</span><span class="token punctuation">,</span>
+  PUBLISHER_ID VARCHAR2<span class="token punctuation">(</span><span class="token number">40</span><span class="token punctuation">)</span> <span class="token keyword">REFERENCES</span> PUBLISHER<span class="token punctuation">(</span>PUBLISHER_ID<span class="token punctuation">)</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</pre></li>
+<li>
+<p>&#x4FEE;&#x6539;&#x8868;&#x683C;&#x540D;&#x7A31;</p>
+<pre data-role="codeBlock" data-info="sql" class="language-sql"><span class="token comment">-- &#x8868;&#x683C;&#x66F4;&#x540D;</span>
+<span class="token keyword">ALTER</span> <span class="token keyword">TABLE</span> BOOK <span class="token keyword">RENAME</span> <span class="token keyword">TO</span> BOOKS<span class="token punctuation">;</span>
+</pre></li>
+<li>
+<p>&#x65B0;&#x589E;&#x8868;&#x683C;&#x6B04;&#x4F4D;</p>
+<pre data-role="codeBlock" data-info="sql" class="language-sql"><span class="token comment">-- &#x65B0;&#x589E;&#x6B04;&#x4F4D;</span>
+<span class="token keyword">ALTER</span> <span class="token keyword">TABLE</span> BOOK <span class="token keyword">ADD</span> <span class="token keyword">LANGUAGE</span> VARCHAR2<span class="token punctuation">(</span><span class="token number">40</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</pre></li>
+<li>
+<p>&#x4FEE;&#x6539;&#x8868;&#x683C;&#x6B04;&#x4F4D;&#x540D;&#x7A31;</p>
+<pre data-role="codeBlock" data-info="sql" class="language-sql"><span class="token comment">-- &#x6B04;&#x4F4D;&#x66F4;&#x540D;</span>
+<span class="token keyword">ALTER</span> <span class="token keyword">TABLE</span> BOOK <span class="token keyword">RENAME</span> <span class="token keyword">COLUMN</span> <span class="token keyword">LANGUAGE</span> <span class="token keyword">TO</span> LANGUAGES<span class="token punctuation">;</span>
+</pre></li>
+<li>
+<p>&#x4FEE;&#x6539;/&#x522A;&#x9664;&#x9810;&#x8A2D;&#x503C;</p>
 <ul>
-<li>client &#x7AEF; &gt; server &#x7AEF;</li>
-<li>server &#x7AEF;: server &gt; db</li>
-<li>client &#x7AEF;: PC</li>
+<li>&#x8CC7;&#x6599;&#x82E5;&#x8981;&#x8A2D;&#x5B9A;&#x70BA;&#x7A7A;&#xFF0C;&#x5247;&#x8981;&#x8A2D;&#x7F6E;&#x6210; <code>NULL</code> &#x4E0D;&#x53EF;&#x8A2D;&#x5B9A;&#x70BA; <code>&apos;&apos;</code></li>
 </ul>
-<div style="text-align:center">
-  <img src="./image/0-1_01.png">
-</div>
+<pre data-role="codeBlock" data-info="sql" class="language-sql"><span class="token comment">-- &#x4FEE;&#x6539;/&#x522A;&#x9664;&#x6B04;&#x4F4D;&#x9810;&#x8A2D;&#x503C;</span>
+<span class="token keyword">ALTER</span> <span class="token keyword">TABLE</span> BOOK <span class="token keyword">MODIFY</span> LANGUAGES <span class="token keyword">DEFAULT</span> <span class="token string">&apos;Chinese&apos;</span><span class="token punctuation">;</span>
+<span class="token keyword">ALTER</span> <span class="token keyword">TABLE</span> BOOK <span class="token keyword">MODIFY</span> LANGUAGES <span class="token keyword">DEFAULT</span> <span class="token boolean">NULL</span><span class="token punctuation">;</span>
+</pre></li>
+<li>
+<p>&#x4FEE;&#x6539;&#x6B04;&#x4F4D;&#x985E;&#x578B;</p>
+<pre data-role="codeBlock" data-info="sql" class="language-sql"><span class="token comment">-- &#x4FEE;&#x6539;&#x6B04;&#x4F4D;&#x985E;&#x578B;</span>
+<span class="token keyword">ALTER</span> <span class="token keyword">TABLE</span> BOOK <span class="token keyword">MODIFY</span> LANGUAGES VARCHAR2<span class="token punctuation">(</span><span class="token number">20</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</pre></li>
+<li>
+<p>&#x522A;&#x9664;&#x6B04;&#x4F4D;</p>
+<pre data-role="codeBlock" data-info="sql" class="language-sql"><span class="token comment">-- &#x522A;&#x9664;&#x6B04;&#x4F4D;</span>
+<span class="token keyword">ALTER</span> <span class="token keyword">TABLE</span> BOOK <span class="token keyword">DROP</span> <span class="token keyword">COLUMN</span> LANGUAGES<span class="token punctuation">;</span>
+</pre></li>
+<li>
+<p>&#x5EFA;&#x7ACB; FOREIGN KEY(&#x5916;&#x9375;)</p>
+<pre data-role="codeBlock" data-info="sql" class="language-sql"><span class="token comment">-- &#x5EFA;&#x7ACB;FK</span>
+<span class="token keyword">ALTER</span> <span class="token keyword">TABLE</span> BOOK
+<span class="token keyword">ADD</span> <span class="token keyword">CONSTRAINT</span> FK_BOOK_PUBLISHER
+<span class="token keyword">FOREIGN</span> <span class="token keyword">KEY</span> <span class="token punctuation">(</span>PUBLISHER_ID<span class="token punctuation">)</span> <span class="token keyword">REFERENCES</span> PUBLISHER<span class="token punctuation">(</span>PUBLISHER_ID<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</pre></li>
+<li>
+<p>&#x79FB;&#x9664; FOREIGN KEY(&#x5916;&#x9375;)</p>
+<pre data-role="codeBlock" data-info="sql" class="language-sql"><span class="token comment">-- &#x79FB;&#x9664;FK</span>
+<span class="token keyword">ALTER</span> <span class="token keyword">TABLE</span> BOOK
+<span class="token keyword">DROP</span> <span class="token keyword">CONSTRAINT</span> FK_BOOK_PUBLISHER<span class="token punctuation">;</span>
+</pre></li>
+<li>
+<p>&#x6B04;&#x4F4D;&#x6539;&#x70BA;&#x4E0D;&#x53EF;/&#x53EF;&#x70BA;&#x7A7A;&#x503C;</p>
+<pre data-role="codeBlock" data-info="sql" class="language-sql"><span class="token comment">-- &#x6B04;&#x4F4D;&#x6539;&#x70BA;&#x4E0D;&#x53EF;/&#x53EF;&#x70BA;&#x7A7A;&#x503C;</span>
+<span class="token keyword">ALTER</span> <span class="token keyword">TABLE</span> BOOK <span class="token keyword">MODIFY</span> AUTHOR <span class="token operator">NOT</span> <span class="token boolean">NULL</span><span class="token punctuation">;</span>
+<span class="token keyword">ALTER</span> <span class="token keyword">TABLE</span> BOOK <span class="token keyword">MODIFY</span> AUTHOR <span class="token boolean">NULL</span><span class="token punctuation">;</span>
+</pre></li>
+<li>
+<p>&#x522A;&#x9664;&#x8868;&#x683C;</p>
+<ul>
+<li>&#x82E5;&#x522A;&#x9664;&#x8868;&#x6709;&#x88AB;&#x53C3;&#x7167;&#xFF0C;&#x5247;&#x4E0D;&#x53EF;&#x522A;&#x9664;</li>
+</ul>
+<pre data-role="codeBlock" data-info="sql" class="language-sql"><span class="token comment">-- DROP TABLE</span>
+<span class="token keyword">DROP</span> <span class="token keyword">TABLE</span> BOOK<span class="token punctuation">;</span>
+<span class="token keyword">DROP</span> <span class="token keyword">TABLE</span> PUBLISHER<span class="token punctuation">;</span>
+</pre></li>
+</ul>
 
       </div>
-      <div class="md-sidebar-toc"><ul>
-<li><a href="#client-server-%E6%9E%B6%E6%9E%84">client server &#x67B6;&#x6784;</a></li>
-</ul>
-</div>
+      <div class="md-sidebar-toc"></div>
       <a id="sidebar-toc-btn">&#x2261;</a>
     
     

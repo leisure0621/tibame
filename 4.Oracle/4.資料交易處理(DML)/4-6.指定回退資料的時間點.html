@@ -1,5 +1,5 @@
 <!DOCTYPE html><html><head>
-      <title>0-1.&#x6DFA;&#x5165;Oracle</title>
+      <title>4-6.&#x6307;&#x5B9A;&#x56DE;&#x9000;&#x8CC7;&#x6599;&#x7684;&#x6642;&#x9593;&#x9EDE;</title>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       
@@ -60,40 +60,71 @@
   opacity: 0;
   transition: 0.3s;
 }
-.markdown-preview.markdown-preview span.mark-red {
-  color: #e22222;
-}
-.markdown-preview.markdown-preview span.mark-green {
-  color: green;
-}
-.markdown-preview.markdown-preview span.mark-gray {
-  color: #8e908c;
-}
-.markdown-preview.markdown-preview span.mark-font-size {
-  font-size: 12px;
-}
-.markdown-preview.markdown-preview span.mark-font-weight {
-  font-weight: bold;
-}
 
       </style>
     </head>
     <body for="html-export">
       <div class="mume markdown-preview  ">
-      <h1 class="mume-header" id="client-server-%E6%9E%B6%E6%9E%84">client server &#x67B6;&#x6784;</h1>
+      <h1 class="mume-header" id="%E4%BA%A4%E6%98%93transaction">&#x4EA4;&#x6613;(transaction)</h1>
 
 <ul>
-<li>client &#x7AEF; &gt; server &#x7AEF;</li>
-<li>server &#x7AEF;: server &gt; db</li>
-<li>client &#x7AEF;: PC</li>
+<li>
+<p>&#x4EA4;&#x6613; (transaction) &#x53EF;&#x5C07;&#x591A;&#x500B;&#x7570;&#x52D5;&#x8996;&#x70BA;&#x4E00;&#x9AD4;,&#x901A;&#x5E38;&#x6703;&#x642D;&#x914D;</p>
+<ul>
+<li>
+<p>ROLLBACK &#x9084;&#x539F;&#x57F7;&#x884C;&#x904E;&#x7684;&#x7570;&#x52D5;</p>
+</li>
+<li>
+<p>COMMIT &#x78BA;&#x5B9A;&#x4EA4;&#x6613; (&#x7121;&#x6CD5;&#x9084;&#x539F;&#x57F7;&#x884C;&#x904E;&#x7684;&#x7570;&#x52D5;)</p>
+</li>
 </ul>
-<div style="text-align:center">
-  <img src="./image/0-1_01.png">
-</div>
+</li>
+<li>
+<p>&#x4F7F;&#x7528; SAVEPOINT &#x53EF;&#x4EE5;&#x8A2D;&#x5B9A; ROLLBACK &#x6B32;&#x56DE;&#x5FA9;&#x7684;&#x6642;&#x9593;&#x9EDE;</p>
+</li>
+</ul>
+<h1 class="mume-header" id="%E6%9F%A5%E8%A9%A2%E6%98%AF%E5%90%A6%E8%A8%AD%E5%AE%9A%E8%87%AA%E5%8B%95-commit">&#x67E5;&#x8A62;&#x662F;&#x5426;&#x8A2D;&#x5B9A;&#x81EA;&#x52D5; COMMIT</h1>
+
+<div style="padding-left:1.5rem;">
+<pre data-role="codeBlock" data-info="sql" class="language-sql"><span class="token comment">-- &#x8981;&#x4F7F;&#x7528; ROLLBACK ,&#x78BA;&#x5B9A; Preferences &gt; Database &gt; Advanced &gt; Autocommit &#x6C92;&#x6709;&#x52FE;&#x9078;&#xFF0C;&#x6216;&#x57F7;&#x884C;&#x4E0B;&#x5217;&#x6307;&#x4EE4;&#x6AA2;&#x67E5; AUTOCOMMIT &#x72C0;&#x614B;</span>
+<span class="token keyword">SHOW</span> AUTOCOMMIT <span class="token punctuation">;</span>
+</pre></div>
+<h1 class="mume-header" id="%E8%A8%AD%E5%AE%9A%E5%84%B2%E5%AD%98%E9%BB%9E">&#x8A2D;&#x5B9A;&#x5132;&#x5B58;&#x9EDE;</h1>
+
+<ul>
+<li>
+<p>&#x8A2D;&#x5B9A;&#x57F7;&#x884C;&#x6642;&#x9593;&#x9EDE; : <code>SAVEPOINT [pointName]</code><sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup></p>
+<pre data-role="codeBlock" data-info="sql" class="language-sql"><span class="token comment">-- SAVEPOINT</span>
+<span class="token keyword">SAVEPOINT</span> point01<span class="token punctuation">;</span>
+<span class="token keyword">DELETE</span> <span class="token keyword">FROM</span> PUBLISHER
+<span class="token keyword">WHERE</span> PUBLISHER_ID <span class="token operator">=</span> <span class="token string">&apos;P00X&apos;</span><span class="token punctuation">;</span>
+
+<span class="token keyword">SAVEPOINT</span> point02<span class="token punctuation">;</span>
+<span class="token keyword">DELETE</span> <span class="token keyword">FROM</span> PUBLISHER
+<span class="token keyword">WHERE</span> PUBLISHER_ID <span class="token operator">=</span> <span class="token string">&apos;P00Y&apos;</span><span class="token punctuation">;</span>
+</pre></li>
+<li>
+<p>&#x56DE;&#x9000;&#x6307;&#x5B9A;&#x6642;&#x9593;&#x9EDE; : <code>ROLLBACK TO SAVEPOINT [pointName]</code></p>
+<ul>
+<li>&#x9000;&#x56DE; <code>[pointName]</code> &#x6C92;&#x4FEE;&#x6539;&#x4E4B;&#x524D;&#x7684;&#x8CC7;&#x6599;</li>
+</ul>
+<pre data-role="codeBlock" data-info="sql" class="language-sql"><span class="token comment">-- &#x56DE;&#x5FA9;&#x5230;&#x6307;&#x5B9A;SAVEPOINT</span>
+<span class="token keyword">ROLLBACK</span> <span class="token keyword">TO</span> <span class="token keyword">SAVEPOINT</span> point01<span class="token punctuation">;</span>
+</pre></li>
+</ul>
+<hr class="footnotes-sep">
+<section class="footnotes">
+<ol class="footnotes-list">
+<li id="fn1" class="footnote-item"><p>SAVEPOINT: &#x65E5;&#x5F8C; ADDC &#x8AB2;&#x7A0B;&#x53EF;&#x80FD;&#x6703;&#x5B78;&#x5230; <a href="#fnref1" class="footnote-backref">&#x21A9;&#xFE0E;</a></p>
+</li>
+</ol>
+</section>
 
       </div>
       <div class="md-sidebar-toc"><ul>
-<li><a href="#client-server-%E6%9E%B6%E6%9E%84">client server &#x67B6;&#x6784;</a></li>
+<li><a href="#%E4%BA%A4%E6%98%93transaction">&#x4EA4;&#x6613;(transaction)</a></li>
+<li><a href="#%E6%9F%A5%E8%A9%A2%E6%98%AF%E5%90%A6%E8%A8%AD%E5%AE%9A%E8%87%AA%E5%8B%95-commit">&#x67E5;&#x8A62;&#x662F;&#x5426;&#x8A2D;&#x5B9A;&#x81EA;&#x52D5; COMMIT</a></li>
+<li><a href="#%E8%A8%AD%E5%AE%9A%E5%84%B2%E5%AD%98%E9%BB%9E">&#x8A2D;&#x5B9A;&#x5132;&#x5B58;&#x9EDE;</a></li>
 </ul>
 </div>
       <a id="sidebar-toc-btn">&#x2261;</a>

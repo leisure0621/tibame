@@ -1,9 +1,9 @@
 <!DOCTYPE html><html><head>
-      <title>3-0.&#x8996;&#x89BA;&#x5316;&#x5EFA;&#x7ACB;&#x8868;&#x683C;</title>
+      <title>4-3.&#x4FEE;&#x6539;&#x8CC7;&#x6599;</title>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       
-      <link rel="stylesheet" href="file:///c:\Users\leisure\.vscode\extensions\shd101wyy.markdown-preview-enhanced-0.5.3\node_modules\@shd101wyy\mume\dependencies\katex\katex.min.css">
+      <link rel="stylesheet" href="file:///c:\Users\USER\.vscode\extensions\shd101wyy.markdown-preview-enhanced-0.5.3\node_modules\@shd101wyy\mume\dependencies\katex\katex.min.css">
       
       
 
@@ -53,104 +53,80 @@
   padding: 10px;
   border-radius: 2px;
 }
+.markdown-preview.markdown-preview .ans:hover > * {
+  opacity: 1;
+}
 .markdown-preview.markdown-preview .ans > * {
   opacity: 0;
   transition: 0.3s;
-}
-.markdown-preview.markdown-preview .ans:hover > * {
-  opacity: 1;
 }
 
       </style>
     </head>
     <body for="html-export">
       <div class="mume markdown-preview  ">
-      <h1 class="mume-header" id="%E5%BB%BA%E7%AB%8B%E8%A1%A8%E6%A0%BC">&#x5EFA;&#x7ACB;&#x8868;&#x683C;</h1>
+      <h1 class="mume-header" id="%E4%BF%AE%E6%94%B9%E8%A1%A8%E5%96%AE%E6%89%80%E6%9C%89%E8%B3%87%E6%96%99">&#x4FEE;&#x6539;&#x8868;&#x55AE;&#x6240;&#x6709;&#x8CC7;&#x6599;</h1>
 
 <ul>
 <li>
-<p><code>Tables</code> &#x53F3;&#x9375; &gt; <code>New Table</code></p>
-<div style="text-align:center">
-  <img src="./image/0-2_37.png">
-</div>
-</li>
-<li>
-<p>&#x6DFB;&#x52A0;&#x6B04;&#x4F4D;&#x7B49;&#x7D30;&#x9805;</p>
-<ul>
-<li>
-<p>NUMBER</p>
-<ul>
-<li>&#x81EA;&#x8A02;&#x7CBE;&#x6E96;&#x6578; NUMBER(&#x7E3D;&#x4F4D;&#x6578;,&#x5C0F;&#x6578;&#x4F4D;&#x6578;)</li>
+<p>&#x4E00;&#x822C;&#x4E0D;&#x6703;&#x9019;&#x9EBC;&#x505A;&#xFF0C;&#x6703;&#x9020;&#x6210;&#x8CC7;&#x6599;&#x5B8C;&#x5168;&#x76F8;&#x540C;</p>
+<pre data-role="codeBlock" data-info="sql" class="language-sql"><span class="token comment">-- UPDATE</span>
+<span class="token keyword">UPDATE</span> PUBLISHER <span class="token keyword">SET</span> CONTACT <span class="token operator">=</span> <span class="token string">&apos;John&apos;</span><span class="token punctuation">,</span> PHONE <span class="token operator">=</span> <span class="token string">&apos;07-1234567765&apos;</span>
+</pre></li>
 </ul>
-</li>
-<li>
-<p>CHAR</p>
-</li>
-<li>
-<p>VARCHAR2</p>
-<ul>
-<li>&#x4E0D;&#x78BA;&#x5B9A;&#x5B57;&#x5143;&#x9577;&#x5EA6;&#x5C31;&#x9078;&#x9019;&#x500B;</li>
-</ul>
-</li>
-<li>
-<p>DATE</p>
-<ul>
-<li>&#x5132;&#x5B58;&#x65E5;&#x671F;</li>
-</ul>
-</li>
-<li>
-<p>TIMESTAMP</p>
-<ul>
-<li>&#x81EA;&#x52D5;&#x5275;&#x5EFA;&#x7576;&#x65E5;&#x6642;&#x9593;: <code>Default</code> &gt; <code>CURRENT_TIMESTAMP</code> <br><br></li>
-</ul>
-</li>
-</ul>
-<div style="text-align:center">
-  <img src="./image/0-2_38.png">
-</div>
-</li>
-</ul>
-<h1 class="mume-header" id="%E5%88%AA%E9%99%A4%E8%A1%A8%E6%A0%BC">&#x522A;&#x9664;&#x8868;&#x683C;</h1>
+<h1 class="mume-header" id="%E4%BF%AE%E6%94%B9%E6%8C%87%E5%AE%9A%E6%A2%9D%E4%BB%B6%E8%B3%87%E6%96%99">&#x4FEE;&#x6539;&#x6307;&#x5B9A;&#x689D;&#x4EF6;&#x8CC7;&#x6599;</h1>
 
 <ul>
 <li>
-<p><code>&#x8868;&#x683C;&#x53F3;&#x9375;</code> &gt; <code>Table</code> &gt; <code>Drop...</code></p>
-<div style="text-align:center">
-  <img src="./image/0-2_43.png">
-</div>
-</li>
-</ul>
-<h1 class="mume-header" id="%E4%BB%8B%E9%9D%A2%E5%8C%96%E5%89%B5%E5%BB%BA%E6%AA%A2%E6%9F%A5%E6%95%88%E6%9E%9C">&#x4ECB;&#x9762;&#x5316;&#x5275;&#x5EFA;&#x6AA2;&#x67E5;&#x6548;&#x679C;</h1>
-
+<p>&#x66F4;&#x65B0; <code>PUBLISHER_ID = &apos;P00X&apos;</code> &#x6216; <code>PUBLISHER_ID = &apos;P00Y&apos;</code></p>
 <ul>
 <li>
-<p><code>Constrains</code> &gt; <code>Check</code> &gt; <code>Check Condition</code> &gt; &#x5BEB;&#x5165;&#x689D;&#x4EF6;</p>
-<div style="text-align:center">
-  <img src="./image/0-2_45.png">
-</div>
+<p><code>UPDATE [TableName] SET [KeyName] = &apos;[KeyValue]&apos;</code> &#x4FEE;&#x6539;&#x65B9;&#x5F0F;</p>
 </li>
-</ul>
-<h1 class="mume-header" id="%E6%96%B0%E5%A2%9E%E8%A1%A8%E5%96%AE%E5%80%BC">&#x65B0;&#x589E;&#x8868;&#x55AE;&#x503C;</h1>
-
-<ul>
 <li>
-<p><code>&#x6253;&#x958B;&#x8868;&#x55AE;</code> &gt; <code>Data</code> &gt; <code>+</code> &gt; <code>&#x65B0;&#x589E;&#x6578;&#x64DA;</code> &gt; <code>&#x221A;</code></p>
-<div style="text-align:center">
-  <img src="./image/0-2_44.png">
-</div>
+<p><code>WHERE [KeyName] = &apos;[KeyValue]&apos;</code> &#x5224;&#x65B7;&#x689D;&#x4EF6;<sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup></p>
 </li>
 </ul>
+<pre data-role="codeBlock" data-info="sql" class="language-sql"><span class="token comment">-- UPDATE</span>
+<span class="token keyword">UPDATE</span> PUBLISHER <span class="token keyword">SET</span> CONTACT <span class="token operator">=</span> <span class="token string">&apos;John&apos;</span><span class="token punctuation">,</span> PHONE <span class="token operator">=</span> <span class="token string">&apos;07-1234567765&apos;</span>
+<span class="token keyword">WHERE</span> PUBLISHER_ID <span class="token operator">=</span> <span class="token string">&apos;P00X&apos;</span> <span class="token operator">OR</span> PUBLISHER_ID <span class="token operator">=</span> <span class="token string">&apos;P00Y&apos;</span><span class="token punctuation">;</span>
+</pre></li>
+</ul>
+<hr class="footnotes-sep">
+<section class="footnotes">
+<ol class="footnotes-list">
+<li id="fn1" class="footnote-item"><p><strong>WHERE</strong>: &#x529F;&#x80FD;&#x4F3C; while &#x9010;&#x7B46;&#x505A;&#x6BD4;&#x8F03; <a href="#fnref1" class="footnote-backref">&#x21A9;&#xFE0E;</a></p>
+</li>
+</ol>
+</section>
 
       </div>
+      <div class="md-sidebar-toc"><ul>
+<li><a href="#%E4%BF%AE%E6%94%B9%E8%A1%A8%E5%96%AE%E6%89%80%E6%9C%89%E8%B3%87%E6%96%99">&#x4FEE;&#x6539;&#x8868;&#x55AE;&#x6240;&#x6709;&#x8CC7;&#x6599;</a></li>
+<li><a href="#%E4%BF%AE%E6%94%B9%E6%8C%87%E5%AE%9A%E6%A2%9D%E4%BB%B6%E8%B3%87%E6%96%99">&#x4FEE;&#x6539;&#x6307;&#x5B9A;&#x689D;&#x4EF6;&#x8CC7;&#x6599;</a></li>
+</ul>
+</div>
+      <a id="sidebar-toc-btn">&#x2261;</a>
+    
+    
+    
+    
+    
+    
+    
+    
+<script>
+
+var sidebarTOCBtn = document.getElementById('sidebar-toc-btn')
+sidebarTOCBtn.addEventListener('click', function(event) {
+  event.stopPropagation()
+  if (document.body.hasAttribute('html-show-sidebar-toc')) {
+    document.body.removeAttribute('html-show-sidebar-toc')
+  } else {
+    document.body.setAttribute('html-show-sidebar-toc', true)
+  }
+})
+</script>
       
-      
-    
-    
-    
-    
-    
-    
-    
-    
   
     </body></html>

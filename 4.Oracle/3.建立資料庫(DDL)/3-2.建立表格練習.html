@@ -1,5 +1,5 @@
 <!DOCTYPE html><html><head>
-      <title>0-1.&#x6DFA;&#x5165;Oracle</title>
+      <title>3-2.&#x5EFA;&#x7ACB;&#x8868;&#x683C;&#x7DF4;&#x7FD2;</title>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       
@@ -80,20 +80,63 @@
     </head>
     <body for="html-export">
       <div class="mume markdown-preview  ">
-      <h1 class="mume-header" id="client-server-%E6%9E%B6%E6%9E%84">client server &#x67B6;&#x6784;</h1>
+      <h1 class="mume-header" id="%E5%81%9A%E6%B3%95">&#x505A;&#x6CD5;</h1>
 
 <ul>
-<li>client &#x7AEF; &gt; server &#x7AEF;</li>
-<li>server &#x7AEF;: server &gt; db</li>
-<li>client &#x7AEF;: PC</li>
+<li>
+<p>&#x5EFA;&#x7ACB; CUSTOMER &#x4E26;&#x8A2D;&#x5B9A; BOOK &#x4E2D;&#x7684;&#x5167;&#x5BB9;</p>
+<pre data-role="codeBlock" data-info="sql" class="language-sql"><span class="token keyword">CREATE</span> <span class="token keyword">TABLE</span> CUSTOMER<span class="token punctuation">(</span>
+    CUSTOMER_ID VARCHAR2<span class="token punctuation">(</span><span class="token number">40</span><span class="token punctuation">)</span> <span class="token keyword">PRIMARY</span> <span class="token keyword">KEY</span> <span class="token operator">NOT</span> <span class="token boolean">NULL</span><span class="token punctuation">,</span>
+    CUSTOMER_NAME VARCHAR2<span class="token punctuation">(</span><span class="token number">40</span><span class="token punctuation">)</span> <span class="token operator">NOT</span> <span class="token boolean">NULL</span><span class="token punctuation">,</span>
+    PHONE VARCHAR2<span class="token punctuation">(</span><span class="token number">40</span><span class="token punctuation">)</span> <span class="token operator">NOT</span> <span class="token boolean">NULL</span><span class="token punctuation">,</span>
+    ADDRESS VARCHAR2<span class="token punctuation">(</span><span class="token number">200</span><span class="token punctuation">)</span> <span class="token operator">NOT</span> <span class="token boolean">NULL</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</pre></li>
+<li>
+<p>&#x5EFA;&#x7ACB; BOOK &#x4E26;&#x95DC;&#x806F; PUBLISHER_ID &#x81F3; PUBLISHER</p>
+<pre data-role="codeBlock" data-info="sql" class="language-sql"><span class="token keyword">CREATE</span> <span class="token keyword">TABLE</span> BOOK<span class="token punctuation">(</span>
+    ISBN <span class="token keyword">CHAR</span><span class="token punctuation">(</span><span class="token number">13</span><span class="token punctuation">)</span> <span class="token keyword">PRIMARY</span> <span class="token keyword">KEY</span> <span class="token operator">NOT</span> <span class="token boolean">NULL</span><span class="token punctuation">,</span>
+    BOOK_NAME VARCHAR2<span class="token punctuation">(</span><span class="token number">200</span><span class="token punctuation">)</span> <span class="token operator">NOT</span> <span class="token boolean">NULL</span><span class="token punctuation">,</span>
+    PRICE NUMBER<span class="token punctuation">(</span><span class="token number">8</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">)</span> <span class="token keyword">CHECK</span> <span class="token punctuation">(</span>PRICE <span class="token operator">&gt;=</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    AUTHOR VARCHAR2<span class="token punctuation">(</span><span class="token number">200</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    PUBLICATION_DATE <span class="token keyword">DATE</span><span class="token punctuation">,</span>
+    PUBLISHER_ID VARCHAR2<span class="token punctuation">(</span><span class="token number">40</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token keyword">FOREIGN</span> <span class="token keyword">KEY</span> <span class="token punctuation">(</span>PUBLISHER_ID<span class="token punctuation">)</span> <span class="token keyword">REFERENCES</span> PUBLISHER<span class="token punctuation">(</span>PUBLISHER_ID<span class="token punctuation">)</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</pre></li>
+<li>
+<p>&#x5EFA;&#x7ACB; ORDER_MASTER &#x4E26;&#x95DC;&#x806F; CUSTOMER_ID &#x81F3; CUSTOMER</p>
+<pre data-role="codeBlock" data-info="sql" class="language-sql"><span class="token keyword">CREATE</span> <span class="token keyword">TABLE</span> ORDER_MASTER <span class="token punctuation">(</span>
+    ORDER_ID NUMBER<span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">)</span> <span class="token keyword">PRIMARY</span> <span class="token keyword">KEY</span> <span class="token operator">NOT</span> <span class="token boolean">NULL</span><span class="token punctuation">,</span>
+    CUSTOMER_ID VARCHAR2<span class="token punctuation">(</span><span class="token number">40</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    ORDER_DATE <span class="token keyword">TIMESTAMP</span> <span class="token keyword">DEFAULT</span> <span class="token keyword">CURRENT_TIMESTAMP</span><span class="token punctuation">,</span>
+    <span class="token keyword">FOREIGN</span> <span class="token keyword">KEY</span> <span class="token punctuation">(</span>CUSTOMER_ID<span class="token punctuation">)</span> <span class="token keyword">REFERENCES</span> CUSTOMER<span class="token punctuation">(</span>CUSTOMER_ID<span class="token punctuation">)</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</pre></li>
+<li>
+<p>&#x5EFA;&#x7ACB; ORDER_DETAIL &#x4E26;&#x95DC;&#x806F; ORDER_ID &#x81F3; ORDER_MASTER&#x3001;&#x4E26;&#x95DC;&#x806F; ISBN &#x81F3; BOOK</p>
+<ul>
+<li>TABLE &#x4E2D;&#x542B; REFERENCES &#x5247; <code>ORDER_DETAIL</code>(&#x7236;) &#x3001;<code>BOOK</code>(&#x5B50;)&#x3001;<code>ORDER_MASTER</code>(&#x5B50;)</li>
+<li><code>ORDER_DETAIL</code>(&#x7236;) &#x7684; <code>ORDER_ID</code>&#x3001;<code>ISBN</code> &#x8CC7;&#x6599;&#x8981;&#x5148;&#x5EFA;&#x7ACB;&#xFF0C;&#x624D;&#x53EF;&#x9806;&#x5229;&#x5275;&#x5EFA; <code>BOOK</code>(&#x5B50;) &#x8207; <code>ORDER_MASTER</code>(&#x5B50;)</li>
 </ul>
-<div style="text-align:center">
-  <img src="./image/0-1_01.png">
-</div>
+<pre data-role="codeBlock" data-info="sql" class="language-sql"><span class="token keyword">CREATE</span> <span class="token keyword">TABLE</span> ORDER_DETAIL <span class="token punctuation">(</span>
+    ORDER_ID NUMBER<span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">)</span> <span class="token keyword">PRIMARY</span> <span class="token keyword">KEY</span> <span class="token operator">NOT</span> <span class="token boolean">NULL</span><span class="token punctuation">,</span>
+    ISBN <span class="token keyword">CHAR</span><span class="token punctuation">(</span><span class="token number">13</span><span class="token punctuation">)</span> <span class="token operator">NOT</span> <span class="token boolean">NULL</span><span class="token punctuation">,</span>
+    QUANTITY NUMBER<span class="token punctuation">(</span><span class="token number">8</span><span class="token punctuation">)</span> <span class="token operator">NOT</span> <span class="token boolean">NULL</span><span class="token punctuation">,</span>
+    <span class="token keyword">FOREIGN</span> <span class="token keyword">KEY</span> <span class="token punctuation">(</span>ORDER_ID<span class="token punctuation">)</span> <span class="token keyword">REFERENCES</span> ORDER_MASTER<span class="token punctuation">(</span>ORDER_ID<span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token keyword">FOREIGN</span> <span class="token keyword">KEY</span> <span class="token punctuation">(</span>ISBN<span class="token punctuation">)</span> <span class="token keyword">REFERENCES</span> BOOK<span class="token punctuation">(</span>ISBN<span class="token punctuation">)</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</pre></li>
+</ul>
+<hr>
+<p>&#x53C3;&#x8003;&#x93C8;&#x63A5;</p>
+<ul>
+<li><a href="https://blog.csdn.net/u011479200/article/details/89025708">Oracle| Oracle &#x5927;&#x5C0F;&#x5199;&#x654F;&#x611F;&#x95EE;&#x9898;</a></li>
+</ul>
 
       </div>
       <div class="md-sidebar-toc"><ul>
-<li><a href="#client-server-%E6%9E%B6%E6%9E%84">client server &#x67B6;&#x6784;</a></li>
+<li><a href="#%E5%81%9A%E6%B3%95">&#x505A;&#x6CD5;</a></li>
 </ul>
 </div>
       <a id="sidebar-toc-btn">&#x2261;</a>

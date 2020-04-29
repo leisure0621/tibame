@@ -1,5 +1,5 @@
 <!DOCTYPE html><html><head>
-      <title>0-1.&#x6DFA;&#x5165;Oracle</title>
+      <title>4-1.&#x65B0;&#x589E;&#x8CC7;&#x6599;</title>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       
@@ -60,40 +60,298 @@
   opacity: 0;
   transition: 0.3s;
 }
-.markdown-preview.markdown-preview span.mark-red {
-  color: #e22222;
-}
-.markdown-preview.markdown-preview span.mark-green {
-  color: green;
-}
-.markdown-preview.markdown-preview span.mark-gray {
-  color: #8e908c;
-}
-.markdown-preview.markdown-preview span.mark-font-size {
-  font-size: 12px;
-}
-.markdown-preview.markdown-preview span.mark-font-weight {
-  font-weight: bold;
-}
 
       </style>
     </head>
     <body for="html-export">
       <div class="mume markdown-preview  ">
-      <h1 class="mume-header" id="client-server-%E6%9E%B6%E6%9E%84">client server &#x67B6;&#x6784;</h1>
+      <h1 class="mume-header" id="%E6%8F%92%E5%85%A5%E8%B3%87%E6%96%99%E7%84%A1%E6%97%A5%E6%9C%9F">&#x63D2;&#x5165;&#x8CC7;&#x6599;(&#x7121;&#x65E5;&#x671F;)</h1>
 
 <ul>
-<li>client &#x7AEF; &gt; server &#x7AEF;</li>
-<li>server &#x7AEF;: server &gt; db</li>
-<li>client &#x7AEF;: PC</li>
+<li>
+<p>&#x63D2;&#x5165;&#x8CC7;&#x6599; <code>INSERT INTO [TableName]([TableCol],[TableCol],...)</code></p>
+<ul>
+<li>&#x503C;&#x82E5;&#x662F; <code>&apos;O&apos;&apos;Reilly&apos;</code> &#x5247;&#x5EFA;&#x7ACB;&#x5F8C;&#x8B8A;&#x6210; <code>O&apos;Reilly</code></li>
 </ul>
+<pre data-role="codeBlock" data-info="sql" class="language-sql"><span class="token comment">-- INSERT INTO PUBLISHER</span>
+<span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> PUBLISHER <span class="token punctuation">(</span>PUBLISHER_ID<span class="token punctuation">,</span> PUBLISHER_NAME<span class="token punctuation">,</span> CONTACT<span class="token punctuation">,</span> PHONE<span class="token punctuation">)</span>
+<span class="token keyword">VALUES</span> <span class="token punctuation">(</span><span class="token string">&apos;P001&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;O&apos;&apos;Reilly&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;Ocean&apos;</span> <span class="token punctuation">,</span> <span class="token string">&apos;02-23456789&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> PUBLISHER <span class="token punctuation">(</span>PUBLISHER_ID<span class="token punctuation">,</span> PUBLISHER_NAME<span class="token punctuation">,</span> CONTACT<span class="token punctuation">,</span> PHONE<span class="token punctuation">)</span>
+<span class="token keyword">VALUES</span> <span class="token punctuation">(</span><span class="token string">&apos;P002&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;John Wiley, Sons Inc&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;Don&apos;</span> <span class="token punctuation">,</span> <span class="token string">&apos;03-36962869&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> PUBLISHER <span class="token punctuation">(</span>PUBLISHER_ID<span class="token punctuation">,</span> PUBLISHER_NAME<span class="token punctuation">,</span> CONTACT<span class="token punctuation">,</span> PHONE<span class="token punctuation">)</span>
+<span class="token keyword">VALUES</span> <span class="token punctuation">(</span><span class="token string">&apos;P003&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;Manning Publications&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;Mary&apos;</span> <span class="token punctuation">,</span> <span class="token string">&apos;04-43456789&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> PUBLISHER <span class="token punctuation">(</span>PUBLISHER_ID<span class="token punctuation">,</span> PUBLISHER_NAME<span class="token punctuation">,</span> CONTACT<span class="token punctuation">,</span> PHONE<span class="token punctuation">)</span>
+<span class="token keyword">VALUES</span> <span class="token punctuation">(</span><span class="token string">&apos;P004&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;Apress&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;Allen&apos;</span> <span class="token punctuation">,</span> <span class="token string">&apos;05-59876543&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> PUBLISHER <span class="token punctuation">(</span>PUBLISHER_ID<span class="token punctuation">,</span> PUBLISHER_NAME<span class="token punctuation">,</span> CONTACT<span class="token punctuation">,</span> PHONE<span class="token punctuation">)</span>
+<span class="token keyword">VALUES</span> <span class="token punctuation">(</span><span class="token string">&apos;P005&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;McGraw-Hill&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;Mike&apos;</span> <span class="token punctuation">,</span> <span class="token string">&apos;06-69876543&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> PUBLISHER <span class="token punctuation">(</span>PUBLISHER_ID<span class="token punctuation">,</span> PUBLISHER_NAME<span class="token punctuation">,</span> CONTACT<span class="token punctuation">,</span> PHONE<span class="token punctuation">)</span>
+<span class="token keyword">VALUES</span> <span class="token punctuation">(</span><span class="token string">&apos;P006&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;Pearson&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;Paul&apos;</span> <span class="token punctuation">,</span> <span class="token string">&apos;09-98767867&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> PUBLISHER <span class="token punctuation">(</span>PUBLISHER_ID<span class="token punctuation">,</span> PUBLISHER_NAME<span class="token punctuation">,</span> CONTACT<span class="token punctuation">,</span> PHONE<span class="token punctuation">)</span>
+<span class="token keyword">VALUES</span> <span class="token punctuation">(</span><span class="token string">&apos;P00X&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;Publisher X&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;X-Man&apos;</span> <span class="token punctuation">,</span> <span class="token string">&apos;07-75698765&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> PUBLISHER <span class="token punctuation">(</span>PUBLISHER_ID<span class="token punctuation">,</span> PUBLISHER_NAME<span class="token punctuation">,</span> CONTACT<span class="token punctuation">,</span> PHONE<span class="token punctuation">)</span>
+<span class="token keyword">VALUES</span> <span class="token punctuation">(</span><span class="token string">&apos;P00Y&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;Publisher Y&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;Yale&apos;</span> <span class="token punctuation">,</span> <span class="token string">&apos;08-83698765&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</pre><hr>
+<table>
+<thead>
+<tr>
+<th>PUBLISHER_ID</th>
+<th>PUBLISHER_NAME</th>
+<th>CONTACT</th>
+<th>PHONE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>P001</td>
+<td>O&apos;Reilly</td>
+<td>Ocean</td>
+<td>02-23456789</td>
+</tr>
+<tr>
+<td>P002</td>
+<td>John Wiley, Sons Inc</td>
+<td>Sons Inc</td>
+<td>Don</td>
+</tr>
+<tr>
+<td>P003</td>
+<td>Manning Publications</td>
+<td>Mary</td>
+<td>04-43456789</td>
+</tr>
+<tr>
+<td>P004</td>
+<td>Apress</td>
+<td>Allen</td>
+<td>05-59876543</td>
+</tr>
+<tr>
+<td>P005</td>
+<td>McGraw-Hill</td>
+<td>Mike</td>
+<td>06-69876543</td>
+</tr>
+<tr>
+<td>P006</td>
+<td>Pearson</td>
+<td>Paul</td>
+<td>09-98767867</td>
+</tr>
+<tr>
+<td>P00X</td>
+<td>Publisher X</td>
+<td>X-Man</td>
+<td>07-75698765</td>
+</tr>
+<tr>
+<td>P00Y</td>
+<td>Publisher Y</td>
+<td>Yale</td>
+<td>08-83698765</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ul>
+<h1 class="mume-header" id="%E6%8F%92%E5%85%A5%E8%B3%87%E6%96%99%E5%90%AB%E6%97%A5%E6%9C%9F%E6%A0%BC%E5%BC%8F">&#x63D2;&#x5165;&#x8CC7;&#x6599;(&#x542B;&#x65E5;&#x671F;&#x683C;&#x5F0F;)</h1>
+
+<ul>
+<li>
+<p>&#x586B;&#x65E5;&#x671F;&#x6642;&#x9700;&#x7528; to_date() &#x505A;&#x65E5;&#x671F;&#x8F49;&#x63DB;&#xFF0C;&#x4F8B;: <code>to_date(&apos;2005-02-19 21:02:44&apos;, &apos;yyyy-mm-dd hh24:mi:ss&apos;)</code><sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup></p>
+<ul>
+<li>
+<p><code>yyyy-mm-dd</code> &#x8868;&#x793A;<strong>&#x5E74;-&#x6708;-&#x65E5;</strong>&#x8F49;&#x63DB;</p>
+</li>
+<li>
+<p><code>hh24:mi:ss</code> &#x8868;&#x793A;<strong>&#x6642;:&#x5206;:&#x79D2;</strong>&#x8F49;&#x63DB;</p>
+</li>
+</ul>
+<pre data-role="codeBlock" data-info="sql" class="language-sql"><span class="token comment">-- INSERT INTO BOOK</span>
+<span class="token comment">-- to_date(): &#x5C07;&#x6307;&#x5B9A;&#x683C;&#x5F0F;&#x65E5;&#x671F;/&#x6642;&#x9593;&#x5B57;&#x4E32;&#x8F49;&#x6210;DATE&#x683C;&#x5F0F;</span>
+<span class="token comment">-- DATE&#xFF1A;to_date(&apos;2005-02-19&apos;, &apos;yyyy-mm-dd&apos;)</span>
+<span class="token comment">-- TIMESTAMP&#xFF1A;to_date(&apos;2005-02-19 21:02:44&apos;, &apos;yyyy-mm-dd hh24:mi:ss&apos;)</span>
+<span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> BOOK
+<span class="token punctuation">(</span>ISBN<span class="token punctuation">,</span> BOOK_NAME<span class="token punctuation">,</span> PRICE<span class="token punctuation">,</span> AUTHOR<span class="token punctuation">,</span> PUBLICATION_DATE<span class="token punctuation">,</span> PUBLISHER_ID<span class="token punctuation">)</span>
+<span class="token keyword">VALUES</span><span class="token punctuation">(</span><span class="token string">&apos;9780596009205&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;Head First Java&apos;</span><span class="token punctuation">,</span> <span class="token number">1186</span> <span class="token punctuation">,</span>
+<span class="token string">&apos;Kathy Sierra and Bert Bates&apos;</span><span class="token punctuation">,</span> to_date<span class="token punctuation">(</span><span class="token string">&apos;2005-02-19&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;yyyy-mm-dd&apos;</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token string">&apos;P001&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</pre></li>
+</ul>
+<h1 class="mume-header" id="%E8%A8%AD%E5%AE%9A%E7%B5%B1%E4%B8%80%E6%97%A5%E6%9C%9F%E6%A0%BC%E5%BC%8F">&#x8A2D;&#x5B9A;&#x7D71;&#x4E00;&#x65E5;&#x671F;&#x683C;&#x5F0F;</h1>
+
+<ul>
+<li>
+<p>&#x8A2D;&#x5B9A;&#x5F8C;&#x9023;&#x7DDA;&#x671F;&#x9593;(SESSION)&#x5C31;&#x4E0D;&#x7528;&#x55AE;&#x7368;&#x5957;&#x7528;&#x683C;&#x5F0F;&#xFF0C;&#x7528;&#x6CD5;: <code>ALTER SESSION SET</code> (&#x4EE5;&#x4E0B;&#x683C;&#x5F0F;&#x5247;&#x4E00;&#x5957;&#x7528;)</p>
+<pre data-role="codeBlock" data-info="sql" class="language-sql"><span class="token comment">-- &#x66F4;&#x6539;NLS_DATE_FORMATNLS_DATE_FORMAT, NLS_TIMESTAMP_FORMAT&#x683C;&#x5F0F;&#x6709;2&#x500B;&#x597D;&#x8655;</span>
+<span class="token comment">-- 1. &#x5728;&#x8CC7;&#x6599;&#x5EAB;&#x9023;&#x7DDA;&#x671F;&#x9593;&#x65B0;&#x589E;&#x6642;&#x7121;&#x9700;&#x4F7F;&#x7528;to_date()&#x8F49;&#x63DB;</span>
+<span class="token comment">-- 2. &#x67E5;&#x8A62;&#x7D50;&#x679C;&#x986F;&#x793A;&#x7684;&#x65E5;&#x671F;/&#x6642;&#x9593;&#x683C;&#x5F0F;&#x4E5F;&#x540C;&#x6642;&#x78BA;&#x5B9A;</span>
+</pre><hr>
+<pre data-role="codeBlock" data-info="sql" class="language-sql"><span class="token keyword">ALTER</span> <span class="token keyword">SESSION</span> <span class="token keyword">SET</span> NLS_DATE_FORMAT <span class="token operator">=</span> <span class="token string">&apos;yyyy-mm-dd&apos;</span><span class="token punctuation">;</span>
+</pre><pre data-role="codeBlock" data-info="sql" class="language-sql"><span class="token keyword">ALTER</span> <span class="token keyword">SESSION</span> <span class="token keyword">SET</span> NLS_TIMESTAMP_FORMAT <span class="token operator">=</span> <span class="token string">&apos;yyyy-mm-dd hh24:mi:ss&apos;</span><span class="token punctuation">;</span>
+</pre></li>
+</ul>
+<h1 class="mume-header" id="%E8%87%AA%E5%8B%95%E7%B7%A8%E8%99%9F">&#x81EA;&#x52D5;&#x7DE8;&#x865F;</h1>
+
+<ul>
+<li>
+<p>&#x5E38;&#x7528;&#x5728; PK<sup class="footnote-ref"><a href="#fn2" id="fnref2">[2]</a></sup> &#x4E0A;&#xFF0C;&#x591A;&#x7528;&#x5728;&#x8A02;&#x55AE;&#x7DE8;&#x865F;</p>
+</li>
+<li>
+<p>&#x5EFA;&#x7ACB;<strong>&#x5E8F;&#x865F;&#x683C;&#x5F0F;</strong></p>
+<pre data-role="codeBlock" data-info="sql" class="language-sql"><span class="token keyword">CREATE</span> SEQUENCE SEQ_EMPLOYEE_ID<span class="token punctuation">;</span>
+</pre><table>
+<thead>
+<tr>
+<th style="text-align:center">Name</th>
+<th style="text-align:center">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">CREATED</td>
+<td style="text-align:center">2020-04-29</td>
+</tr>
+<tr>
+<td style="text-align:center">LAST_DDL_TIME</td>
+<td style="text-align:center">2020-04-29</td>
+</tr>
+<tr>
+<td style="text-align:center">SEQUENCE_OWNER</td>
+<td style="text-align:center">BOOKSHOP</td>
+</tr>
+<tr>
+<td style="text-align:center">SEQUENCE_NAME</td>
+<td style="text-align:center">SEQ_EMPLOYEE_ID</td>
+</tr>
+<tr>
+<td style="text-align:center">MIN_VALUE</td>
+<td style="text-align:center">1</td>
+</tr>
+<tr>
+<td style="text-align:center">MAX_VALUE</td>
+<td style="text-align:center">9999999999999999999999999999</td>
+</tr>
+<tr>
+<td style="text-align:center">INCREMENT_BY</td>
+<td style="text-align:center">1</td>
+</tr>
+<tr>
+<td style="text-align:center">CYCLE_FLAG</td>
+<td style="text-align:center">N</td>
+</tr>
+<tr>
+<td style="text-align:center">ORDER_FLAG</td>
+<td style="text-align:center">N</td>
+</tr>
+<tr>
+<td style="text-align:center">CACHE_SIZE</td>
+<td style="text-align:center">20</td>
+</tr>
+<tr>
+<td style="text-align:center">LAST_NUMBER</td>
+<td style="text-align:center">21</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>&#x5957;&#x7528;<strong>&#x5E8F;&#x865F;&#x683C;&#x5F0F;</strong>&#x4E26;&#x65B0;&#x589E;&#x8CC7;&#x6599;</p>
+<pre data-role="codeBlock" data-info="sql" class="language-sql"><span class="token comment">-- &#x5373;&#x4F7F;&#x65B0;&#x589E;&#x5931;&#x6557;&#xFF0C;sequence&#x4ECD;&#x6703;&#x81EA;&#x52D5;&#x8DF3;&#x865F;&#xFF0C;&#x907F;&#x514D;&#x591A;&#x4EBA;&#x65B0;&#x589E;&#x6642;&#x7121;&#x6CD5;&#x9806;&#x5229;&#x53D6;&#x865F;&#x7684;&#x554F;&#x984C;</span>
+<span class="token comment">-- &#x65B0;&#x589E;&#x5931;&#x6557;&#x7684;&#x8A71;&#x7167;&#x6A23;&#x6703;&#x65B0;&#x589E;&#x5931;&#x6557;&#xFF0C;&#x76F4;&#x5230;&#x65B0;&#x7684;&#x57F7;&#x884C;&#x53EF;&#x4EE5;&#x57F7;&#x884C;&#x6210;&#x529F;&#x5C31;&#x6703;&#x5C07;&#x8CC7;&#x6599;&#x52A0;&#x5165;</span>
+<span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> EMPLOYEE <span class="token punctuation">(</span>EMPLOYEE_ID<span class="token punctuation">,</span> NAME<span class="token punctuation">)</span>
+<span class="token keyword">VALUES</span> <span class="token punctuation">(</span>SEQ_EMPLOYEE_ID<span class="token punctuation">.</span>nextval<span class="token punctuation">,</span> <span class="token string">&apos;John&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</pre></li>
+<li>
+<p>&#x67E5;&#x8A62;&#x76EE;&#x524D;&#x7DE8;&#x5230;&#x7684;&#x865F;&#x78BC;</p>
+<pre data-role="codeBlock" data-info="sql" class="language-sql"><span class="token comment">-- &#x67E5;&#x8A62;&#x76EE;&#x524D;&#x81EA;&#x52D5;&#x7DE8;&#x865F;(sequence)&#x7684;&#x503C;</span>
+<span class="token keyword">SELECT</span> SEQ_EMPLOYEE_ID<span class="token punctuation">.</span>currval <span class="token keyword">FROM</span> dual<span class="token punctuation">;</span>
+</pre></li>
+</ul>
+<h1 class="mume-header" id="commit-%E8%88%87-rollback">COMMIT &#x8207; ROLLBACK</h1>
+
+<ul>
+<li>
+<p>COMMIT<sup class="footnote-ref"><a href="#fn3" id="fnref3">[3]</a></sup></p>
+<ul>
+<li>
+<p>&#x5728; Oracle &#x63D0;&#x4EA4;&#x6B64;&#x6B21;&#x4FEE;&#x6539;&#x4FE1;&#x606F;&#xFF0C;&#x6C92;&#x4E0B; commit &#x5247;&#x6307;&#x4EE4;&#x5F8C;&#x7684;&#x6548;&#x679C;&#x6C92;&#x6709;&#x771F;&#x6B63;&#x88AB;&#x4FDD;&#x5B58;(&#x76F8;&#x7576;&#x65BC; excel &#x7DE8;&#x8F2F;&#x5F8C;&#x6C92;&#x6709; <code>ctrl + s</code> &#x6A94;&#x6848;)<sup class="footnote-ref"><a href="#fn4" id="fnref4">[4]</a></sup>&#xFF0C;&#x9019;&#x6642;&#x5C31;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; ROLLBACK &#x56DE;&#x9000;&#x8CC7;&#x6599;</p>
+</li>
+<li>
+<p>&#x4F7F;&#x7528;&#x65B9;&#x6CD5; <code>COMMIT;</code></p>
+</li>
+</ul>
+</li>
+<li>
+<p>ROLLBACK<sup class="footnote-ref"><a href="#fn5" id="fnref5">[5]</a></sup></p>
+<ul>
+<li>
+<p>&#x64A4;&#x56DE;&#x672A;&#x63D0;&#x4EA4;(&#x4FDD;&#x5B58;)&#x7684;&#x8CC7;&#x6599;</p>
+</li>
+<li>
+<p>&#x4F7F;&#x7528;&#x65B9;&#x6CD5; <code>ROLLBACK;</code></p>
+</li>
+</ul>
+</li>
+</ul>
+<h1 class="mume-header" id="%E8%87%AA%E5%8B%95%E5%BA%8F%E8%99%9F%E6%A0%BC%E5%BC%8F">&#x81EA;&#x52D5;&#x5E8F;&#x865F;&#x683C;&#x5F0F;</h1>
+
+<ul>
+<li>
+<p>&#x4ECB;&#x9762;&#x5316;&#x5EFA;&#x7ACB;</p>
 <div style="text-align:center">
-  <img src="./image/0-1_01.png">
+  <img src="./image/4-1_02.png">
 </div>
+</li>
+<li>
+<p>&#x6307;&#x4EE4;&#x81EA;&#x52D5;&#x5EFA;&#x7ACB;</p>
+<div style="text-align:center">
+  <img src="./image/4-1_03.png">
+</div>
+</li>
+</ul>
+<h1 class="mume-header" id="%E8%B3%87%E6%96%99%E9%8E%96%E5%AE%9A">&#x8CC7;&#x6599;&#x9396;&#x5B9A;</h1>
+
+<ul>
+<li>
+<p>&#x8CC7;&#x6599;&#x8868;&#x5728;<strong>&#x6709;&#x4EBA;&#x7DE8;&#x8F2F;</strong>&#x6642;<strong>&#x6B64;&#x7B46;&#x8CC7;&#x6599;&#x6703;&#x88AB;&#x9396;&#x5B9A;</strong><sup class="footnote-ref"><a href="#fn6" id="fnref6">[6]</a></sup>&#xFF0C;&#x6B64;&#x6642;&#x5176;&#x4ED6;&#x4EBA;&#x54E1;&#x4E0D;&#x53EF;&#x4FEE;&#x6539;(&#x4F46;&#x6B64;&#x8868;&#x7684;&#x5176;&#x4ED6;&#x8CC7;&#x6599;&#x4ECD;&#x53EF;&#x88AB;&#x4FEE;&#x6539;)</p>
+<div style="text-align:center">
+  <img src="./image/4-1_01.png">
+</div>
+</li>
+</ul>
+<hr class="footnotes-sep">
+<section class="footnotes">
+<ol class="footnotes-list">
+<li id="fn1" class="footnote-item"><p>to_date(&apos;2005-02-19&apos;, &apos;yyyy-mm-dd&apos;)&#x4E2D;&#x7684; <code>2005-02-19</code> &#x6307;&#x7684;&#x5C31;&#x662F;&#x503C; <a href="#fnref1" class="footnote-backref">&#x21A9;&#xFE0E;</a></p>
+</li>
+<li id="fn2" class="footnote-item"><p>Primary Key(&#x4E3B;&#x9375;) <a href="#fnref2" class="footnote-backref">&#x21A9;&#xFE0E;</a></p>
+</li>
+<li id="fn3" class="footnote-item"><p><a href="https://www.w3cschool.cn/oraclejc/oraclejc-grjn2r0x.html">&#x4F7F;&#x7528; COMMIT &#x8BED;&#x53E5;&#x5728; Oracle &#x4E2D;&#x53D1;&#x51FA;&#x63D0;&#x4EA4;</a> <a href="#fnref3" class="footnote-backref">&#x21A9;&#xFE0E;</a></p>
+</li>
+<li id="fn4" class="footnote-item"><p>&#x8CC7;&#x6599; commit &#x5F8C;&#x624D;&#x80FD;&#x6E96;&#x78BA;&#x5730;&#x4FDD;&#x5B58;&#x6B64;&#x6B21;&#x4FEE;&#x6539;&#xFF0C;&#x4E26;&#x8B93;&#x5176;&#x4ED6;&#x5171;&#x7528;&#x8CC7;&#x6599;&#x5EAB;&#x7684;&#x4EBA;&#x4E00;&#x540C;&#x4F7F;&#x7528; <a href="#fnref4" class="footnote-backref">&#x21A9;&#xFE0E;</a></p>
+</li>
+<li id="fn5" class="footnote-item"><p><a href="https://tomkuo139.blogspot.com/2009/10/oracle-plsql-savepoint-rollback.html">Oracle PL/SQL &#x4E2D;, Savepoint &#x8207; Rollback &#x7684;&#x7528;&#x6CD5;</a> <a href="#fnref5" class="footnote-backref">&#x21A9;&#xFE0E;</a></p>
+</li>
+<li id="fn6" class="footnote-item"><p>&#x5373;&#x61C9;&#x7528;&#x5230; <strong>ACID</strong> &#x4E2D;&#x7684;<strong>&#x9694;&#x96E2;&#x6027;</strong>(<code>I</code>&#xFF0C;<code>Isolation</code>)&#x898F;&#x5247; <a href="#fnref6" class="footnote-backref">&#x21A9;&#xFE0E;</a></p>
+</li>
+</ol>
+</section>
 
       </div>
       <div class="md-sidebar-toc"><ul>
-<li><a href="#client-server-%E6%9E%B6%E6%9E%84">client server &#x67B6;&#x6784;</a></li>
+<li><a href="#%E6%8F%92%E5%85%A5%E8%B3%87%E6%96%99%E7%84%A1%E6%97%A5%E6%9C%9F">&#x63D2;&#x5165;&#x8CC7;&#x6599;(&#x7121;&#x65E5;&#x671F;)</a></li>
+<li><a href="#%E6%8F%92%E5%85%A5%E8%B3%87%E6%96%99%E5%90%AB%E6%97%A5%E6%9C%9F%E6%A0%BC%E5%BC%8F">&#x63D2;&#x5165;&#x8CC7;&#x6599;(&#x542B;&#x65E5;&#x671F;&#x683C;&#x5F0F;)</a></li>
+<li><a href="#%E8%A8%AD%E5%AE%9A%E7%B5%B1%E4%B8%80%E6%97%A5%E6%9C%9F%E6%A0%BC%E5%BC%8F">&#x8A2D;&#x5B9A;&#x7D71;&#x4E00;&#x65E5;&#x671F;&#x683C;&#x5F0F;</a></li>
+<li><a href="#%E8%87%AA%E5%8B%95%E7%B7%A8%E8%99%9F">&#x81EA;&#x52D5;&#x7DE8;&#x865F;</a></li>
+<li><a href="#commit-%E8%88%87-rollback">COMMIT &#x8207; ROLLBACK</a></li>
+<li><a href="#%E8%87%AA%E5%8B%95%E5%BA%8F%E8%99%9F%E6%A0%BC%E5%BC%8F">&#x81EA;&#x52D5;&#x5E8F;&#x865F;&#x683C;&#x5F0F;</a></li>
+<li><a href="#%E8%B3%87%E6%96%99%E9%8E%96%E5%AE%9A">&#x8CC7;&#x6599;&#x9396;&#x5B9A;</a></li>
 </ul>
 </div>
       <a id="sidebar-toc-btn">&#x2261;</a>

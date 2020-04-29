@@ -3,7 +3,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       
-      <link rel="stylesheet" href="file:///c:\Users\leisure\.vscode\extensions\shd101wyy.markdown-preview-enhanced-0.5.3\node_modules\@shd101wyy\mume\dependencies\katex\katex.min.css">
+      <link rel="stylesheet" href="file:///c:\Users\USER\.vscode\extensions\shd101wyy.markdown-preview-enhanced-0.5.3\node_modules\@shd101wyy\mume\dependencies\katex\katex.min.css">
       
       
 
@@ -53,12 +53,27 @@
   padding: 10px;
   border-radius: 2px;
 }
+.markdown-preview.markdown-preview .ans:hover > * {
+  opacity: 1;
+}
 .markdown-preview.markdown-preview .ans > * {
   opacity: 0;
   transition: 0.3s;
 }
-.markdown-preview.markdown-preview .ans:hover > * {
-  opacity: 1;
+.markdown-preview.markdown-preview span.mark-red {
+  color: #e22222;
+}
+.markdown-preview.markdown-preview span.mark-green {
+  color: green;
+}
+.markdown-preview.markdown-preview span.mark-gray {
+  color: #8e908c;
+}
+.markdown-preview.markdown-preview span.mark-font-size {
+  font-size: 12px;
+}
+.markdown-preview.markdown-preview span.mark-font-weight {
+  font-weight: bold;
 }
 
       </style>
@@ -133,15 +148,32 @@
 </ul>
 
       </div>
+      <div class="md-sidebar-toc"><ul>
+<li><a href="#%E9%81%95%E5%8F%8D%E6%AD%A3%E8%A6%8F%E5%8C%96">&#x9055;&#x53CD;&#x6B63;&#x898F;&#x5316;</a></li>
+<li><a href="#%E9%81%95%E5%8F%8D%E6%AD%A3%E8%A6%8F%E5%8C%96%E6%A1%88%E4%BE%8B">&#x9055;&#x53CD;&#x6B63;&#x898F;&#x5316;&#x6848;&#x4F8B;</a></li>
+</ul>
+</div>
+      <a id="sidebar-toc-btn">&#x2261;</a>
+    
+    
+    
+    
+    
+    
+    
+    
+<script>
+
+var sidebarTOCBtn = document.getElementById('sidebar-toc-btn')
+sidebarTOCBtn.addEventListener('click', function(event) {
+  event.stopPropagation()
+  if (document.body.hasAttribute('html-show-sidebar-toc')) {
+    document.body.removeAttribute('html-show-sidebar-toc')
+  } else {
+    document.body.setAttribute('html-show-sidebar-toc', true)
+  }
+})
+</script>
       
-      
-    
-    
-    
-    
-    
-    
-    
-    
   
     </body></html>

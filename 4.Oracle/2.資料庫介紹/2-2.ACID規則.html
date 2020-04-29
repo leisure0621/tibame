@@ -1,9 +1,9 @@
 <!DOCTYPE html><html><head>
-      <title>3-2.&#x5EFA;&#x7ACB;&#x8868;&#x683C;&#x7DF4;&#x7FD2;</title>
+      <title>2-2.ACID&#x898F;&#x5247;</title>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       
-      <link rel="stylesheet" href="file:///c:\Users\leisure\.vscode\extensions\shd101wyy.markdown-preview-enhanced-0.5.3\node_modules\@shd101wyy\mume\dependencies\katex\katex.min.css">
+      <link rel="stylesheet" href="file:///c:\Users\USER\.vscode\extensions\shd101wyy.markdown-preview-enhanced-0.5.3\node_modules\@shd101wyy\mume\dependencies\katex\katex.min.css">
       
       
 
@@ -53,82 +53,127 @@
   padding: 10px;
   border-radius: 2px;
 }
+.markdown-preview.markdown-preview .ans:hover > * {
+  opacity: 1;
+}
 .markdown-preview.markdown-preview .ans > * {
   opacity: 0;
   transition: 0.3s;
 }
-.markdown-preview.markdown-preview .ans:hover > * {
-  opacity: 1;
+.markdown-preview.markdown-preview span.mark-red {
+  color: #e22222;
+}
+.markdown-preview.markdown-preview span.mark-green {
+  color: green;
+}
+.markdown-preview.markdown-preview span.mark-gray {
+  color: #8e908c;
+}
+.markdown-preview.markdown-preview span.mark-font-size {
+  font-size: 12px;
+}
+.markdown-preview.markdown-preview span.mark-font-weight {
+  font-weight: bold;
 }
 
       </style>
     </head>
     <body for="html-export">
       <div class="mume markdown-preview  ">
-      <h1 class="mume-header" id="%E5%81%9A%E6%B3%95">&#x505A;&#x6CD5;</h1>
+      <h1 class="mume-header" id="acid-%E8%A6%8F%E5%89%87">ACID &#x898F;&#x5247;</h1>
 
 <ul>
 <li>
-<p>&#x5EFA;&#x7ACB; CUSTOMER &#x4E26;&#x8A2D;&#x5B9A; BOOK &#x4E2D;&#x7684;&#x5167;&#x5BB9;</p>
-<pre data-role="codeBlock" data-info="sql" class="language-sql"><span class="token keyword">CREATE</span> <span class="token keyword">TABLE</span> CUSTOMER<span class="token punctuation">(</span>
-    CUSTOMER_ID VARCHAR2<span class="token punctuation">(</span><span class="token number">40</span><span class="token punctuation">)</span> <span class="token keyword">PRIMARY</span> <span class="token keyword">KEY</span> <span class="token operator">NOT</span> <span class="token boolean">NULL</span><span class="token punctuation">,</span>
-    CUSTOMER_NAME VARCHAR2<span class="token punctuation">(</span><span class="token number">40</span><span class="token punctuation">)</span> <span class="token operator">NOT</span> <span class="token boolean">NULL</span><span class="token punctuation">,</span>
-    PHONE VARCHAR2<span class="token punctuation">(</span><span class="token number">40</span><span class="token punctuation">)</span> <span class="token operator">NOT</span> <span class="token boolean">NULL</span><span class="token punctuation">,</span>
-    ADDRESS VARCHAR2<span class="token punctuation">(</span><span class="token number">200</span><span class="token punctuation">)</span> <span class="token operator">NOT</span> <span class="token boolean">NULL</span>
-<span class="token punctuation">)</span><span class="token punctuation">;</span>
-</pre></li>
-<li>
-<p>&#x5EFA;&#x7ACB; BOOK &#x4E26;&#x95DC;&#x806F; PUBLISHER_ID &#x81F3; PUBLISHER</p>
-<pre data-role="codeBlock" data-info="sql" class="language-sql"><span class="token keyword">CREATE</span> <span class="token keyword">TABLE</span> BOOK<span class="token punctuation">(</span>
-    ISBN <span class="token keyword">CHAR</span><span class="token punctuation">(</span><span class="token number">13</span><span class="token punctuation">)</span> <span class="token keyword">PRIMARY</span> <span class="token keyword">KEY</span> <span class="token operator">NOT</span> <span class="token boolean">NULL</span><span class="token punctuation">,</span>
-    BOOK_NAME VARCHAR2<span class="token punctuation">(</span><span class="token number">200</span><span class="token punctuation">)</span> <span class="token operator">NOT</span> <span class="token boolean">NULL</span><span class="token punctuation">,</span>
-    PRICE NUMBER<span class="token punctuation">(</span><span class="token number">8</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">)</span> <span class="token keyword">CHECK</span> <span class="token punctuation">(</span>PRICE <span class="token operator">&gt;=</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
-    AUTHOR VARCHAR2<span class="token punctuation">(</span><span class="token number">200</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
-    PUBLICATION_DATE <span class="token keyword">DATE</span><span class="token punctuation">,</span>
-    PUBLISHER_ID VARCHAR2<span class="token punctuation">(</span><span class="token number">40</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
-    <span class="token keyword">FOREIGN</span> <span class="token keyword">KEY</span> <span class="token punctuation">(</span>PUBLISHER_ID<span class="token punctuation">)</span> <span class="token keyword">REFERENCES</span> PUBLISHER<span class="token punctuation">(</span>PUBLISHER_ID<span class="token punctuation">)</span>
-<span class="token punctuation">)</span><span class="token punctuation">;</span>
-</pre></li>
-<li>
-<p>&#x5EFA;&#x7ACB; ORDER_MASTER &#x4E26;&#x95DC;&#x806F; CUSTOMER_ID &#x81F3; CUSTOMER</p>
-<pre data-role="codeBlock" data-info="sql" class="language-sql"><span class="token keyword">CREATE</span> <span class="token keyword">TABLE</span> ORDER_MASTER <span class="token punctuation">(</span>
-    ORDER_ID NUMBER<span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">)</span> <span class="token keyword">PRIMARY</span> <span class="token keyword">KEY</span> <span class="token operator">NOT</span> <span class="token boolean">NULL</span><span class="token punctuation">,</span>
-    CUSTOMER_ID VARCHAR2<span class="token punctuation">(</span><span class="token number">40</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
-    ORDER_DATE <span class="token keyword">TIMESTAMP</span> <span class="token keyword">DEFAULT</span> <span class="token keyword">CURRENT_TIMESTAMP</span><span class="token punctuation">,</span>
-    <span class="token keyword">FOREIGN</span> <span class="token keyword">KEY</span> <span class="token punctuation">(</span>CUSTOMER_ID<span class="token punctuation">)</span> <span class="token keyword">REFERENCES</span> CUSTOMER<span class="token punctuation">(</span>CUSTOMER_ID<span class="token punctuation">)</span>
-<span class="token punctuation">)</span><span class="token punctuation">;</span>
-</pre></li>
-<li>
-<p>&#x5EFA;&#x7ACB; ORDER_MASTER &#x4E26;&#x95DC;&#x806F; CUSTOMER_ID &#x81F3; CUSTOMER</p>
+<p>&#x4EA4;&#x6613;&#x7BA1;&#x7406; (Transaction Management)</p>
 <ul>
-<li>TABLE &#x4E2D;&#x542B; REFERENCES &#x5247; <code>ORDER_DETAIL</code>(&#x7236;) &#x3001;<code>BOOK</code>(&#x5B50;)&#x3001;<code>ORDER_MASTER</code>(&#x5B50;)</li>
-<li><code>ORDER_DETAIL</code>(&#x7236;) &#x7684; <code>ORDER_ID</code>&#x3001;<code>ISBN</code> &#x8CC7;&#x6599;&#x8981;&#x5148;&#x5EFA;&#x7ACB;&#xFF0C;&#x624D;&#x53EF;&#x9806;&#x5229;&#x5275;&#x5EFA; <code>BOOK</code>(&#x5B50;) &#x8207; <code>ORDER_MASTER</code>(&#x5B50;)</li>
+<li>&#x5C0D;&#x8CC7;&#x6599;&#x5EAB;&#x57F7;&#x884C;&#x4E00;&#x500B;&#x4EA4;&#x6613;&#x53EF;&#x80FD;&#x5305;&#x542B;&#x4E00;&#x9023;&#x4E32;&#x7684;&#x65B0;&#x589E;&#x3001;&#x4FEE;&#x6539;&#x6216;&#x522A;&#x9664;<br>
+&#x6307;&#x4EE4;&#x3002;&#x70BA;&#x4E86;&#x4FDD;&#x8B49;&#x4EA4;&#x6613;&#x7684;&#x6B63;&#x78BA;&#x8207;&#x53EF;&#x9760;,&#x5FC5;&#x9808;&#x7B26;&#x5408; ACID<br>
+(Atomicity, Consistency, Isolation, Durability)</li>
 </ul>
-<pre data-role="codeBlock" data-info="sql" class="language-sql"><span class="token keyword">CREATE</span> <span class="token keyword">TABLE</span> ORDER_DETAIL <span class="token punctuation">(</span>
-    ORDER_ID NUMBER<span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">)</span> <span class="token keyword">PRIMARY</span> <span class="token keyword">KEY</span> <span class="token operator">NOT</span> <span class="token boolean">NULL</span><span class="token punctuation">,</span>
-    ISBN <span class="token keyword">CHAR</span><span class="token punctuation">(</span><span class="token number">13</span><span class="token punctuation">)</span> <span class="token operator">NOT</span> <span class="token boolean">NULL</span><span class="token punctuation">,</span>
-    QUANTITY NUMBER<span class="token punctuation">(</span><span class="token number">8</span><span class="token punctuation">)</span> <span class="token operator">NOT</span> <span class="token boolean">NULL</span><span class="token punctuation">,</span>
-    <span class="token keyword">FOREIGN</span> <span class="token keyword">KEY</span> <span class="token punctuation">(</span>ORDER_ID<span class="token punctuation">)</span> <span class="token keyword">REFERENCES</span> ORDER_MASTER<span class="token punctuation">(</span>ORDER_ID<span class="token punctuation">)</span><span class="token punctuation">,</span>
-    <span class="token keyword">FOREIGN</span> <span class="token keyword">KEY</span> <span class="token punctuation">(</span>ISBN<span class="token punctuation">)</span> <span class="token keyword">REFERENCES</span> BOOK<span class="token punctuation">(</span>ISBN<span class="token punctuation">)</span>
-<span class="token punctuation">)</span><span class="token punctuation">;</span>
-</pre></li>
-</ul>
-<hr>
-<p>&#x53C3;&#x8003;&#x93C8;&#x63A5;</p>
+</li>
+<li>
+<p>&#x55AE;&#x5143;&#x6027; (Atomicity)</p>
 <ul>
-<li><a href="https://blog.csdn.net/u011479200/article/details/89025708">Oracle| Oracle &#x5927;&#x5C0F;&#x5199;&#x654F;&#x611F;&#x95EE;&#x9898;</a></li>
+<li>&#x4EA4;&#x6613;&#x4E2D;&#x6240;&#x542B;&#x6709;&#x7684;&#x6240;&#x6709;&#x904B;&#x7B97;&#xFF0C;&#x4E0D;&#x662F;&#x5B8C;&#x5168;&#x505A;&#x5B8C;&#x5C31;&#x662F;&#x5B8C;&#x5168;&#x4E0D;&#x505A;
+<ul>
+<li>A &#x5F9E;&#x81EA;&#x5DF1;&#x5E33;&#x6236;&#x532F;&#x6B3E; 1000 &#x81F3; B&#xFF0C;<br>
+A &#x5E33;&#x6236;-1000&#xFF0C;B &#x5E33;&#x6236;+100 &#x90FD;&#x9700;&#x505A;&#x5B8C;&#x3002;</li>
+<li>&#x57F7;&#x884C;&#x4E2D;&#x767C;&#x751F;&#x932F;&#x8AA4;&#x5FC5;&#x9808;&#x56DE;&#x5FA9; (roll back) &#x5230;&#x5C1A;&#x672A;&#x532F;&#x6B3E;&#x524D;&#x7684;&#x72C0;&#x614B;</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>&#x4E00;&#x81F4;&#x6027; (Consistency)</p>
+<ul>
+<li>&#x4EA4;&#x6613;&#x524D;&#x5F8C;&#x90FD;&#x6C92;&#x7834;&#x58DE;&#x8CC7;&#x6599;&#x5EAB;&#x7684;&#x5B8C;&#x6574;&#x6027;&#xFF0C;&#x5B8C;&#x5168;&#x7B26;&#x5408;&#x8CC7;&#x6599;&#x5EAB;&#x5B9A;&#x7684;&#x898F;&#x5247;&#x3002;
+<ul>
+<li>&#x5E33;&#x6236;&#x6263;&#x7684;&#x91D1;&#x984D;&#x8207; B &#x589E;&#x52A0;&#x7684;&#x91D1;&#x984D;&#x4E00;&#x81F4;</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>&#x9694;&#x96E2;&#x6027; (Isolation)</p>
+<ul>
+<li>&#x540C;&#x4E00;&#x7B46;&#x8CC7;&#x6599;&#x5728;&#x4E00;&#x500B;&#x4EA4;&#x6613;&#x5C1A;&#x672A;&#x5B8C;&#x6210;&#x524D;&#x4E0D;&#x53EF;&#x4EE5;&#x8B93;&#x5176;&#x4ED6;&#x4EA4;&#x6613;&#x57F7;&#x884C;&#x66F4;&#x6539;&#xFF0C;<br>
+&#x4E5F;&#x5C31;&#x662F;&#x9810;&#x9632;&#x540C;&#x6642;&#x6027;(synchronization)&#x53EF;&#x80FD;&#x9020;&#x6210;&#x7684;&#x932F;&#x8AA4;
+<ul>
+<li>A&#x3001;B &#x540C;&#x6642;&#x532F;&#x6B3E; 1000 &#x7D66; C&#x3002;&#x7576; A &#x7D66; C &#x6642;&#x5FC5;&#x9808;&#x9396;&#x5B9A; C &#x5E33;&#x6236;&#xFF0C;<br>
+&#x76F4;&#x5230;&#x532F;&#x6B3E;&#x7D50;&#x675F;&#x624D;&#x80FD;&#x8B93; B &#x532F;&#x6B3E;&#x81F3; C</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>&#x6C38;&#x4E45;&#x6027; (Durability)</p>
+<ul>
+<li>&#x4EA4;&#x6613;&#x4E00;&#x65E6;&#x6210;&#x529F;&#xFF0C;&#x5C0D;&#x8CC7;&#x6599;&#x7684;&#x8B8A;&#x66F4;&#x5373;<strong>&#x6C38;&#x4E45;&#x6709;&#x6548;</strong>&#xFF0C;&#x5373;&#x4F7F;&#x7CFB;&#x7D71;&#x6545;&#x969C;&#x4E5F;&#x4E0D;&#x5F71;&#x97FF;</li>
+<li>&#x9700;&#x4EF0;&#x8CF4;&#x8CC7;&#x6599;&#x5EAB;&#x8F29;&#x5206;&#x8207;&#x4EA4;&#x6613;&#x65E5;&#x81F3;(log)
+<ul>
+<li>&#x7CFB;&#x7D71;&#x544A;&#x8A34; A &#x63D0;&#x6B3E;&#x6210;&#x529F;&#xFF0C;&#x4F46;&#x5176;&#x5BE6;&#x9019;&#x7B46;&#x4EA4;&#x6613;&#x7D00;&#x9304;&#x9084;&#x5728;&#x78C1;&#x789F;&#x66AB;&#x5B58;&#x5340;&#x7B49;&#x5F85;&#x78BA;&#x5B9A;&#xFF0C;<br>
+&#x4EA4;&#x6613;&#x8CC7;&#x6599;&#x6703;&#x907A;&#x5931;</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>&#x95DC;&#x806F;&#x5F0F;&#x8CC7;&#x6599;&#x5EAB; (Relational Database)</p>
+<ul>
+<li>Edgar Frank Codd &#x8CC7;&#x6599;&#x5EAB;&#x4E4B;&#x7236;</li>
+<li>&#x7531;&#x95DC;&#x806F;&#x5F0F;&#x8A2D;&#x8A08;&#x51FA;&#x4F86;&#x7684;&#x7CFB;&#x7D71;&#xFF0C;&#x53EB;&#x95DC;&#x806F;&#x5F0F;&#x8CC7;&#x6599;&#x5EAB;&#x7BA1;&#x7406;&#x7CFB;&#x7D71;(Relational Database<br>
+Management System&#xFF0C;RDBMS)</li>
+<li>&#x5104;&#x5146;&#x7B46;&#x6578;&#x4EE5;&#x4E0B;&#x7684;&#x6700;&#x4F73;&#x9078;&#x64C7;(&#x4F46;&#x88AB; google &#x62CB;&#x68C4;&#xFF0C;&#x56E0;&#x70BA;&#x57F7;&#x884C;&#x6548;&#x80FD;&#x592A;&#x5DEE;)</li>
+</ul>
+</li>
 </ul>
 
       </div>
+      <div class="md-sidebar-toc"><ul>
+<li><a href="#acid-%E8%A6%8F%E5%89%87">ACID &#x898F;&#x5247;</a></li>
+</ul>
+</div>
+      <a id="sidebar-toc-btn">&#x2261;</a>
+    
+    
+    
+    
+    
+    
+    
+    
+<script>
+
+var sidebarTOCBtn = document.getElementById('sidebar-toc-btn')
+sidebarTOCBtn.addEventListener('click', function(event) {
+  event.stopPropagation()
+  if (document.body.hasAttribute('html-show-sidebar-toc')) {
+    document.body.removeAttribute('html-show-sidebar-toc')
+  } else {
+    document.body.setAttribute('html-show-sidebar-toc', true)
+  }
+})
+</script>
       
-      
-    
-    
-    
-    
-    
-    
-    
-    
   
     </body></html>

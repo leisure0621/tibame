@@ -1,5 +1,5 @@
 <!DOCTYPE html><html><head>
-      <title>0-1.&#x6DFA;&#x5165;Oracle</title>
+      <title>4-2.&#x65B0;&#x589E;&#x8CC7;&#x6599;&#x7DF4;&#x7FD2;</title>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       
@@ -60,40 +60,53 @@
   opacity: 0;
   transition: 0.3s;
 }
-.markdown-preview.markdown-preview span.mark-red {
-  color: #e22222;
-}
-.markdown-preview.markdown-preview span.mark-green {
-  color: green;
-}
-.markdown-preview.markdown-preview span.mark-gray {
-  color: #8e908c;
-}
-.markdown-preview.markdown-preview span.mark-font-size {
-  font-size: 12px;
-}
-.markdown-preview.markdown-preview span.mark-font-weight {
-  font-weight: bold;
-}
 
       </style>
     </head>
     <body for="html-export">
       <div class="mume markdown-preview  ">
-      <h1 class="mume-header" id="client-server-%E6%9E%B6%E6%9E%84">client server &#x67B6;&#x6784;</h1>
+      <h1 class="mume-header" id="%E9%A1%8C%E7%9B%AE">&#x984C;&#x76EE;</h1>
 
 <ul>
-<li>client &#x7AEF; &gt; server &#x7AEF;</li>
-<li>server &#x7AEF;: server &gt; db</li>
-<li>client &#x7AEF;: PC</li>
+<li>
+<p>&#x65B0;&#x589E; 1 &#x7B46;&#x8CC7;&#x6599;&#x81F3; CUSTOMER &#x8868;&#x683C;&#x5167;</p>
+</li>
+<li>
+<p>&#x65B0;&#x589E; 1 &#x7B46;&#x8CC7;&#x6599;&#x81F3; ORDER_MASTER &#x8868;&#x683C;&#x5167;</p>
+<ul>
+<li>ORDER_ID &#x63A1;&#x7528;&#x81EA;&#x52D5;&#x7DE8;&#x865F;</li>
 </ul>
-<div style="text-align:center">
-  <img src="./image/0-1_01.png">
-</div>
+</li>
+<li>
+<p>&#x65B0;&#x589E; 1 &#x7B46;&#x8CC7;&#x6599;&#x81F3; ORDER_DETAIL &#x8868;&#x683C;&#x5167;</p>
+</li>
+</ul>
+<h1 class="mume-header" id="%E8%A7%A3%E7%AD%94">&#x89E3;&#x7B54;</h1>
+
+<div style="padding-left:1.5rem;">
+<pre data-role="codeBlock" data-info="sql" class="language-sql"><span class="token comment">-- &#x5B9A;&#x7FA9;&#x6642;&#x9593;&#x683C;&#x5F0F;</span>
+<span class="token keyword">ALTER</span> <span class="token keyword">SESSION</span> <span class="token keyword">SET</span> NLS_DATE_FORMAT <span class="token operator">=</span> <span class="token string">&apos;yyyy-mm-dd&apos;</span><span class="token punctuation">;</span>
+
+<span class="token comment">-- &#x65B0;&#x589E;1&#x7B46;&#x8CC7;&#x6599;&#x81F3;CUSTOMER&#x8868;&#x683C;&#x5167;</span>
+<span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> customer <span class="token punctuation">(</span>CUSTOMER_ID<span class="token punctuation">,</span>CUSTOMER_NAME<span class="token punctuation">,</span>PHONE<span class="token punctuation">,</span>ADDRESS<span class="token punctuation">)</span>
+<span class="token keyword">VALUES</span> <span class="token punctuation">(</span><span class="token string">&apos;C02&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;C002&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;0989989989&apos;</span> <span class="token punctuation">,</span> <span class="token string">&apos;add2&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">-- &#x5EFA;&#x7ACB;&#x5E8F;&#x865F;&#x683C;&#x5F0F;</span>
+<span class="token keyword">CREATE</span> SEQUENCE SEQ_ORDER_DETAIL_ID<span class="token punctuation">;</span>
+
+<span class="token comment">-- &#x65B0;&#x589E;1&#x7B46;&#x8CC7;&#x6599;&#x81F3;ORDER_MASTER&#x8868;&#x683C;&#x5167;</span>
+<span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> order_master <span class="token punctuation">(</span>ORDER_ID<span class="token punctuation">,</span>CUSTOMER_ID<span class="token punctuation">)</span>
+<span class="token keyword">VALUES</span> <span class="token punctuation">(</span>SEQ_ORDER_DETAIL_ID<span class="token punctuation">.</span>nextval<span class="token punctuation">,</span> <span class="token string">&apos;C02&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">-- &#x65B0;&#x589E;1&#x7B46;&#x8CC7;&#x6599;&#x81F3;ORDER_DETAIL&#x8868;&#x683C;&#x5167;</span>
+<span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> order_detail <span class="token punctuation">(</span>ORDER_ID<span class="token punctuation">,</span>ISBN<span class="token punctuation">,</span>QUANTITY<span class="token punctuation">)</span>
+<span class="token keyword">VALUES</span> <span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">,</span><span class="token string">&apos;9780596009205&apos;</span><span class="token punctuation">,</span> <span class="token number">500</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</pre></div>
 
       </div>
       <div class="md-sidebar-toc"><ul>
-<li><a href="#client-server-%E6%9E%B6%E6%9E%84">client server &#x67B6;&#x6784;</a></li>
+<li><a href="#%E9%A1%8C%E7%9B%AE">&#x984C;&#x76EE;</a></li>
+<li><a href="#%E8%A7%A3%E7%AD%94">&#x89E3;&#x7B54;</a></li>
 </ul>
 </div>
       <a id="sidebar-toc-btn">&#x2261;</a>
