@@ -16,3 +16,19 @@ h1#top + ul {
 h1#top + ul li {
   list-style-type: none;
 }
+/* 滾軸 */
+.book.with-summary .book-summary::-webkit-scrollbar {
+  width: 5px;
+  background-color: transparent;
+}
+.book.with-summary .book-summary::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #ececec;
+}
+.book.with-summary .book-summary::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: transparent;
+}
+.book .book-summary {
+  background: transparent;
+}
