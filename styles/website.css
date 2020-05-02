@@ -1,0 +1,18 @@
+* {
+  font-family: 微軟正黑體;
+}
+/* gitbook宣傳導航 */
+.gitbook-link {
+  display: none !important;
+}
+/* markdown標題 */
+.md-title {
+  text-decoration: none !important;
+}
+/* 目錄 */
+h1#top + ul {
+  padding: 0;
+}
+h1#top + ul li {
+  list-style-type: none;
+}

@@ -1,0 +1,2233 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>14. 例外處裡 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../../../styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="14-1.Exception物件.html" />
+    
+    
+    <link rel="prev" href="../13.Object類別與包裝類別/13-2.包裝類別.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../../">
+            
+                <a href="../../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../1.雲端應用/1-1.雲端應用與介紹.html">
+            
+                <a href="../../1.雲端應用/1-1.雲端應用與介紹.html">
+            
+                    
+                    1. 雲端應用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../2.HTML/1.初階學習.html">
+            
+                <a href="../../2.HTML/1.初階學習.html">
+            
+                    
+                    2. HTML
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../../2.HTML/1.初階學習.html">
+            
+                <a href="../../2.HTML/1.初階學習.html">
+            
+                    
+                    1. 初階學習
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../../2.HTML/2.表格的變化-含合併欄位的表格.html">
+            
+                <a href="../../2.HTML/2.表格的變化-含合併欄位的表格.html">
+            
+                    
+                    2. 表格的變化-含合併欄位的表格
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../../2.HTML/3.播放視訊與音訊檔.html">
+            
+                <a href="../../2.HTML/3.播放視訊與音訊檔.html">
+            
+                    
+                    3. 播放視訊與音訊檔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../../2.HTML/4.form標籤.html">
+            
+                <a href="../../2.HTML/4.form標籤.html">
+            
+                    
+                    4. form 標籤
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../../2.HTML/5.HTML5.html">
+            
+                <a href="../../2.HTML/5.HTML5.html">
+            
+                    
+                    5. HTML5
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../../2.HTML/6.CSS.html">
+            
+                <a href="../../2.HTML/6.CSS.html">
+            
+                    
+                    6. CSS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="../../2.HTML/7.HTML課後練習.html">
+            
+                <a href="../../2.HTML/7.HTML課後練習.html">
+            
+                    
+                    7. HTML 課後練習
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../1.JAVA導論/1-1.JAVA開課介紹與起源.html">
+            
+                <a href="../1.JAVA導論/1-1.JAVA開課介紹與起源.html">
+            
+                    
+                    3. JAVA 程式設計
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../1.JAVA導論/1-1.JAVA開課介紹與起源.html">
+            
+                <a href="../1.JAVA導論/1-1.JAVA開課介紹與起源.html">
+            
+                    
+                    1. 導論
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../2.JAVA開發環境建立/2-1.JAVA開發環境建立.html">
+            
+                <a href="../2.JAVA開發環境建立/2-1.JAVA開發環境建立.html">
+            
+                    
+                    2. 第一隻 JAVA 程式
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.2.1" data-path="../2.JAVA開發環境建立/2-1.JAVA開發環境建立.html">
+            
+                <a href="../2.JAVA開發環境建立/2-1.JAVA開發環境建立.html">
+            
+                    
+                    1. 開發環境建立
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2" data-path="../2.JAVA開發環境建立/2-2.TXT撰寫第一隻JAVA.html">
+            
+                <a href="../2.JAVA開發環境建立/2-2.TXT撰寫第一隻JAVA.html">
+            
+                    
+                    2. TXT 撰寫第一隻 JAVA
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.3" data-path="../2.JAVA開發環境建立/2-3.Eclipse各種操作.html">
+            
+                <a href="../2.JAVA開發環境建立/2-3.Eclipse各種操作.html">
+            
+                    
+                    3. Eclipse 各種操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.4" data-path="../2.JAVA開發環境建立/2-4.JAVA基本形式.html">
+            
+                <a href="../2.JAVA開發環境建立/2-4.JAVA基本形式.html">
+            
+                    
+                    4. JAVA 基本形式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.5" data-path="../2.JAVA開發環境建立/2-5.創建Eclipse項目.html">
+            
+                <a href="../2.JAVA開發環境建立/2-5.創建Eclipse項目.html">
+            
+                    
+                    5. 創建 Eclipse 項目
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../3.定數、變數、常數與運算子/3-1.JAVA變量.html">
+            
+                <a href="../3.定數、變數、常數與運算子/3-1.JAVA變量.html">
+            
+                    
+                    3. 定數、變數、常數與運算子
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.3.1" data-path="../3.定數、變數、常數與運算子/3-1.JAVA變量.html">
+            
+                <a href="../3.定數、變數、常數與運算子/3-1.JAVA變量.html">
+            
+                    
+                    1. 變量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.2" data-path="../3.定數、變數、常數與運算子/3-2.變數種類與有效範圍.html">
+            
+                <a href="../3.定數、變數、常數與運算子/3-2.變數種類與有效範圍.html">
+            
+                    
+                    2. 變數種類與有效範圍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.3" data-path="../3.定數、變數、常數與運算子/3-3.JAVA常數與命名方式.html">
+            
+                <a href="../3.定數、變數、常數與運算子/3-3.JAVA常數與命名方式.html">
+            
+                    
+                    3. 常數與命名方式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.4" data-path="../3.定數、變數、常數與運算子/3-4.算術運算子.html">
+            
+                <a href="../3.定數、變數、常數與運算子/3-4.算術運算子.html">
+            
+                    
+                    4. 算術運算子
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.5" data-path="../3.定數、變數、常數與運算子/3-5.遞增遞減運算子.html">
+            
+                <a href="../3.定數、變數、常數與運算子/3-5.遞增遞減運算子.html">
+            
+                    
+                    5. 遞增遞減運算子
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.6" data-path="../3.定數、變數、常數與運算子/3-6.指定運算子.html">
+            
+                <a href="../3.定數、變數、常數與運算子/3-6.指定運算子.html">
+            
+                    
+                    6. 指定運算子
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.7" data-path="../3.定數、變數、常數與運算子/3-7.關係運算子.html">
+            
+                <a href="../3.定數、變數、常數與運算子/3-7.關係運算子.html">
+            
+                    
+                    7. 關係運算子
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.8" data-path="../3.定數、變數、常數與運算子/3-8.條件運算子.html">
+            
+                <a href="../3.定數、變數、常數與運算子/3-8.條件運算子.html">
+            
+                    
+                    8. 條件運算子
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.9" data-path="../3.定數、變數、常數與運算子/3-9.位元運算子.html">
+            
+                <a href="../3.定數、變數、常數與運算子/3-9.位元運算子.html">
+            
+                    
+                    9. 位元運算子
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.10" data-path="../3.定數、變數、常數與運算子/3-10.移位運算子.html">
+            
+                <a href="../3.定數、變數、常數與運算子/3-10.移位運算子.html">
+            
+                    
+                    10. 移位運算子
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.11" data-path="../3.定數、變數、常數與運算子/3-11.三元運算子.html">
+            
+                <a href="../3.定數、變數、常數與運算子/3-11.三元運算子.html">
+            
+                    
+                    11. 三元運算子
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.12" data-path="../3.定數、變數、常數與運算子/3-12.晉升與型別轉換.html">
+            
+                <a href="../3.定數、變數、常數與運算子/3-12.晉升與型別轉換.html">
+            
+                    
+                    12. 晉升與型別轉換
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../4.流程控制/4-1.if...else.html">
+            
+                <a href="../4.流程控制/4-1.if...else.html">
+            
+                    
+                    4. 流程控制
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.4.1" data-path="../4.流程控制/4-1.if...else.html">
+            
+                <a href="../4.流程控制/4-1.if...else.html">
+            
+                    
+                    1. if...else
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4.2" data-path="../4.流程控制/4-2.課堂練習.html">
+            
+                <a href="../4.流程控制/4-2.課堂練習.html">
+            
+                    
+                    2. 課堂練習
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4.3" data-path="../4.流程控制/4-3.巢狀結構.html">
+            
+                <a href="../4.流程控制/4-3.巢狀結構.html">
+            
+                    
+                    3. 巢狀結構
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4.4" data-path="../4.流程控制/4-4.switch.html">
+            
+                <a href="../4.流程控制/4-4.switch.html">
+            
+                    
+                    4. switch
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../5.迴圈/5-1.迴圈敘述.html">
+            
+                <a href="../5.迴圈/5-1.迴圈敘述.html">
+            
+                    
+                    5. 迴圈
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.5.1" data-path="../5.迴圈/5-1.迴圈敘述.html">
+            
+                <a href="../5.迴圈/5-1.迴圈敘述.html">
+            
+                    
+                    1. 迴圈敘述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5.2" data-path="../5.迴圈/5-2.課堂作業.html">
+            
+                <a href="../5.迴圈/5-2.課堂作業.html">
+            
+                    
+                    2. 課堂作業
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5.3" data-path="../5.迴圈/5-3.迴圈練習與比較.html">
+            
+                <a href="../5.迴圈/5-3.迴圈練習與比較.html">
+            
+                    
+                    3. 迴圈練習與比較
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5.4" data-path="../5.迴圈/5-4.迴圈內的break與continue.html">
+            
+                <a href="../5.迴圈/5-4.迴圈內的break與continue.html">
+            
+                    
+                    4. 迴圈內的 break 與 continue
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="../6.方法的宣告與使用/6-1.方法的建立與呼叫與傳值.html">
+            
+                <a href="../6.方法的宣告與使用/6-1.方法的建立與呼叫與傳值.html">
+            
+                    
+                    6. 方法的宣告與使用
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.6.1" data-path="../6.方法的宣告與使用/6-1.方法的建立與呼叫與傳值.html">
+            
+                <a href="../6.方法的宣告與使用/6-1.方法的建立與呼叫與傳值.html">
+            
+                    
+                    1. 方法的建立與呼叫與傳值
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6.2" data-path="../6.方法的宣告與使用/6-2.方法覆載.html">
+            
+                <a href="../6.方法的宣告與使用/6-2.方法覆載.html">
+            
+                    
+                    2. 方法覆載(Overloading)
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="../7.物件導向概論/7-1.何為物件何為類別.html">
+            
+                <a href="../7.物件導向概論/7-1.何為物件何為類別.html">
+            
+                    
+                    7. 物件導向概論
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.7.1" data-path="../7.物件導向概論/7-1.何為物件何為類別.html">
+            
+                <a href="../7.物件導向概論/7-1.何為物件何為類別.html">
+            
+                    
+                    1. 何為物件何為類別
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7.2" data-path="../7.物件導向概論/7-2.物件參考變數.html">
+            
+                <a href="../7.物件導向概論/7-2.物件參考變數.html">
+            
+                    
+                    2. 物件參考變數
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7.3" data-path="../7.物件導向概論/7-3.課堂練習.html">
+            
+                <a href="../7.物件導向概論/7-3.課堂練習.html">
+            
+                    
+                    3. 課堂練習
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="../8.陣列與字串/8-1.陣列.html">
+            
+                <a href="../8.陣列與字串/8-1.陣列.html">
+            
+                    
+                    8. 陣列與字串
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.8.1" data-path="../8.陣列與字串/8-1.陣列.html">
+            
+                <a href="../8.陣列與字串/8-1.陣列.html">
+            
+                    
+                    1. 陣列
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8.2" data-path="../8.陣列與字串/8-2.隨機亂數.html">
+            
+                <a href="../8.陣列與字串/8-2.隨機亂數.html">
+            
+                    
+                    2. 隨機亂數
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8.3" data-path="../8.陣列與字串/8-3.課堂練習.html">
+            
+                <a href="../8.陣列與字串/8-3.課堂練習.html">
+            
+                    
+                    3. 課堂練習
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8.4" data-path="../8.陣列與字串/8-4.陣列指定的敘述.html">
+            
+                <a href="../8.陣列與字串/8-4.陣列指定的敘述.html">
+            
+                    
+                    4. 陣列指定的敘述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8.5" data-path="../8.陣列與字串/8-5.static與其他物件關係.html">
+            
+                <a href="../8.陣列與字串/8-5.static與其他物件關係.html">
+            
+                    
+                    5. static 與其他物件關係
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8.6" data-path="../8.陣列與字串/8-6.進階陣列操作.html">
+            
+                <a href="../8.陣列與字串/8-6.進階陣列操作.html">
+            
+                    
+                    6. 進階陣列操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8.7" data-path="../8.陣列與字串/8-7.String特性與常用方法.html">
+            
+                <a href="../8.陣列與字串/8-7.String特性與常用方法.html">
+            
+                    
+                    7. String 特性與常用方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8.8" data-path="../8.陣列與字串/8-8.命令列參數.html">
+            
+                <a href="../8.陣列與字串/8-8.命令列參數.html">
+            
+                    
+                    8. 命令列參數
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8.9" data-path="../8.陣列與字串/8-9.不固定參數個數.html">
+            
+                <a href="../8.陣列與字串/8-9.不固定參數個數.html">
+            
+                    
+                    9. 不固定參數個數
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9" data-path="../9.使用封裝與建構子/9-1.封裝的基本概念.html">
+            
+                <a href="../9.使用封裝與建構子/9-1.封裝的基本概念.html">
+            
+                    
+                    9. 使用封裝與建構子
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.9.1" data-path="../9.使用封裝與建構子/9-1.封裝的基本概念.html">
+            
+                <a href="../9.使用封裝與建構子/9-1.封裝的基本概念.html">
+            
+                    
+                    1. 封裝的基本概念
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9.2" data-path="../9.使用封裝與建構子/9-2.建構子的使用.html">
+            
+                <a href="../9.使用封裝與建構子/9-2.建構子的使用.html">
+            
+                    
+                    2. 建構子的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9.3" data-path="../9.使用封裝與建構子/9-3.建構子與方法.html">
+            
+                <a href="../9.使用封裝與建構子/9-3.建構子與方法.html">
+            
+                    
+                    3. 建構子與方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9.4" data-path="../9.使用封裝與建構子/9-4.static修飾子.html">
+            
+                <a href="../9.使用封裝與建構子/9-4.static修飾子.html">
+            
+                    
+                    4. static 修飾子
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.10" data-path="../10.繼承與多型/9-4.static修飾子.md">
+            
+                <span>
+            
+                    
+                    10. 繼承與多型
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.10.1" data-path="../10.繼承與多型/10-1.繼承基本概念.html">
+            
+                <a href="../10.繼承與多型/10-1.繼承基本概念.html">
+            
+                    
+                    1. 繼承(Inheritance)基本概念
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.10.2" data-path="../10.繼承與多型/10-2.多型.html">
+            
+                <a href="../10.繼承與多型/10-2.多型.html">
+            
+                    
+                    2. 多型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.10.3" data-path="../10.繼承與多型/10-3.方法到與建構子的差異.html">
+            
+                <a href="../10.繼承與多型/10-3.方法到與建構子的差異.html">
+            
+                    
+                    3. 方法到與建構子的差異
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.11" data-path="../11.介面與多型/11-1.抽象類別.html">
+            
+                <a href="../11.介面與多型/11-1.抽象類別.html">
+            
+                    
+                    11. 介面與多型
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.11.1" data-path="../11.介面與多型/11-1.抽象類別.html">
+            
+                <a href="../11.介面與多型/11-1.抽象類別.html">
+            
+                    
+                    1. 抽象類別
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.11.2" data-path="../11.介面與多型/11-2.介面與空介面.html">
+            
+                <a href="../11.介面與多型/11-2.介面與空介面.html">
+            
+                    
+                    2. 介面(interface)與空介面(TagInterface)
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.12" data-path="../12.套件、import與類別路徑/12-1.Java原始檔案格式.html">
+            
+                <a href="../12.套件、import與類別路徑/12-1.Java原始檔案格式.html">
+            
+                    
+                    12.套件、import 與類別路徑
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.12.1" data-path="../12.套件、import與類別路徑/12-1.Java原始檔案格式.html">
+            
+                <a href="../12.套件、import與類別路徑/12-1.Java原始檔案格式.html">
+            
+                    
+                    1. Java 原始檔案格式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.12.2" data-path="../12.套件、import與類別路徑/12-2.套件編譯與執行.html">
+            
+                <a href="../12.套件、import與類別路徑/12-2.套件編譯與執行.html">
+            
+                    
+                    2. 套件編譯與執行
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.12.3" data-path="../12.套件、import與類別路徑/12-3.import(引用">
+            
+                <span>
+            
+                    
+                    3. import(引用)套件或特定別
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.12.4" data-path="../12.套件、import與類別路徑/12-4.靜態套件.html">
+            
+                <a href="../12.套件、import與類別路徑/12-4.靜態套件.html">
+            
+                    
+                    4. 靜態(引用)套件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.12.5" data-path="../12.套件、import與類別路徑/12-5.類別路徑.html">
+            
+                <a href="../12.套件、import與類別路徑/12-5.類別路徑.html">
+            
+                    
+                    5. 類別路徑(classpath)
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.13" data-path="../13.Object類別與包裝類別/13-1.Object類別.html">
+            
+                <a href="../13.Object類別與包裝類別/13-1.Object類別.html">
+            
+                    
+                    13.Object 類別與包裝類別
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.13.1" data-path="../13.Object類別與包裝類別/13-1.Object類別.html">
+            
+                <a href="../13.Object類別與包裝類別/13-1.Object類別.html">
+            
+                    
+                    1. Object 類別
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.13.2" data-path="../13.Object類別與包裝類別/13-2.包裝類別.html">
+            
+                <a href="../13.Object類別與包裝類別/13-2.包裝類別.html">
+            
+                    
+                    2. 包裝類別
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4.14" data-path="14-1.Exception物件.html">
+            
+                <a href="14-1.Exception物件.html">
+            
+                    
+                    14. 例外處裡
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.4.14.1" data-path="14-1.Exception物件.html">
+            
+                <a href="14-1.Exception物件.html">
+            
+                    
+                    14. Exception 物件
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../../4.Oracle/0.Oracle淺談/0-1.淺入Oracle.html">
+            
+                <a href="../../4.Oracle/0.Oracle淺談/0-1.淺入Oracle.html">
+            
+                    
+                    5. Oracle
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../../4.Oracle/0.Oracle淺談/0-1.淺入Oracle.html">
+            
+                <a href="../../4.Oracle/0.Oracle淺談/0-1.淺入Oracle.html">
+            
+                    
+                    1. 淺談
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../../4.Oracle/1.Oracle安裝/1-1.Oracle安裝與各種設定.html">
+            
+                <a href="../../4.Oracle/1.Oracle安裝/1-1.Oracle安裝與各種設定.html">
+            
+                    
+                    2. 安裝
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../../4.Oracle/2.資料庫介紹/2-1.資料庫介紹.html">
+            
+                <a href="../../4.Oracle/2.資料庫介紹/2-1.資料庫介紹.html">
+            
+                    
+                    3. 資料庫介紹
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.3.1" data-path="../../4.Oracle/2.資料庫介紹/2-1.資料庫介紹.html">
+            
+                <a href="../../4.Oracle/2.資料庫介紹/2-1.資料庫介紹.html">
+            
+                    
+                    1. 資料庫介紹
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.2" data-path="../../4.Oracle/2.資料庫介紹/2-2.ACID規則.html">
+            
+                <a href="../../4.Oracle/2.資料庫介紹/2-2.ACID規則.html">
+            
+                    
+                    2. ACID 規則
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.3" data-path="../../4.Oracle/2.資料庫介紹/2-3.為什麼要採用關聯式資料庫.html">
+            
+                <a href="../../4.Oracle/2.資料庫介紹/2-3.為什麼要採用關聯式資料庫.html">
+            
+                    
+                    3. 為什麼要採用關聯式資料庫
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.4" data-path="../../4.Oracle/2.資料庫介紹/2-7.主鍵與外來鍵.html">
+            
+                <a href="../../4.Oracle/2.資料庫介紹/2-7.主鍵與外來鍵.html">
+            
+                    
+                    4. 主鍵(PK)與外來鍵(FK)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.5" data-path="../../4.Oracle/2.資料庫介紹/2-10.資料庫正規化.html">
+            
+                <a href="../../4.Oracle/2.資料庫介紹/2-10.資料庫正規化.html">
+            
+                    
+                    5. 資料庫正規化(1NF、2NF、3NF)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.6" data-path="../../4.Oracle/2.資料庫介紹/2-13.違反正規化.html">
+            
+                <a href="../../4.Oracle/2.資料庫介紹/2-13.違反正規化.html">
+            
+                    
+                    6. 違反正規化
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../../4.Oracle/3.建立資料庫/3-0.視覺化建立表格.html">
+            
+                <a href="../../4.Oracle/3.建立資料庫/3-0.視覺化建立表格.html">
+            
+                    
+                    4. 建立資料庫(DDL)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.4.1" data-path="../../4.Oracle/3.建立資料庫/3-0.視覺化建立表格.html">
+            
+                <a href="../../4.Oracle/3.建立資料庫/3-0.視覺化建立表格.html">
+            
+                    
+                    1. 視覺化建立表格
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4.2" data-path="../../4.Oracle/3.建立資料庫/3-1.建立表格.html">
+            
+                <a href="../../4.Oracle/3.建立資料庫/3-1.建立表格.html">
+            
+                    
+                    2. 指令建立表格
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4.3" data-path="../../4.Oracle/3.建立資料庫/3-2.建立表格練習.html">
+            
+                <a href="../../4.Oracle/3.建立資料庫/3-2.建立表格練習.html">
+            
+                    
+                    3. 建立表格練習
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4.4" data-path="../../4.Oracle/3.建立資料庫/3-3.SQL種類.html">
+            
+                <a href="../../4.Oracle/3.建立資料庫/3-3.SQL種類.html">
+            
+                    
+                    4. SQL 種類
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4.5" data-path="../../4.Oracle/3.建立資料庫/3-10.Browser設定.html">
+            
+                <a href="../../4.Oracle/3.建立資料庫/3-10.Browser設定.html">
+            
+                    
+                    5. Browser 設定
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4.6" data-path="../../4.Oracle/3.建立資料庫/3-11.常用指令.html">
+            
+                <a href="../../4.Oracle/3.建立資料庫/3-11.常用指令.html">
+            
+                    
+                    6. 常用指令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4.7" data-path="../../4.Oracle/3.建立資料庫/3-12.新增修改刪除練習.html">
+            
+                <a href="../../4.Oracle/3.建立資料庫/3-12.新增修改刪除練習.html">
+            
+                    
+                    7. 新增修改刪除練習
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../../4.Oracle/4.資料交易處理/4-1.新增資料.html">
+            
+                <a href="../../4.Oracle/4.資料交易處理/4-1.新增資料.html">
+            
+                    
+                    5. 資料交易處理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.5.1" data-path="../../4.Oracle/4.資料交易處理/4-1.新增資料.html">
+            
+                <a href="../../4.Oracle/4.資料交易處理/4-1.新增資料.html">
+            
+                    
+                    1. 新增資料
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5.2" data-path="../../4.Oracle/4.資料交易處理/4-2.新增資料練習.html">
+            
+                <a href="../../4.Oracle/4.資料交易處理/4-2.新增資料練習.html">
+            
+                    
+                    2. 新增資料練習
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5.3" data-path="../../4.Oracle/4.資料交易處理/4-3.修改資料.html">
+            
+                <a href="../../4.Oracle/4.資料交易處理/4-3.修改資料.html">
+            
+                    
+                    3. 修改資料
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5.4" data-path="../../4.Oracle/4.資料交易處理/4-4.修改資料練習.html">
+            
+                <a href="../../4.Oracle/4.資料交易處理/4-4.修改資料練習.html">
+            
+                    
+                    4. 修改資料練習
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5.5" data-path="../../4.Oracle/4.資料交易處理/4-5.刪除資料.html">
+            
+                <a href="../../4.Oracle/4.資料交易處理/4-5.刪除資料.html">
+            
+                    
+                    5. 刪除資料
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5.6" data-path="../../4.Oracle/4.資料交易處理/4-6.指定回退資料的時間點.html">
+            
+                <a href="../../4.Oracle/4.資料交易處理/4-6.指定回退資料的時間點.html">
+            
+                    
+                    6. 指定回退資料的時間點
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5.7" data-path="../../4.Oracle/4.資料交易處理/4-7.回退資料練習.html">
+            
+                <a href="../../4.Oracle/4.資料交易處理/4-7.回退資料練習.html">
+            
+                    
+                    7. 回退資料練習
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5.8" data-path="../../4.Oracle/4.資料交易處理/4-8.匯入匯出資料.html">
+            
+                <a href="../../4.Oracle/4.資料交易處理/4-8.匯入匯出資料.html">
+            
+                    
+                    8. 匯入匯出資料
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../../5.雲端概論及技術/1.雲端運算概論/1-1.什麼是雲端計算.html">
+            
+                <a href="../../5.雲端概論及技術/1.雲端運算概論/1-1.什麼是雲端計算.html">
+            
+                    
+                    5. 雲端運算概論
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../../5.雲端概論及技術/1.雲端運算概論/1-1.什麼是雲端計算.html">
+            
+                <a href="../../5.雲端概論及技術/1.雲端運算概論/1-1.什麼是雲端計算.html">
+            
+                    
+                    1. 什麼是雲端計算
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../../5.雲端概論及技術/1.雲端運算概論/1-2.雲端運算的基本特性.html">
+            
+                <a href="../../5.雲端概論及技術/1.雲端運算概論/1-2.雲端運算的基本特性.html">
+            
+                    
+                    2. 雲端運算的基本特性(重要)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../../5.雲端概論及技術/1.雲端運算概論/1-3.雲端運算的服務模式.html">
+            
+                <a href="../../5.雲端概論及技術/1.雲端運算概論/1-3.雲端運算的服務模式.html">
+            
+                    
+                    3. 雲端運算的服務模式(記住)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../../5.雲端概論及技術/1.雲端運算概論/1-4.雲端運算的部屬模型.html">
+            
+                <a href="../../5.雲端概論及技術/1.雲端運算概論/1-4.雲端運算的部屬模型.html">
+            
+                    
+                    4. 雲端運算的部屬模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="../../5.雲端概論及技術/1.雲端運算概論/1-5.雲端運算的關鍵技術.html">
+            
+                <a href="../../5.雲端概論及技術/1.雲端運算概論/1-5.雲端運算的關鍵技術.html">
+            
+                    
+                    5. 雲端運算的關鍵技術
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../.." >14. 例外處裡</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="top">&#x76EE;&#x9304;</h1>
+
+<ul>
+<li><a href="#s1">1. Exception &#x4F8B;&#x5916;&#x8655;&#x88E1;</a></li>
+<li><a href="#s2">2. &#x4F8B;&#x5916;&#x7684;&#x985E;&#x5225;&#x5C64;&#x7D1A;&#x67B6;&#x69CB;</a></li>
+<li><a href="#s3">3. try-catch</a></li>
+<li><a href="#s4">4. try-catch-finally</a></li>
+<li><a href="#s5">5. throws &#x95DC;&#x9375;&#x5B57;</a></li>
+<li><a href="#s6">6. &#x5E38;&#x898B;&#x7684; Runtime Exception</a></li>
+<li><a href="#s7">7. &#x5176;&#x4ED6;</a></li>
+</ul>
+<hr>
+<h1 id="1-exception-&#x4F8B;&#x5916;&#x8655;&#x88E1;"><a id="s1" class="md-title" href="#top">1. Exception &#x4F8B;&#x5916;&#x8655;&#x88E1;</a></h1>
+<ul>
+<li><p>&#x63D0;&#x5347; Java &#x7684;<strong>&#x7A69;&#x56FA;</strong>&#x6027;</p>
+</li>
+<li><p>Java &#x7A0B;&#x5F0F;&#x57F7;&#x884C;&#x6642;&#xFF0C;&#x5982;&#x679C;&#x767C;&#x751F;&#x7570;&#x5E38;&#x72C0;&#x6CC1;&#xFF0C;&#x53EF;&#x4EE5;&#x501F;&#x52A9;&#x4F8B;&#x5916;&#x8655;&#x88E1;</p>
+<ul>
+<li><strong>&#x7A0B;&#x5F0F;&#x767C;&#x751F;(&#x7522;&#x751F;)&#x4F8B;&#x5916;&#x6642;&#xFF0C;&#x8996;&#x70BA;&#x7522;&#x751F;&#x4E00;&#x500B; Exception &#x7269;&#x4EF6;</strong></li>
+</ul>
+</li>
+<li><p>Java &#x7684;&#x4F8B;&#x5916;&#x8655;&#x88E1;&#x53EF;&#x5C07;&#x4E00;&#x822C;<strong>&#x6B63;&#x5E38;&#x8655;&#x88E1;&#x7A0B;&#x5E8F;</strong>&#x8207;<strong>&#x932F;&#x8AA4;&#x8655;&#x88E1;&#x7A0B;&#x5E8F;</strong>&#x505A;&#x5230;<strong>&#x5206;&#x958B;&#x6558;&#x8FF0;</strong>&#xFF0C;&#x8B93;&#x7A0B;&#x5F0F;&#x53EF;&#x8B80;&#x6027;&#x63D0;&#x9AD8;</p>
+<ul>
+<li>&#x4E94;&#x500B;&#x95DC;&#x9375;&#x5B57;: <code>try</code>&#x3001;<code>catch</code>&#x3001;<code>finally</code>&#x3001;<code>throws</code>&#x3001;<code>throw</code></li>
+</ul>
+</li>
+<li><p>&#x9069;&#x5408;&#x4F7F;&#x7528;&#x7684;&#x6642;&#x6A5F;: &#x5982;&#x8CC7;&#x6599;&#x5EAB;&#x9023;&#x7D50;&#x5931;&#x6557;&#x3001;&#x627E;&#x4E0D;&#x5230;&#x6A94;&#x6848;&#x3001;&#x9664; 0&#x3001;&#x53C3;&#x6578;&#x70BA;&#x7A7A;&#x3001;&#x53C3;&#x6578;&#x578B;&#x614B;&#x4E0D;&#x7B26;&#x3001;&#x9663;&#x5217;&#x7D22;&#x5F15;&#x8D85;&#x51FA;&#x7BC4;&#x570D;..&#x7B49;</p>
+</li>
+</ul>
+<h1 id="2-&#x4F8B;&#x5916;&#x7684;&#x985E;&#x5225;&#x5C64;&#x7D1A;&#x67B6;&#x69CB;"><a id="s2" class="md-title" href="#top">2. &#x4F8B;&#x5916;&#x7684;&#x985E;&#x5225;&#x5C64;&#x7D1A;&#x67B6;&#x69CB;</a></h1>
+<ul>
+<li><p>Throwable &#x5C64;&#x7D1A;&#x67B6;&#x69CB;</p>
+</li>
+<li><p>Throwable</p>
+<ul>
+<li>Error<ul>
+<li>AssertionError</li>
+<li>VirtualMachineError<ul>
+<li>StackOverflowError</li>
+<li>OutOfMemoryError</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Exception(&#x4E5F;&#x662F;&#x4E00;&#x5B9A;&#x8981;&#x8655;&#x88E1;&#x7684;&#x4F8B;&#x5916;)<ul>
+<li>&#x4E0D;&#x4E00;&#x5B9A;&#x8981;&#x8655;&#x88E1;&#x7684;&#x4F8B;&#x5916;<ul>
+<li>RuntimeException<ul>
+<li>ArithmeticException</li>
+<li>ClassCastException</li>
+<li>IndexOutOfBoundsException<ul>
+<li>ArrayIndexOutOfBoundsException</li>
+</ul>
+</li>
+<li>IllegalArgumentException<ul>
+<li>NumberFormatException</li>
+</ul>
+</li>
+<li>IllegalStateException</li>
+<li>NullPointerException</li>
+<li>IllegalMonitorStateException</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>&#x4E00;&#x5B9A;&#x8981;&#x8655;&#x88E1;&#x7684;&#x4F8B;&#x5916;<ul>
+<li>ParaseException</li>
+<li>IOException<ul>
+<li>EOFException</li>
+<li>FileNotFoundException</li>
+</ul>
+</li>
+<li>InterruptedException</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h1 id="3-try-catch"><a id="s3" class="md-title" href="#top">3. try-catch</a></h1>
+<ul>
+<li><p>Java &#x7684;&#x4F8B;&#x5916;&#x8655;&#x88E1;</p>
+<ul>
+<li><p><code>MyException e</code> &#xFF0C;<code>MyException</code> &#x6307;&#x5B9A;&#x8A72; catch &#x8981;&#x8655;&#x88E1;&#x7684;&#x4F8B;&#x5916;&#x7A2E;&#x985E;(&#x985E;&#x578B;)&#xFF0C;<code>e</code> &#x5C0D;&#x8857;&#x9032;&#x4F86;&#x7684;&#x4F8B;&#x5916;&#x7269;&#x4EF6;&#x7684;&#x540D;&#x7A31;(&#x53EF;&#x81EA;&#x884C;&#x53D6;&#x540D;)</p>
+</li>
+<li><p>&#x6BCF;&#x500B; catch &#x5C31;&#x662F;&#x4E00;&#x7A2E;&#x4F8B;&#x5916;&#x8655;&#x88E1;&#x65B9;&#x5F0F;&#xFF0C;&#x6240;&#x4EE5; catch &#x53EF;&#x4EE5;&#x5F88;&#x591A;&#x500B;</p>
+</li>
+<li><p>&#x4F8B;&#x5916;&#x8655;&#x88E1;&#x4E2D;&#xFF0C;<strong>&#x985E;&#x5225;&#x4F4D;&#x968E;&#x9AD8;</strong>(&#x7236;&#x985E;&#x5225;)&#x8005;&#x9700;&#x7F6E;&#x65BC;<strong>&#x985E;&#x5225;&#x4F4D;&#x968E;&#x4F4E;</strong>(&#x5B50;&#x985E;&#x5225;)&#x8005;<strong>&#x5F8C;&#x65B9;</strong></p>
+<ul>
+<li>&#x56E0;&#x70BA;&#x5982;&#x679C;&#x4F4D;&#x968E;&#x9AD8;&#x7684;&#x5728;&#x524D;&#x65B9;&#xFF0C;&#x5247;&#x5F8C;&#x7E8C; catch &#x5247;&#x6C38;&#x9060;&#x4E0D;&#x53EF;&#x80FD;&#x57F7;&#x884C;&#x5230;</li>
+</ul>
+</li>
+</ul>
+<pre><code class="lang-java"><span class="hljs-keyword">try</span>{
+  &#x6B63;&#x5E38;&#x8655;&#x88E1;&#x7A0B;&#x5E8F;&#x7684;&#x7A0B;&#x5F0F;&#x78BC;...;
+} <span class="hljs-keyword">catch</span>(MyException e){
+  &#x932F;&#x8AA4;&#x8655;&#x88E1;&#x7A0B;&#x5E8F;&#x7684;&#x7A0B;&#x5F0F;&#x78BC;...;
+} <span class="hljs-keyword">catch</span>(Exception e){
+  &#x932F;&#x8AA4;&#x8655;&#x88E1;&#x7A0B;&#x5E8F;&#x7684;&#x7A0B;&#x5F0F;&#x78BC;...;
+} ...
+</code></pre>
+</li>
+<li><p>&#x4F8B;&#x5916;&#x7528;&#x6CD5;</p>
+<pre><code class="lang-java"><span class="hljs-keyword">package</span> ch01;
+
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">TestTryCatch</span> </span>{
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
+    <span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>;
+    String[] strs = { <span class="hljs-string">&quot;1&quot;</span>, <span class="hljs-string">&quot;2&quot;</span>, <span class="hljs-string">&quot;Hello3&quot;</span> };
+    <span class="hljs-keyword">while</span> (i &lt; <span class="hljs-number">4</span>) {
+      <span class="hljs-keyword">try</span> {
+        System.out.println(Integer.parseInt(strs[i]));
+      } <span class="hljs-keyword">catch</span> (ArrayIndexOutOfBoundsException e) {
+        System.out.println(e);
+      } <span class="hljs-keyword">catch</span> (Exception e) {
+        System.out.println(e);
+      } <span class="hljs-keyword">catch</span> (Throwable e) {
+        System.out.println(e);
+      }
+      i++;
+    }
+    System.out.println(i);
+  }
+}
+</code></pre>
+<hr>
+<pre><code class="lang-java"><span class="hljs-number">1</span>
+<span class="hljs-number">2</span>
+java.lang.NumberFormatException: For input string: <span class="hljs-string">&quot;Hello3&quot;</span>
+java.lang.ArrayIndexOutOfBoundsException: <span class="hljs-number">3</span>
+<span class="hljs-number">4</span>
+</code></pre>
+</li>
+</ul>
+<h1 id="4-try-catch-finally"><a id="s4" class="md-title" href="#top">4. try-catch-finally</a></h1>
+<ul>
+<li><p>&#x5C07;&#x4E00;&#x5B9A;&#x8981;&#x57F7;&#x884C;&#x7684;&#x7A0B;&#x5F0F;&#x78BC;&#x653E;&#x5728; finally{}&#x7684;&#x7A0B;&#x5F0F;&#x5340;&#x584A;&#x88E1;</p>
+</li>
+<li><p>finally{} &#x662F;&#x7121;&#x8AD6;&#x767C;&#x751F;&#x4EC0;&#x9EBC;&#x60C5;&#x6CC1;&#x7686;&#x6703;&#x57F7;&#x884C;&#x7684;&#x7A0B;&#x5F0F;&#x5340;&#x584A;&#xFF0C;&#x7528;&#x4F86;&#x91CB;&#x653E;&#x6709;&#x9650;&#x7684;&#x8CC7;&#x6E90;&#xFF0C;&#x5982;: &#x95DC;&#x9589;(close)&#x8CC7;&#x6599;&#x5EAB;&#x9023;&#x7DDA;&#x3001;&#x6A94;&#x6848;&#x8B80;&#x53D6;...&#x7B49;</p>
+<pre><code class="lang-java"><span class="hljs-keyword">try</span>{
+  &#x6B63;&#x5E38;&#x8655;&#x88E1;&#x7A0B;&#x5E8F;&#x7684;&#x7A0B;&#x5F0F;&#x78BC;...;
+} <span class="hljs-keyword">catch</span>(MyException e){
+  &#x932F;&#x8AA4;&#x8655;&#x88E1;&#x7A0B;&#x5E8F;&#x7684;&#x7A0B;&#x5F0F;&#x78BC;...;
+} <span class="hljs-keyword">catch</span>(Exception e){
+  &#x932F;&#x8AA4;&#x8655;&#x88E1;&#x7A0B;&#x5E8F;&#x7684;&#x7A0B;&#x5F0F;&#x78BC;...;
+} <span class="hljs-keyword">finally</span> {
+  &#x4E00;&#x5B9A;&#x8981;&#x57F7;&#x884C;&#x7684;&#x7A0B;&#x5F0F;&#x78BC;...;
+}
+</code></pre>
+</li>
+<li><p>&#x4F8B;&#x5916;&#x7528;&#x6CD5;</p>
+<pre><code class="lang-java"><span class="hljs-keyword">package</span> ch01;
+
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">TestTryCatchFinally</span> </span>{
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
+    <span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>;
+    String[] strs = { <span class="hljs-string">&quot;Hello1&quot;</span>, <span class="hljs-string">&quot;Hello2&quot;</span>, <span class="hljs-string">&quot;Hello3&quot;</span> };
+    <span class="hljs-keyword">while</span> (i &lt; <span class="hljs-number">4</span>) {
+      <span class="hljs-keyword">try</span> {
+        System.out.println(strs[i]);
+      } <span class="hljs-keyword">catch</span> (ArrayIndexOutOfBoundsException e) {
+        System.out.println(<span class="hljs-string">&quot;1-&#x5DF2;&#x8D85;&#x51FA;&#x9663;&#x5217;&#x7684;&#x9577;&#x5EA6;&quot;</span>);
+      } <span class="hljs-keyword">catch</span> (Exception e) {
+        System.out.println(<span class="hljs-string">&quot;2-&#x767C;&#x751F;Exception&quot;</span>);
+      } <span class="hljs-keyword">finally</span> {
+        System.out.println(<span class="hljs-string">&quot;&#x4E00;&#x5B9A;&#x8981;&#x57F7;&#x884C;&#x7684;&#x7A0B;&#x5F0F;&#x78BC;&quot;</span>);
+      }
+      i++;
+    }
+    System.out.println(<span class="hljs-string">&quot;---------------------------&quot;</span>);
+    <span class="hljs-keyword">while</span> (i &lt; <span class="hljs-number">5</span>) {
+      <span class="hljs-keyword">try</span> {
+        System.out.println(strs[i]);
+      } <span class="hljs-keyword">catch</span> (IllegalStateException e) {
+        System.out.println(<span class="hljs-string">&quot;1-&#x5DF2;&#x8D85;&#x51FA;&#x9663;&#x5217;&#x7684;&#x9577;&#x5EA6;&quot;</span>);
+      } <span class="hljs-keyword">finally</span> {
+        System.out.println(<span class="hljs-string">&quot;&#x4E00;&#x5B9A;&#x8981;&#x57F7;&#x884C;&#x7684;&#x7A0B;&#x5F0F;&#x78BC;&quot;</span>);
+      }
+      i++;
+    }
+  }
+}
+</code></pre>
+<hr>
+<pre><code class="lang-java">Hello3
+&#x4E00;&#x5B9A;&#x8981;&#x57F7;&#x884C;&#x7684;&#x7A0B;&#x5F0F;&#x78BC;
+<span class="hljs-number">1</span>-&#x5DF2;&#x8D85;&#x51FA;&#x9663;&#x5217;&#x7684;&#x9577;&#x5EA6;
+&#x4E00;&#x5B9A;&#x8981;&#x57F7;&#x884C;&#x7684;&#x7A0B;&#x5F0F;&#x78BC;
+---------------------------
+&#x4E00;&#x5B9A;&#x8981;&#x57F7;&#x884C;&#x7684;&#x7A0B;&#x5F0F;&#x78BC;
+Exception in thread <span class="hljs-string">&quot;main&quot;</span> java.lang.ArrayIndexOutOfBoundsException: <span class="hljs-number">4</span>
+  at ch01.TestTryCatchFinally.main(TestTryCatchFinally.java:<span class="hljs-number">23</span>)
+</code></pre>
+</li>
+</ul>
+<h1 id="5-throws-&#x95DC;&#x9375;&#x5B57;"><a id="s5" class="md-title" href="#top">5. throws &#x95DC;&#x9375;&#x5B57;</a></h1>
+<ul>
+<li><p>Java &#x6709;&#x5169;&#x7A2E;&#x4E0D;&#x540C;&#x578B;&#x614B;&#x7684;&#x4F8B;&#x5916;(Exceptions)</p>
+<ul>
+<li><p><strong>&#x57F7;&#x884C;&#x6642;&#x671F;&#x7684;&#x4F8B;&#x5916;</strong></p>
+<ul>
+<li><p>&#x9019;&#x4E00;&#x985E;&#x7684;&#x4F8B;&#x5916;&#x4E0D;&#x4E00;&#x5B9A;&#x8981;&#x8655;&#x88E1;</p>
+</li>
+<li><p>&#x4E5F;&#x7A31;&#x70BA;&#x4E0D;&#x5FC5;&#x6AA2;&#x67E5;&#x7684;&#x4F8B;&#x5916;(<code>unchecked exceptions</code>)</p>
+</li>
+<li><p>&#x5982; <code>Runtime Exception</code> &#x53CA;&#x5176;<strong>&#x5B50;&#x985E;&#x5225;</strong></p>
+</li>
+</ul>
+</li>
+<li><p><strong>&#x975E;&#x57F7;&#x884C;&#x6642;&#x671F;&#x7684;&#x4F8B;&#x5916;</strong></p>
+<ul>
+<li><p>&#x9019;&#x4E00;&#x985E;&#x7684;&#x4F8B;&#x5916;&#x4E00;&#x5B9A;&#x8981;<strong>&#x8655;&#x88E1;</strong></p>
+</li>
+<li><p>&#x4E5F;&#x7A31;&#x70BA;&#x5FC5;&#x9808;&#x6AA2;&#x67E5;&#x7684;&#x4F8B;&#x5916;(<code>checked exceptions</code>)</p>
+</li>
+<li><p>&#x5982; <code>IOException</code> &#x3001; <code>SQLException</code> ...&#x7B49;</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>&#x5728;&#x65B9;&#x6CD5;&#x5B9A;&#x7FA9;&#x6642;&#xFF0C;&#x53EF;&#x4F7F;&#x7528; <code>throws</code> &#x95DC;&#x9375;&#x5B57;&#x5C07;&#x53EF;&#x80FD;&#x767C;&#x751F;&#x7684;&#x4F8B;&#x5916;&#xFF0C;&#x4E1F;&#x51FA;&#x7D66;&#x547C;&#x53EB;&#x6B64;&#x65B9;&#x6CD5;&#x7684;&#x7A0B;&#x5F0F;&#x53BB;&#x8655;&#x88E1;(&#x4F8B;&#x5916;&#x53EF;&#x4EE5;&#x4E00;&#x76F4;&#x4E1F;&#xFF0C;&#x6700;&#x5F8C;&#x6703;&#x662F; JVM &#x57F7;&#x884C;&#xFF0C;&#x8AAA;&#x660E;&#x932F;&#x8AA4;&#x539F;&#x56E0;&#x4E26;&#x505C;&#x6B62;&#x7A0B;&#x5F0F;&#x904B;&#x884C;)</p>
+<ul>
+<li><p>void method() throws MyExcetion {...}</p>
+</li>
+<li><p>public static int parseInt(String s) throws NumberFormatException {...}</p>
+</li>
+<li><p>public int read() throws IOException {...}</p>
+</li>
+<li><p>public static Connection getConnection() throws SQLException</p>
+</li>
+</ul>
+</li>
+<li><p>&#x5C0D;&#x65BC;<code>checked exceptions</code>&#xFF0C;&#x5728;&#x547C;&#x53EB;&#x6709; <code>throws</code> &#x95DC;&#x9375;&#x5B57;&#x7684;&#x65B9;&#x6CD5;&#x6642;&#xFF0C;<strong>&#x5FC5;&#x9808;</strong>&#x5C07;&#x8A72;&#x65B9;&#x6CD5;&#x7F6E;&#x65BC;&#x4E0B;&#x5217;&#x5169;&#x8005;&#x4E4B;&#x4E00;</p>
+<ul>
+<li><p>&#x5C07;&#x8A72;&#x65B9;&#x6CD5;&#x81F3;&#x65BC; try {} &#x7A0B;&#x5F0F;&#x5340;&#x584A;&#x4E2D;</p>
+<ul>
+<li>try...catch <strong>&#x660E;&#x78BA;&#x8655;&#x88E1;</strong>(&#x81EA;&#x5DF1;&#x6293;&#x4E0B;&#x4F86;&#x505A;&#x8655;&#x88E1;&#x52D5;&#x4F5C;)</li>
+</ul>
+</li>
+<li><p>(&#x6216;)&#x5C07;&#x8A72;&#x65B9;&#x6CD5;&#x7F6E;&#x65BC;&#x5B9A;&#x7FA9;&#x6709; throws &#x95DC;&#x9375;&#x5B57;&#x7684;&#x65B9;&#x6CD5;&#x4E2D;</p>
+<ul>
+<li><p>&#x6B64;&#x70BA;&#x5728;&#x900F;&#x904E; throws &#x4E1F;&#x51FA;&#x4F8B;&#x5916;&#xFF0C;&#x7136;&#x5F8C;&#x518D;&#x7531;&#x4E0B;&#x4E00;&#x500B;&#x547C;&#x53EB;&#x8005;&#x4F86;&#x8655;&#x88E1;</p>
+</li>
+<li><p>throws <strong>&#x6D88;&#x6975;&#x8655;&#x88E1;</strong>(&#x518D;&#x4E1F;&#x6539;&#x5F8C;&#x9762;&#x7684;&#x4F7F;&#x7528;&#x8005;&#x53BB;&#x8655;&#x88E1;)</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>&#x4E00;&#x5B9A;&#x8981;&#x8655;&#x88E1;&#x7684;&#x4F8B;&#x5916;&#x505A;&#x6CD5; 1: &#x660E;&#x78BA;&#x8655;&#x88E1;</p>
+<pre><code class="lang-java"><span class="hljs-keyword">package</span> ch01;
+
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">TestThrows1</span> </span>{
+  String[] strs = { <span class="hljs-string">&quot;Hello1&quot;</span>, <span class="hljs-string">&quot;Hello2&quot;</span>, <span class="hljs-string">&quot;Hello3&quot;</span> };
+
+  <span class="hljs-comment">// Exception &#x662F;&#x4E00;&#x5B9A;&#x8981;&#x8655;&#x88E1;&#x7684;&#x4F8B;&#x5916;&#xFF0C;&#x6240;&#x4EE5;&#x8981;&#x7528; try...catch &#x8655;&#x88E1;</span>
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">printStrs</span><span class="hljs-params">(<span class="hljs-keyword">int</span> i)</span> <span class="hljs-keyword">throws</span> Exception </span>{
+    System.out.println(strs[i]);
+  }
+
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
+    <span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>;
+    TestThrows1 t1 = <span class="hljs-keyword">new</span> TestThrows1();
+    <span class="hljs-keyword">while</span> (i &lt; <span class="hljs-number">4</span>) {
+      <span class="hljs-keyword">try</span> {
+        t1.printStrs(i);
+      } <span class="hljs-keyword">catch</span> (ArrayIndexOutOfBoundsException e) {
+        System.out.println(<span class="hljs-string">&quot;1-&#x5DF2;&#x8D85;&#x51FA;&#x9663;&#x5217;&#x7684;&#x9577;&#x5EA6;&quot;</span>);
+      } <span class="hljs-keyword">catch</span> (Exception e) {
+        System.out.println(<span class="hljs-string">&quot;2-&#x767C;&#x751F;Exception&quot;</span>);
+      }
+      i++;
+    }
+  }
+}
+</code></pre>
+<hr>
+<pre><code class="lang-java">Hello1
+Hello2
+Hello3
+Exception in thread <span class="hljs-string">&quot;main&quot;</span> java.lang.ArrayIndexOutOfBoundsException: <span class="hljs-number">3</span>
+  at ch01.TestThrows1.printStrs(TestThrows1.java:<span class="hljs-number">7</span>)
+  at ch01.TestThrows1.main(TestThrows1.java:<span class="hljs-number">14</span>)
+</code></pre>
+</li>
+<li><p>&#x4E00;&#x5B9A;&#x8981;&#x8655;&#x88E1;&#x7684;&#x4F8B;&#x5916;&#x505A;&#x6CD5; 2: &#x6D88;&#x6975;&#x8655;&#x88E1;</p>
+<pre><code class="lang-java"><span class="hljs-keyword">package</span> ch01;
+
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">TestThrows2</span> </span>{
+  String[] strs = { <span class="hljs-string">&quot;Hello1&quot;</span>, <span class="hljs-string">&quot;Hello2&quot;</span>, <span class="hljs-string">&quot;Hello3&quot;</span> };
+
+  <span class="hljs-comment">// 2. &#x4E0D;&#x8655;&#x88E1;&#x4F8B;&#x5916;</span>
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">printStrs</span><span class="hljs-params">(<span class="hljs-keyword">int</span> i)</span> <span class="hljs-keyword">throws</span> Exception </span>{
+    System.out.println(strs[i]);
+  }
+
+  <span class="hljs-comment">// 4. &#x6C92;&#x4EBA;&#x8981;&#x8655;&#x88E1;&#x4F8B;&#x5916;&#xFF0C;&#x62CB;&#x51FA;&#x7531;JVM&#x8655;&#x88E1;</span>
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> <span class="hljs-keyword">throws</span> Exception </span>{
+    <span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>;
+    TestThrows2 t2 = <span class="hljs-keyword">new</span> TestThrows2();
+    <span class="hljs-keyword">while</span> (i &lt; <span class="hljs-number">4</span>) {
+      <span class="hljs-comment">// 1. &#x57F7;&#x884C;</span>
+      t2.printStrs(i);
+      <span class="hljs-comment">// 3. &#x4E0D;&#x8655;&#x7406;&#x4F8B;&#x5916;</span>
+      i++;
+    }
+  }
+}
+</code></pre>
+<hr>
+<pre><code class="lang-cs">Hello1
+Hello2
+Hello3
+Exception <span class="hljs-keyword">in</span> thread <span class="hljs-string">&quot;main&quot;</span> java.lang.ArrayIndexOutOfBoundsException: <span class="hljs-number">3</span>
+  at ch01.TestThrows2.printStrs(TestThrows2.java:<span class="hljs-number">7</span>)
+  at ch01.TestThrows2.main(TestThrows2.java:<span class="hljs-number">14</span>)
+</code></pre>
+</li>
+<li><p>&#x4E0D;&#x4E00;&#x5B9A;&#x8981;&#x8655;&#x88E1;&#x7684;&#x4F8B;&#x5916;&#x4F5C;&#x6CD5;</p>
+<pre><code class="lang-java"><span class="hljs-keyword">package</span> ch01;
+
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">TestThrows1</span> </span>{
+  String[] strs = { <span class="hljs-string">&quot;Hello1&quot;</span>, <span class="hljs-string">&quot;Hello2&quot;</span>, <span class="hljs-string">&quot;Hello3&quot;</span> };
+
+  <span class="hljs-comment">// ArrayIndexOutOfBoundsException &#x662F;&#x4E0D;&#x4E00;&#x5B9A;&#x8981;&#x8655;&#x88E1;&#x7684;&#x4F8B;&#x5916;&#xFF0C;&#x6240;&#x4EE5;&#x4E0D;&#x7528; try...catch &#x8655;&#x88E1;&#x4E5F;&#x884C;</span>
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">printStrs</span><span class="hljs-params">(<span class="hljs-keyword">int</span> i)</span> <span class="hljs-keyword">throws</span> ArrayIndexOutOfBoundsException </span>{
+    System.out.println(strs[i]);
+  }
+
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
+    <span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>;
+    TestThrows1 t1 = <span class="hljs-keyword">new</span> TestThrows1();
+    <span class="hljs-keyword">while</span> (i &lt; <span class="hljs-number">4</span>) {
+      t1.printStrs(i);
+      i++;
+    }
+  }
+}
+</code></pre>
+</li>
+</ul>
+<h1 id="6-&#x5E38;&#x898B;&#x7684;-runtime-exception"><a id="s6" class="md-title" href="#top">6. &#x5E38;&#x898B;&#x7684; Runtime Exception</a></h1>
+<div style="padding-left:1.5rem;">
+
+<ul>
+<li><table>
+<thead>
+<tr>
+<th style="text-align:center">&#x4F8B;&#x5916;(Exception)&#x7684;&#x985E;&#x5225;&#x540D;&#x7A31;</th>
+<th>&#x4F8B;&#x5916;&#x72C0;&#x6CC1;&#x8AAA;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">ArithmeticException</td>
+<td>&#x5206;&#x6BCD;&#x70BA; 0 &#x6642;</td>
+</tr>
+<tr>
+<td style="text-align:center">NullPointerException</td>
+<td>&#x547C;&#x53EB;&#x5230;&#x4E00;&#x500B;&#x7A7A;&#x503C; null &#x8B8A;&#x6578;</td>
+</tr>
+<tr>
+<td style="text-align:center">IlleggalArgumentException</td>
+<td>&#x50B3;&#x5165;&#x7684;&#x53C3;&#x6578;&#x578B;&#x614B;&#x4E0D;&#x7B26;</td>
+</tr>
+<tr>
+<td style="text-align:center">NumberFormateException</td>
+<td>&#x50B3;&#x5165;&#x7684;&#x53C3;&#x6578;&#x578B;&#x614B;&#x4E0D;&#x7B26;(&#x524D;&#x8005;&#x7684;&#x5B50;&#x985E;&#x5225;)</td>
+</tr>
+<tr>
+<td style="text-align:center">IndexOutOfBoundsException</td>
+<td>&#x7D22;&#x5F15;&#x503C;&#x8D85;&#x904E;&#x7269;&#x4EF6;&#x4E0A;&#x9650;</td>
+</tr>
+<tr>
+<td style="text-align:center">ArrayIndexOutOfBoundsException</td>
+<td>&#x7D22;&#x5F15;&#x503C;&#x8D85;&#x904E;&#x9663;&#x5217;&#x4E0A;&#x9650;(&#x524D;&#x8005;&#x7684;&#x5B50;&#x985E;&#x5225;)</td>
+</tr>
+<tr>
+<td style="text-align:center">SecurityException</td>
+<td>&#x9055;&#x53CD;&#x5B89;&#x5168;&#x539F;&#x5247;(ex.&#x5C07; package &#x547D;&#x540D;&#x6210; java)</td>
+</tr>
+</tbody>
+</table>
+
+</li>
+</ul>
+<h1 id="7-&#x5176;&#x4ED6;"><a id="s7" class="md-title" href="#top">7. &#x5176;&#x4ED6;</a></h1>
+<ul>
+<li><p>final &#x4FEE;&#x98FE;&#x95DC;&#x9375;&#x5B57;</p>
+<ul>
+<li><strong>&#x8B8A;&#x91CF;</strong>&#x4E0A;&#x9762;&#x4E0D;&#x80FD;&#x4FEE;&#x6539;&#x8B8A;&#x91CF;&#xFF0C;&#x4E5F;&#x4E0D;&#x80FD;&#x6307;&#x5411;&#x65B0;&#x5C0D;&#x8C61;</li>
+<li><strong>&#x65B9;&#x6CD5;</strong>&#x4E0A;&#x9762;&#x4E0D;&#x80FD;&#x88AB;&#x4FEE;&#x6539;&#x65B9;&#x6CD5;</li>
+<li><strong>&#x985E;&#x5225;</strong>&#x4E0A;&#x9762;&#x4E0D;&#x80FD;&#x88AB;&#x7E7C;&#x627F;</li>
+</ul>
+</li>
+<li><p>finalize</p>
+<ul>
+<li>&#x7D66;&#x5783;&#x573E;&#x56DE;&#x6536;&#x547C;&#x53EB;&#x7684;</li>
+</ul>
+</li>
+<li><p>filally</p>
+<ul>
+<li>&#x662F;&#x500B;&#x95DC;&#x9375;&#x5B57;&#xFF0C;&#x7528;&#x5728;&#x4F8B;&#x5916;&#x57F7;&#x884C;&#x4E0A;</li>
+</ul>
+</li>
+</ul>
+<hr>
+<p>&#x53C3;&#x8003;&#x93C8;&#x63A5;</p>
+<ul>
+<li><a href="https://www.cnblogs.com/dolphin0520/p/3736238.html" target="_blank">&#x6D45;&#x6790; Java &#x4E2D;&#x7684; final &#x5173;&#x952E;&#x5B57;</a></li>
+<li><a href="https://blog.csdn.net/a13429921973/article/details/12885885" target="_blank">Java &#x5173;&#x952E;&#x5B57; final &#x4F7F;&#x7528;&#x8BE6;&#x89E3;</a></li>
+</ul>
+</div>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../13.Object類別與包裝類別/13-2.包裝類別.html" class="navigation navigation-prev " aria-label="Previous page: 2. 包裝類別">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="14-1.Exception物件.html" class="navigation navigation-next " aria-label="Next page: 14. Exception 物件">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"14. 例外處裡","level":"1.4.14","depth":2,"next":{"title":"14. Exception 物件","level":"1.4.14.1","depth":3,"path":"tibame/3.JAVA程式設計/14.例外處裡/14-1.Exception物件.md","ref":"./tibame/3.JAVA程式設計/14.例外處裡/14-1.Exception物件.md","articles":[]},"previous":{"title":"2. 包裝類別","level":"1.4.13.2","depth":3,"path":"tibame/3.JAVA程式設計/13.Object類別與包裝類別/13-2.包裝類別.md","ref":"./tibame/3.JAVA程式設計/13.Object類別與包裝類別/13-2.包裝類別.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"tibame/3.JAVA程式設計/14.例外處裡/14-1.Exception物件.md","mtime":"2020-05-02T08:07:31.714Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-05-02T08:28:38.835Z"},"basePath":"../../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../../gitbook/gitbook.js"></script>
+    <script src="../../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
