@@ -35,9 +35,3 @@ h1#top + ul li {
 .book .book-summary {
   background: transparent;
 }
-/* 三角 */
-.sjx:before {
-  content: '▲';
-  margin-left: -6.5px;
-  color: #ddd;
-}
