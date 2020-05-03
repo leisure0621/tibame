@@ -17,18 +17,27 @@ h1#top + ul li {
   list-style-type: none;
 }
 /* 滾軸 */
+.md-scroll::-webkit-scrollbar-track,
 .book.with-summary .book-summary::-webkit-scrollbar {
   width: 5px;
   background-color: transparent;
 }
+.md-scroll::-webkit-scrollbar-track,
 .book.with-summary .book-summary::-webkit-scrollbar-thumb {
   border-radius: 10px;
   background-color: #ececec;
 }
+.md-scroll::-webkit-scrollbar-track,
 .book.with-summary .book-summary::-webkit-scrollbar-track {
   border-radius: 10px;
   background-color: transparent;
 }
 .book .book-summary {
   background: transparent;
+}
+/* 三角 */
+.sjx:before {
+  content: '▲';
+  margin-left: -6.5px;
+  color: #ddd;
 }
