@@ -35,3 +35,36 @@ h1#top + ul li {
 .book .book-summary {
   background: transparent;
 }
+/* 筆記用色彩 */
+.highlight-style {
+  padding: 0.2em;
+  margin: 0;
+  font-size: 0.85em;
+}
+.highlight-style:after,
+.highlight-style:before {
+  letter-spacing: -0.2em;
+  content: '\00a0';
+}
+.highlight-theme,
+.highlight-theme * {
+  background: #4183c4;
+  color: white !important;
+}
+.highlight-yellow {
+  background: #f5f758;
+}
+.highlight-style.color-red {
+  color: red;
+}
+.markdown-section em {
+  padding: 0.2em;
+  font-size: 0.85em;
+  font-style: initial;
+  background: #f8fa45;
+  color: black;
+}
+.markdown-section code {
+  background: #f8fa45 !important;
+  color: black !important;
+}
