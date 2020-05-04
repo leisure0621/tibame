@@ -1822,9 +1822,16 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="assertions">Assertions</h1>
+                                <h1 id="top">&#x76EE;&#x9304;</h1>
+
 <ul>
-<li><p>&#x4EC0;&#x9EBC;&#x662F; Assertions (<em>&#x6E2C;&#x8A66;&#x968E;&#x6BB5;&#x7684;&#x5DE5;&#x5177;</em>)</p>
+<li><a href="#s1">1. Assertions</a></li>
+<li><a href="#s2">2. Eclipse &#x555F;&#x52D5; Assertions &#x9A57;&#x8B49;</a></li>
+</ul>
+<hr>
+<h1 id="1-assertions"><a id="s1" class="md-title" href="#top">1. Assertions</a></h1>
+<ul>
+<li><p>&#x4EC0;&#x9EBC;&#x662F; Assertions (<code>&#x6E2C;&#x8A66;&#x968E;&#x6BB5;&#x7684;&#x5DE5;&#x5177;</code>)</p>
 <ul>
 <li><p>&#x7528;&#x4F86;&#x7DAD;&#x8B77;&#x7A0B;&#x5F0F;&#x4F7F;&#x4E4B;&#x66F4;&#x5805;&#x56FA;(robust)&#xFF0C;0 &#x932F;&#x8AA4;</p>
 </li>
@@ -1834,34 +1841,34 @@
 </li>
 <li><p>Assertion &#x8A9E;&#x6CD5;</p>
 <ul>
-<li><p><em>assert <bollean_expression></bollean_expression></em></p>
+<li><p><code>assert &lt;bollean_expression&gt;</code></p>
 <ul>
-<li>&#x7576;<em>bollean_expression</em>(&#x5E03;&#x6797;&#x5224;&#x65B7;)&#x70BA; false &#x6642;&#x6703;&#x4E1F;&#x51FA; <em>AssertionError</em> &#x7A0B;&#x5F0F;&#x7576;&#x5373;&#x4E2D;&#x65B7;</li>
+<li>&#x7576;<code>bollean_expression</code>(&#x5E03;&#x6797;&#x5224;&#x65B7;)&#x70BA; false &#x6642;&#x6703;&#x4E1F;&#x51FA; <code>AssertionError</code> &#x7A0B;&#x5F0F;&#x7576;&#x5373;&#x4E2D;&#x65B7;</li>
 </ul>
 </li>
-<li><p><em>assert <bollean_expression>: <detail_expression>;</detail_expression></bollean_expression></em> (<em>&#x66F4;&#x5E38;&#x7528;</em>&#xFF0C;&#x56E0;&#x70BA;&#x5F8C;&#x7E8C;&#x80FD;&#x6DFB;&#x52A0;<em>&#x904B;&#x7B97;&#x5F0F;</em>)</p>
+<li><p><code>assert &lt;bollean_expression&gt;: &lt;detail_expression&gt;;</code> (<code>&#x66F4;&#x5E38;&#x7528;</code>&#xFF0C;&#x56E0;&#x70BA;&#x5F8C;&#x7E8C;&#x80FD;&#x6DFB;&#x52A0;<code>&#x904B;&#x7B97;&#x5F0F;</code>)</p>
 <ul>
-<li>&#x7576; boolean_expression &#x70BA; false &#x6642;&#xFF0C;&#x6703;&#x57F7;&#x884C;&#x5F8C;&#x9762;&#x7684;&#x904B;&#x7B97;&#x5F0F;&#xFF0C;&#x6700;&#x5E38;&#x7528;&#x70BA;&#x5B57;&#x4E32;&#xFF0C;&#x4EE5;&#x8AAA;&#x660E;&#x932F;&#x8AA4;&#x7684;&#x539F;&#x56E0;<ul>
+<li>&#x7576; boolean`expression &#x70BA; false &#x6642;&#xFF0C;&#x6703;&#x57F7;&#x884C;&#x5F8C;&#x9762;&#x7684;&#x904B;&#x7B97;&#x5F0F;&#xFF0C;&#x6700;&#x5E38;&#x7528;&#x70BA;&#x5B57;&#x4E32;&#xFF0C;&#x4EE5;&#x8AAA;&#x660E;&#x932F;&#x8AA4;&#x7684;&#x539F;&#x56E0;<ul>
 <li>&#x5982;: assert obj != null : &quot;&#x9019;&#x7269;&#x4EF6;&#x4E0D;&#x5F97;&#x70BA; null&quot;;</li>
 <li>&#x5982;: assert k != 0:&quot;k &#x503C;&#x4E0D;&#x5F97;&#x70BA; 0&quot;;</li>
 </ul>
 </li>
 </ul>
 </li>
-<li><p>&#x7BC4;&#x4F8B;&#x7A0B;&#x5F0F;: <em>JavaEx_Part2 &gt; ch01 &gt; TestAssertion.java</em></p>
+<li><p>&#x7BC4;&#x4F8B;&#x7A0B;&#x5F0F;: <code>JavaEx_Part2 &gt; ch01 &gt; TestAssertion.java</code></p>
 </li>
 </ul>
 </li>
-<li><p>&#x57F7;&#x884C;(<em>&#x9810;&#x8A2D; assert &#x529F;&#x80FD;&#x662F;&#x95DC;&#x9589;&#x7684;</em>) &#x57F7;&#x884C;&#x6642;&#x6DFB;&#x52A0; <em>-ea</em></p>
+<li><p>&#x57F7;&#x884C;(<code>&#x9810;&#x8A2D; assert &#x529F;&#x80FD;&#x662F;&#x95DC;&#x9589;&#x7684;</code>) &#x57F7;&#x884C;&#x6642;&#x6DFB;&#x52A0; <code>-ea</code></p>
 <pre><code class="lang-cs">java -ea TestAssertion
 </code></pre>
 </li>
-<li><p>&#x9019;&#x6A23;&#x4F8B;&#x5916;&#x8655;&#x88E1;&#x7684;&#x7A0B;&#x5F0F;&#x53EF;&#x4EE5;<em>&#x4E0D;&#x7528;&#x522A;&#x9664;</em>&#xFF0C;&#x9700;&#x8981;&#x6642;&#x5728;&#x555F;&#x52D5;&#x5C31;&#x597D;</p>
+<li><p>&#x9019;&#x6A23;&#x4F8B;&#x5916;&#x8655;&#x88E1;&#x7684;&#x7A0B;&#x5F0F;&#x53EF;&#x4EE5;<code>&#x4E0D;&#x7528;&#x522A;&#x9664;</code>&#xFF0C;&#x9700;&#x8981;&#x6642;&#x5728;&#x555F;&#x52D5;&#x5C31;&#x597D;</p>
 </li>
 </ul>
-<h1 id="eclipse-&#x555F;&#x52D5;-assertions-&#x9A57;&#x8B49;">Eclipse &#x555F;&#x52D5; Assertions &#x9A57;&#x8B49;</h1>
+<h1 id="2-eclipse-&#x555F;&#x52D5;-assertions-&#x9A57;&#x8B49;"><a id="s2" class="md-title" href="#top">2. Eclipse &#x555F;&#x52D5; Assertions &#x9A57;&#x8B49;</a></h1>
 <ul>
-<li><p><em>Run</em> &gt; <em>Run Configurations...</em> &gt; <em>Arguments</em> &gt; <em>VM arguments</em> &gt; <em>-ea</em></p>
+<li><p><code>Run</code> &gt; <code>Run Configurations...</code> &gt; <code>Arguments</code> &gt; <code>VM arguments</code> &gt; <code>-ea</code></p>
 <div style="text-align:center">
   <img src="image/14-4_01.png">
 </div>
@@ -1910,7 +1917,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"4. Assertions","level":"1.4.14.4","depth":3,"next":{"title":"15. 資料輸入與輸出","level":"1.4.15","depth":2,"path":"3.JAVA程式設計/15.資料輸入與輸出/15-1.File類別.md","ref":"./3.JAVA程式設計/15.資料輸入與輸出/15-1.File類別.md","articles":[{"title":"1. File 類別","level":"1.4.15.1","depth":3,"path":"3.JAVA程式設計/15.資料輸入與輸出/15-1.File類別.md","ref":"./3.JAVA程式設計/15.資料輸入與輸出/15-1.File類別.md","articles":[]}]},"previous":{"title":"3. 例外練習","level":"1.4.14.3","depth":3,"path":"3.JAVA程式設計/14.例外處裡/14-3.例外練習.md","ref":"./3.JAVA程式設計/14.例外處裡/14-3.例外練習.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"3.JAVA程式設計/14.例外處裡/14-4.Assertions.md","mtime":"2020-05-04T05:55:59.316Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-05-04T14:20:03.217Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"4. Assertions","level":"1.4.14.4","depth":3,"next":{"title":"15. 資料輸入與輸出","level":"1.4.15","depth":2,"path":"3.JAVA程式設計/15.資料輸入與輸出/15-1.File類別.md","ref":"./3.JAVA程式設計/15.資料輸入與輸出/15-1.File類別.md","articles":[{"title":"1. File 類別","level":"1.4.15.1","depth":3,"path":"3.JAVA程式設計/15.資料輸入與輸出/15-1.File類別.md","ref":"./3.JAVA程式設計/15.資料輸入與輸出/15-1.File類別.md","articles":[]}]},"previous":{"title":"3. 例外練習","level":"1.4.14.3","depth":3,"path":"3.JAVA程式設計/14.例外處裡/14-3.例外練習.md","ref":"./3.JAVA程式設計/14.例外處裡/14-3.例外練習.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"3.JAVA程式設計/14.例外處裡/14-4.Assertions.md","mtime":"2020-05-04T14:41:43.047Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-05-04T14:44:10.609Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
