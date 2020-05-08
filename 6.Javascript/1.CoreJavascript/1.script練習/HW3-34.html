@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HW3-34</title>
+  </head>
+  <body>
+    <div id="hk3"></div>
+    <script>
+      let hk3 = document.getElementById('hk3'),
+        str = 0;
+      while (true) {
+        if (str % 7 == 3 && str % 9 == 4 && str % 10 == 2 && str % 11 == 1) {
+          console.log(`${str} 人`);
+          hk3.innerHTML = `${str} 人`;
+          break;
+        } else str++;
+      }
+    </script>
+  </body>
+</html>

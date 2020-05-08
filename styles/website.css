@@ -1,5 +1,5 @@
 * {
-  font-family: 微軟正黑體;
+  font-family: 微软正黑体, 微软雅黑;
 }
 /* gitbook宣傳導航 */
 .gitbook-link {
@@ -58,13 +58,21 @@ h1#top + ul li {
   color: red;
 }
 .markdown-section em {
-  padding: 0.2em;
-  font-size: 0.85em;
-  font-style: initial;
+  border-radius: 2px;
   background: #f8fa45;
   color: black;
+  font-size: 12.8px;
+  font-size: 0.8rem;
+  font-style: initial;
+  margin: 0 2px;
+  padding: 3px 5px;
+  white-space: pre-wrap;
 }
 .markdown-section code {
   background: #f8fa45;
   color: black;
+}
+.mume pre code {
+  background-color: #f8f8f8;
+  color: #525252;
 }

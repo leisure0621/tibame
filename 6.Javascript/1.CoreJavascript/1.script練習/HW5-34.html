@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HW5-34</title>
+    <style>
+      li {
+        list-style: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="hk5"></div>
+    <script>
+      let hk5 = document.getElementById('hk5'),
+        length1 = 84,
+        length2 = 70,
+        str;
+
+      for (let i = length1; i > 0; i--) {
+        if (length1 % i === 0 && length2 % i === 0) {
+          str = `邊長: ${i}, 切割成 ${(length1 * length2) / i ** 2} 塊`;
+          break;
+        }
+      }
+
+      console.log(str);
+      hk5.innerHTML = str;
+    </script>
+  </body>
+</html>

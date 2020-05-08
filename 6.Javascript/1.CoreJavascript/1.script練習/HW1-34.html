@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HW1-34</title>
+    <style>
+      li {
+        list-style: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="hk1">
+      <ul></ul>
+    </div>
+    <script>
+      // 解法1
+      let hk1 = document.getElementById('hk1').getElementsByTagName('ul')[0];
+      for (let i = 0; i <= 15; i++) {
+        if (i % 2 === 0) {
+          hk1.innerHTML += `<li>${i} is even</li>`;
+        } else {
+          hk1.innerHTML += `<li>${i} is odd</li>`;
+        }
+      }
+
+      // 解法2
+      str = '';
+      for (let i = 0; i <= 15; i++) {
+        if (i % 2 === 0) {
+          str += `${i} is even\n`;
+        } else {
+          str += `${i} is odd\n`;
+        }
+      }
+      console.log(str);
+
+      // 解法3
+      for (let i = 0; i <= 15; i++) {
+        if (i % 2 === 0) {
+          str = `${i} is even`;
+        } else {
+          str = `${i} is odd`;
+        }
+        console.log(str);
+      }
+    </script>
+  </body>
+</html>
