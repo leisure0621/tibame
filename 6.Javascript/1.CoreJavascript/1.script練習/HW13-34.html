@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HW13-34</title>
+  </head>
+  <body>
+    <script>
+      // 方法1: 0.4ms
+      let humpName = (str) => {
+        let arr = str.split(' ');
+        for (let i = 0; i < arr.length; i++) {
+          arr[i] = arr[i].replace(
+            arr[i].charAt(0),
+            i === 0
+              ? arr[i].charAt(0).toLowerCase()
+              : arr[i].charAt(0).toUpperCase()
+          );
+        }
+        return arr.join('');
+      };
+      console.log(humpName('Hello Javascript world'));
+      // 方法2: 0.3ms，效率次高
+      let humpName2 = (str) => {
+        return str.replace(/(\b\w+\b)|( )/g, function (word, index, space) {
+          if (space) {
+            return '';
+          } else if (index === 0) {
+            return word.replace(word.charAt(0), word.charAt(0).toLowerCase());
+          } else {
+            return word.replace(word.charAt(0), word.charAt(0).toUpperCase());
+          }
+        });
+      };
+      console.log(humpName2('Hello Javascript world'));
+      // 方法3: 0.1ms，效率最高
+      let humpName3 = (str) => {
+        return str.replace(/(\b\w+\b)|(\s)/g, function (word, index, space) {
+          if (space) {
+            return '';
+          } else if (index === 0) {
+            return word.substring(0, 1).toLowerCase() + word.substring(1);
+          } else {
+            return word.substring(0, 1).toUpperCase() + word.substring(1);
+          }
+        });
+      };
+      console.log(humpName3('Hello Javascript world'));
+    </script>
+  </body>
+</html>

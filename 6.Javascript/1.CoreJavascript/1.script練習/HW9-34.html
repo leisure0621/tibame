@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HW9-34</title>
+  </head>
+  <body>
+    <script>
+      let cylinder = {
+        radius: 0,
+        height: 0,
+        getVolume: function () {
+          return (this.radius ** 2 * this.height * Math.PI).toFixed(2);
+        },
+      };
+      cylinder.radius = 3;
+      cylinder.height = 2;
+      console.log(`cylinder的體積是 ${cylinder.getVolume()}`);
+    </script>
+  </body>
+</html>

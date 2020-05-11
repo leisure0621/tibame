@@ -88,11 +88,7 @@
       "resolved": "https://registry.npmjs.org/entities/-/entities-1.1.2.tgz",
       "version": "1.1.2"
     },
-    "gitbook-plugin-back-to-top-button": {
-      "integrity": "sha1-5iGDOLDvGdWOb2YAmUNQt26ANd8=",
-      "resolved": "https://registry.npmjs.org/gitbook-plugin-back-to-top-button/-/gitbook-plugin-back-to-top-button-0.1.4.tgz",
-      "version": "0.1.4"
-    },
+    "gitbook-plugin-anchor-navigation-ex": "^1.0.14",
     "gitbook-plugin-custom-favicon": {
       "integrity": "sha1-y3NynUdYy3xsVk6O+wNdH24Irs8=",
       "resolved": "https://registry.npmjs.org/gitbook-plugin-custom-favicon/-/gitbook-plugin-custom-favicon-0.0.4.tgz",

@@ -15,7 +15,8 @@
       <ul></ul>
     </div>
     <script>
-      // 解法1
+      // 解法1: 1.4ms
+      console.time();
       let hk1 = document.getElementById('hk1').getElementsByTagName('ul')[0];
       for (let i = 0; i <= 15; i++) {
         if (i % 2 === 0) {
@@ -24,8 +25,10 @@
           hk1.innerHTML += `<li>${i} is odd</li>`;
         }
       }
+      console.timeEnd();
 
-      // 解法2
+      // 解法2: 0.18ms
+      console.time();
       str = '';
       for (let i = 0; i <= 15; i++) {
         if (i % 2 === 0) {
@@ -35,8 +38,10 @@
         }
       }
       console.log(str);
+      console.timeEnd();
 
-      // 解法3
+      // 解法3: 1.0ms
+      console.time();
       for (let i = 0; i <= 15; i++) {
         if (i % 2 === 0) {
           str = `${i} is even`;
@@ -45,6 +50,7 @@
         }
         console.log(str);
       }
+      console.timeEnd();
     </script>
   </body>
 </html>

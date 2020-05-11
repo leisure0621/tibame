@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HW7-34</title>
+  </head>
+  <body>
+    <script>
+      let crawl = (...arr) => {
+        let dates = 0;
+        arr[0] = arr[0] - arr[1];
+        while (true) {
+          dates++;
+          if (arr[0] - arr[2] === 0) {
+            break;
+          }
+          arr[0] = arr[0] - arr[2] + arr[3];
+        }
+        return dates;
+      };
+      console.log('需爬 ' + crawl(10, 2, 3, 2) + ' 天');
+    </script>
+  </body>
+</html>
