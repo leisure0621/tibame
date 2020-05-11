@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>10-1.繼承基本概念 · GitBook</title>
+        <title>16-2.Map 介面 · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -59,8 +59,10 @@
     <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="10-2.多型.html" />
+    <link rel="next" href="16-3.泛型.html" />
     
+    
+    <link rel="prev" href="16-1.集合與陣列.html" />
     
 
     </head>
@@ -2374,9 +2376,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter active" data-level="1.12.2.1" data-path="10-1.繼承基本概念.html">
+        <li class="chapter " data-level="1.12.2.1" data-path="../10.繼承與多型/10-1.繼承基本概念.html">
             
-                <a href="10-1.繼承基本概念.html">
+                <a href="../10.繼承與多型/10-1.繼承基本概念.html">
             
                     
                     10-1.繼承基本概念
@@ -2387,9 +2389,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.12.2.2" data-path="10-2.多型.html">
+        <li class="chapter " data-level="1.12.2.2" data-path="../10.繼承與多型/10-2.多型.html">
             
-                <a href="10-2.多型.html">
+                <a href="../10.繼承與多型/10-2.多型.html">
             
                     
                     10-2.多型
@@ -2400,9 +2402,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.12.2.3" data-path="10-3.方法到與建構子的差異.html">
+        <li class="chapter " data-level="1.12.2.3" data-path="../10.繼承與多型/10-3.方法到與建構子的差異.html">
             
-                <a href="10-3.方法到與建構子的差異.html">
+                <a href="../10.繼承與多型/10-3.方法到與建構子的差異.html">
             
                     
                     10-3.方法到與建構子的差異
@@ -2761,9 +2763,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.12.8.1" data-path="../16.集合與泛型/16-1.集合與陣列.html">
+        <li class="chapter " data-level="1.12.8.1" data-path="16-1.集合與陣列.html">
             
-                <a href="../16.集合與泛型/16-1.集合與陣列.html">
+                <a href="16-1.集合與陣列.html">
             
                     
                     16-1.集合與陣列
@@ -2774,9 +2776,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.12.8.2" data-path="../16.集合與泛型/16-2.Map介面.html">
+        <li class="chapter active" data-level="1.12.8.2" data-path="16-2.Map介面.html">
             
-                <a href="../16.集合與泛型/16-2.Map介面.html">
+                <a href="16-2.Map介面.html">
             
                     
                     16-2.Map 介面
@@ -2787,9 +2789,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.12.8.3" data-path="../16.集合與泛型/16-3.泛型.html">
+        <li class="chapter " data-level="1.12.8.3" data-path="16-3.泛型.html">
             
-                <a href="../16.集合與泛型/16-3.泛型.html">
+                <a href="16-3.泛型.html">
             
                     
                     16-3.泛型
@@ -4208,7 +4210,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="../.." >10-1.繼承基本概念</a>
+        <a href="../.." >16-2.Map 介面</a>
     </h1>
 </div>
 
@@ -4226,501 +4228,387 @@
                                 <h1 id="top">&#x76EE;&#x9304;</h1>
 
 <ul>
-<li><a href="#s1">1. &#x7E7C;&#x627F;&#x57FA;&#x672C;&#x6982;&#x5FF5;</a></li>
-<li><a href="#s2">2. &#x7E7C;&#x627F;&#x512A;&#x9EDE;&#x8207;&#x597D;&#x8655;</a></li>
-<li><a href="#s3">3. &#x7E7C;&#x627F;&#x8207;&#x6CD5;&#x8207;&#x6CE8;&#x610F;&#x4E8B;&#x9805;</a></li>
-<li><a href="#s4">4. &#x8986;&#x5BEB;(Overriding)&#x76EE;&#x7684;&#x8207;&#x898F;&#x5B9A;</a></li>
-<li><a href="#s5">5. final &#x4FEE;&#x98FE;&#x5B50;</a></li>
-<li><a href="#s6">6. &#x547C;&#x53EB;&#x7236;&#x985E;&#x5225;&#x7684;&#x65B9;&#x6CD5;</a></li>
-<li><a href="#s7">7. &#x547C;&#x53EB;&#x7236;&#x985E;&#x5225;&#x7684;&#x5EFA;&#x69CB;&#x5B50;</a></li>
-<li><a href="#s8">8. &#x8907;&#x96DC;&#x7684;&#x7E7C;&#x627F;&#x95DC;&#x4FC2;</a></li>
-<li><a href="#s9">9. &#x8AB2;&#x5802;&#x7DF4;&#x7FD2;</a></li>
-<li><a href="#s10">10. &#x56E0;&#x70BA; super()&#x7522;&#x751F;&#x7684;&#x932F;&#x8AA4;</a></li>
-<li><a href="#s11">11. &#x6A19;&#x8A3B;(Annotation)&#x7684;&#x4F5C;&#x7528;</a></li>
+<li><a href="#s1">1. Map &#x4ECB;&#x9762;</a></li>
+<li><a href="#s2">2. Map &#x5E38;&#x7528;&#x65B9;&#x6CD5;</a></li>
+<li><a href="#s3">3. HashMap &#x985E;&#x5225;&#x7BC4;&#x4F8B;</a></li>
+<li><a href="#s4">4. Vector &#x8207; Hashtable &#x985E;&#x5225;</a></li>
+<li><a href="#s5">5. Vector &#x7BC4;&#x4F8B;</a></li>
+<li><a href="#s6">6. Hashtable &#x7BC4;&#x4F8B;</a></li>
+<li><a href="#s7">7. Enumeration &#x7BC4;&#x4F8B;</a></li>
+<li><a href="#s8">8. Enumeration &#x4ECB;&#x9762;</a></li>
+<li><a href="#s9">9. &#x5FC5;&#x9808;&#x719F;&#x7DF4;&#x4F7F;&#x7528;</a></li>
 </ul>
 <hr>
-<h1 id="1-&#x7E7C;&#x627F;&#x57FA;&#x672C;&#x6982;&#x5FF5;"><a id="s1" class="md-title" href="#top">1. &#x7E7C;&#x627F;&#x57FA;&#x672C;&#x6982;&#x5FF5;</a></h1>
+<h1 id="1-map-&#x4ECB;&#x9762;"><a id="s1" class="md-title" href="#top">1. Map &#x4ECB;&#x9762;</a></h1>
 <ul>
-<li><p><a href="#">&#x5B50;&#x985E;&#x5225;</a>(<code>subclass</code>)<a href="#">&#x5EF6;&#x4F38;</a>(<code>extence</code>)<span id="superclass"><a href="#">&#x7236;&#x985E;&#x5225;</a>(<code>superclass</code>)</span></p>
+<li><p>Map(<code>Dictionary</code>) &#x662F;&#x4E00;&#x7A2E;<code>key/value</code>&#x7684;&#x96C6;&#x5408;,&#x6BCF;&#x4E00;&#x7B46;&#x8CC7;&#x6599;&#x7686;&#x6709;&#x4E00;&#x5C0D;(<code>&#x5C0D;&#x61C9;(&#x6620;)</code>)&#x4E3B;&#x9375;&#x503C;(key)&#x548C;&#x5167;&#x542B;&#x503C;(value)</p>
 <ul>
-<li><p>&#x4F7F;&#x7528;&#x7E7C;&#x627F;&#x7684;&#x8A71;<a href="#">&#x5B50;&#x985E;&#x5225;</a>(<code>subclass</code>)&#x5C31;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;<strong>&#x64C1;&#x6709;</strong><a href="#">&#x7236;&#x985E;&#x5225;</a>(<code>superclass</code>)&#x7684;&#x6771;&#x897F;&#xFF0C;&#x4E14;&#x4E0D;&#x7528;&#x5728;&#x5B50;&#x985E;&#x5225;&#x518D;&#x5BEB;&#x4E00;&#x6B21;</p>
-</li>
-<li><p>&#x5B50;&#x985E;&#x5225;<strong>&#x53EF;&#x4EE5;&#x64F4;&#x5145;</strong>&#x81EA;&#x5DF1;&#x7684;&#x6771;&#x897F;</p>
-</li>
-<li><p><strong>&#x985E;&#x5225;</strong>&#x7684;&#x5EF6;&#x4F38;&#x8207;&#x64F4;&#x5C55;(&#x5305;&#x542B;&#x6210;&#x54E1;&#x8B8A;&#x6578;&#x8207;&#x65B9;&#x6CD5;)</p>
-</li>
+<li>Hashtable table = new Hashtable();
+table.put(&quot;key&quot;, &quot;value&quot;);</li>
 </ul>
 </li>
-<li><p>&#x7236;&#x985E;&#x5225;(superclass)</p>
+<li><p>&#x82E5;&#x4F7F;&#x7528;&#x76F8;&#x540C;&#x7684;&#x4E3B;&#x9375;&#x503C;,&#x5247;&#x65B0;&#x7684;&#x8CC7;&#x6599;&#x6703;&#x53D6;&#x4EE3;&#x820A;&#x7684;&#x8CC7;&#x6599;</p>
+</li>
+<li>&#x4F7F;&#x7528;&#x4E3B;&#x9375;&#x503C;&#x5C0B;&#x627E;&#x5167;&#x542B;&#x503C;,&#x82E5;&#x4E3B;&#x9375;&#x503C;&#x4E0D;&#x5B58;&#x5728;,&#x5247;&#x6703;&#x56DE;&#x50B3; null</li>
+<li><p>HashMap &#x985E;&#x5225;&#x5BE6;&#x4F5C; Map &#x4ECB;&#x9762;</p>
 <ul>
-<li><p>&#x5177;&#x6709;&#x5171;&#x540C;&#x6210;&#x54E1;&#x7684;&#x985E;&#x5225;</p>
-</li>
-<li><p>&#x4E00;&#x822C;&#x5316;(generalization)</p>
-</li>
+<li>&#x53D6;&#x5F97; Map &#x96C6;&#x5408;&#x4E2D;&#x6240;&#x6709;&#x7684; key,&#x53EF;&#x4EE5;&#x4F7F;&#x7528; keySet(),&#x5B83;&#x6703;&#x5C07; Map &#x88E1;&#x6240;&#x5305;&#x542B;&#x7684;&#x6240;&#x6709; key &#x4EE5; Set &#x4ECB;&#x9762;&#x7684;&#x578B;&#x614B;&#x56DE;&#x50B3;</li>
 </ul>
 </li>
-<li><p>&#x5B50;&#x985E;&#x5225;(subclass)</p>
+<li><p>Set keySet()</p>
 <ul>
-<li><p>&#x7E7C;&#x627F;&#x7236;&#x985E;&#x5225;&#x7684;&#x985E;&#x5225;</p>
-</li>
-<li><p>&#x7279;&#x5225;&#x5316;(specialization)</p>
-</li>
+<li>&#x53D6;&#x5F97; Map &#x96C6;&#x5408;&#x4E2D;&#x6240;&#x6709;&#x7684; value,&#x53EF;&#x4EE5;&#x4F7F;&#x7528; values(),&#x5B83;&#x6703;&#x5C07; Map &#x88E1;&#x6240;&#x5305;&#x542B;&#x7684;&#x6240;&#x6709; value &#x4EE5; Collection &#x4ECB;&#x9762;&#x7684;&#x578B;&#x614B;&#x56DE;&#x50B3;</li>
 </ul>
 </li>
+<li><p>Collection values()</p>
+</li>
+<li><p><code>Map &#x662F;&#x4E00;&#x7A2E;key/value&#x7684;&#x96C6;&#x5408;</code>,&#x6BCF;&#x4E00;&#x7B46;&#x8CC7;&#x6599;&#x7686;&#x6709;&#x4E00;&#x5C0D;&#x4E3B;&#x9375;&#x503C;(key)&#x548C;&#x5167;&#x542B;&#x503C;(value)</p>
+<ul>
+<li>Hashtable table = new Hashtable();
+table.put(&quot;key&quot;, &quot;value&quot;);</li>
 </ul>
-<div style="overflow: auto; margin: 15px;">
-  <div>
-    <div style="
-        background: rgba(66, 185, 130, 0.1);
-        width: 210px;
-        border-radius: 50%;
-        text-align: center;
-        padding: 30px;
-      ">
-      &#x7236;&#x985E;&#x5225;
-      <div style="
-          padding: 35px 10px;
-          margin: 15px;
-          background: rgba(66, 185, 130, 0.1);
-          border-radius: 50%;
-        ">
-        &#x5B50;&#x985E;&#x5225;
-      </div>
-    </div>
-  </div>
-</div>
+</li>
+<li><p>&#x82E5;&#x4F7F;&#x7528;<code>&#x76F8;&#x540C;&#x7684;&#x4E3B;&#x9375;&#x503C;</code>,&#x5247;<code>&#x65B0;&#x7684;&#x8CC7;&#x6599;&#x6703;&#x53D6;&#x4EE3;&#x820A;&#x7684;&#x8CC7;&#x6599;</code></p>
+</li>
+<li><p>&#x4F7F;&#x7528;&#x4E3B;&#x9375;&#x503C;&#x5C0B;&#x627E;&#x5167;&#x542B;&#x503C;,&#x82E5;<code>&#x4E3B;&#x9375;&#x503C;&#x4E0D;&#x5B58;&#x5728;</code>,&#x5247;<code>&#x6703;&#x56DE;&#x50B3; null</code></p>
+</li>
+<li><p><code>HashMap</code> &#x985E;&#x5225;&#x5BE6;&#x4F5C; Map &#x4ECB;&#x9762;</p>
+</li>
+<li><p>&#x53D6;&#x5F97; Map &#x96C6;&#x5408;&#x4E2D;&#x6240;&#x6709;&#x7684; key,&#x53EF;&#x4EE5;&#x4F7F;&#x7528; keySet(),&#x5B83;&#x6703;&#x5C07; Map &#x88E1;&#x6240;&#x5305;&#x542B;&#x7684;&#x6240;&#x6709; key &#x4EE5; Set &#x4ECB;&#x9762;&#x7684;&#x578B;&#x614B;&#x56DE;&#x50B3;</p>
+</li>
+<li><p>Set keySet()</p>
+<ul>
+<li>&#x53D6;&#x5F97; Map &#x96C6;&#x5408;&#x4E2D;&#x6240;&#x6709;&#x7684; value,&#x53EF;&#x4EE5;&#x4F7F;&#x7528; values(),&#x5B83;&#x6703;&#x5C07; Map &#x88E1;&#x6240;&#x5305;&#x542B;&#x7684;&#x6240;&#x6709; value &#x4EE5; Collection &#x4ECB;&#x9762;&#x7684;&#x578B;&#x614B;&#x56DE;&#x50B3;</li>
+</ul>
+</li>
+<li><p>Collection values()</p>
+</li>
+</ul>
+<h1 id="2-map-&#x5E38;&#x7528;&#x65B9;&#x6CD5;"><a id="s2" class="md-title" href="#top">2. Map &#x5E38;&#x7528;&#x65B9;&#x6CD5;</a></h1>
+<ul>
+<li>&#x56E0;&#x70BA;&#x8CC7;&#x6599;&#x578B;&#x614B;&#x662F; Object &#xFF0C;&#x6240;&#x4EE5;&#x53EF;&#x4EE5;&#x5C07;&#x4EFB;&#x4F55;&#x8CC7;&#x6599;&#x505A; key &#x6216; value</li>
+<li>&#x91CD;&#x8907;&#x7684; key &#x6703;&#x5C07;&#x65E2;&#x6709; key &#x503C;&#x53D6;&#x4EE3;</li>
+</ul>
+<table>
+<tbody>
+<tr style="height: 43px;">
+<td style="height: 43px;" colspan="2" align="center">&lt;&lt;interface&gt;&gt;<br>Map&#xA0;</td>
+</tr>
+<tr style="height: 23px;">
+<td style="height: 23px;"><code>Object</code> put(Object key, Object value)</td>
+<td style="height: 23px;">&#x5C07;&#x6307;&#x5B9A;&#x7684;&#x9375;&#x8207;&#x503C;&#x653E;&#x5230;Map&#x88E1;</td>
+</tr>
+<tr style="height: 23px;">
+<td style="height: 23px;">Object get(Object key)</td>
+<td style="height: 23px;">&#x4F9D;&#x6307;&#x5B9A;&#x7684;&#x9375;&#x53D6;&#x5F97;&#x5C0D;&#x61C9;&#x7684;&#x503C;</td>
+</tr>
+<tr style="height: 23px;">
+<td style="height: 23px;">Object remove(Object key)</td>
+<td style="height: 23px;">&#x4F9D;&#x6307;&#x5B9A;&#x7684;&#x9375;&#x79FB;&#x9664;&#x5C0D;&#x61C9;&#x7684;&#x9375;&#x503C;&#x7D44;</td>
+</tr>
+<tr style="height: 23px;">
+<td style="height: 23px;">void clear()</td>
+<td style="height: 23px;">&#x6E05;&#x7A7A;Map&#x5167;&#x6240;&#x6709;&#x7684;&#x9375;&#x503C;&#x7D44;</td>
+</tr>
+<tr style="height: 23px;">
+<td style="height: 23px;">boolean containsKey(Object key)</td>
+<td style="height: 23px;">&#x6AA2;&#x67E5;Map&#x5167;&#x662F;&#x5426;&#x6709;&#x6307;&#x5B9A;&#x7684;&#x9375;</td>
+</tr>
+<tr style="height: 23px;">
+<td style="height: 23px;">boolean containsValue(Object value)</td>
+<td style="height: 23px;">&#x6AA2;&#x67E5;Map&#x5167;&#x662F;&#x5426;&#x6709;&#x6307;&#x5B9A;&#x7684;&#x503C;</td>
+</tr>
+<tr style="height: 23px;">
+<td style="height: 23px;">boolean isEmpty()</td>
+<td style="height: 23px;">&#x6AA2;&#x67E5;Map&#x662F;&#x5426;&#x70BA;&#x7A7A;&#x5BB9;&#x5668;</td>
+</tr>
+<tr style="height: 23px;">
+<td style="height: 23px;">int size()</td>
+<td style="height: 23px;">&#x56DE;&#x50B3;Map&#x5167;&#x7684;&#x9375;&#x503C;&#x7D44;&#x7E3D;&#x6578;</td>
+</tr>
+<tr style="height: 23px;">
+<td style="height: 23px;">Set keySet()</td>
+<td style="height: 23px;">&#x5C07;Map&#x5167;&#x7684;&#x6240;&#x6709;&#x9375;&#x8F49;&#x5B58;&#x6210;Set&#x7269;&#x4EF6;</td>
+</tr>
+<tr style="height: 23px;">
+<td style="height: 23px;">Collection values()</td>
+<td style="height: 23px;">&#x5C07;Map&#x5167;&#x7684;&#x6240;&#x6709;&#x503C;&#x8F49;&#x5B58;&#x6210;Collection&#x96C6;&#x5408;</td>
+</tr>
+</tbody>
+</table>
 
-<p><br></p>
-<h1 id="2-&#x7E7C;&#x627F;&#x512A;&#x9EDE;&#x8207;&#x597D;&#x8655;"><a id="s2" class="md-title" href="#top">2. &#x7E7C;&#x627F;&#x512A;&#x9EDE;&#x8207;&#x597D;&#x8655;</a></h1>
+<h1 id="3-hashmap-&#x985E;&#x5225;&#x7BC4;&#x4F8B;"><a id="s3" class="md-title" href="#top">3. HashMap &#x985E;&#x5225;&#x7BC4;&#x4F8B;</a></h1>
 <ul>
-<li><p>&#x4E3B;&#x8981;&#x76EE;&#x7684;&#x5C31;&#x662F;&#x63D0;&#x9AD8;&#x7A0B;&#x5F0F;&#x7684;&#x91CD;&#x8907;&#x4F7F;&#x7528;&#x59D3;</p>
-</li>
-<li><p>&#x5B50;&#x985E;&#x5225;&#x5C07;&#x6703;&#x7E7C;&#x627F;&#x5230;&#x7236;&#x985E;&#x5225;&#x4E2D;<a href="#superclass">&#x6240;&#x6709;&#x53EF;&#x4EE5;&#x5B58;&#x53D6;&#x7684;&#x6210;&#x54E1;&#xFF0C;&#x5305;&#x62EC;&#x8B8A;&#x6578;&#x8207;&#x65B9;&#x6CD5;</a></p>
-<ul>
-<li><p>(&#x96D6;&#x7136;&#x53EF;&#x4EE5;&#x5B58;&#x53D6;&#xFF0C;&#x4F46;&#x9084;&#x662F;&#x6703;&#x53D7;&#x5230;&#x5B58;&#x53D6;&#x4FEE;&#x98FE;&#x95DC;&#x9375;&#x5B57;&#x7684;&#x5F71;&#x97FF;)</p>
-</li>
-<li><p>&#x5171;&#x540C;&#x8CC7;&#x6599;&#x53EA;&#x8981;&#x63CF;&#x8FF0;&#x4E00;&#x6B21;(&#x6703;&#x96B1;&#x542B;&#x5728;&#x5B50;&#x985E;&#x5225;&#x88E1;&#x9762;)</p>
-</li>
-<li><p>&#x8655;&#x88E1;&#x5171;&#x540C;&#x8CC7;&#x6599;&#x7684;&#x6210;&#x54E1;&#x65B9;&#x6CD5;&#x4E5F;&#x53EA;&#x8981;&#x63CF;&#x8FF0;&#x4E00;&#x6B21;</p>
-</li>
+<li>&#x7BC4;&#x4F8B; 1</li>
 </ul>
-</li>
-</ul>
-<h1 id="3-&#x7E7C;&#x627F;&#x8207;&#x6CD5;&#x8207;&#x6CE8;&#x610F;&#x4E8B;&#x9805;"><a id="s3" class="md-title" href="#top">3. &#x7E7C;&#x627F;&#x8207;&#x6CD5;&#x8207;&#x6CE8;&#x610F;&#x4E8B;&#x9805;</a></h1>
-<ul>
-<li><p>&#x7E7C;&#x627F;(inhert)&#x7684;&#x95DC;&#x9375;&#x5B57; <code>extends</code> &#xFF0C; &#x4F7F;&#x7528;&#x65B9;&#x6CD5; <code>class SubClassName extends SuperClassName{...}</code></p>
-<ul>
-<li>&#x53EA;&#x80FD;&#x7E7C;&#x627F;<strong>&#x65B9;&#x6CD5;</strong>&#x8DDF;<strong>&#x6210;&#x54E1;</strong></li>
-</ul>
-</li>
-<li><p>&#x7576; B &#x7E7C;&#x627F; A&#xFF0C;&#x4EE5; <a href="#">B is a A</a>(<strong>is a</strong> &#x53EF;&#x4EE5;&#x7406;&#x89E3;&#x70BA; <strong>&#x662F;&#x4E00;&#x7A2E;</strong>) &#x8868;&#x793A;</p>
-<ul>
-<li><p>FullTimeEmployee <strong>is a</strong> Employee</p>
-<ul>
-<li>&#x81EA;&#x52D5;&#x9580; is a &#x9580;</li>
-</ul>
-</li>
-<li><p>FullTimeEmployee <strong>has a</strong> MonthlySalary</p>
-<ul>
-<li><p>&#x81EA;&#x52D5;&#x9580; has a &#x5C3A;&#x5BF8;</p>
-</li>
-<li><p>&#x81EA;&#x52D5;&#x9580; has a &#x81EA;&#x52D5;&#x5316;&#x958B;&#x95DC;</p>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p>&#x6CE8;&#x610F;</p>
-<ul>
-<li><p>Java &#x4E0D;&#x652F;&#x63F4;&#x591A;&#x91CD;&#x7E7C;&#x627F;&#xFF0C;&#x4E00;&#x500B;&#x5B50;&#x985E;&#x5225;&#x53EA;&#x80FD; <code>extends</code> &#x4E00;&#x500B;&#x7236;&#x985E;&#x5225;</p>
-<ul>
-<li>OOP &#x4F86;&#x8AAA;&#x662F;&#x53EF;&#x4EE5;&#x591A;&#x91CD;&#x7E7C;&#x627F;&#x7684;(ex.C++)</li>
-</ul>
-</li>
-<li><p>&#x5EFA;&#x69CB;&#x5B50;(Constructor)<strong>&#x7121;&#x6CD5;&#x88AB;&#x7E7C;&#x627F;</strong></p>
-<ul>
-<li><p><a href="#">&#x7121;&#x6CD5;&#x88AB;&#x7E7C;&#x627F;&#x662F;&#x56E0;&#x70BA;&#x4ED6;&#x662F;&#x79C1;&#x6709;&#x7269;??</a></p>
-<ul>
-<li>&#x5EFA;&#x69CB;&#x5B50;&#x7684;&#x7279;&#x6027;: &#x9700;&#x8DDF; class &#x540D;&#x7A31;&#x76F8;&#x540C;&#xFF0C;&#x4F46;&#x7E7C;&#x627F;&#x5230;&#x65B0;&#x7684; class &#x5C31;&#x80AF;&#x5B9A;&#x8DDF;&#x7576;&#x4E0B;&#x7684; class &#x540D;&#x7A31;&#x4E0D;&#x540C;&#x4E86;&#xFF0C;&#x8981;&#x7528;&#x4E5F;&#x6C92;&#x8FA6;&#x6CD5;&#x4F7F;&#x7528;</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p>java.lang.<strong>Object &#x985E;&#x5225;</strong>&#x70BA;&#x6240;&#x6709;&#x985E;&#x5225;&#x7684;&#x5171;&#x540C;&#x7236;&#x985E;&#x5225;(&#x6240;&#x6709;&#x985E;&#x5225;&#x7684;&#x6839;)</p>
-<ul>
-<li>&#x6E90;&#x982D;&#x627E;&#x4E0A;&#x53BB;&#x5C31;&#x80FD;&#x627E;&#x5230; Object <code>public class LetMeAskYou extends Object {...}</code> &#xFF0C;&#x6240;&#x6709; class &#x90FD;&#x6709;&#x96B1;&#x85CF;&#x7684;&#x7236;&#x985E;&#x5225; Object</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<div style="overflow: auto; margin: 15px;">
-<div style="max-width: 652px; min-width: 652px;">
-<div style="
-display: flex;
-">
-<div style="
-background: rgba(66, 185, 130, 0.1);
-width: 320px;
-border-radius: 50%;
-text-align: center;
-padding: 30px;
-">
-Pen
-<div style="
-padding: 35px 10px;
-margin: 15px;
-background: rgba(66, 185, 130, 0.1);
-border-radius: 50%;
-">
-Pencil
-<div style="
-padding: 35px 10px;
-background: rgba(66, 185, 130, 0.1);
-border-radius: 50%;
-width: 100px;
-margin: 15px auto;
-">
-AutoPencil
-</div>
-</div>
-</div>
-<ul>
-<li>
-<p>AutoPencil is a Pencil</p>
-</li>
-<li>
-<p>AutoPencil is a Pen</p>
-</li>
-<li>
-<p><a href="#">Everything is a Object</a></p>
-</li></ul></div>
-</div>
-</div>
+<pre><code class="lang-java"><span class="hljs-keyword">package</span> ch03;
 
-<p><br></p>
-<h1 id="4-&#x8986;&#x5BEB;overriding&#x76EE;&#x7684;&#x8207;&#x898F;&#x5B9A;"><a id="s4" class="md-title" href="#top">4. &#x8986;&#x5BEB;(Overriding)&#x76EE;&#x7684;&#x8207;&#x898F;&#x5B9A;</a></h1>
-<ul>
-<li><p>&#x76EE;&#x7684;</p>
-<ul>
-<li>&#x5B50;&#x985E;&#x5225;&#x7E7C;&#x627F;&#x7236;&#x985E;&#x5225;&#x5F8C;&#xFF0C;&#x4E0D;&#x6EFF;&#x610F;&#x7236;&#x985E;&#x5225;&#x5B9A;&#x7FA9;&#x7684;&#x65B9;&#x6CD5;&#x6642;&#x5B50;&#x985E;&#x5225;&#x53EF;&#x4EE5;&#x5728;&#x7E7C;&#x627F;&#x5F8C;&#x91CD;&#x65B0;&#x6539;&#x5BEB;&#xFF0C;&#x5373;&#x70BA; Overriding</li>
-</ul>
-</li>
-<li><p>&#x898F;&#x5B9A;(&#x53EA;&#x662F;&#x5C0D;&#x65B9;&#x6CD5;<strong>&#x5167;&#x5BB9;</strong>&#x6539;&#x8B8A;&#xFF0C;&#x6240;&#x4EE5;&#x65B9;&#x6CD5;&#x5BA3;&#x544A;&#x7684;&#x7D50;&#x69CB;&#x4E0D;&#x53EF;&#x4EE5;&#x4E82;&#x52D5;)</p>
-<ul>
-<li><p><strong>&#x65B9;&#x6CD5;&#x540D;&#x7A31;</strong>&#x3001;<strong>&#x53C3;&#x6578;&#x6578;&#x91CF;</strong>&#x3001;<strong>&#x53C3;&#x6578;&#x578B;&#x5225;</strong>&#x3001;<strong>&#x56DE;&#x50B3;&#x578B;&#x5225;</strong>&#x8981;&#x4E00;&#x6A23;</p>
-</li>
-<li><p>&#x5B50;&#x985E;&#x5225;&#x8986;&#x5BEB;&#x65B9;&#x6CD5;&#x6642;&#x5B58;&#x53D6;&#x4FEE;&#x98FE;&#x5B50;&#x7684;&#x7B49;&#x7D1A;<strong>&#x4E0D;&#x80FD;&#x5C0F;&#x65BC;</strong>&#x539F;&#x65B9;&#x6CD5;</p>
-<ul>
-<li><a href="https://leisure0621.github.io/tibame/3.JAVA&#x7A0B;&#x5F0F;&#x8A2D;&#x8A08;/9.&#x4F7F;&#x7528;&#x5C01;&#x88DD;&#x8207;&#x5EFA;&#x69CB;&#x5B50;/9-4.static&#x4FEE;&#x98FE;&#x5B50;.html" target="_blank">&#x5B58;&#x53D6;&#x4FEE;&#x98FE;&#x5B50;</a> : <code>public</code> &gt; <code>protected</code> &gt; <code>default</code> &gt; <code>private</code></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<h1 id="final-&#x4FEE;&#x98FE;&#x5B50;">final &#x4FEE;&#x98FE;&#x5B50;</h1>
-<ul>
-<li><p>&#x4E00;&#x500B;&#x985E;&#x5225;&#x5BA3;&#x544A;&#x70BA; <code>final</code>(<a href="https://leisure0621.github.io/tibame/3.JAVA&#x7A0B;&#x5F0F;&#x8A2D;&#x8A08;/3.&#x5B9A;&#x6578;&#x3001;&#x8B8A;&#x6578;&#x3001;&#x5E38;&#x6578;&#x8207;&#x904B;&#x7B97;&#x5B50;/3-1.JAVA&#x8B8A;&#x91CF;.html" target="_blank">&#x5E38;&#x6578;</a>) &#x6642;<strong>&#x4E0D;&#x80FD;&#x88AB;&#x7E7C;&#x627F;</strong>(&#x7D55;&#x5B50;&#x7D55;&#x5B6B;)</p>
-<ul>
-<li><p><code>public final class String {...}</code></p>
-</li>
-<li><p><code>public final class Math {...}</code></p>
-</li>
-<li><p><code>public class A extends Math {...}</code> &#x6703;&#x63D0;&#x793A;&#x932F;&#x8AA4;&#xFF0C;&#x56E0;&#x70BA; String &#x70BA; final</p>
-</li>
-<li><p><code>public final Methods(...){...}</code> method &#x4E5F;&#x53EF;&#x8B8A;&#x6210; final</p>
-</li>
-<li><p><code>final Pen myPen = new Pen();</code> <strong>&#x7269;&#x4EF6;&#x53C3;&#x8003;&#x8B8A;&#x6578;</strong>&#x5BA3;&#x544A;&#x70BA; final&#xFF0C;&#x8868;&#x793A;&#x9019;&#x500B;&#x8B8A;&#x6578;&#x5728;&#x521D;&#x59CB;&#x503C;&#x5316;&#x5F8C;&#x4E0D;&#x5F97;&#x5728;&#x6307;&#x5411;&#x53E6;&#x4E00;&#x500B;&#x7269;&#x4EF6;</p>
-</li>
-<li><p>&#x56FA;&#x5B9A;&#x4E0D;&#x8B8A;&#x7684;&#x662F;&#x5740;&#x7684;&#x503C;&#xFF0C;&#x800C;&#x8A72;&#x7269;&#x4EF6;&#x7684;&#x5C6C;&#x6027;&#x662F;&#x5426;&#x80FD;&#x4FEE;&#x6539;&#x8981;&#x770B;&#x5BA3;&#x544A;&#x5C6C;&#x6027;&#x6642;&#x662F;&#x5426;&#x6709;&#x52A0;&#x4E0A; final</p>
-</li>
-</ul>
-<pre><code class="lang-java"><span class="hljs-keyword">final</span> Pen myPen = <span class="hljs-keyword">new</span> Pen();
-Pen yourPen = <span class="hljs-keyword">new</span> Pen();
-myPen = yourPen; <span class="hljs-comment">// &#x6703;&#x7522;&#x751F;&#x932F;&#x8AA4;&#xFF0C;&#x56E0;&#x70BA; myPen &#x88AB;&#x5BA3;&#x544A;&#x70BA; final</span>
-</code></pre>
-<ul>
-<li><p><code>public static final double price = 10.0;</code> &#x56FA;&#x5B9A;&#x4E0D;&#x80FD;&#x8B8A;&#x52D5;&#x7684;&#x503C;&#xFF0C;&#x7E7C;&#x627F;&#x5F8C;&#x4E5F;&#x4E0D;&#x80FD;&#x6539;&#x8B8A;</p>
-<ul>
-<li>&#x4EFB;&#x4F55;&#x4EBA;&#x90FD;&#x80FD;&#x7528;&#xFF0C;&#x4E0D;&#x80FD;&#x76F4;&#x63A5;&#x4FEE;&#x6539;&#xFF0C;&#x56FA;&#x5B9A;&#x7684;&#xFF0C;double &#x578B;&#x614B;&#x7684;&#xFF0C;&#x91D1;&#x984D;</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<h1 id="5-final-&#x4FEE;&#x98FE;&#x5B50;"><a id="s5" class="md-title" href="#top">5. final &#x4FEE;&#x98FE;&#x5B50;</a></h1>
-<ul>
-<li><p><code>super.MethodName();</code> &#x5B50;&#x985E;&#x5225;&#x901A;&#x904E; <code>super.</code> &#x53EF;&#x4EE5;&#x547C;&#x53EB;<strong>&#x4E0A;&#x4E00;&#x5C64;&#x985E;&#x5225;</strong>&#x7684;&#x65B9;&#x6CD5;&#xFF0C;<strong>&#x7121;&#x6CD5;&#x8D8A;&#x7D1A;&#x547C;&#x53EB;</strong>(&#x5C31;&#x662F;&#x53EA;&#x80FD;&#x547C;&#x53EB;<strong>&#x4E0A;&#x4E00;&#x500B;</strong>)</p>
-<div style="text-align:center">
-  <img src="image/10-1_01.png">
-</div>
+<span class="hljs-keyword">import</span> java.util.HashMap;
+<span class="hljs-keyword">import</span> java.util.Iterator;
+<span class="hljs-keyword">import</span> java.util.Map;
+<span class="hljs-keyword">import</span> java.util.Set;
 
-</li>
-</ul>
-<h1 id="6-&#x547C;&#x53EB;&#x7236;&#x985E;&#x5225;&#x7684;&#x65B9;&#x6CD5;"><a id="s6" class="md-title" href="#top">6. &#x547C;&#x53EB;&#x7236;&#x985E;&#x5225;&#x7684;&#x65B9;&#x6CD5;</a></h1>
-<ul>
-<li><p>&#x547C;&#x53EB;&#x7236;&#x985E;&#x5225;&#x7684;&#x5EFA;&#x69CB;&#x5B50;</p>
-<ul>
-<li><p>&#x5B50;&#x985E;&#x5225;&#x900F;&#x904E;&#x5EFA;&#x69CB;&#x5B50;&#xFF0C;&#x7528; <code>supper(...)</code> &#x5C07;<strong>&#x5171;&#x540C;&#x7684;&#x5EFA;&#x69CB;&#x5B50;&#x53C3;&#x6578;</strong>&#x50B3;&#x7D66;&#x7236;&#x985E;&#x5225;(&#x6307;&#x5171;&#x540C;&#x7684;&#x8CC7;&#x6599;&#x61C9;&#x4F7F;&#x7528;&#x7236;&#x985E;&#x5225;&#x7684;&#x5EFA;&#x69CB;&#x5B50;)</p>
-</li>
-<li><p>&#x7269;&#x4EF6;&#x7522;&#x751F;&#x6642;&#xFF0C;&#x5EFA;&#x69CB;&#x5B50;&#x547C;&#x53EB;&#x7684;&#x9806;&#x5E8F;&#x70BA;&#x5148;&#x7236;&#x985E;&#x5225;&#x5728;&#x5B50;&#x985E;&#x5225;&#xFF0C;&#x6240;&#x4EE5;</p>
-<ul>
-<li><p>&#x5EFA;&#x69CB;&#x5B50;&#x4E2D;&#x82E5;&#x6709;&#x51FA;&#x73FE;<strong>super(...)</strong>&#xFF0C;&#x4E00;&#x5B9A;&#x8981;&#x653E;&#x5728;<strong>&#x7B2C;&#x4E00;&#x500B;</strong>&#x6558;&#x8FF0;&#x4F4D;&#x7F6E;</p>
-</li>
-<li><p>&#x5EFA;&#x69CB;&#x5B50;&#x4E2D;&#x82E5;&#x672A;&#x51FA;&#x73FE;<strong>super(...)</strong>&#xFF0C;JAVA &#x9810;&#x8A2D;&#x6703;&#x6709;&#x4E00;&#x500B;<strong>&#x96B1;&#x5F62;&#x7684; super()</strong></p>
-<ul>
-<li><p>&#x76F8;&#x7576;&#x65BC;&#x6C92;&#x6709;&#x5EFA;&#x7ACB;&#x5EFA;&#x69CB;&#x5B50;&#xFF0C;&#x5247;&#x985E;&#x5225;&#x4E2D;&#x9810;&#x8A2D;&#x6703;&#x6709;&#x4E00;&#x500B;&#x96B1;&#x5F62;&#x7684;&#x5EFA;&#x69CB;&#x5B50;</p>
-</li>
-<li><p><strong>&#x547C;&#x53EB;&#x7236;&#x985E;&#x5225;&#x4E0D;&#x5E36;&#x53C3;&#x6578;&#x7684;&#x5EFA;&#x69CB;&#x5B50;</strong>&#xFF0C;&#x9810;&#x8A2D;&#x81EA;&#x52D5;&#x653E; <code>super()</code> &#x5728;&#x7B2C;&#x4E00;&#x500B;&#x6558;&#x8FF0;&#x7684;&#x4F4D;&#x7F6E;</p>
-<ul>
-<li>&#x6240;&#x6709; class &#x90FD;&#x6709;&#x96B1;&#x85CF;&#x7684;&#x7236;&#x985E;&#x5225; Object</li>
-</ul>
-</li>
-<li><p><code>this()</code> &#x8207; <code>super()</code> &#x5728;&#x5EFA;&#x69CB;&#x5B50;&#x7684;&#x8A2D;&#x8A08;&#x4E0A;&#x90FD;&#x5F97;&#x653E;&#x5728;&#x7B2C;&#x4E00;&#x500B;&#x6558;&#x8FF0;&#x4F4D;&#x7F6E;&#xFF0C;&#x624D;&#x80FD;&#x7B26;&#x5408;&#x5EFA;&#x69CB;&#x5B50;&#x57F7;&#x884C;&#x9806;&#x5E8F;&#x898F;&#x5247;&#xFF0C;&#x6240;&#x4EE5;&#x5169;&#x500B;&#x53EA;&#x80FD;&#x64C7;&#x4E00;&#x4F7F;&#x7528;</p>
-<ul>
-<li>&#x5EFA;&#x69CB;&#x5B50;&#x7684;&#x7279;&#x6027;&#xFF0C;&#x4E00;&#x6B21;&#x6027;&#xFF0C;&#x6240;&#x4EE5;&#x4E00;&#x500B;&#x65B9;&#x6CD5;&#x5167;&#x4E0D;&#x80FD;&#x91CD;&#x8907;&#x7528; <code>this()</code> &#x8207; <code>super()</code><br><br></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<pre><code class="lang-java"><span class="hljs-keyword">super</span>(<span class="hljs-number">1</span>,<span class="hljs-number">2</span>)
-</code></pre>
-<div style="text-align:center">
-  <img src="image/10-1_02.png">
-</div>
-</li>
-<li><p>&#x547C;&#x53EB;&#x540C;&#x500B;&#x985E;&#x5225;&#x7684;&#x5EFA;&#x69CB;&#x5B50;</p>
-<pre><code class="lang-java"><span class="hljs-keyword">this</span>(<span class="hljs-number">1</span>,<span class="hljs-number">2</span>)
-</code></pre>
-</li>
-</ul>
-<h1 id="7-&#x547C;&#x53EB;&#x7236;&#x985E;&#x5225;&#x7684;&#x5EFA;&#x69CB;&#x5B50;"><a id="s7" class="md-title" href="#top">7. &#x547C;&#x53EB;&#x7236;&#x985E;&#x5225;&#x7684;&#x5EFA;&#x69CB;&#x5B50;</a></h1>
-  <div style="text-align:center">
-    <img src="image/10-1_03.png">
-  </div>
-
-<h1 id="8-&#x8907;&#x96DC;&#x7684;&#x7E7C;&#x627F;&#x95DC;&#x4FC2;"><a id="s8" class="md-title" href="#top">8. &#x8907;&#x96DC;&#x7684;&#x7E7C;&#x627F;&#x95DC;&#x4FC2;</a></h1>
-<ul>
-<li><p>&#x901A;&#x904E;&#x7E7C;&#x627F;&#x65B9;&#x5F0F;&#x4F86;&#x7522;&#x751F;&#x5169;&#x500B; animal</p>
-</li>
-<li><p>&#x65B9;&#x6CD5; 1</p>
-<pre><code class="lang-java"><span class="hljs-keyword">package</span> xxx;
-
-<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Elephant</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Animal</span> </span>{
-  String name;
-
-  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Elephant</span><span class="hljs-params">()</span></span>{
-
-  }
-
-  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Elephant</span><span class="hljs-params">(String name, <span class="hljs-keyword">int</span> age, <span class="hljs-keyword">float</span> weight)</span> </span>{
-    <span class="hljs-keyword">super</span>(age, weight);
-    <span class="hljs-keyword">this</span>.name = name;
-  }
-
-  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">speak</span><span class="hljs-params">()</span> </span>{
-    <span class="hljs-keyword">super</span>.speak();
-    System.out.println(name);
-  }
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">TestHashMap</span> </span>{
 
   <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
-    Elephant Animal = <span class="hljs-keyword">new</span> Elephant(<span class="hljs-string">&quot;Animal&quot;</span>, <span class="hljs-number">3</span>, <span class="hljs-number">8</span>);
-    Elephant Elephone = <span class="hljs-keyword">new</span> Elephant(<span class="hljs-string">&quot;Elephone&quot;</span>, <span class="hljs-number">8</span>, <span class="hljs-number">1200</span>);
-    Animal.speak();
-    Elephone.speak();
+    Map map = <span class="hljs-keyword">new</span> HashMap();
+    map.put(<span class="hljs-string">&quot;one&quot;</span>, <span class="hljs-keyword">new</span> Integer(<span class="hljs-number">1</span>));
+    map.put(<span class="hljs-string">&quot;two&quot;</span>, <span class="hljs-string">&quot;2&quot;</span>);
+    map.put(<span class="hljs-string">&quot;three&quot;</span>, <span class="hljs-keyword">new</span> Float(<span class="hljs-number">3.0</span>));
+
+    System.out.println(map.get(<span class="hljs-string">&quot;one&quot;</span>));
+    System.out.println(map.get(<span class="hljs-string">&quot;two&quot;</span>));
+    System.out.println(map.get(<span class="hljs-string">&quot;three&quot;</span>));
+
+    <span class="hljs-comment">// &#x53D6;&#x51FA;&#x6240;&#x6709;&#x7684;key,&#x5305;&#x88DD;&#x70BA;Set&#x7684;&#x578B;&#x614B;</span>
+    Set set = map.keySet();
+
+    Iterator it = set.iterator();
+    <span class="hljs-keyword">while</span> (it.hasNext()) {
+      Object myKey = it.next();
+      System.out.println(myKey + <span class="hljs-string">&quot;=&quot;</span> + map.get(myKey));
+    }
+
+    <span class="hljs-comment">//keySet() &#x65B9;&#x6CD5;&#x4F86;&#x81EA;Map&#x4ECB;&#x9762;, &#x6240;&#x4EE5;&#x6240;&#x6709;Map&#x5BB6;&#x65CF;&#x6210;&#x54E1;&#x90FD;&#x9069;&#x7528;&#x6B64;&#x65B9;&#x5F0F;&#x53D6;&#x503C;</span>
 
   }
 }
 </code></pre>
-<pre><code class="lang-java"><span class="hljs-keyword">package</span> xxx;
+<ul>
+<li><p>&#x7BC4;&#x4F8B;&#x7A0B;&#x5F0F;: <code>/JavaEx_Part2/src/ch03/TestHashMap.java</code></p>
+</li>
+<li><p>&#x7BC4;&#x4F8B; 2</p>
+</li>
+</ul>
+<pre><code class="lang-java"><span class="hljs-keyword">package</span> idv.david.additional.iocollection;
 
-<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Animal</span> </span>{
-  <span class="hljs-keyword">private</span> <span class="hljs-keyword">int</span> age;
-  <span class="hljs-keyword">private</span> <span class="hljs-keyword">float</span> weight;
+<span class="hljs-keyword">import</span> <span class="hljs-keyword">static</span> java.lang.System.out;
 
-  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Animal</span><span class="hljs-params">()</span></span>{
+<span class="hljs-keyword">import</span> java.io.BufferedReader;
+<span class="hljs-keyword">import</span> java.io.FileReader;
+<span class="hljs-keyword">import</span> java.io.IOException;
+<span class="hljs-keyword">import</span> java.util.HashMap;
+<span class="hljs-keyword">import</span> java.util.Map;
+<span class="hljs-keyword">import</span> java.util.Set;
+<span class="hljs-keyword">import</span> java.util.StringTokenizer;
 
-  }
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">DataInputExample</span> </span>{
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> <span class="hljs-keyword">throws</span> IOException </span>{
+    <span class="hljs-comment">// Variables declare &#x5BA3;&#x544A;&#x8B8A;&#x6578;</span>
+    <span class="hljs-keyword">int</span> totalAge = <span class="hljs-number">0</span>;
+    <span class="hljs-keyword">double</span> totalHeight = <span class="hljs-number">0.0</span>;
+    <span class="hljs-keyword">double</span> totalWeight = <span class="hljs-number">0.0</span>;
+    <span class="hljs-keyword">int</span> totalPerson = <span class="hljs-number">0</span>;
+    <span class="hljs-comment">// &#x8A2D;&#x5B9A;map</span>
+    Map&lt;String, Integer&gt; cities = <span class="hljs-keyword">new</span> HashMap&lt;String, Integer&gt;();
 
-  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Animal</span><span class="hljs-params">(<span class="hljs-keyword">int</span> age, <span class="hljs-keyword">float</span> weight)</span> </span>{
-    <span class="hljs-keyword">this</span>.age = age;
-    <span class="hljs-keyword">this</span>.weight = weight;
-  }
+    <span class="hljs-comment">// Read data from file &#x8B80;&#x53D6;&#x6A94;&#x6848;</span>
+    BufferedReader br = <span class="hljs-keyword">new</span> BufferedReader(<span class="hljs-keyword">new</span> FileReader(<span class="hljs-string">&quot;files/data.txt&quot;</span>));
 
-  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">speak</span><span class="hljs-params">()</span> </span>{
-    System.out.println(age + <span class="hljs-string">&quot;&#x6B72;&quot;</span>);
-    System.out.println(weight + <span class="hljs-string">&quot;&#x516C;&#x65A4;&quot;</span>);
-  }
+    <span class="hljs-comment">// Parsing data &#x8A2D;&#x5B9A;&#x5B57;&#x4E32;&#xFF0C;&#x8B80;&#x53D6;&#x6A94;&#x6848;&#x5167;&#x5BB9;</span>
+    String data;
+    <span class="hljs-comment">// &#x5C07;&#x6BCF;&#x884C;&#x503C;&#x6307;&#x5B9A;&#x5230;&#x5B57;&#x4E32;&#x4E2D;</span>
+    <span class="hljs-keyword">while</span> ((data = br.readLine()) != <span class="hljs-keyword">null</span>) {
+      totalPerson++;
+      <span class="hljs-comment">// &#x6587;&#x5B57;&#x5207;&#x5272;&#x5DE5;&#x5177;(&#x8981;&#x8655;&#x88E1;&#x7684;&#x5B57;&#x4E32;,&#x5206;&#x5272;&#x7B26;)</span>
+      <span class="hljs-comment">// Token &#x5B57;&#x7B26;(&#x8655;&#x7406;&#x904E;&#x7684;&#x5B57;&#x4E32;)</span>
+      StringTokenizer st = <span class="hljs-keyword">new</span> StringTokenizer(data, <span class="hljs-string">&quot;,&quot;</span>);
+      <span class="hljs-comment">// hasMoreTokens &#x8FD4;&#x56DE;&#x662F;&#x5426;&#x9084;&#x6709;&#x5206;&#x5272;&#x7B26;</span>
+      <span class="hljs-keyword">if</span> (st.hasMoreTokens()) {
+        <span class="hljs-keyword">int</span> no = Integer.parseInt(st.nextToken());
+        String name = st.nextToken();
+        <span class="hljs-comment">// &#x7E3D;&#x5E74;&#x9F61;</span>
+        totalAge += Integer.parseInt(st.nextToken());
+        <span class="hljs-comment">// &#x7E3D;&#x8EAB;&#x9AD8;</span>
+        totalHeight += Double.parseDouble(st.nextToken());
+        <span class="hljs-comment">// &#x7E3D;&#x91CD;&#x91CF;</span>
+        totalWeight += Double.parseDouble(st.nextToken());
+        <span class="hljs-comment">// &#x7528;&#x65BC;&#x8FD4;&#x56DE;&#x4E0B;&#x4E00;&#x500B;&#x5339;&#x914D;&#x7684;&#x5B57;&#x4E32;</span>
+        String tel = st.nextToken();
 
-  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setAge</span><span class="hljs-params">(<span class="hljs-keyword">int</span> age)</span> </span>{
-    <span class="hljs-keyword">this</span>.age = age;
-  }
+        <span class="hljs-comment">// &#x986F;&#x793A;&#x5404;&#x500B;&#x5730;&#x65B9;&#x6709;&#x5E7E;&#x500B;&#x4EBA;</span>
+        String city = st.nextToken();
+        <span class="hljs-keyword">if</span> (cities.containsKey(city)) {
+          <span class="hljs-keyword">int</span> count = cities.get(city) + <span class="hljs-number">1</span>;
+          cities.put(city, count);
+        } <span class="hljs-keyword">else</span>
+          cities.put(city, <span class="hljs-number">1</span>);
+      }
+    }
 
-  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">float</span> <span class="hljs-title">getWeight</span><span class="hljs-params">(<span class="hljs-keyword">float</span> weight)</span> </span>{
-    <span class="hljs-keyword">return</span> weight;
-  }
+    <span class="hljs-comment">// Output result</span>
+    out.printf(<span class="hljs-string">&quot;&#x5E73;&#x5747; &#x5E74;&#x9F61;: %d&#x6B72;%n&quot;</span>, totalAge / totalPerson);
+    out.printf(<span class="hljs-string">&quot;&#x5E73;&#x5747; &#x8EAB;&#x9AD8;: %.2f&#x516C;&#x5206;%n&quot;</span>, totalHeight / totalPerson);
+    out.printf(<span class="hljs-string">&quot;&#x5E73;&#x5747; &#x9AD4;&#x91CD;: %.2f&#x516C;&#x65A4;%n&quot;</span>, totalWeight / totalPerson);
 
-  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setWeight</span><span class="hljs-params">(<span class="hljs-keyword">float</span> weight)</span> </span>{
-    <span class="hljs-keyword">this</span>.weight = weight;
+    Set&lt;String&gt; keys = cities.keySet();
+    <span class="hljs-keyword">for</span> (String city : keys)
+      out.printf(<span class="hljs-string">&quot;&#x4F4F;&#x5740; %S: %d&#x4EBA;%n&quot;</span>, city, cities.get(city));
+
+    System.out.println(<span class="hljs-string">&quot;\n---------&#x6E2C;&#x8A66;toString()-----------&quot;</span>);
+    System.out.println(<span class="hljs-string">&quot;toString()=&quot;</span> + cities); <span class="hljs-comment">// &#x6E2C;&#x8A66;toString()</span>
   }
 }
 </code></pre>
+<ul>
+<li>&#x7BC4;&#x4F8B;&#x7A0B;&#x5F0F;: <code>/JavaEx_Part2/src/idv/david/additional/iocollection/DataInputExample.java</code></li>
+</ul>
+<h1 id="4-vector-&#x8207;-hashtable-&#x985E;&#x5225;"><a id="s4" class="md-title" href="#top">4. Vector &#x8207; Hashtable &#x985E;&#x5225;</a></h1>
+<ul>
+<li><p>Vector &#x70BA;&#x4E00;&#x53EF;&#x7F6E;&#x5165;&#x300C;&#x4EFB;&#x610F;&#x7269;&#x4EF6;&#x300D;&#x7684;&#x300C;&#x52D5;&#x614B;&#x9663;&#x5217;&#x300D;(&#x53EF;&#x96A8;&#x5167;&#x542B;&#x7269;&#x81EA;&#x52D5;&#x589E;&#x6E1B;&#x9577;&#x5EA6;)</p>
+</li>
+<li><p>Hashtable &#x5167;&#x90E8;&#x662F;&#x4E00;&#x500B;&#x300C;&#x985E;&#x4F3C;&#x8868;&#x683C;&#x300D;&#x7684;&#x8CC7;&#x6599;&#x7D50;&#x69CB;&#x4F86;&#x5132;&#x5B58;&#x8CC7;&#x6599;</p>
+</li>
+<li><p>Vector &#x5F9E; <code>JDK1.0</code> &#x6642;&#x4EE3;&#x5C31;&#x5DF2;&#x5B58;&#x5728;,&#x5728; JDK1.2 &#x6642;,&#x65B0;&#x7684; List &#x4ECB;&#x9762;&#x51FA;&#x73FE;&#x5F8C;,Vector &#x624D;&#x52A0;&#x5165; List &#x5BB6;&#x65CF;,&#x4E26;&#x5BE6;&#x4F5C;&#x65B0;&#x7684;&#x65B9;&#x6CD5;</p>
+<ul>
+<li><code>Vector &#x5BE6;&#x4F5C;&#x4E86; List</code></li>
+</ul>
+</li>
+<li><p>Hashtable &#x5F9E; <code>JDK1.0</code> &#x6642;&#x4EE3;&#x5C31;&#x5DF2;&#x5B58;&#x5728;,&#x5728; JDK1.2 &#x6642;,&#x65B0;&#x7684; Map &#x4ECB;&#x9762;&#x51FA;&#x73FE;&#x5F8C;,Hashtable &#x624D;&#x52A0;&#x5165; Map &#x5BB6;&#x65CF;,&#x4E26;&#x5BE6;&#x4F5C;&#x65B0;&#x7684;&#x65B9;&#x6CD5;</p>
+</li>
+<li><p><code>Vector</code> &#x985E;&#x5225;&#x7B49;&#x540C;&#x65BC; <code>ArrayList</code> &#x985E;&#x5225;,&#x4F46;&#x662F; Vector &#x63D0;&#x4F9B;<code>&#x540C;&#x6B65;&#x5316;</code>&#x7684;&#x512A;&#x9EDE;(&#x8207;<code>&#x8CA0;&#x64D4;</code>),&#x9019;&#x5C0D;<code>&#x591A;&#x57F7;&#x884C;&#x7DD2;</code>&#x7684;&#x5B58;&#x53D6;&#x662F;&#x5F88;&#x91CD;&#x8981;&#x7684;</p>
+</li>
+<li><p><code>Hashtable</code> &#x985E;&#x5225;&#x7B49;&#x540C;&#x65BC; <code>HashMap</code> &#x985E;&#x5225;,&#x4F46;&#x662F; Hashtable &#x63D0;&#x4F9B;<code>&#x540C;&#x6B65;&#x5316;</code>&#x7684;&#x512A;&#x9EDE;(&#x8207;<code>&#x8CA0;&#x64D4;</code>),&#x9019;&#x5C0D;<code>&#x591A;&#x57F7;&#x884C;&#x7DD2;</code>&#x7684;&#x5B58;&#x53D6;&#x662F;&#x5F88;&#x91CD;&#x8981;&#x7684;</p>
+</li>
+</ul>
+<h1 id="5-vector-&#x7BC4;&#x4F8B;"><a id="s5" class="md-title" href="#top">5. Vector &#x7BC4;&#x4F8B;</a></h1>
+<pre><code class="lang-java"><span class="hljs-keyword">package</span> ch03;
+
+<span class="hljs-keyword">import</span> java.util.*;
+
+<span class="hljs-comment">//Vector &#x70BA;&#x4E00;&#x53EF;&#x7F6E;&#x5165;&quot;&#x4EFB;&#x610F;&#x7269;&#x4EF6;&quot;&#x7684;&quot;&#x52D5;&#x614B;&#x9663;&#x5217;&quot;(&#x53EF;&#x96A8;&#x5167;&#x542B;&#x7269;&#x591A;&#x5BE1;&#x589E;&#x6E1B;&#x5176;&#x9577;&#x5EA6;)</span>
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">TestVector1</span> </span>{
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String args[])</span> </span>{
+    <span class="hljs-comment">// &#x65B9;&#x6CD5;1: &#x4F7F;&#x7528;&#x820A;&#x65B9;&#x6CD5;&#x5FC5;&#x9808;&#x7528; Vector &#x5BA3;&#x544A;</span>
+    Vector v = <span class="hljs-keyword">new</span> Vector();
+    v.addElement(<span class="hljs-keyword">new</span> Integer(<span class="hljs-number">12</span>));
+    v.addElement(<span class="hljs-keyword">new</span> Long(<span class="hljs-number">34L</span>));
+    v.addElement(<span class="hljs-keyword">new</span> Float(<span class="hljs-number">5.6f</span>));
+    v.addElement(<span class="hljs-keyword">new</span> Double(<span class="hljs-number">7.8</span>));
+    v.addElement(<span class="hljs-keyword">new</span> String(<span class="hljs-string">&quot;Hello&quot;</span>));
+
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; v.size(); i++) {
+      Object obj = v.elementAt(i);
+      System.out.println(obj);
+    }
+
+    <span class="hljs-comment">// &#x65B9;&#x6CD5;2: &#x4E5F;&#x53EF;&#x5BEB;&#x6210; List v2 = new Vector();</span>
+    Vector v2 = <span class="hljs-keyword">new</span> Vector();
+    v2.add(<span class="hljs-keyword">new</span> Integer(<span class="hljs-number">12</span>));
+    v2.add(<span class="hljs-keyword">new</span> Long(<span class="hljs-number">34L</span>));
+    v2.add(<span class="hljs-keyword">new</span> Float(<span class="hljs-number">5.6f</span>));
+    v2.add(<span class="hljs-keyword">new</span> Double(<span class="hljs-number">7.8</span>));
+    v2.add(<span class="hljs-keyword">new</span> String(<span class="hljs-string">&quot;Hello&quot;</span>));
+
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; v2.size(); i++) {
+      Object obj = v2.get(i);
+      System.out.println(obj);
+    }
+
+  }
+}
+</code></pre>
+<ul>
+<li>&#x7BC4;&#x4F8B;&#x7A0B;&#x5F0F;: <code>/JavaEx_Part2/src/ch03/TestVector2.java</code></li>
+<li>&#x7BC4;&#x4F8B;&#x7A0B;&#x5F0F;: <code>/JavaEx_Part2/src/ch03/TestVector1.java</code></li>
+</ul>
+<h1 id="6-hashtable-&#x7BC4;&#x4F8B;"><a id="s6" class="md-title" href="#top">6. Hashtable &#x7BC4;&#x4F8B;</a></h1>
+<pre><code class="lang-java"><span class="hljs-comment">/*
+1.Hashtable &#x5167;&#x90E8;&#x662F;&#x4E00;&#x500B;&quot;&#x985E;&#x4F3C;&#x8868;&#x683C;&quot;&#x7684;&#x8CC7;&#x6599;&#x7D50;&#x69CB;&#x4F86;&#x5132;&#x5B58;&#x8CC7;&#x6599;, &#x6BCF;&#x4E00;&#x7B46;&#x8CC7;&#x6599;&#x90FD;&#x6709;
+  &#x5C0D;&#x61C9;&#x7684;&#x7D22;&#x5F15;&#x9375;(key) , &#x9019;&#x7D22;&#x5F15;&#x9375;&#x662F;&#x7269;&#x4EF6;&#x7684;&#x578B;&#x614B; , &#x4F46;&#x662F;&#x901A;&#x5E38;&#x70BA;&#x65B9;&#x4FBF;&#x8D77;&#x898B;, &#x5927;
+  &#x90E8;&#x4EFD;&#x7684;&#x60C5;&#x6CC1;&#x90FD;&#x662F;&#x5229;&#x7528;&quot;&#x5B57;&#x4E32;&quot;&#x503C;&#x7576;&#x505A;&#x7D22;&#x5F15;&#x9375;(key). &#x53CD;&#x4E4B;&#x7576;&#x6B32;&#x53D6;&#x51FA;&#x9019;&#x7B46;&#x8CC7;&#x6599;&#x6642;,
+  &#x4E5F;&#x662F;&#x5229;&#x7528;&#x525B;&#x525B;&#x6240;&#x8A2D;&#x5B9A;&#x7684;&#x7D22;&#x5F15;&#x9375;&#x503C;&#x4F86;&#x53D6;&#x51FA;&#x8CC7;&#x6599;
+
+2.&#x6B32;&#x5132;&#x5B58;&#x4E0D;&#x540C;&#x7684;&#x8CC7;&#x6599;&#x6642;&#x5FC5;&#x9700;&#x7528;&#x4E0D;&#x540C;&#x7684;&#x7D22;&#x5F15;&#x9375;, &#x5426;&#x5247;&#x5176;&#x7D22;&#x5F15;&#x9375;&#x6240;&#x5C0D;&#x61C9;&#x8CC7;&#x6599;&#x503C;&#x70BA;&#x6700;
+  &#x5F8C;&#x5132;&#x5B58;&#x7684;&#x90A3;&#x7B46;&#x8CC7;&#x6599;
+
+3.Hashtable &#x7684;&#x8CC7;&#x6599;&#x4E5F;&#x662F;&#x7269;&#x4EF6;&#x7684;&#x578B;&#x614B;, &#x6240;&#x4EE5;&#x53EF;&#x4EE5;&#x5132;&#x5B58;&#x4EFB;&#x4F55;&#x5F62;&#x5F0F;&#x7684;&#x8CC7;&#x6599;, &#x4F7F;&#x7528;&#x8005;
+  &#x53D6;&#x51FA;&#x8CC7;&#x6599;&#x7684;&#x540C;&#x6642;, &#x5FC5;&#x9808;&#x6CE8;&#x610F;&#x8A72;&#x8CC7;&#x6599;&#x7684;&#x578B;&#x614B;&#x800C;&#x81EA;&#x884C;&#x4F5C;&#x7269;&#x4EF6;&#x8CC7;&#x6599;&#x8F49;&#x63DB;(casting)&#x7684;&#x52D5;&#x4F5C;.
+
+*/</span>
+<span class="hljs-keyword">package</span> ch03;
+
+<span class="hljs-keyword">import</span> java.util.*;
+
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">TestHashtable</span> </span>{
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String args[])</span> </span>{
+    Hashtable hash = <span class="hljs-keyword">new</span> Hashtable();
+    hash.put(<span class="hljs-string">&quot;one&quot;</span>, <span class="hljs-keyword">new</span> Integer(<span class="hljs-number">1</span>));
+    hash.put(<span class="hljs-string">&quot;two&quot;</span>, <span class="hljs-string">&quot;2&quot;</span>);
+    hash.put(<span class="hljs-string">&quot;three&quot;</span>, <span class="hljs-keyword">new</span> Float(<span class="hljs-number">3.0</span>));
+
+    <span class="hljs-comment">// &#x5FC5;&#x9808;&#x578B;&#x5225;&#x8F49;&#x63DB;</span>
+    Integer oneValue = (Integer) hash.get(<span class="hljs-string">&quot;one&quot;</span>);
+    String twoValue = (String) hash.get(<span class="hljs-string">&quot;two&quot;</span>);
+    Float threeValue = (Float) hash.get(<span class="hljs-string">&quot;three&quot;</span>);
+
+    System.out.println(oneValue);
+    System.out.println(twoValue);
+    System.out.println(threeValue);
+  }
+}
+</code></pre>
+<ul>
+<li>&#x7BC4;&#x4F8B;&#x7A0B;&#x5F0F;: <code>/JavaEx_Part2/src/ch03/TestHashtable.java</code></li>
+</ul>
+<h1 id="7-enumeration-&#x7BC4;&#x4F8B;"><a id="s7" class="md-title" href="#top">7. Enumeration &#x7BC4;&#x4F8B;</a></h1>
+<ul>
+<li><p>JDK1.0 &#x7684; <code>Enumeration</code> &#x4ECB;&#x9762;<code>&#x985E;&#x4F3C;</code> JDK1.2 &#x7684;&#x8FED;&#x4EE3;&#x5668; <code>Iterator</code> &#x4ECB;&#x9762;</p>
+</li>
+<li><p>&#x4ECB;&#x9762;&#x65B9;&#x6CD5;</p>
+<ul>
+<li><p>public boolean hasMoreElements()</p>
+</li>
+<li><p>public Object nextElement()</p>
+</li>
+</ul>
+</li>
+<li><p>&#x7269;&#x4EF6;&#x5BE6;&#x4F5C;&#x6B64;&#x4ECB;&#x9762;&#x76EE;&#x7684;&#x662F;&#x7522;&#x751F;&#x4E00;&#x5E8F;&#x5217;&#x7684;&#x5143;&#x7D20;,&#x900F;&#x904E;&#x547C;&#x53EB; nextElement() &#x65B9;&#x6CD5;&#x4F86;&#x53D6;&#x5F97;&#x4E00;&#x500B;&#x4E00;&#x500B;&#x63A5;&#x7E8C;&#x7684;&#x5143;&#x7D20;</p>
+</li>
+<li><p>nextElement() &#x6240;&#x56DE;&#x50B3;&#x7684;&#x8CC7;&#x6599;&#x662F; Object &#x7684;&#x578B;&#x614B;,&#x4F7F;&#x7528;&#x8005;&#x9700;&#x8981;&#x505A; Casting</p>
+</li>
+<li><p>Hashtable &#x8207; Vector &#x90FD;&#x6709;&#x63D0;&#x4F9B;&#x65B9;&#x6CD5;&#x5C07;&#x5176;&#x8CC7;&#x6599;&#x7F6E;&#x65BC; Enumeration &#x7269;&#x4EF6;&#x4E2D;,&#x4E26;&#x900F;&#x904E; Enumeration &#x7269;&#x4EF6;&#x4F86;&#x5B58;&#x53D6;&#x6240;&#x6709;&#x7684;&#x8CC7;&#x6599;</p>
+</li>
+</ul>
+<h1 id="8-enumeration-&#x4ECB;&#x9762;"><a id="s8" class="md-title" href="#top">8. Enumeration &#x4ECB;&#x9762;</a></h1>
+<ul>
+<li><code>System</code> &#x53EF;&#x6709;&#x6A19;&#x6E96;&#x8F38;&#x5165;/&#x8F38;&#x51FA;</li>
+<li><code>System.getProperties()</code> &#x53EF;&#x7372;&#x5F97;&#x7CFB;&#x7D71;&#x7576;&#x524D;&#x5C6C;&#x6027;</li>
+</ul>
+<pre><code class="lang-java"><span class="hljs-keyword">package</span> ch03;
+
+<span class="hljs-keyword">import</span> java.util.Enumeration;
+<span class="hljs-keyword">import</span> java.util.Properties;
+
+<span class="hljs-comment">// Property(&#x5C6C;&#x6027;)</span>
+<span class="hljs-comment">// TestProperties &#x7372;&#x5F97;&#x7CFB;&#x7D71;&#x5C6C;&#x6027;</span>
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">TestProperties</span> </span>{
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String args[])</span> </span>{
+    Properties props = System.getProperties();
+    Enumeration names = props.propertyNames();
+    <span class="hljs-keyword">while</span> (names.hasMoreElements()) {
+      String name = (String) names.nextElement();
+      String val = props.getProperty(name);
+      System.out.println(<span class="hljs-string">&quot;property of &quot;</span> + name + <span class="hljs-string">&quot; = &quot;</span> + val);
+    }
+  }
+}
+</code></pre>
+<h1 id="9-&#x5FC5;&#x9808;&#x719F;&#x7DF4;&#x4F7F;&#x7528;"><a id="s9" class="md-title" href="#top">9. &#x5FC5;&#x9808;&#x719F;&#x7DF4;&#x4F7F;&#x7528;</a></h1>
+<ul>
+<li>hashMap</li>
+<li>hashSet</li>
+<li><p>ArrayList</p>
+</li>
+<li><p>&#x96C6;&#x5408;&#x6BD4;&#x9663;&#x5217;&#x4F7F;&#x7528;&#x66F4;&#x983B;&#x7E41;</p>
+</li>
+</ul>
 <hr>
-<pre><code class="lang-cs"><span class="hljs-number">3</span>&#x6B72;
-<span class="hljs-number">8.0</span>&#x516C;&#x65A4;
-Animal
-
-<span class="hljs-number">8</span>&#x6B72;
-<span class="hljs-number">1200.0</span>&#x516C;&#x65A4;
-Elephone
-</code></pre>
-</li>
-<li><p>&#x65B9;&#x6CD5; 2</p>
-<pre><code class="lang-java"><span class="hljs-keyword">package</span> xxx;
-
-<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Animal</span> </span>{
-  <span class="hljs-keyword">private</span> <span class="hljs-keyword">int</span> age;
-  <span class="hljs-keyword">private</span> <span class="hljs-keyword">float</span> weight;
-
-  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Animal</span><span class="hljs-params">()</span></span>{
-
-  }
-
-  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Animal</span><span class="hljs-params">(<span class="hljs-keyword">int</span> age, <span class="hljs-keyword">float</span> weight)</span> </span>{
-    <span class="hljs-keyword">this</span>.age = age;
-    <span class="hljs-keyword">this</span>.weight = weight;
-  }
-
-  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">speak</span><span class="hljs-params">()</span> </span>{
-    System.out.println(<span class="hljs-string">&quot;Age is = &quot;</span> + age);
-    System.out.println(<span class="hljs-string">&quot;Weight is = &quot;</span> + weight);
-  }
-
-  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">getAge</span><span class="hljs-params">()</span> </span>{
-    <span class="hljs-keyword">return</span> age;
-  }
-
-  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setAge</span><span class="hljs-params">(<span class="hljs-keyword">int</span> age)</span> </span>{
-    <span class="hljs-keyword">this</span>.age = age;
-  }
-
-  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">float</span> <span class="hljs-title">getWeight</span><span class="hljs-params">()</span> </span>{
-    <span class="hljs-keyword">return</span> weight;
-  }
-
-  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setWeight</span><span class="hljs-params">(<span class="hljs-keyword">float</span> weight)</span> </span>{
-    <span class="hljs-keyword">this</span>.weight = weight;
-  }
-}
-</code></pre>
-<pre><code class="lang-java"><span class="hljs-keyword">package</span> xxx;
-
-<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Elephant</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Animal</span> </span>{
-  <span class="hljs-keyword">private</span> String name;
-  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Elephant</span><span class="hljs-params">()</span></span>{
-
-  }
-
-  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Elephant</span><span class="hljs-params">(<span class="hljs-keyword">int</span> age, <span class="hljs-keyword">float</span> weight, String name)</span> </span>{
-    <span class="hljs-keyword">super</span>(age, weight);
-    <span class="hljs-keyword">this</span>.name = name;
-  }
-
-  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">speak</span><span class="hljs-params">()</span> </span>{
-    System.out.println(name + <span class="hljs-string">&quot;&#xFF0C;&quot;</span> + <span class="hljs-keyword">super</span>.getAge() + <span class="hljs-string">&quot; &#x6B72;&#xFF0C;&quot;</span> + <span class="hljs-keyword">super</span>.getWeight() + <span class="hljs-string">&quot; &#x516C;&#x65A4;&quot;</span>);
-  }
-
-  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
-    Elephant Animal = <span class="hljs-keyword">new</span> Elephant(<span class="hljs-number">3</span>, <span class="hljs-number">8</span>, <span class="hljs-string">&quot;Animal&quot;</span>);
-    Elephant Elephone = <span class="hljs-keyword">new</span> Elephant(<span class="hljs-number">8</span>, <span class="hljs-number">1200</span>, <span class="hljs-string">&quot;Elephone&quot;</span>);
-    Animal.speak();
-    Elephone.speak();
-
-  }
-}
-</code></pre>
-</li>
-</ul>
-<h1 id="9-&#x8AB2;&#x5802;&#x7DF4;&#x7FD2;"><a id="s9" class="md-title" href="#top">9. &#x8AB2;&#x5802;&#x7DF4;&#x7FD2;</a></h1>
+<p>&#x53C3;&#x8003;&#x93C8;&#x63A5;:</p>
 <ul>
-<li><p><code>public &#x5EFA;&#x69CB;&#x5B50;(){}</code> &#x56E0;&#x70BA;&#x7A0B;&#x5F0F;&#x64B0;&#x5BEB;&#x6703;&#x518D;&#x7D50;&#x5408;&#x6846;&#x67B6;&#xFF0C;&#x4E5F;&#x70BA;&#x4E86;&#x8B93;&#x5F8C;&#x7E8C;&#x7E7C;&#x627F;&#x6642;&#x8981;&#x7528;&#xFF0C;&#x6240;&#x4EE5;&#x6703;&#x4FDD;&#x7559;&#x4E00;&#x500B;&#x7A7A;&#x7684;&#x5EFA;&#x69CB;&#x5B50;(&#x9810;&#x8A2D;&#x5EFA;&#x69CB;&#x5B50;)</p>
-</li>
-<li><p>&#x505A;&#x5230;&#x6B64;&#x6B65;&#x9A5F;&#x6642; Elephant &#x6703;&#x6709;&#x8B66;&#x793A;</p>
-<pre><code class="lang-java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Elephant</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Animal</span> </span>{
-
-}
-</code></pre>
-</li>
-<li><p>&#x539F;&#x56E0;&#x662F;&#x56E0;&#x70BA;&#x7E7C;&#x627F;&#x6642;&#x6703;&#x6709;&#x96B1;&#x5F62;&#x7684; super() &#x7236;&#x985E;&#x5225;&#x529F;&#x80FD;</p>
-<pre><code class="lang-java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Elephant</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Animal</span> </span>{
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Elephant</span><span class="hljs-params">()</span></span>{
-      <span class="hljs-keyword">super</span>(); <span class="hljs-comment">// &#x4F7F;&#x7528;&#x7236;&#x985E;&#x5225;&#x7684;&#x5EFA;&#x69CB;&#x5B50;</span>
-    }
-}
-</code></pre>
-</li>
-<li><p>&#x4F46;&#x53C8;&#x56E0;&#x70BA; Animal &#x985E;&#x5225;&#x4E2D;&#x7B26;&#x5408;&#x4E0D;&#x9700;&#x50B3;&#x5165;&#x53C3;&#x6578;&#x7684;&#x5EFA;&#x69CB;&#x5B50;&#xFF0C;&#x6240;&#x4EE5;&#x627E;&#x4E0D;&#x5230;&#x800C;&#x51FA;&#x932F;</p>
-<pre><code class="lang-java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Animal</span> </span>{
-  <span class="hljs-keyword">private</span> <span class="hljs-keyword">int</span> age;
-  <span class="hljs-keyword">private</span> <span class="hljs-keyword">float</span> weight;
-
-  <span class="hljs-comment">// &#x7236;&#x985E;&#x5225;&#x5EFA;&#x69CB;&#x5B50;&#xFF0C;&#x6C92;&#x6709;&#x7A7A;&#x7684;&#x5EFA;&#x69CB;&#x5B50;</span>
-  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Animal</span><span class="hljs-params">(<span class="hljs-keyword">int</span> age, <span class="hljs-keyword">float</span> weight)</span> </span>{
-    <span class="hljs-keyword">this</span>.age = age;
-    <span class="hljs-keyword">this</span>.weight = weight;
-  }
-
-  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">speak</span><span class="hljs-params">()</span> </span>{
-    System.out.println(<span class="hljs-string">&quot;Age is = &quot;</span> + age);
-    System.out.println(<span class="hljs-string">&quot;Weight is = &quot;</span> + weight);
-  }
-
-  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">getAge</span><span class="hljs-params">()</span> </span>{
-    <span class="hljs-keyword">return</span> age;
-  }
-
-  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setAge</span><span class="hljs-params">(<span class="hljs-keyword">int</span> age)</span> </span>{
-    <span class="hljs-keyword">this</span>.age = age;
-  }
-
-  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">float</span> <span class="hljs-title">getWeight</span><span class="hljs-params">()</span> </span>{
-    <span class="hljs-keyword">return</span> weight;
-  }
-
-  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setWeight</span><span class="hljs-params">(<span class="hljs-keyword">float</span> weight)</span> </span>{
-    <span class="hljs-keyword">this</span>.weight = weight;
-  }
-}
-</code></pre>
-</li>
-<li><p>&#x70BA;&#x4E86;&#x7B26;&#x5408;&#x76EE;&#x524D;&#x6709;&#x7684;&#x7236;&#x7D1A;&#x5EFA;&#x69CB;&#x5B50;&#x7684;&#x8CC7;&#x6599;&#xFF0C;&#x5C31;&#x8981;&#x5165;&#x53C3;&#xFF0C;&#x8B93; super &#x53EF;&#x6709;&#x503C;
-(&#x5230;&#x6B64;&#x6B65;&#x9A5F;&#x5C31;&#x5C07;&#x51FA;&#x73FE;&#x7684;&#x932F;&#x8AA4;&#x4FEE;&#x6539;&#x5B8C;&#x6210;&#x4E86;)</p>
-<pre><code class="lang-java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Elephant</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Animal</span> </span>{
-    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Elephant</span><span class="hljs-params">(<span class="hljs-keyword">int</span> age, <span class="hljs-keyword">float</span> weight)</span></span>{
-      <span class="hljs-keyword">super</span>(<span class="hljs-keyword">int</span> age, <span class="hljs-keyword">float</span> weight);
-    }
-}
-</code></pre>
-</li>
-</ul>
-<h1 id="10-&#x56E0;&#x70BA;-super&#x7522;&#x751F;&#x7684;&#x932F;&#x8AA4;"><a id="s10" class="md-title" href="#top">10. &#x56E0;&#x70BA; super()&#x7522;&#x751F;&#x7684;&#x932F;&#x8AA4;</a></h1>
-<ul>
-<li><p>&#x53EF;&#x4EE5;&#x5354;&#x52A9;&#x63D0;&#x9192;&#x662F;&#x5426;&#x683C;&#x5F0F;&#x932F;&#x8AA4;</p>
-<pre><code class="lang-java"><span class="hljs-meta">@Override</span> <span class="hljs-comment">// JDK5&#x6642;&#x52A0;&#x5165;&#x7684;&#x529F;&#x80FD;(Annotation &#x6A19;&#x8A3B;)</span>
-<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">speak</span><span class="hljs-params">()</span> </span>{
-  <span class="hljs-comment">// TODO Auto-generated method stub</span>
-  <span class="hljs-keyword">super</span>.speak();
-}
-</code></pre>
-</li>
-<li><p>&#x6709;&#x9019;&#x7A2E;&#x7DA0;&#x8272;&#x9375;&#x982D;&#x8868;&#x793A;&#x683C;&#x5F0F;&#x6B63;&#x78BA;</p>
-<div style="text-align:center">
-  <img src="image/10-1_04.png">
-</div>
-</li>
+<li><a href="https://www.cnblogs.com/gaopeng527/p/4899237.html" target="_blank">java &#x5B57;&#x7B26;&#x4E32;&#x5206;&#x89E3; StringTokenizer &#x7528;&#x6CD5;&#xFF08;&#x6BD4; split()&#x65B9;&#x6CD5;&#x6548;&#x7387;&#x9AD8;&#xFF09;</a></li>
+<li><a href="https://blog.csdn.net/BrotherDong90/article/details/49073941" target="_blank">java &#x4E2D; System.getProperty &#x7684;&#x7528;&#x6CD5;&#x3002;</a></li>
+<li><a href="https://www.cnblogs.com/gongchenglion/p/properties.html" target="_blank">Java &#x5173;&#x4E8E; Properties &#x7528;&#x6CD5;&#x7684;&#x603B;&#x7ED3;(&#x4E00;)</a></li>
 </ul>
 
                                 
@@ -4749,8 +4637,12 @@ Elephone
 
             
                 
+                <a href="16-1.集合與陣列.html" class="navigation navigation-prev " aria-label="Previous page: 16-1.集合與陣列">
+                    <i class="fa fa-angle-left"></i>
+                </a>
                 
-                <a href="10-2.多型.html" class="navigation navigation-next navigation-unique" aria-label="Next page: 10-2.多型">
+                
+                <a href="16-3.泛型.html" class="navigation navigation-next " aria-label="Next page: 16-3.泛型">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -4761,7 +4653,7 @@ Elephone
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"10-1.繼承基本概念","level":"1.12.2.1","depth":3,"next":{"title":"10-2.多型","level":"1.12.2.2","depth":3,"path":"3.JAVA程式設計/10.繼承與多型/10-2.多型.md","ref":"3.JAVA程式設計/10.繼承與多型/10-2.多型.md","articles":[]},"previous":{"title":"10.繼承與多型","level":"1.12.2","depth":2,"ref":"","articles":[{"title":"10-1.繼承基本概念","level":"1.12.2.1","depth":3,"path":"3.JAVA程式設計/10.繼承與多型/10-1.繼承基本概念.md","ref":"3.JAVA程式設計/10.繼承與多型/10-1.繼承基本概念.md","articles":[]},{"title":"10-2.多型","level":"1.12.2.2","depth":3,"path":"3.JAVA程式設計/10.繼承與多型/10-2.多型.md","ref":"3.JAVA程式設計/10.繼承與多型/10-2.多型.md","articles":[]},{"title":"10-3.方法到與建構子的差異","level":"1.12.2.3","depth":3,"path":"3.JAVA程式設計/10.繼承與多型/10-3.方法到與建構子的差異.md","ref":"3.JAVA程式設計/10.繼承與多型/10-3.方法到與建構子的差異.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"3.JAVA程式設計/10.繼承與多型/10-1.繼承基本概念.md","mtime":"2020-04-30T16:35:45.654Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-05-11T17:01:00.714Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"16-2.Map 介面","level":"1.12.8.2","depth":3,"next":{"title":"16-3.泛型","level":"1.12.8.3","depth":3,"path":"3.JAVA程式設計/16.集合與泛型/16-3.泛型.md","ref":"3.JAVA程式設計/16.集合與泛型/16-3.泛型.md","articles":[]},"previous":{"title":"16-1.集合與陣列","level":"1.12.8.1","depth":3,"path":"3.JAVA程式設計/16.集合與泛型/16-1.集合與陣列.md","ref":"3.JAVA程式設計/16.集合與泛型/16-1.集合與陣列.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"3.JAVA程式設計/16.集合與泛型/16-2.Map介面.md","mtime":"2020-05-11T15:52:00.151Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-05-11T17:01:00.714Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
