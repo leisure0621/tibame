@@ -17,17 +17,32 @@ h1#top + ul li {
   list-style-type: none;
 }
 /* 滾軸 */
-.md-scroll::-webkit-scrollbar-track,
+.book
+  .book-body
+  .page-wrapper
+  .page-inner
+  section.normal
+  pre::-webkit-scrollbar,
 .book.with-summary .book-summary::-webkit-scrollbar {
   width: 5px;
   background-color: transparent;
 }
-.md-scroll::-webkit-scrollbar-track,
+.book
+  .book-body
+  .page-wrapper
+  .page-inner
+  section.normal
+  pre::-webkit-scrollbar-thumb,
 .book.with-summary .book-summary::-webkit-scrollbar-thumb {
   border-radius: 10px;
   background-color: #ececec;
 }
-.md-scroll::-webkit-scrollbar-track,
+.book
+  .book-body
+  .page-wrapper
+  .page-inner
+  section.normal
+  pre::-webkit-scrollbar-track,
 .book.with-summary .book-summary::-webkit-scrollbar-track {
   border-radius: 10px;
   background-color: transparent;
