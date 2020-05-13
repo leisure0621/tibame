@@ -208,6 +208,7 @@ h1#top + ul li {
   .hljs-cdata {
   color: #42b983;
 }
+.book-summary ul.summary li span,
 #book-search-results .search-results .has-results .search-results-item a {
   color: #42b983;
 }
