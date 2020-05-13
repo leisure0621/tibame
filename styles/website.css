@@ -265,3 +265,7 @@ h1#top + ul li {
 .book .book-body .page-wrapper .page-inner section.normal code .hljs-constant {
   color: #525252;
 }
+/* 功能性 */
+pre {
+  max-height: 25%;
+}

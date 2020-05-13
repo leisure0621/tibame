@@ -2393,7 +2393,12 @@ margin-left: 10px;
 </li>
 <li><p>&#x6B7B;&#x4EA1;&#x72C0;&#x614B;(Dead)</p>
 <ul>
-<li>run()&#x65B9;&#x6CD5;&#x57F7;&#x884C;&#x5B8C;&#x7562;&#x6642;,&#x6216; stop()&#x65B9;&#x6CD5;&#x88AB;&#x547C;&#x53EB;&#x6642; (<code>&#x8A3B;: stop()&#x4E0D;&#x518D;&#x4F7F;&#x7528;&#xFF0C;&#x5B98;&#x65B9;&#x4E5F;&#x4E0D;&#x5EFA;&#x8B70;&#x7528;</code>)</li>
+<li><p>run()&#x65B9;&#x6CD5;&#x57F7;&#x884C;&#x5B8C;&#x7562;&#x6642;,&#x6216; stop()&#x65B9;&#x6CD5;&#x88AB;&#x547C;&#x53EB;&#x6642; (<code>&#x8A3B;: stop()&#x4E0D;&#x518D;&#x4F7F;&#x7528;&#xFF0C;&#x5B98;&#x65B9;&#x4E5F;&#x4E0D;&#x5EFA;&#x8B70;&#x7528;</code>)</p>
+<ul>
+<li>&#x9019;&#x7A2E;&#x65B9;&#x6CD5;&#x88AB;&#x7A31;&#x70BA;&#x88AB;&#x5217;&#x70BA; <code>Deprecated (&#x6DD8;&#x6C70;)</code> &#x7684;&#x65B9;&#x6CD5;</li>
+<li>&#x958B;&#x767C;&#x5DE5;&#x5177;&#x6703;&#x986F;&#x793A; <del><code>stop()</code></del></li>
+</ul>
+</li>
 </ul>
 </li>
 <li><p>&#x7B49;&#x5F85;&#x72C0;&#x614B;(Waiting)(<code>&#x7528;&#x5728;&#x57F7;&#x884C;&#x7E8C;&#x4E4B;&#x9593;&#x7684;&#x6E9D;&#x901A;&#x8A2D;&#x8A08;</code>)</p>
@@ -3172,6 +3177,253 @@ margin-left: 10px;
 <li><p>&#x53EF;&#x4EE5;&#x4E0D;&#x7528;&#x7684;&#x5730;&#x65B9;&#xFF0C;<code>&#x8A2A;&#x5BA2;&#x4EBA;&#x6578;</code>; &#x9700;&#x8981;&#x7528;&#x7684;&#x5730;&#x65B9;&#xFF0C;<code>&#x9322;</code></p>
 </li>
 </ul>
+<h1 id="&#x57F7;&#x884C;&#x7DD2;&#x9593;&#x901A;&#x8A0A;">&#x57F7;&#x884C;&#x7DD2;&#x9593;&#x901A;&#x8A0A;</h1>
+<ul>
+<li><p>&#x57F7;&#x884C;&#x7DD2;&#x9593;&#x7684;&#x901A;&#x8A0A;(interthread communication)</p>
+<ul>
+<li><p>&#x76EE;&#x7684;: &#x8B93;&#x57F7;&#x884C;&#x7DD2;&#x4E4B;&#x9593;&#x53EF;&#x4E92;&#x76F8;&#x4EA4;&#x8AC7;,&#x5F7C;&#x6B64;&#x7B49;&#x5F85;</p>
+</li>
+<li><p>&#x65B9;&#x5F0F;:</p>
+<ol>
+<li>&#x53EF;&#x900F;&#x904E;&#x5171;&#x540C;&#x4F7F;&#x7528;&#x7684;&#x8CC7;&#x6599;&#x4EA4;&#x8AC7;</li>
+<li>&#x6216;&#x4F7F;&#x7528;&#x57F7;&#x884C;&#x7DD2;&#x63A7;&#x5236;&#x7684;&#x65B9;&#x6CD5;(method),&#x5982; join()</li>
+<li>&#x6216;&#x65BC; <code>synchronized &#x7684;&#x65B9;&#x6CD5;&#x5167;&#x4F7F;&#x7528;</code> wait(), notify(), notifyAll()&#x7B49;&#x66F4;&#x7D30;&#x5FAE;&#x6E9D;&#x901A;&#x6A5F;&#x5236;,&#x5F7C;&#x6B64;&#x7B49;&#x5F85;,&#x4EE5;&#x907F;&#x514D;&#x300C;&#x751F;&#x7522;&#x904E;&#x5269;&#x3001;&#x4E0D;&#x8DB3;&#x300D;&#x6216;&#x662F;&#x300C;&#x6D88;&#x8CBB;&#x904E;&#x5269;&#x3001;&#x4E0D;&#x8DB3;&#x300D;&#x7684;&#x554F;&#x984C;,&#x4E26;&#x4F7F; CPU &#x4F7F;&#x7528;&#x66F4;&#x6709;&#x6548;&#x7387;</li>
+</ol>
+</li>
+<li><p>wait(), notify(), notifyAll() &#x9019;&#x4E9B;&#x65B9;&#x6CD5;&#x5728; Object &#x985E;&#x5225;&#x88E1;&#x5BE6;&#x4F5C;&#x6210; <code>final</code> &#x7684;&#x65B9;&#x6CD5;,&#x6240;&#x6709; Java &#x985E;&#x5225;&#x90FD;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x9019;&#x4E9B;&#x65B9;&#x6CD5;</p>
+</li>
+<li><p><code>wait()</code>:&#x7576;&#x4E00;&#x57F7;&#x884C;&#x7DD2;&#x547C;&#x53EB; wait()&#x65B9;&#x6CD5;&#x6642;,&#x6703;&#x653E;&#x68C4; monitor,&#x5C07; lock &#x91CB;&#x653E;&#x51FA;&#x7D66;&#x53E6;&#x4E00;&#x500B;&#x6B63;&#x7B49;&#x5F85;&#x9032;&#x5165; monitor &#x7684;&#x57F7;&#x884C;&#x7DD2;,&#x4E26;&#x4E14;&#x9032;&#x5165;&#x7B49;&#x5F85;&#x57F7;&#x884C;&#x7DD2;&#x7FA4;(pool)&#x958B;&#x59CB;&#x7B49;&#x5F85;,&#x76F4;&#x5230;&#x7B49;&#x5F85;&#x6642;&#x9593;&#x7D42;&#x4E86;,&#x6216;&#x662F;&#x88AB;&#x53E6;&#x4E00;&#x500B;&#x9032;&#x5165;&#x76F8;&#x540C; monitor &#x7684;&#x57F7;&#x884C;&#x7DD2;&#x547C;&#x53EB; notify()&#x6216; notifyAll()&#x65B9;&#x6CD5;&#x6240;&#x53EB;&#x9192;,&#x800C;&#x518D;&#x9032;&#x5165; ready &#x72C0;&#x614B;</p>
+</li>
+<li><p><code>notify()</code>: <code>&#x96A8;&#x6A5F;</code>&#x53EB;&#x9192;&#x5728;&#x76F8;&#x540C;&#x7269;&#x4EF6;&#x4E0A;&#x67D0;&#x4E00;&#x500B;&#x6B63;&#x5728; waiting &#x7684;&#x57F7;&#x884C;&#x7DD2;</p>
+</li>
+<li><p><code>notifyAll()</code>: <code>&#x53EB;&#x9192;</code>&#x5728;&#x76F8;&#x540C;&#x7269;&#x4EF6;&#x4E0A;<code>&#x6240;&#x6709;</code>&#x6B63;&#x5728; waiting &#x7684;&#x57F7;&#x884C;&#x7DD2;,priority &#x6700;&#x9AD8;&#x8005;&#x5C07;&#x7B2C;&#x4E00;&#x500B;&#x57F7;&#x884C;</p>
+</li>
+</ul>
+</li>
+</ul>
+<pre><code class="lang-java">&#x7BC4;&#x4F8B;&#x7A0B;&#x5F0F;: <span class="hljs-string">&quot;/JavaEx_Part2/src/ch04/TestWaitNotify.java&quot;</span>
+</code></pre>
+<pre><code class="lang-java"><span class="hljs-keyword">package</span> ch04;
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Depot</span> </span>{
+  <span class="hljs-keyword">private</span> <span class="hljs-keyword">int</span> stock = <span class="hljs-number">0</span>; <span class="hljs-comment">// &#x5EAB;&#x5B58;&#x91CF;</span>
+
+  <span class="hljs-function"><span class="hljs-keyword">synchronized</span> <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">produce</span><span class="hljs-params">(<span class="hljs-keyword">int</span> qty)</span> </span>{
+    <span class="hljs-keyword">while</span> (stock &gt; <span class="hljs-number">20</span>) {
+      System.out.println(<span class="hljs-string">&quot;&#x5EAB;&#x5B58;&#x91CF;&#x8D85;&#x904E;20&#xFF0C;&#x66AB;&#x505C;&#x751F;&#x7522;&quot;</span>);
+      <span class="hljs-keyword">try</span> {
+        wait();
+      } <span class="hljs-keyword">catch</span> (InterruptedException e) {
+        e.printStackTrace();
+      }
+    }
+    stock += qty;
+    System.out.println(<span class="hljs-string">&quot;&#x7522;&#x91CF;&#xFF1A;&quot;</span> + qty + <span class="hljs-string">&quot;&#xFF1B;&#x5EAB;&#x5B58;&#x91CF;&#xFF1A;&quot;</span> + stock);
+    notify();
+  }
+
+  <span class="hljs-function"><span class="hljs-keyword">synchronized</span> <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">consume</span><span class="hljs-params">(<span class="hljs-keyword">int</span> qty)</span> </span>{
+    <span class="hljs-keyword">while</span> (stock &lt; qty) {
+      System.out.println(<span class="hljs-string">&quot;&#x5EAB;&#x5B58;&#x91CF;&#x4E0D;&#x8DB3;&#xFF0C;&#x66AB;&#x505C;&#x6D88;&#x8CBB;&quot;</span>);
+      <span class="hljs-keyword">try</span> {
+        wait();
+      } <span class="hljs-keyword">catch</span> (InterruptedException e) {
+        e.printStackTrace();
+      }
+    }
+    stock -= qty;
+    System.out.println(<span class="hljs-string">&quot;&#x6D88;&#x8CBB;&#x91CF;&#xFF1A;&quot;</span> + qty + <span class="hljs-string">&quot;&#xFF1B;&#x5EAB;&#x5B58;&#x91CF;&quot;</span> + stock);
+    <span class="hljs-keyword">if</span> (stock &lt; <span class="hljs-number">5</span>) {
+      System.out.println(<span class="hljs-string">&quot;&#x5EAB;&#x5B58;&#x91CF;&#x4F4E;&#xFF0C;&#x50AC;&#x4FC3;&#x751F;&#x7522;&quot;</span>);
+      notify();
+    }
+  }
+}
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Producer</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Thread</span> </span>{
+  Depot depot;
+
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Producer</span><span class="hljs-params">(Depot depot)</span> </span>{
+    <span class="hljs-keyword">this</span>.depot = depot;
+  }
+
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">run</span><span class="hljs-params">()</span> </span>{
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">1</span>; i &lt;= <span class="hljs-number">10</span>; i++)
+      depot.produce(<span class="hljs-number">4</span>); <span class="hljs-comment">// &#x6BCF;&#x6B21;&#x751F;&#x7522;4&#x500B;</span>
+  }
+}
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Consumer</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Thread</span> </span>{
+  Depot depot;
+
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Consumer</span><span class="hljs-params">(Depot depot)</span> </span>{
+    <span class="hljs-keyword">this</span>.depot = depot;
+  }
+
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">run</span><span class="hljs-params">()</span> </span>{
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">1</span>; i &lt;= <span class="hljs-number">10</span>; i++)
+      depot.consume(<span class="hljs-number">3</span>); <span class="hljs-comment">// &#x6BCF;&#x6B21;&#x6D88;&#x8CBB;3&#x500B;</span>
+  }
+}
+
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">TestWaitNotify</span> </span>{
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
+    Depot depot = <span class="hljs-keyword">new</span> Depot();
+    Producer producer = <span class="hljs-keyword">new</span> Producer(depot);
+    Consumer consumer = <span class="hljs-keyword">new</span> Consumer(depot);
+    producer.start();
+    consumer.start();
+  }
+}
+</code></pre>
+<h1 id="&#x6B7B;&#x7D50;-deadlock">&#x6B7B;&#x7D50; (DeadLock)</h1>
+<ul>
+<li><p>&#x6B7B;&#x7D50;(DeadLock)</p>
+<ul>
+<li>&#x539F;&#x56E0;:&#x591A;&#x57F7;&#x884C;&#x7DD2;&#x7684;&#x540C;&#x6B65;&#x5316;&#x9396;&#x5B9A;(synchronized)&#x53EF;&#x80FD;&#x9020;&#x6210;&#x57F7;&#x884C;&#x7DD2;&#x9593;&#x76F8;&#x4E92;&#x7B49;&#x5F85;&#x7684;&#x6B7B;&#x7D50;&#x3002;&#x800C; Java &#x7121;&#x6CD5;&#x5075;&#x6E2C;&#x6216;&#x9810;&#x9632;&#x6B7B;&#x7D50;&#x7684;&#x767C;&#x751F;,&#x9808;&#x7531;&#x7A0B;&#x5F0F;&#x8A2D;&#x8A08;&#x5E2B;&#x81EA;&#x884C;&#x63A7;&#x5236;&#x8207;&#x638C;&#x63E1;</li>
+</ul>
+</li>
+<li><p><a href="http://zh.wikipedia.org/wiki/%E5%93%B2%E5%AD%A6%E5%AE%B6%E5%B0%B1%E9%A4%90%E9%97%AE%E9%A2%98" target="_blank">&#x54F2;&#x5B78;&#x5BB6;&#x7528;&#x9910;&#x554F;&#x984C;</a></p>
+</li>
+<li><p>&#x907F;&#x514D;&#x6B7B;&#x7D50;: &#x6700;&#x597D;&#x65B9;&#x6CD5;&#x662F;&#x9810;&#x9632;&#x800C;&#x975E;&#x5075;&#x6E2C;&#x5B83;</p>
+</li>
+<li><p>&#x9810;&#x9632;&#x6B7B;&#x7D50;: &#x6700;&#x7C21;&#x55AE;&#x65B9;&#x5F0F;&#x662F;&#x5C07;&#x4E00;&#x7FA4;&#x7269;&#x4EF6;&#x7684;&#x9396;&#x5B9A;&#x52D5;&#x4F5C;,&#x4F9D;&#x64DA;&#x76F8;&#x540C;&#x7684;&#x9806;&#x5E8F;&#x70BA;&#x4E4B;</p>
+</li>
+</ul>
+<pre><code class="lang-cs">&#x7BC4;&#x4F8B;&#x7A0B;&#x5F0F;: <span class="hljs-string">&quot;/JavaEx_Part2/src/ch04/DeadLock.java&quot;</span>
+</code></pre>
+<pre><code class="lang-java"><span class="hljs-keyword">package</span> ch04;
+
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">DeadLock</span> </span>{
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String args[])</span> </span>{
+    T1 t1 = <span class="hljs-keyword">new</span> T1(<span class="hljs-number">3</span>, <span class="hljs-string">&quot;T1&quot;</span>); <span class="hljs-comment">// 3 secs</span>
+    T2 t2 = <span class="hljs-keyword">new</span> T2(<span class="hljs-number">0</span>, <span class="hljs-string">&quot;T2&quot;</span>); <span class="hljs-comment">// 0 secs</span>
+
+    t1.start();
+    t2.start();
+    <span class="hljs-keyword">try</span> {
+      <span class="hljs-comment">// &#x7761;&#x4E86;&#x4E00;&#x79D2;</span>
+      Thread.sleep(<span class="hljs-number">1000</span>); <span class="hljs-comment">// 1 secs</span>
+    } <span class="hljs-keyword">catch</span> (Exception e) {
+    }
+    t1.stop(); <span class="hljs-comment">// Deprecated (&#x6DD8;&#x6C70;)</span>
+  }
+}
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">T1</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Thread</span> </span>{
+  <span class="hljs-keyword">private</span> <span class="hljs-keyword">int</span> sleepTime = <span class="hljs-number">0</span>;
+  <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">boolean</span> finished = <span class="hljs-keyword">false</span>;
+
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">T1</span><span class="hljs-params">(<span class="hljs-keyword">int</span> second, String name)</span> </span>{
+    <span class="hljs-keyword">super</span>(name);
+    sleepTime = second;
+  }
+
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">run</span><span class="hljs-params">()</span> </span>{
+    System.out.println(<span class="hljs-string">&quot;T1 running...&quot;</span>);
+    <span class="hljs-keyword">try</span> {
+      <span class="hljs-comment">// &#x7761;&#x4E09;&#x79D2;&#x5728;&#x8D77;&#x4F86;</span>
+      Thread.sleep(sleepTime * <span class="hljs-number">1000</span>); <span class="hljs-comment">// 3 secs</span>
+    } <span class="hljs-keyword">catch</span> (Exception e) {
+    }
+    System.out.println(<span class="hljs-string">&quot;T1 finished.&quot;</span>);
+    T1.finished = <span class="hljs-keyword">true</span>;
+  }
+}
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">T2</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Thread</span> </span>{
+  <span class="hljs-keyword">private</span> <span class="hljs-keyword">int</span> sleepTime = <span class="hljs-number">0</span>;
+
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">T2</span><span class="hljs-params">(<span class="hljs-keyword">int</span> second, String name)</span> </span>{
+    <span class="hljs-keyword">super</span>(name);
+    sleepTime = second;
+  }
+
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">run</span><span class="hljs-params">()</span> </span>{
+    <span class="hljs-keyword">while</span> (!T1.finished) {
+      yield();
+    }
+    System.out.println(<span class="hljs-string">&quot;T2 running...&quot;</span>);
+    System.out.println(<span class="hljs-string">&quot;T2 finished.&quot;</span>);
+  }
+}
+</code></pre>
+<pre><code class="lang-cs">&#x7BC4;&#x4F8B;&#x7A0B;&#x5F0F;: <span class="hljs-string">&quot;/JavaEx_Part2/src/ch04/NoDeadLock.java&quot;</span>
+</code></pre>
+<pre><code class="lang-java"><span class="hljs-keyword">package</span> ch04;
+
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">NoDeadLock</span> </span>{
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String args[])</span> </span>{
+    T1_1 t1 = <span class="hljs-keyword">new</span> T1_1(<span class="hljs-number">3</span>, <span class="hljs-string">&quot;T1_1&quot;</span>); <span class="hljs-comment">// 3 secs</span>
+    T2_1 t2 = <span class="hljs-keyword">new</span> T2_1(<span class="hljs-number">0</span>, <span class="hljs-string">&quot;T2_1&quot;</span>); <span class="hljs-comment">// 0 secs</span>
+
+    t1.start();
+    t2.start();
+    <span class="hljs-keyword">try</span> {
+      Thread.sleep(<span class="hljs-number">5000</span>); <span class="hljs-comment">// &#x539F;1 sec &#x6BD4; 3 secs &#x5C0F; , &#x4F7F;&#x5F97;t1&#x4ECD;&#x5728;sleep&#x6642;&#x88AB; stop</span>
+    } <span class="hljs-keyword">catch</span> (Exception e) {
+    }                       <span class="hljs-comment">// &#x56E0;&#x6B64;&#x7121;&#x6CD5;&#x57F7;&#x884C;T1_1.finished = true;</span>
+    t1.stop();              <span class="hljs-comment">// &#x9020;&#x6210;t2&#x4E4B;&#x8FF4;&#x5708; while(!T1_1.finished){yield();} &#x70BA;&#x771F;,&#x7121;&#x6CD5;&#x96E2;&#x958B;</span>
+  }
+}
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">T1_1</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Thread</span> </span>{
+  <span class="hljs-keyword">private</span> <span class="hljs-keyword">int</span> sleepTime = <span class="hljs-number">0</span>;
+  <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">boolean</span> finished = <span class="hljs-keyword">false</span>;
+
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">T1_1</span><span class="hljs-params">(<span class="hljs-keyword">int</span> second, String name)</span> </span>{
+    <span class="hljs-keyword">super</span>(name);
+    sleepTime = second;
+  }
+
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">run</span><span class="hljs-params">()</span> </span>{
+    System.out.println(<span class="hljs-string">&quot;T1_1 running...&quot;</span>);
+    <span class="hljs-keyword">try</span> {
+      Thread.sleep(sleepTime * <span class="hljs-number">1000</span>); <span class="hljs-comment">// 3 secs</span>
+    } <span class="hljs-keyword">catch</span> (Exception e) {
+    }
+    System.out.println(<span class="hljs-string">&quot;T1_1 finished.&quot;</span>);
+    T1_1.finished = <span class="hljs-keyword">true</span>;
+  }
+}
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">T2_1</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Thread</span> </span>{
+  <span class="hljs-keyword">private</span> <span class="hljs-keyword">int</span> sleepTime = <span class="hljs-number">0</span>;
+
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">T2_1</span><span class="hljs-params">(<span class="hljs-keyword">int</span> second, String name)</span> </span>{
+    <span class="hljs-keyword">super</span>(name);
+    sleepTime = second;
+  }
+
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">run</span><span class="hljs-params">()</span> </span>{
+    <span class="hljs-keyword">while</span> (!T1_1.finished) {
+      yield();
+    }
+    System.out.println(<span class="hljs-string">&quot;T2_1 running...&quot;</span>);
+    System.out.println(<span class="hljs-string">&quot;T2_1 finished.&quot;</span>);
+  }
+}
+</code></pre>
+<h1 id="daemon-&#x57F7;&#x884C;&#x7DD2;">Daemon &#x57F7;&#x884C;&#x7DD2;</h1>
+<ul>
+<li><p>Daemon &#x57F7;&#x884C;&#x7DD2;</p>
+<ul>
+<li>Daemon &#x57F7;&#x884C;&#x7DD2;&#x7684;&#x5DE5;&#x4F5C;&#x662F;&#x7B49;&#x5F85;&#x5225;&#x4EBA;&#x8981;&#x6C42;&#x670D;&#x52D9;,&#x5176; run &#x65B9;&#x6CD5;&#x901A;&#x5E38;&#x662F;&#x4E00;&#x500B;<code>&#x7121;&#x7AAE;&#x8FF4;&#x5708;</code></li>
+<li>&#x7576;&#x5176;&#x5B83;&#x6240;&#x6709;&#x57F7;&#x884C;&#x7DD2;&#x90FD;&#x7D50;&#x675F;&#x57F7;&#x884C;,&#x53EA;&#x5269; Daemon &#x57F7;&#x884C;&#x7DD2;&#x6642;,JVM &#x4FBF;&#x6703;&#x7D50;&#x675F; Daemon &#x57F7;&#x884C;&#x7DD2;&#x7684;&#x57F7;&#x884C;</li>
+<li>Daemon &#x57F7;&#x884C;&#x7DD2;&#x901A;&#x5E38;&#x70BA;&#x7CFB;&#x7D71;&#x7A0B;&#x5F0F;,&#x800C;&#x975E; Daemon &#x57F7;&#x884C;&#x7DD2;&#x901A;&#x5E38;&#x70BA;&#x61C9;&#x7528;&#x7A0B;&#x5F0F;,&#x5EFA;&#x8B70;&#x524D;&#x8005;&#x7684;&#x512A;&#x5148;&#x6B0A;&#x61C9;&#x6BD4;&#x5F8C;&#x8005;&#x70BA;&#x4F4E;</li>
+<li>Java &#x7684; Garbage collector &#x5373;&#x662F;&#x4E00;&#x7A2E; Daemon &#x57F7;&#x884C;&#x7DD2;</li>
+</ul>
+</li>
+<li><p>&#x55AE;&#x6838;&#x591A;&#x7E8C;/&#x591A;&#x6838;&#x591A;&#x7E8C;</p>
+</li>
+</ul>
+<h1 id="&#x57F7;&#x884C;&#x7E8C;&#x7559;&#x610F;&#x7E3D;&#x7D50;">&#x57F7;&#x884C;&#x7E8C;&#x7559;&#x610F;&#x7E3D;&#x7D50;</h1>
+<ul>
+<li>thread</li>
+<li>runnable</li>
+<li>&#x57F7;&#x884C;&#x7E8C;&#x7279;&#x6027;</li>
+<li>&#x5269;&#x4E0B;&#x5169;&#x500B;&#x5C0F;&#x7BC0;&#x6C92;&#x6709;&#x8981;&#x7E7C;&#x7E8C;&#x8AAA;&#x4E86;&#xFF0C;&#x4E3B;&#x8981;&#x662F;&#x624B;&#x6A5F;&#x6703;&#x51FA;&#x73FE;&#x7684;&#x554F;&#x984C;</li>
+</ul>
 
                                 
                                 </section>
@@ -3207,7 +3459,7 @@ margin-left: 10px;
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"17-1.執行緒","level":"1.4.16.1","depth":3,"next":{"title":"4.Oracle","level":"1.5","depth":1,"ref":"","articles":[{"title":"0.Oracle 淺談","level":"1.5.1","depth":2,"ref":"","articles":[{"title":"0-1.淺入 Oracle","level":"1.5.1.1","depth":3,"path":"4.Oracle/0.Oracle淺談/0-1.淺入Oracle.md","ref":"4.Oracle/0.Oracle淺談/0-1.淺入Oracle.md","articles":[]}]},{"title":"1.Oracle 安裝","level":"1.5.2","depth":2,"ref":"","articles":[{"title":"1-1.Oracle 安裝與各種設定","level":"1.5.2.1","depth":3,"path":"4.Oracle/1.Oracle安裝/1-1.Oracle安裝與各種設定.md","ref":"4.Oracle/1.Oracle安裝/1-1.Oracle安裝與各種設定.md","articles":[]}]},{"title":"2.資料庫介紹","level":"1.5.3","depth":2,"ref":"","articles":[{"title":"2-1.資料庫介紹","level":"1.5.3.1","depth":3,"path":"4.Oracle/2.資料庫介紹/2-1.資料庫介紹.md","ref":"4.Oracle/2.資料庫介紹/2-1.資料庫介紹.md","articles":[]},{"title":"2-2.ACID 規則","level":"1.5.3.2","depth":3,"path":"4.Oracle/2.資料庫介紹/2-2.ACID規則.md","ref":"4.Oracle/2.資料庫介紹/2-2.ACID規則.md","articles":[]},{"title":"2-3.為什麼要採用關聯式資料庫","level":"1.5.3.3","depth":3,"path":"4.Oracle/2.資料庫介紹/2-3.為什麼要採用關聯式資料庫.md","ref":"4.Oracle/2.資料庫介紹/2-3.為什麼要採用關聯式資料庫.md","articles":[]},{"title":"2-7.主鍵與外來鍵","level":"1.5.3.4","depth":3,"path":"4.Oracle/2.資料庫介紹/2-7.主鍵與外來鍵.md","ref":"4.Oracle/2.資料庫介紹/2-7.主鍵與外來鍵.md","articles":[]},{"title":"2-10.資料庫正規化","level":"1.5.3.5","depth":3,"path":"4.Oracle/2.資料庫介紹/2-10.資料庫正規化.md","ref":"4.Oracle/2.資料庫介紹/2-10.資料庫正規化.md","articles":[]},{"title":"2-13.違反正規化","level":"1.5.3.6","depth":3,"path":"4.Oracle/2.資料庫介紹/2-13.違反正規化.md","ref":"4.Oracle/2.資料庫介紹/2-13.違反正規化.md","articles":[]}]},{"title":"3.建立資料庫","level":"1.5.4","depth":2,"ref":"","articles":[{"title":"3-0.視覺化建立表格","level":"1.5.4.1","depth":3,"path":"4.Oracle/3.建立資料庫/3-0.視覺化建立表格.md","ref":"4.Oracle/3.建立資料庫/3-0.視覺化建立表格.md","articles":[]},{"title":"3-1.建立表格","level":"1.5.4.2","depth":3,"path":"4.Oracle/3.建立資料庫/3-1.建立表格.md","ref":"4.Oracle/3.建立資料庫/3-1.建立表格.md","articles":[]},{"title":"3-2.建立表格練習","level":"1.5.4.3","depth":3,"path":"4.Oracle/3.建立資料庫/3-2.建立表格練習.md","ref":"4.Oracle/3.建立資料庫/3-2.建立表格練習.md","articles":[]},{"title":"3-3.SQL 種類","level":"1.5.4.4","depth":3,"path":"4.Oracle/3.建立資料庫/3-3.SQL種類.md","ref":"4.Oracle/3.建立資料庫/3-3.SQL種類.md","articles":[]},{"title":"3-10.Browser 設定","level":"1.5.4.5","depth":3,"path":"4.Oracle/3.建立資料庫/3-10.Browser設定.md","ref":"4.Oracle/3.建立資料庫/3-10.Browser設定.md","articles":[]},{"title":"3-11.常用指令","level":"1.5.4.6","depth":3,"path":"4.Oracle/3.建立資料庫/3-11.常用指令.md","ref":"4.Oracle/3.建立資料庫/3-11.常用指令.md","articles":[]},{"title":"3-12.新增修改刪除練習","level":"1.5.4.7","depth":3,"path":"4.Oracle/3.建立資料庫/3-12.新增修改刪除練習.md","ref":"4.Oracle/3.建立資料庫/3-12.新增修改刪除練習.md","articles":[]}]},{"title":"4.資料交易處理","level":"1.5.5","depth":2,"ref":"","articles":[{"title":"4-1.新增資料","level":"1.5.5.1","depth":3,"path":"4.Oracle/4.資料交易處理/4-1.新增資料.md","ref":"4.Oracle/4.資料交易處理/4-1.新增資料.md","articles":[]},{"title":"4-2.新增資料練習","level":"1.5.5.2","depth":3,"path":"4.Oracle/4.資料交易處理/4-2.新增資料練習.md","ref":"4.Oracle/4.資料交易處理/4-2.新增資料練習.md","articles":[]},{"title":"4-3.修改資料","level":"1.5.5.3","depth":3,"path":"4.Oracle/4.資料交易處理/4-3.修改資料.md","ref":"4.Oracle/4.資料交易處理/4-3.修改資料.md","articles":[]},{"title":"4-4.修改資料練習","level":"1.5.5.4","depth":3,"path":"4.Oracle/4.資料交易處理/4-4.修改資料練習.md","ref":"4.Oracle/4.資料交易處理/4-4.修改資料練習.md","articles":[]},{"title":"4-5.刪除資料","level":"1.5.5.5","depth":3,"path":"4.Oracle/4.資料交易處理/4-5.刪除資料.md","ref":"4.Oracle/4.資料交易處理/4-5.刪除資料.md","articles":[]},{"title":"4-6.指定回退資料的時間點","level":"1.5.5.6","depth":3,"path":"4.Oracle/4.資料交易處理/4-6.指定回退資料的時間點.md","ref":"4.Oracle/4.資料交易處理/4-6.指定回退資料的時間點.md","articles":[]},{"title":"4-7.回退資料練習","level":"1.5.5.7","depth":3,"path":"4.Oracle/4.資料交易處理/4-7.回退資料練習.md","ref":"4.Oracle/4.資料交易處理/4-7.回退資料練習.md","articles":[]},{"title":"4-8.匯入匯出資料","level":"1.5.5.8","depth":3,"path":"4.Oracle/4.資料交易處理/4-8.匯入匯出資料.md","ref":"4.Oracle/4.資料交易處理/4-8.匯入匯出資料.md","articles":[]}]},{"title":"5.資料查詢","level":"1.5.6","depth":2,"ref":"","articles":[{"title":"5-1.資料查詢的各種方法","level":"1.5.6.1","depth":3,"path":"4.Oracle/5.資料查詢/5-1.資料查詢的各種方法.md","ref":"4.Oracle/5.資料查詢/5-1.資料查詢的各種方法.md","articles":[]}]},{"title":"6.進階查詢","level":"1.5.7","depth":2,"ref":"","articles":[{"title":"6-1.進階查詢","level":"1.5.7.1","depth":3,"path":"4.Oracle/6.進階查詢/6-1.進階查詢.md","ref":"4.Oracle/6.進階查詢/6-1.進階查詢.md","articles":[]}]}]},"previous":{"title":"17.多執行緒","level":"1.4.16","depth":2,"ref":"","articles":[{"title":"17-1.執行緒","level":"1.4.16.1","depth":3,"path":"3.JAVA程式設計/17.多執行緒/17-1.執行緒.md","ref":"3.JAVA程式設計/17.多執行緒/17-1.執行緒.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"3.JAVA程式設計/17.多執行緒/17-1.執行緒.md","mtime":"2020-05-12T11:20:43.223Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-05-12T13:23:35.880Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"17-1.執行緒","level":"1.4.16.1","depth":3,"next":{"title":"4.Oracle","level":"1.5","depth":1,"ref":"","articles":[{"title":"0.Oracle 淺談","level":"1.5.1","depth":2,"ref":"","articles":[{"title":"0-1.淺入 Oracle","level":"1.5.1.1","depth":3,"path":"4.Oracle/0.Oracle淺談/0-1.淺入Oracle.md","ref":"4.Oracle/0.Oracle淺談/0-1.淺入Oracle.md","articles":[]}]},{"title":"1.Oracle 安裝","level":"1.5.2","depth":2,"ref":"","articles":[{"title":"1-1.Oracle 安裝與各種設定","level":"1.5.2.1","depth":3,"path":"4.Oracle/1.Oracle安裝/1-1.Oracle安裝與各種設定.md","ref":"4.Oracle/1.Oracle安裝/1-1.Oracle安裝與各種設定.md","articles":[]}]},{"title":"2.資料庫介紹","level":"1.5.3","depth":2,"ref":"","articles":[{"title":"2-1.資料庫介紹","level":"1.5.3.1","depth":3,"path":"4.Oracle/2.資料庫介紹/2-1.資料庫介紹.md","ref":"4.Oracle/2.資料庫介紹/2-1.資料庫介紹.md","articles":[]},{"title":"2-2.ACID 規則","level":"1.5.3.2","depth":3,"path":"4.Oracle/2.資料庫介紹/2-2.ACID規則.md","ref":"4.Oracle/2.資料庫介紹/2-2.ACID規則.md","articles":[]},{"title":"2-3.為什麼要採用關聯式資料庫","level":"1.5.3.3","depth":3,"path":"4.Oracle/2.資料庫介紹/2-3.為什麼要採用關聯式資料庫.md","ref":"4.Oracle/2.資料庫介紹/2-3.為什麼要採用關聯式資料庫.md","articles":[]},{"title":"2-7.主鍵與外來鍵","level":"1.5.3.4","depth":3,"path":"4.Oracle/2.資料庫介紹/2-7.主鍵與外來鍵.md","ref":"4.Oracle/2.資料庫介紹/2-7.主鍵與外來鍵.md","articles":[]},{"title":"2-10.資料庫正規化","level":"1.5.3.5","depth":3,"path":"4.Oracle/2.資料庫介紹/2-10.資料庫正規化.md","ref":"4.Oracle/2.資料庫介紹/2-10.資料庫正規化.md","articles":[]},{"title":"2-13.違反正規化","level":"1.5.3.6","depth":3,"path":"4.Oracle/2.資料庫介紹/2-13.違反正規化.md","ref":"4.Oracle/2.資料庫介紹/2-13.違反正規化.md","articles":[]}]},{"title":"3.建立資料庫","level":"1.5.4","depth":2,"ref":"","articles":[{"title":"3-0.視覺化建立表格","level":"1.5.4.1","depth":3,"path":"4.Oracle/3.建立資料庫/3-0.視覺化建立表格.md","ref":"4.Oracle/3.建立資料庫/3-0.視覺化建立表格.md","articles":[]},{"title":"3-1.建立表格","level":"1.5.4.2","depth":3,"path":"4.Oracle/3.建立資料庫/3-1.建立表格.md","ref":"4.Oracle/3.建立資料庫/3-1.建立表格.md","articles":[]},{"title":"3-2.建立表格練習","level":"1.5.4.3","depth":3,"path":"4.Oracle/3.建立資料庫/3-2.建立表格練習.md","ref":"4.Oracle/3.建立資料庫/3-2.建立表格練習.md","articles":[]},{"title":"3-3.SQL 種類","level":"1.5.4.4","depth":3,"path":"4.Oracle/3.建立資料庫/3-3.SQL種類.md","ref":"4.Oracle/3.建立資料庫/3-3.SQL種類.md","articles":[]},{"title":"3-10.Browser 設定","level":"1.5.4.5","depth":3,"path":"4.Oracle/3.建立資料庫/3-10.Browser設定.md","ref":"4.Oracle/3.建立資料庫/3-10.Browser設定.md","articles":[]},{"title":"3-11.常用指令","level":"1.5.4.6","depth":3,"path":"4.Oracle/3.建立資料庫/3-11.常用指令.md","ref":"4.Oracle/3.建立資料庫/3-11.常用指令.md","articles":[]},{"title":"3-12.新增修改刪除練習","level":"1.5.4.7","depth":3,"path":"4.Oracle/3.建立資料庫/3-12.新增修改刪除練習.md","ref":"4.Oracle/3.建立資料庫/3-12.新增修改刪除練習.md","articles":[]}]},{"title":"4.資料交易處理","level":"1.5.5","depth":2,"ref":"","articles":[{"title":"4-1.新增資料","level":"1.5.5.1","depth":3,"path":"4.Oracle/4.資料交易處理/4-1.新增資料.md","ref":"4.Oracle/4.資料交易處理/4-1.新增資料.md","articles":[]},{"title":"4-2.新增資料練習","level":"1.5.5.2","depth":3,"path":"4.Oracle/4.資料交易處理/4-2.新增資料練習.md","ref":"4.Oracle/4.資料交易處理/4-2.新增資料練習.md","articles":[]},{"title":"4-3.修改資料","level":"1.5.5.3","depth":3,"path":"4.Oracle/4.資料交易處理/4-3.修改資料.md","ref":"4.Oracle/4.資料交易處理/4-3.修改資料.md","articles":[]},{"title":"4-4.修改資料練習","level":"1.5.5.4","depth":3,"path":"4.Oracle/4.資料交易處理/4-4.修改資料練習.md","ref":"4.Oracle/4.資料交易處理/4-4.修改資料練習.md","articles":[]},{"title":"4-5.刪除資料","level":"1.5.5.5","depth":3,"path":"4.Oracle/4.資料交易處理/4-5.刪除資料.md","ref":"4.Oracle/4.資料交易處理/4-5.刪除資料.md","articles":[]},{"title":"4-6.指定回退資料的時間點","level":"1.5.5.6","depth":3,"path":"4.Oracle/4.資料交易處理/4-6.指定回退資料的時間點.md","ref":"4.Oracle/4.資料交易處理/4-6.指定回退資料的時間點.md","articles":[]},{"title":"4-7.回退資料練習","level":"1.5.5.7","depth":3,"path":"4.Oracle/4.資料交易處理/4-7.回退資料練習.md","ref":"4.Oracle/4.資料交易處理/4-7.回退資料練習.md","articles":[]},{"title":"4-8.匯入匯出資料","level":"1.5.5.8","depth":3,"path":"4.Oracle/4.資料交易處理/4-8.匯入匯出資料.md","ref":"4.Oracle/4.資料交易處理/4-8.匯入匯出資料.md","articles":[]}]},{"title":"5.資料查詢","level":"1.5.6","depth":2,"ref":"","articles":[{"title":"5-1.資料查詢的各種方法","level":"1.5.6.1","depth":3,"path":"4.Oracle/5.資料查詢/5-1.資料查詢的各種方法.md","ref":"4.Oracle/5.資料查詢/5-1.資料查詢的各種方法.md","articles":[]}]},{"title":"6.進階查詢","level":"1.5.7","depth":2,"ref":"","articles":[{"title":"6-1.進階查詢","level":"1.5.7.1","depth":3,"path":"4.Oracle/6.進階查詢/6-1.進階查詢.md","ref":"4.Oracle/6.進階查詢/6-1.進階查詢.md","articles":[]}]}]},"previous":{"title":"17.多執行緒","level":"1.4.16","depth":2,"ref":"","articles":[{"title":"17-1.執行緒","level":"1.4.16.1","depth":3,"path":"3.JAVA程式設計/17.多執行緒/17-1.執行緒.md","ref":"3.JAVA程式設計/17.多執行緒/17-1.執行緒.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"3.JAVA程式設計/17.多執行緒/17-1.執行緒.md","mtime":"2020-05-13T02:51:22.914Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-05-13T07:40:41.111Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
