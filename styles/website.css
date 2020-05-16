@@ -51,12 +51,8 @@ h1#top + ul li {
   background: transparent;
 }
 /* 筆記用色彩 */
-.markdown-section code {
+code {
   color: #e96900;
-}
-.mume pre code {
-  background-color: #f8f8f8;
-  color: #525252;
 }
 bikao {
   color: #f44336;
