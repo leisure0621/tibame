@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>UI 隨機產生四個不同大小與顏色的Hello文字</title>
+</head>
+<body>
+	<div class="hello">Hello</div>
+	<div class="hello">Hello</div>
+	<div class="hello">Hello</div>
+	<div class="hello">Hello</div>
+
+	<script type="text/javascript">
+		// 題目：在UI上，隨機生成四個不同大小與顏色的Hello文字
+
+		// 1. 定義七種顏色的array
+		var color = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'purple'];
+
+		// 2. 定義七種字型大小的array
+		var fontSize = [8, 12, 24, 36, 48, 60, 84];
+
+		// 3. 做出能隨機抽出 0 ~ 6 數字的函式
+		function random (m) {
+			// 0 ~ 1
+			var rand = Math.random();
+			// 0, 1, 2, 3, 4, 5, 6
+			var rand2 = Math.floor(rand * m);
+			return rand2;
+		}
+
+		// 4. 抓取DOM元素，document.getElementsByClassName()
+    var doms = document.querySelectorAll(".hello");
+
+		// 5. 遞迴所有抓取到的元素，並賦予隨機顏色與字型大小
+		for(var i = 0;i<doms.length;i++){
+      var index = random(color.length);
+      var randColor = color[index];
+      index = random(fontSize.length);
+      var randomFontSize = fontSize[index];
+      doms[i].style.color = randColor;
+      doms[i].style.fontSize = `${randomFontSize}px`;
+    }
+	</script>
+</body>
+</html>

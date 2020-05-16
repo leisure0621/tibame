@@ -52,12 +52,27 @@ h1#top + ul li {
 }
 /* 筆記用色彩 */
 .markdown-section code {
-  background: #f8fa45;
-  color: black;
+  color: #e96900;
 }
 .mume pre code {
   background-color: #f8f8f8;
   color: #525252;
+}
+bikao {
+  color: #f44336;
+  font-size: 0.75rem;
+  animation: light-shadow 1.5s;
+  animation-iteration-count: infinite;
+}
+/* 動畫 */
+@keyframes light-shadow {
+  0% {
+  }
+  50% {
+    color: #f39892;
+  }
+  100% {
+  }
 }
 /* list下添加區隔 */
 .page-inner ul li:last-child {
@@ -70,7 +85,6 @@ h1#top + ul li {
   color: var(--theme-color, #42b983);
   font-weight: 600;
 }
-
 .book .book-body .page-wrapper .page-inner section.normal pre .hljs-variable,
 .book .book-body .page-wrapper .page-inner section.normal code .hljs-variable,
 .book .book-body .page-wrapper .page-inner section.normal pre .hljs-attribute,
