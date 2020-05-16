@@ -51,7 +51,10 @@ h1#top + ul li {
   background: transparent;
 }
 /* 筆記用色彩 */
-code {
+.markdown-section pre code {
+  color: #333;
+}
+.markdown-section code {
   color: #e96900;
 }
 bikao {
@@ -73,6 +76,10 @@ bikao {
 /* list下添加區隔 */
 .page-inner ul li:last-child {
   margin-bottom: 15px;
+}
+/* hr分隔線大小 */
+.markdown-section hr {
+  height: 1px;
 }
 /* 主體色 */
 .book-summary ul.summary li.active > a,
