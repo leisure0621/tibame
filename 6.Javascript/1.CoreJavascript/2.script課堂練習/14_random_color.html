@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>UI 由使用者決定，隨機產生幾個不同大小與顏色的Hello文字</title>
+  </head>
+  <body>
+    <div id="display"></div>
+
+    <script type="text/javascript">
+      // 題目：在UI上，由使用者決定，隨機產生幾個不同大小與顏色的Hello文字
+
+      // 1. 定義七種顏色的array
+      var color = [
+        'red',
+        'orange',
+        'yellow',
+        'green',
+        'blue',
+        'indigo',
+        'purple',
+      ];
+
+      // 2. 定義七種字型大小的array
+      var fontSize = [8, 12, 24, 36, 48, 60, 84];
+
+      // 3. 做出能隨機抽出 0 ~ 6 數字的函式
+      function random(m) {
+        // 0 ~ 1
+        var rand = Math.random();
+        // 0, 1, 2, 3, 4, 5, 6
+        var rand2 = Math.floor(rand * m);
+        return rand2;
+      }
+
+      // 4. 抓取DOM元素，document.getElementById()
+      let div = document.getElementById('display');
+
+      // 5. 寫一個函式，帶入不同的數字，可以產生不同的結果
+      function plot(n) {
+        // 遞迴所有抓取到的元素
+        for (var i = 0; i < n; i++) {
+          // 取一次隨機數字
+          var index = random(7);
+          // 隨機顏色
+          var randColor = color[index];
+
+          // 取一次隨機數字
+          var index = random(7);
+          // 隨機字型大小
+          var randSize = fontSize[index];
+
+          // 產生新的DOM元素 提示：document.createElement('div')
+          let hello = document.createElement('div');
+
+          // 賦予DOM元素顏色
+          hello.style.color = randColor;
+
+          // 賦予DOM元素字型大小
+          hello.style.fontSize = randSize + 'px';
+          // 賦予DOM元素內容
+          hello.innerText = i + 1;
+
+          // 新增一筆到UI上
+          div.append(hello);
+        }
+      }
+
+      // 6. 帶入不同數字，驗證一下？
+      plot(3);
+
+      // 7. 寫一個函式，問問題，使用window.prompt('請輸入一個正整數：')，若不符合規則，就他請再輸入一次
+      // 提示：parseInt(ques)
+      // 提示：isNaN()
+      function askQuestion() {
+        // 驗證成功，執行plot()方法
+        let ans = window.prompt('請輸入一個正整數');
+        let num = parseInt(ans);
+        while (isNaN(num) || num <= 0) {
+          ans = window.prompt('請輸入一個正整數');
+          num = parseInt(ans);
+        }
+        plot(num);
+      }
+
+      // 8. 執行函式
+      // askQuestion();
+    </script>
+  </body>
+</html>

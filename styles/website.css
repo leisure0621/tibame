@@ -55,7 +55,8 @@ h1#top + ul li {
   color: #333;
 }
 .markdown-section code {
-  color: #e96900;
+  background: rgb(89, 255, 179);
+  color: black;
 }
 bikao {
   color: #f44336;
@@ -77,9 +78,20 @@ bikao {
 .page-inner ul li:last-child {
   margin-bottom: 15px;
 }
-/* hr分隔線大小 */
+.markdown-section blockquote,
+.markdown-section dl,
+.markdown-section ol,
+.markdown-section p,
+.markdown-section table,
+.markdown-section ul {
+  margin-bottom: 1em;
+}
+/* Theme 設定 */
 .markdown-section hr {
   height: 1px;
+}
+sup.footnote-ref a {
+  font-size: 0.75rem;
 }
 /* 主體色 */
 .book-summary ul.summary li.active > a,

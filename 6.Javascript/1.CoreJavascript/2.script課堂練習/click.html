@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p><button id="myButton" onclick="myHandler('me')">Click Me!</button></p>
+    <p>
+      <button id="myButton2">
+        Click Meeeeeee!
+      </button>
+    </p>
+    <p>
+      <button id="myButton3">
+        Click Meeeeeeeeeeeeeeee!
+      </button>
+    </p>
+    <script>
+      // 方法1: 不建議，與HTML耦合
+      function myHandler(say) {
+        alert(say);
+      }
+      // 方法2
+      let btn = document.getElementById('myButton2');
+      btn.onclick = () => {
+        alert('me too');
+      };
+      // 方法3: 推薦，不用記很多 addEventListener(事件名稱, 事件處裡函式)
+      let btn2 = document.getElementById('myButton3');
+      btn2.addEventListener('click', () => {
+        alert('me tooooooooooooooooo');
+      });
+    </script>
+  </body>
+</html>

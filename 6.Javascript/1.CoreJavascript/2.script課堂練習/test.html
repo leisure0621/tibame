@@ -7,17 +7,12 @@
   </head>
   <body>
     <script>
-      let formate = () => {
-        let date = new Date();
-        date = `${date.getFullYear()}/${
-          date.getMonth() + 1
-        }/${date.getDate()} ${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}`;
-        return date;
+      // 會在dom tree構建好後才執行
+      window.onload = function () {
+        var div = document.getElementById('div');
+        console.log(div);
       };
-
-      setInterval(function () {
-        console.log(formate());
-      }, 1000);
     </script>
+    <div id="div"></div>
   </body>
 </html>
