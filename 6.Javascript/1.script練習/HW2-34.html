@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HW2-34</title>
+    <style>
+      li {
+        list-style: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="hk2">
+      <ul></ul>
+    </div>
+    <script>
+      let hk2 = document.getElementById('hk2').getElementsByTagName('ul')[0],
+        num = 18;
+      for (let i = 1; i <= num / 2; i++) {
+        hk2.innerHTML += `<li>${i} + ${num - i}</li>`;
+        console.log(`${i} + ${num - i}`);
+      }
+    </script>
+  </body>
+</html>

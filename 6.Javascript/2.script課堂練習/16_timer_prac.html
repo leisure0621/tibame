@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>UI 簡易的計時器</title>
+    <style type="text/css">
+      #panel {
+        padding: 20px;
+        text-align: center;
+      }
+      #display {
+        font-family: arial;
+        font-size: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="panel">
+      <div>
+        <span id="display">00:00</span>
+      </div>
+      <button id="start">START</button>
+      <button id="stop">STOP</button>
+      <button id="clear">CLEAR</button>
+    </div>
+
+    <script type="text/javascript">
+      // 題目：在UI上，請製作一個簡易的計時器，有開始，結束，清除的功能。
+      // START：從00:00開始，每秒更新一次畫面
+      // STOP：暫停秒數
+      // CLEAR：清除秒數，變回00:00
+
+      var timer;
+      var totalSeconds = 0;
+
+      // 1. 抓取DOM元素
+      let display = document.getElementById('display');
+
+      // 2. 寫一個函式，可以任意更改display上面的值
+      function writeTime(totalSeconds) {
+        // 算出有幾分鐘
+        var leftMinutes = Math.floor(totalSeconds / 60);
+        var min = leftMinutes < 10 ? '0' + leftMinutes : leftMinutes;
+        // 扣掉還剩幾秒鐘
+        var leftSeconds = totalSeconds % 60;
+        var sec = leftSeconds < 10 ? '0' + leftSeconds : leftSeconds;
+        display.innerHTML = min + ':' + sec;
+      }
+
+      // 3. 驗證一下是否可行？
+      // writeTime(60);
+      let setTime;
+      // 3. 對按鈕進行註冊click事件
+      // START button
+      let start = document.getElementById('start');
+      start.addEventListener('click', function () {
+        setTime = setInterval(function () {
+          totalSeconds++;
+          writeTime(totalSeconds);
+        }, 1000);
+      });
+
+      // STOP button
+      let stop = document.getElementById('stop');
+      stop.addEventListener('click', function () {
+        clearInterval(setTime);
+      });
+
+      // CLEAR button
+      let clear = document.getElementById('clear');
+      clear.addEventListener('click', function () {
+        clearInterval(setTime);
+        totalSeconds = 0;
+        writeTime(totalSeconds);
+      });
+    </script>
+  </body>
+</html>

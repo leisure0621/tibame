@@ -1,0 +1,4300 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>02.JDBC 新手等級 LV1 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-pageview-count/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../../styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="03.JDBC新手等級LV2.html" />
+    
+    
+    <link rel="prev" href="01.JDBC新手村.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    0.一些上课需要注意的地方
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../../0.一些上课需要注意的地方/note.html">
+            
+                <a href="../../0.一些上课需要注意的地方/note.html">
+            
+                    
+                    Note
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    08.HTML5
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../../08.HTML5/01.sublime外掛.html">
+            
+                <a href="../../08.HTML5/01.sublime外掛.html">
+            
+                    
+                    01.sublime 外掛
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../../08.HTML5/02.html第一堂課.html">
+            
+                <a href="../../08.HTML5/02.html第一堂課.html">
+            
+                    
+                    02.html 第一堂課
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    1.雲端應用
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../../1.雲端應用/1-1.雲端應用與介紹.html">
+            
+                <a href="../../1.雲端應用/1-1.雲端應用與介紹.html">
+            
+                    
+                    1-1.雲端應用與介紹
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    2.Html
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../../2.Html/1.初階學習.html">
+            
+                <a href="../../2.Html/1.初階學習.html">
+            
+                    
+                    1.初階學習
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../../2.Html/2.表格的變化-含合併欄位的表格.html">
+            
+                <a href="../../2.Html/2.表格的變化-含合併欄位的表格.html">
+            
+                    
+                    2.表格的變化-含合併欄位的表格
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../../2.Html/3.播放視訊與音訊檔.html">
+            
+                <a href="../../2.Html/3.播放視訊與音訊檔.html">
+            
+                    
+                    3.播放視訊與音訊檔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../../2.Html/4.form標籤.html">
+            
+                <a href="../../2.Html/4.form標籤.html">
+            
+                    
+                    4.form 標籤
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../../2.Html/5.HTML5.html">
+            
+                <a href="../../2.Html/5.HTML5.html">
+            
+                    
+                    5.HTML5
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="../../2.Html/6.CSS.html">
+            
+                <a href="../../2.Html/6.CSS.html">
+            
+                    
+                    6.CSS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="../../2.Html/7.HTML課後練習.html">
+            
+                <a href="../../2.Html/7.HTML課後練習.html">
+            
+                    
+                    7.HTML 課後練習
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    3.JAVA
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" >
+            
+                <span>
+            
+                    
+                    01.JAVA 基礎學習
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1.1" >
+            
+                <span>
+            
+                    
+                    01.JAVA 導論
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1.1.1" data-path="../01.JAVA基礎學習/01.JAVA導論/1-1.JAVA開課介紹與起源.html">
+            
+                <a href="../01.JAVA基礎學習/01.JAVA導論/1-1.JAVA開課介紹與起源.html">
+            
+                    
+                    1-1.JAVA 開課介紹與起源
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.2" >
+            
+                <span>
+            
+                    
+                    02.JAVA 開發環境建立
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1.2.1" data-path="../01.JAVA基礎學習/02.JAVA開發環境建立/2-1.JAVA開發環境建立.html">
+            
+                <a href="../01.JAVA基礎學習/02.JAVA開發環境建立/2-1.JAVA開發環境建立.html">
+            
+                    
+                    2-1.JAVA 開發環境建立
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.2.2" data-path="../01.JAVA基礎學習/02.JAVA開發環境建立/2-2.TXT撰寫第一隻JAVA.html">
+            
+                <a href="../01.JAVA基礎學習/02.JAVA開發環境建立/2-2.TXT撰寫第一隻JAVA.html">
+            
+                    
+                    2-2.TXT 撰寫第一隻 JAVA
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.2.3" data-path="../01.JAVA基礎學習/02.JAVA開發環境建立/2-3.Eclipse各種操作.html">
+            
+                <a href="../01.JAVA基礎學習/02.JAVA開發環境建立/2-3.Eclipse各種操作.html">
+            
+                    
+                    2-3.Eclipse 各種操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.2.4" data-path="../01.JAVA基礎學習/02.JAVA開發環境建立/2-4.JAVA基本形式.html">
+            
+                <a href="../01.JAVA基礎學習/02.JAVA開發環境建立/2-4.JAVA基本形式.html">
+            
+                    
+                    2-4.JAVA 基本形式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.2.5" data-path="../01.JAVA基礎學習/02.JAVA開發環境建立/2-5.創建Eclipse項目.html">
+            
+                <a href="../01.JAVA基礎學習/02.JAVA開發環境建立/2-5.創建Eclipse項目.html">
+            
+                    
+                    2-5.創建 Eclipse 項目
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.3" >
+            
+                <span>
+            
+                    
+                    03.定數、變數、常數與運算子
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1.3.1" data-path="../01.JAVA基礎學習/03.定數、變數、常數與運算子/3-01.JAVA變量.html">
+            
+                <a href="../01.JAVA基礎學習/03.定數、變數、常數與運算子/3-01.JAVA變量.html">
+            
+                    
+                    3-01.JAVA 變量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.3.2" data-path="../01.JAVA基礎學習/03.定數、變數、常數與運算子/3-02.變數種類與有效範圍.html">
+            
+                <a href="../01.JAVA基礎學習/03.定數、變數、常數與運算子/3-02.變數種類與有效範圍.html">
+            
+                    
+                    3-02.變數種類與有效範圍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.3.3" data-path="../01.JAVA基礎學習/03.定數、變數、常數與運算子/3-03.JAVA常數與命名方式.html">
+            
+                <a href="../01.JAVA基礎學習/03.定數、變數、常數與運算子/3-03.JAVA常數與命名方式.html">
+            
+                    
+                    3-03.JAVA 常數與命名方式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.3.4" data-path="../01.JAVA基礎學習/03.定數、變數、常數與運算子/3-04.算術運算子.html">
+            
+                <a href="../01.JAVA基礎學習/03.定數、變數、常數與運算子/3-04.算術運算子.html">
+            
+                    
+                    3-04.算術運算子
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.3.5" data-path="../01.JAVA基礎學習/03.定數、變數、常數與運算子/3-05.遞增遞減運算子.html">
+            
+                <a href="../01.JAVA基礎學習/03.定數、變數、常數與運算子/3-05.遞增遞減運算子.html">
+            
+                    
+                    3-05.遞增遞減運算子
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.3.6" data-path="../01.JAVA基礎學習/03.定數、變數、常數與運算子/3-06.指定運算子.html">
+            
+                <a href="../01.JAVA基礎學習/03.定數、變數、常數與運算子/3-06.指定運算子.html">
+            
+                    
+                    3-06.指定運算子
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.3.7" data-path="../01.JAVA基礎學習/03.定數、變數、常數與運算子/3-07.關係運算子.html">
+            
+                <a href="../01.JAVA基礎學習/03.定數、變數、常數與運算子/3-07.關係運算子.html">
+            
+                    
+                    3-07.關係運算子
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.3.8" data-path="../01.JAVA基礎學習/03.定數、變數、常數與運算子/3-08.條件運算子.html">
+            
+                <a href="../01.JAVA基礎學習/03.定數、變數、常數與運算子/3-08.條件運算子.html">
+            
+                    
+                    3-08.條件運算子
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.3.9" data-path="../01.JAVA基礎學習/03.定數、變數、常數與運算子/3-09.位元運算子.html">
+            
+                <a href="../01.JAVA基礎學習/03.定數、變數、常數與運算子/3-09.位元運算子.html">
+            
+                    
+                    3-09.位元運算子
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.3.10" data-path="../01.JAVA基礎學習/03.定數、變數、常數與運算子/3-10.移位運算子.html">
+            
+                <a href="../01.JAVA基礎學習/03.定數、變數、常數與運算子/3-10.移位運算子.html">
+            
+                    
+                    3-10.移位運算子
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.3.11" data-path="../01.JAVA基礎學習/03.定數、變數、常數與運算子/3-11.三元運算子.html">
+            
+                <a href="../01.JAVA基礎學習/03.定數、變數、常數與運算子/3-11.三元運算子.html">
+            
+                    
+                    3-11.三元運算子
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.3.12" data-path="../01.JAVA基礎學習/03.定數、變數、常數與運算子/3-12.晉升與型別轉換.html">
+            
+                <a href="../01.JAVA基礎學習/03.定數、變數、常數與運算子/3-12.晉升與型別轉換.html">
+            
+                    
+                    3-12.晉升與型別轉換
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.4" >
+            
+                <span>
+            
+                    
+                    04.流程控制
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1.4.1" data-path="../01.JAVA基礎學習/04.流程控制/4-1.if...else.html">
+            
+                <a href="../01.JAVA基礎學習/04.流程控制/4-1.if...else.html">
+            
+                    
+                    4-1.if...else
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.4.2" data-path="../01.JAVA基礎學習/04.流程控制/4-2.課堂練習.html">
+            
+                <a href="../01.JAVA基礎學習/04.流程控制/4-2.課堂練習.html">
+            
+                    
+                    4-2.課堂練習
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.4.3" data-path="../01.JAVA基礎學習/04.流程控制/4-3.巢狀結構.html">
+            
+                <a href="../01.JAVA基礎學習/04.流程控制/4-3.巢狀結構.html">
+            
+                    
+                    4-3.巢狀結構
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.4.4" data-path="../01.JAVA基礎學習/04.流程控制/4-4.switch.html">
+            
+                <a href="../01.JAVA基礎學習/04.流程控制/4-4.switch.html">
+            
+                    
+                    4-4.switch
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.5" >
+            
+                <span>
+            
+                    
+                    05.迴圈
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1.5.1" data-path="../01.JAVA基礎學習/05.迴圈/5-1.迴圈敘述.html">
+            
+                <a href="../01.JAVA基礎學習/05.迴圈/5-1.迴圈敘述.html">
+            
+                    
+                    5-1.迴圈敘述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.5.2" data-path="../01.JAVA基礎學習/05.迴圈/5-2.課堂作業.html">
+            
+                <a href="../01.JAVA基礎學習/05.迴圈/5-2.課堂作業.html">
+            
+                    
+                    5-2.課堂作業
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.5.3" data-path="../01.JAVA基礎學習/05.迴圈/5-3.迴圈練習與比較.html">
+            
+                <a href="../01.JAVA基礎學習/05.迴圈/5-3.迴圈練習與比較.html">
+            
+                    
+                    5-3.迴圈練習與比較
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.5.4" data-path="../01.JAVA基礎學習/05.迴圈/5-4.迴圈內的break與continue.html">
+            
+                <a href="../01.JAVA基礎學習/05.迴圈/5-4.迴圈內的break與continue.html">
+            
+                    
+                    5-4.迴圈內的 break 與 continue
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.6" >
+            
+                <span>
+            
+                    
+                    06.方法的宣告與使用
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1.6.1" data-path="../01.JAVA基礎學習/06.方法的宣告與使用/6-1.方法的建立與呼叫與傳值.html">
+            
+                <a href="../01.JAVA基礎學習/06.方法的宣告與使用/6-1.方法的建立與呼叫與傳值.html">
+            
+                    
+                    6-1.方法的建立與呼叫與傳值
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.6.2" data-path="../01.JAVA基礎學習/06.方法的宣告與使用/6-2.方法覆載.html">
+            
+                <a href="../01.JAVA基礎學習/06.方法的宣告與使用/6-2.方法覆載.html">
+            
+                    
+                    6-2.方法覆載
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" >
+            
+                <span>
+            
+                    
+                    02.JAVA 物件導向
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.2.1" >
+            
+                <span>
+            
+                    
+                    07.物件導向概論
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.2.1.1" data-path="../02.JAVA物件導向/07.物件導向概論/7-1.何為物件何為類別.html">
+            
+                <a href="../02.JAVA物件導向/07.物件導向概論/7-1.何為物件何為類別.html">
+            
+                    
+                    7-1.何為物件何為類別
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2.1.2" data-path="../02.JAVA物件導向/07.物件導向概論/7-2.物件參考變數.html">
+            
+                <a href="../02.JAVA物件導向/07.物件導向概論/7-2.物件參考變數.html">
+            
+                    
+                    7-2.物件參考變數
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2.1.3" data-path="../02.JAVA物件導向/07.物件導向概論/7-3.課堂練習.html">
+            
+                <a href="../02.JAVA物件導向/07.物件導向概論/7-3.課堂練習.html">
+            
+                    
+                    7-3.課堂練習
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2.2" >
+            
+                <span>
+            
+                    
+                    08.陣列與字串
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.2.2.1" data-path="../02.JAVA物件導向/08.陣列與字串/8-1.陣列.html">
+            
+                <a href="../02.JAVA物件導向/08.陣列與字串/8-1.陣列.html">
+            
+                    
+                    8-1.陣列
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2.2.2" data-path="../02.JAVA物件導向/08.陣列與字串/8-2.隨機亂數.html">
+            
+                <a href="../02.JAVA物件導向/08.陣列與字串/8-2.隨機亂數.html">
+            
+                    
+                    8-2.隨機亂數
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2.2.3" data-path="../02.JAVA物件導向/08.陣列與字串/8-3.課堂練習.html">
+            
+                <a href="../02.JAVA物件導向/08.陣列與字串/8-3.課堂練習.html">
+            
+                    
+                    8-3.課堂練習
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2.2.4" data-path="../02.JAVA物件導向/08.陣列與字串/8-4.陣列指定的敘述.html">
+            
+                <a href="../02.JAVA物件導向/08.陣列與字串/8-4.陣列指定的敘述.html">
+            
+                    
+                    8-4.陣列指定的敘述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2.2.5" data-path="../02.JAVA物件導向/08.陣列與字串/8-5.static與其他物件關係.html">
+            
+                <a href="../02.JAVA物件導向/08.陣列與字串/8-5.static與其他物件關係.html">
+            
+                    
+                    8-5.static 與其他物件關係
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2.2.6" data-path="../02.JAVA物件導向/08.陣列與字串/8-6.進階陣列操作.html">
+            
+                <a href="../02.JAVA物件導向/08.陣列與字串/8-6.進階陣列操作.html">
+            
+                    
+                    8-6.進階陣列操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2.2.7" data-path="../02.JAVA物件導向/08.陣列與字串/8-7.String特性與常用方法.html">
+            
+                <a href="../02.JAVA物件導向/08.陣列與字串/8-7.String特性與常用方法.html">
+            
+                    
+                    8-7.String 特性與常用方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2.2.8" data-path="../02.JAVA物件導向/08.陣列與字串/8-8.命令列參數.html">
+            
+                <a href="../02.JAVA物件導向/08.陣列與字串/8-8.命令列參數.html">
+            
+                    
+                    8-8.命令列參數
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2.2.9" data-path="../02.JAVA物件導向/08.陣列與字串/8-9.不固定參數個數.html">
+            
+                <a href="../02.JAVA物件導向/08.陣列與字串/8-9.不固定參數個數.html">
+            
+                    
+                    8-9.不固定參數個數
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2.3" >
+            
+                <span>
+            
+                    
+                    09.使用封裝與建構子
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.2.3.1" data-path="../02.JAVA物件導向/09.使用封裝與建構子/9-1.封裝的基本概念.html">
+            
+                <a href="../02.JAVA物件導向/09.使用封裝與建構子/9-1.封裝的基本概念.html">
+            
+                    
+                    9-1.封裝的基本概念
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2.3.2" data-path="../02.JAVA物件導向/09.使用封裝與建構子/9-2.建構子的使用.html">
+            
+                <a href="../02.JAVA物件導向/09.使用封裝與建構子/9-2.建構子的使用.html">
+            
+                    
+                    9-2.建構子的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2.3.3" data-path="../02.JAVA物件導向/09.使用封裝與建構子/9-3.建構子與方法.html">
+            
+                <a href="../02.JAVA物件導向/09.使用封裝與建構子/9-3.建構子與方法.html">
+            
+                    
+                    9-3.建構子與方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2.3.4" data-path="../02.JAVA物件導向/09.使用封裝與建構子/9-4.static修飾子.html">
+            
+                <a href="../02.JAVA物件導向/09.使用封裝與建構子/9-4.static修飾子.html">
+            
+                    
+                    9-4.static 修飾子
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2.4" >
+            
+                <span>
+            
+                    
+                    10.繼承與多型
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.2.4.1" data-path="../02.JAVA物件導向/10.繼承與多型/10-1.繼承基本概念.html">
+            
+                <a href="../02.JAVA物件導向/10.繼承與多型/10-1.繼承基本概念.html">
+            
+                    
+                    10-1.繼承基本概念
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2.4.2" data-path="../02.JAVA物件導向/10.繼承與多型/10-2.多型.html">
+            
+                <a href="../02.JAVA物件導向/10.繼承與多型/10-2.多型.html">
+            
+                    
+                    10-2.多型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2.4.3" data-path="../02.JAVA物件導向/10.繼承與多型/10-3.方法到與建構子的差異.html">
+            
+                <a href="../02.JAVA物件導向/10.繼承與多型/10-3.方法到與建構子的差異.html">
+            
+                    
+                    10-3.方法到與建構子的差異
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2.5" >
+            
+                <span>
+            
+                    
+                    11.介面與多型
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.2.5.1" data-path="../02.JAVA物件導向/11.介面與多型/11-1.抽象類別.html">
+            
+                <a href="../02.JAVA物件導向/11.介面與多型/11-1.抽象類別.html">
+            
+                    
+                    11-1.抽象類別
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2.5.2" data-path="../02.JAVA物件導向/11.介面與多型/11-2.介面與空介面.html">
+            
+                <a href="../02.JAVA物件導向/11.介面與多型/11-2.介面與空介面.html">
+            
+                    
+                    11-2.介面與空介面
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" >
+            
+                <span>
+            
+                    
+                    03.JAVA 套件與進階
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.3.1" >
+            
+                <span>
+            
+                    
+                    12.套件、import 與類別路徑
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.3.1.1" data-path="../03.JAVA套件與進階/12.套件、import與類別路徑/12-1.Java原始檔案格式.html">
+            
+                <a href="../03.JAVA套件與進階/12.套件、import與類別路徑/12-1.Java原始檔案格式.html">
+            
+                    
+                    12-1.Java 原始檔案格式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3.1.2" data-path="../03.JAVA套件與進階/12.套件、import與類別路徑/12-2.套件編譯與執行.html">
+            
+                <a href="../03.JAVA套件與進階/12.套件、import與類別路徑/12-2.套件編譯與執行.html">
+            
+                    
+                    12-2.套件編譯與執行
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3.1.3" data-path="../03.JAVA套件與進階/12.套件、import與類別路徑/12-3.import套件或特定別.html">
+            
+                <a href="../03.JAVA套件與進階/12.套件、import與類別路徑/12-3.import套件或特定別.html">
+            
+                    
+                    12-3.import 套件或特定別
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3.1.4" data-path="../03.JAVA套件與進階/12.套件、import與類別路徑/12-4.靜態套件.html">
+            
+                <a href="../03.JAVA套件與進階/12.套件、import與類別路徑/12-4.靜態套件.html">
+            
+                    
+                    12-4.靜態套件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3.1.5" data-path="../03.JAVA套件與進階/12.套件、import與類別路徑/12-5.類別路徑.html">
+            
+                <a href="../03.JAVA套件與進階/12.套件、import與類別路徑/12-5.類別路徑.html">
+            
+                    
+                    12-5.類別路徑
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3.2" >
+            
+                <span>
+            
+                    
+                    13.Object 類別與包裝類別
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.3.2.1" data-path="../03.JAVA套件與進階/13.Object類別與包裝類別/13-1.Object類別.html">
+            
+                <a href="../03.JAVA套件與進階/13.Object類別與包裝類別/13-1.Object類別.html">
+            
+                    
+                    13-1.Object 類別
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3.2.2" data-path="../03.JAVA套件與進階/13.Object類別與包裝類別/13-2.包裝類別.html">
+            
+                <a href="../03.JAVA套件與進階/13.Object類別與包裝類別/13-2.包裝類別.html">
+            
+                    
+                    13-2.包裝類別
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3.3" >
+            
+                <span>
+            
+                    
+                    14.例外處裡
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.3.3.1" data-path="../03.JAVA套件與進階/14.例外處裡/14-1.Exception物件.html">
+            
+                <a href="../03.JAVA套件與進階/14.例外處裡/14-1.Exception物件.html">
+            
+                    
+                    14-1.Exception 物件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3.3.2" data-path="../03.JAVA套件與進階/14.例外處裡/14-2.throw.html">
+            
+                <a href="../03.JAVA套件與進階/14.例外處裡/14-2.throw.html">
+            
+                    
+                    14-2.throw
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3.3.3" data-path="../03.JAVA套件與進階/14.例外處裡/14-3.例外練習.html">
+            
+                <a href="../03.JAVA套件與進階/14.例外處裡/14-3.例外練習.html">
+            
+                    
+                    14-3.例外練習
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3.3.4" data-path="../03.JAVA套件與進階/14.例外處裡/14-4.Assertions.html">
+            
+                <a href="../03.JAVA套件與進階/14.例外處裡/14-4.Assertions.html">
+            
+                    
+                    14-4.Assertions
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3.4" >
+            
+                <span>
+            
+                    
+                    15.資料輸入與輸出
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.3.4.1" data-path="../03.JAVA套件與進階/15.資料輸入與輸出/15-1.File類別.html">
+            
+                <a href="../03.JAVA套件與進階/15.資料輸入與輸出/15-1.File類別.html">
+            
+                    
+                    15-1.File 類別
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3.4.2" data-path="../03.JAVA套件與進階/15.資料輸入與輸出/15-2.資料流類別.html">
+            
+                <a href="../03.JAVA套件與進階/15.資料輸入與輸出/15-2.資料流類別.html">
+            
+                    
+                    15-2.資料流類別
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3.4.3" data-path="../03.JAVA套件與進階/15.資料輸入與輸出/15-3.其它特殊方法與功能補充.html">
+            
+                <a href="../03.JAVA套件與進階/15.資料輸入與輸出/15-3.其它特殊方法與功能補充.html">
+            
+                    
+                    15-3.其它特殊方法與功能補充
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3.4.4" data-path="../03.JAVA套件與進階/15.資料輸入與輸出/15-4.物件的輸入輸出.html">
+            
+                <a href="../03.JAVA套件與進階/15.資料輸入與輸出/15-4.物件的輸入輸出.html">
+            
+                    
+                    15-4.物件的輸入輸出
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3.4.5" data-path="../03.JAVA套件與進階/15.資料輸入與輸出/15-5.Java的節點資料流.html">
+            
+                <a href="../03.JAVA套件與進階/15.資料輸入與輸出/15-5.Java的節點資料流.html">
+            
+                    
+                    15-5.Java 的節點資料流
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3.5" >
+            
+                <span>
+            
+                    
+                    16.集合與泛型
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.3.5.1" data-path="../03.JAVA套件與進階/16.集合與泛型/16-1.集合與陣列.html">
+            
+                <a href="../03.JAVA套件與進階/16.集合與泛型/16-1.集合與陣列.html">
+            
+                    
+                    16-1.集合與陣列
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3.5.2" data-path="../03.JAVA套件與進階/16.集合與泛型/16-2.Map介面.html">
+            
+                <a href="../03.JAVA套件與進階/16.集合與泛型/16-2.Map介面.html">
+            
+                    
+                    16-2.Map 介面
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3.5.3" data-path="../03.JAVA套件與進階/16.集合與泛型/16-3.泛型.html">
+            
+                <a href="../03.JAVA套件與進階/16.集合與泛型/16-3.泛型.html">
+            
+                    
+                    16-3.泛型
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3.6" >
+            
+                <span>
+            
+                    
+                    17.多執行緒
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.3.6.1" data-path="../03.JAVA套件與進階/17.多執行緒/17-1.執行緒.html">
+            
+                <a href="../03.JAVA套件與進階/17.多執行緒/17-1.執行緒.html">
+            
+                    
+                    17-1.執行緒
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3.7" >
+            
+                <span>
+            
+                    
+                    18.常用資料類型與相關
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.3.7.1" data-path="../03.JAVA套件與進階/18.常用資料類型與相關/18-1.常用資料類型與相關.html">
+            
+                <a href="../03.JAVA套件與進階/18.常用資料類型與相關/18-1.常用資料類型與相關.html">
+            
+                    
+                    18-1.常用資料類型與相關
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" >
+            
+                <span>
+            
+                    
+                    04.JDBC 與資料庫的連接
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.4.1" data-path="01.JDBC新手村.html">
+            
+                <a href="01.JDBC新手村.html">
+            
+                    
+                    01.JDBC 新手村
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.6.4.2" data-path="02.JDBC新手等級LV1.html">
+            
+                <a href="02.JDBC新手等級LV1.html">
+            
+                    
+                    02.JDBC 新手等級 LV1
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4.3" data-path="03.JDBC新手等級LV2.html">
+            
+                <a href="03.JDBC新手等級LV2.html">
+            
+                    
+                    03.JDBC 新手等級 LV2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4.4" data-path="04.JDBC連線池.html">
+            
+                <a href="04.JDBC連線池.html">
+            
+                    
+                    04.JDBC 連線池
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4.5" data-path="05.JDBC之SQLException.html">
+            
+                <a href="05.JDBC之SQLException.html">
+            
+                    
+                    05.JDBC 之 SQLException
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4.6" data-path="06.uesetup11_4安裝.html">
+            
+                <a href="06.uesetup11_4安裝.html">
+            
+                    
+                    06.uesetup11_4 安裝
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" >
+            
+                <span>
+            
+                    
+                    05.JAVA 程式設計
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.5.1" data-path="../05.JAVA程式設計/01.ServletJSP/01.ServletJSP.html">
+            
+                <a href="../05.JAVA程式設計/01.ServletJSP/01.ServletJSP.html">
+            
+                    
+                    01.ServletJSP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5.2" data-path="../05.JAVA程式設計/02.HelloWorld/02.HelloWorld.html">
+            
+                <a href="../05.JAVA程式設計/02.HelloWorld/02.HelloWorld.html">
+            
+                    
+                    02.HelloWorld
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5.3" data-path="../05.JAVA程式設計/03.BeforeAPI/03.BeforeAPI.html">
+            
+                <a href="../05.JAVA程式設計/03.BeforeAPI/03.BeforeAPI.html">
+            
+                    
+                    03.BeforeAPI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5.4" data-path="../05.JAVA程式設計/04.ServletAPI/04.ServletAPI.html">
+            
+                <a href="../05.JAVA程式設計/04.ServletAPI/04.ServletAPI.html">
+            
+                    
+                    04.ServletAPI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5.5" data-path="../05.JAVA程式設計/05.動態web專案/05.動態web專案.html">
+            
+                <a href="../05.JAVA程式設計/05.動態web專案/05.動態web專案.html">
+            
+                    
+                    05.動態 web 專案
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5.6" data-path="../05.JAVA程式設計/06.InitParameter/06.InitParameter.html">
+            
+                <a href="../05.JAVA程式設計/06.InitParameter/06.InitParameter.html">
+            
+                    
+                    06.InitParameter
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" >
+            
+                <span>
+            
+                    
+                    4.Oracle
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" >
+            
+                <span>
+            
+                    
+                    0.Oracle 淺談
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1.1" data-path="../../4.Oracle/0.Oracle淺談/0-1.淺入Oracle.html">
+            
+                <a href="../../4.Oracle/0.Oracle淺談/0-1.淺入Oracle.html">
+            
+                    
+                    0-1.淺入 Oracle
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" >
+            
+                <span>
+            
+                    
+                    1.Oracle 安裝
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.2.1" data-path="../../4.Oracle/1.Oracle安裝/1-1.Oracle安裝與各種設定.html">
+            
+                <a href="../../4.Oracle/1.Oracle安裝/1-1.Oracle安裝與各種設定.html">
+            
+                    
+                    1-1.Oracle 安裝與各種設定
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" >
+            
+                <span>
+            
+                    
+                    2.資料庫介紹
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.3.1" data-path="../../4.Oracle/2.資料庫介紹/2-01.資料庫介紹.html">
+            
+                <a href="../../4.Oracle/2.資料庫介紹/2-01.資料庫介紹.html">
+            
+                    
+                    2-01.資料庫介紹
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3.2" data-path="../../4.Oracle/2.資料庫介紹/2-02.ACID規則.html">
+            
+                <a href="../../4.Oracle/2.資料庫介紹/2-02.ACID規則.html">
+            
+                    
+                    2-02.ACID 規則
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3.3" data-path="../../4.Oracle/2.資料庫介紹/2-03.為什麼要採用關聯式資料庫.html">
+            
+                <a href="../../4.Oracle/2.資料庫介紹/2-03.為什麼要採用關聯式資料庫.html">
+            
+                    
+                    2-03.為什麼要採用關聯式資料庫
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3.4" data-path="../../4.Oracle/2.資料庫介紹/2-07.主鍵與外來鍵.html">
+            
+                <a href="../../4.Oracle/2.資料庫介紹/2-07.主鍵與外來鍵.html">
+            
+                    
+                    2-07.主鍵與外來鍵
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3.5" data-path="../../4.Oracle/2.資料庫介紹/2-10.資料庫正規化.html">
+            
+                <a href="../../4.Oracle/2.資料庫介紹/2-10.資料庫正規化.html">
+            
+                    
+                    2-10.資料庫正規化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3.6" data-path="../../4.Oracle/2.資料庫介紹/2-13.違反正規化.html">
+            
+                <a href="../../4.Oracle/2.資料庫介紹/2-13.違反正規化.html">
+            
+                    
+                    2-13.違反正規化
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" >
+            
+                <span>
+            
+                    
+                    3.建立資料庫
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.4.1" data-path="../../4.Oracle/3.建立資料庫/3-01.視覺化建立表格.html">
+            
+                <a href="../../4.Oracle/3.建立資料庫/3-01.視覺化建立表格.html">
+            
+                    
+                    3-01.視覺化建立表格
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4.2" data-path="../../4.Oracle/3.建立資料庫/3-02.建立表格.html">
+            
+                <a href="../../4.Oracle/3.建立資料庫/3-02.建立表格.html">
+            
+                    
+                    3-02.建立表格
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4.3" data-path="../../4.Oracle/3.建立資料庫/3-03.建立表格練習.html">
+            
+                <a href="../../4.Oracle/3.建立資料庫/3-03.建立表格練習.html">
+            
+                    
+                    3-03.建立表格練習
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4.4" data-path="../../4.Oracle/3.建立資料庫/3-04.SQL種類.html">
+            
+                <a href="../../4.Oracle/3.建立資料庫/3-04.SQL種類.html">
+            
+                    
+                    3-04.SQL 種類
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4.5" data-path="../../4.Oracle/3.建立資料庫/3-10.Browser設定.html">
+            
+                <a href="../../4.Oracle/3.建立資料庫/3-10.Browser設定.html">
+            
+                    
+                    3-10.Browser 設定
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4.6" data-path="../../4.Oracle/3.建立資料庫/3-11.常用指令.html">
+            
+                <a href="../../4.Oracle/3.建立資料庫/3-11.常用指令.html">
+            
+                    
+                    3-11.常用指令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4.7" data-path="../../4.Oracle/3.建立資料庫/3-12.新增修改刪除練習.html">
+            
+                <a href="../../4.Oracle/3.建立資料庫/3-12.新增修改刪除練習.html">
+            
+                    
+                    3-12.新增修改刪除練習
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5" >
+            
+                <span>
+            
+                    
+                    4.資料交易處理
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.5.1" data-path="../../4.Oracle/4.資料交易處理/4-01.新增資料.html">
+            
+                <a href="../../4.Oracle/4.資料交易處理/4-01.新增資料.html">
+            
+                    
+                    4-01.新增資料
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5.2" data-path="../../4.Oracle/4.資料交易處理/4-02.新增資料練習.html">
+            
+                <a href="../../4.Oracle/4.資料交易處理/4-02.新增資料練習.html">
+            
+                    
+                    4-02.新增資料練習
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5.3" data-path="../../4.Oracle/4.資料交易處理/4-03.修改資料.html">
+            
+                <a href="../../4.Oracle/4.資料交易處理/4-03.修改資料.html">
+            
+                    
+                    4-03.修改資料
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5.4" data-path="../../4.Oracle/4.資料交易處理/4-04.修改資料練習.html">
+            
+                <a href="../../4.Oracle/4.資料交易處理/4-04.修改資料練習.html">
+            
+                    
+                    4-04.修改資料練習
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5.5" data-path="../../4.Oracle/4.資料交易處理/4-05.刪除資料.html">
+            
+                <a href="../../4.Oracle/4.資料交易處理/4-05.刪除資料.html">
+            
+                    
+                    4-05.刪除資料
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5.6" data-path="../../4.Oracle/4.資料交易處理/4-06.指定回退資料的時間點.html">
+            
+                <a href="../../4.Oracle/4.資料交易處理/4-06.指定回退資料的時間點.html">
+            
+                    
+                    4-06.指定回退資料的時間點
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5.7" data-path="../../4.Oracle/4.資料交易處理/4-07.回退資料練習.html">
+            
+                <a href="../../4.Oracle/4.資料交易處理/4-07.回退資料練習.html">
+            
+                    
+                    4-07.回退資料練習
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5.8" data-path="../../4.Oracle/4.資料交易處理/4-08.匯入匯出資料.html">
+            
+                <a href="../../4.Oracle/4.資料交易處理/4-08.匯入匯出資料.html">
+            
+                    
+                    4-08.匯入匯出資料
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.6" >
+            
+                <span>
+            
+                    
+                    5.資料查詢
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.6.1" data-path="../../4.Oracle/5.資料查詢/5-01.資料查詢的各種方法.html">
+            
+                <a href="../../4.Oracle/5.資料查詢/5-01.資料查詢的各種方法.html">
+            
+                    
+                    5-01.資料查詢的各種方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.7" >
+            
+                <span>
+            
+                    
+                    6.進階查詢
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.7.1" data-path="../../4.Oracle/6.進階查詢/6-01.進階查詢.html">
+            
+                <a href="../../4.Oracle/6.進階查詢/6-01.進階查詢.html">
+            
+                    
+                    6-01.進階查詢
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.8" >
+            
+                <span>
+            
+                    
+                    7.查詢結果建立表格與 View
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.8.1" data-path="../../4.Oracle/7.查詢結果建立表格與View/01.SELECT與VIEW.html">
+            
+                <a href="../../4.Oracle/7.查詢結果建立表格與View/01.SELECT與VIEW.html">
+            
+                    
+                    01.SELECT 與 VIEW
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.9" >
+            
+                <span>
+            
+                    
+                    8.使用者授權
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.9.1" data-path="../../4.Oracle/8.使用者授權/01.權限相關.html">
+            
+                <a href="../../4.Oracle/8.使用者授權/01.權限相關.html">
+            
+                    
+                    01.權限相關
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" >
+            
+                <span>
+            
+                    
+                    5.雲端概論及技術
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../../5.雲端概論及技術/1-1.什麼是雲端計算.html">
+            
+                <a href="../../5.雲端概論及技術/1-1.什麼是雲端計算.html">
+            
+                    
+                    1-1.什麼是雲端計算
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../../5.雲端概論及技術/1-2.雲端運算的基本特性.html">
+            
+                <a href="../../5.雲端概論及技術/1-2.雲端運算的基本特性.html">
+            
+                    
+                    1-2.雲端運算的基本特性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../../5.雲端概論及技術/1-3.雲端運算的服務模式.html">
+            
+                <a href="../../5.雲端概論及技術/1-3.雲端運算的服務模式.html">
+            
+                    
+                    1-3.雲端運算的服務模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="../../5.雲端概論及技術/1-4.雲端運算的部屬模型.html">
+            
+                <a href="../../5.雲端概論及技術/1-4.雲端運算的部屬模型.html">
+            
+                    
+                    1-4.雲端運算的部屬模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.5" data-path="../../5.雲端概論及技術/1-5.雲端運算的關鍵技術.html">
+            
+                <a href="../../5.雲端概論及技術/1-5.雲端運算的關鍵技術.html">
+            
+                    
+                    1-5.雲端運算的關鍵技術
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.6" data-path="../../5.雲端概論及技術/1-6.雲端概論的資料讀取.html">
+            
+                <a href="../../5.雲端概論及技術/1-6.雲端概論的資料讀取.html">
+            
+                    
+                    1-6.雲端概論的資料讀取
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" >
+            
+                <span>
+            
+                    
+                    6.Javascript
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../../6.Javascript/01.Javascript新手村.html">
+            
+                <a href="../../6.Javascript/01.Javascript新手村.html">
+            
+                    
+                    01.Javascript 新手村
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" >
+            
+                <span>
+            
+                    
+                    7.資料庫設計與敏捷開發
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" >
+            
+                <span>
+            
+                    
+                    01.資料庫設計
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1.1" data-path="../../7.資料庫設計與敏捷開發/01.資料庫設計/01.資料庫設計概念.html">
+            
+                <a href="../../7.資料庫設計與敏捷開發/01.資料庫設計/01.資料庫設計概念.html">
+            
+                    
+                    01.資料庫設計概念
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="../../7.資料庫設計與敏捷開發/02.資料庫設計/02.資料庫設計.html">
+            
+                <a href="../../7.資料庫設計與敏捷開發/02.資料庫設計/02.資料庫設計.html">
+            
+                    
+                    02.資料庫設計
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="../../7.資料庫設計與敏捷開發/03.敏捷軟體開發/03.敏捷軟體開發.html">
+            
+                <a href="../../7.資料庫設計與敏捷開發/03.敏捷軟體開發/03.敏捷軟體開發.html">
+            
+                    
+                    03.敏捷軟體開發
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4" data-path="../../7.資料庫設計與敏捷開發/04.敏捷開發特性/04.敏捷開發特性.html">
+            
+                <a href="../../7.資料庫設計與敏捷開發/04.敏捷開發特性/04.敏捷開發特性.html">
+            
+                    
+                    04.敏捷開發特性
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >02.JDBC 新手等級 LV1</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="try-&#x2013;-catch-&#x2013;-finally">try &#x2013; catch &#x2013; finally</h1>
+<ul>
+<li>java7 &#x5F8C;&#x53EF;&#x4EE5;&#x4E0D;&#x9700;&#x8981; close &#x8CC7;&#x6E90;</li>
+</ul>
+<pre><code class="lang-cs">&#x7BC4;&#x4F8B;&#x7A0B;&#x5F0F;: <span class="hljs-string">&quot;/JavaEx_Part2/src/ch01/TestTryWithResources.java&quot;</span>
+</code></pre>
+<pre><code class="lang-java"><span class="hljs-keyword">package</span> ch01;
+
+<span class="hljs-keyword">import</span> java.io.BufferedReader;
+<span class="hljs-keyword">import</span> java.io.File;
+<span class="hljs-keyword">import</span> java.io.FileReader;
+<span class="hljs-keyword">import</span> java.io.IOException;
+
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">TestTryWithResources</span> </span>{
+
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
+    File file = <span class="hljs-keyword">new</span> File(<span class="hljs-string">&quot;files/books.csv&quot;</span>);
+    BufferedReader br = <span class="hljs-keyword">null</span>;
+
+    <span class="hljs-comment">// before, finally&#x5167;&#x81EA;&#x884C;&#x8655;&#x7406;&#x8CC7;&#x6E90;&#x7684;&#x95DC;&#x9589;</span>
+    <span class="hljs-comment">// &#x4F46;&#x76EE;&#x524D;&#x9084;&#x662F;&#x6703;&#x9700;&#x8981;&#x81EA;&#x884C;&#x8655;&#x7406;&#xFF0C;&#x56E0;&#x70BA;&#x4F01;&#x696D;&#x7684;&#x7248;&#x672C;&#x758A;&#x4EE3;&#x7DE9;&#x6162;&#xFF0C;&#x6545;&#x9084;&#x662F;&#x6703;&#x7528;&#x5230;&#x820A;&#x7684;&#x65B9;&#x6CD5;&#x53BB;&#x5BEB;</span>
+    <span class="hljs-keyword">try</span> {
+      br = <span class="hljs-keyword">new</span> BufferedReader(<span class="hljs-keyword">new</span> FileReader(file));
+      String bookInfo = <span class="hljs-string">&quot;&quot;</span>;
+      <span class="hljs-keyword">while</span> ((bookInfo = br.readLine()) != <span class="hljs-keyword">null</span>) {
+        System.out.println(bookInfo);
+      }
+    } <span class="hljs-keyword">catch</span> (IOException ex) {
+      ex.printStackTrace();
+    } <span class="hljs-keyword">finally</span> {
+      <span class="hljs-keyword">try</span> {
+        br.close();
+      } <span class="hljs-keyword">catch</span> (IOException ex) {
+        ex.printStackTrace();
+      }
+    }
+
+    <span class="hljs-comment">// Java 7, try-with-resources&#x53EF;&#x78BA;&#x4FDD;&#x7269;&#x4EF6;&#xFF08;&#x8CC7;&#x6E90;&#xFF09;&#x5728;&#x6700;&#x5F8C;&#x90FD;&#x6703;&#x88AB;&#x95DC;&#x9589;</span>
+    <span class="hljs-keyword">try</span> (BufferedReader in = <span class="hljs-keyword">new</span> BufferedReader(<span class="hljs-keyword">new</span> FileReader(file));) {
+      String bookInfo = <span class="hljs-string">&quot;&quot;</span>;
+      <span class="hljs-keyword">while</span> ((bookInfo = in.readLine()) != <span class="hljs-keyword">null</span>) {
+        System.out.println(bookInfo);
+      }
+    } <span class="hljs-keyword">catch</span> (IOException ex) {
+      ex.printStackTrace();
+    }
+  }
+}
+</code></pre>
+<ul>
+<li>JDK 7(JDBC 4.1)&#x4EE5;&#x5F8C;&#x53EF;&#x64CD;&#x4F5C;&#x7684;&#x4F5C;&#x6CD5;</li>
+</ul>
+<pre><code class="lang-cs">&#x7BC4;&#x4F8B;&#x7A0B;&#x5F0F;: <span class="hljs-string">&quot;/JavaEx_JDBC_Oracle/src/idv/david/basic/TestConnection2.java&quot;</span>
+</code></pre>
+<pre><code class="lang-java"><span class="hljs-keyword">package</span> idv.david.basic;
+
+<span class="hljs-keyword">import</span> java.sql.Connection;
+<span class="hljs-keyword">import</span> java.sql.DriverManager;
+<span class="hljs-keyword">import</span> java.sql.SQLException;
+
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">TestConnection2</span> </span>{
+  <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> String URL = <span class="hljs-string">&quot;jdbc:oracle:thin:@localhost:1521:xe&quot;</span>;
+  <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> String USER = <span class="hljs-string">&quot;david&quot;</span>;
+  <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> String PASSWORD = <span class="hljs-string">&quot;123456&quot;</span>;
+
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
+    <span class="hljs-keyword">try</span> {
+      Class.forName(<span class="hljs-string">&quot;oracle.jdbc.driver.OracleDriver&quot;</span>);
+    } <span class="hljs-keyword">catch</span> (ClassNotFoundException ce) {
+      ce.printStackTrace();
+    }
+
+    <span class="hljs-comment">// JDK 7(JDBC 4.1) &#x4EE5;&#x5F8C;</span>
+    <span class="hljs-keyword">try</span>(Connection con = DriverManager.getConnection(URL, USER, PASSWORD)) {
+      System.out.println(<span class="hljs-string">&quot;Connecting to database successfully! (&#x9023;&#x7DDA;&#x6210;&#x529F;&#xFF01;)&quot;</span>);
+    } <span class="hljs-keyword">catch</span> (SQLException se) {
+      System.out.println(se.getMessage());
+    }
+  }
+}
+</code></pre>
+<h1 id="sql-injectionsql-&#x6CE8;&#x5165;&#x653B;&#x64CA;">SQL Injection(SQL &#x6CE8;&#x5165;&#x653B;&#x64CA;)</h1>
+<ul>
+<li>&#x99ED;&#x5BA2;&#x5011;&#x7684;<code>&#x586B;&#x7A7A;&#x904A;&#x6232;</code></li>
+<li><code>(NAME = &apos;1&apos; OR &apos;1&apos;=&apos;1&apos;) and (PASSWORD = &apos;1&apos; OR &apos;1&apos;=&apos;1&apos;);</code></li>
+</ul>
+<pre><code class="lang-cs">&#x7BC4;&#x4F8B;&#x7A0B;&#x5F0F;: <span class="hljs-string">&quot;/JavaEx_JDBC_Oracle/src/idv/david/basic/TestSQLInjection.java&quot;</span>
+</code></pre>
+<pre><code class="lang-java"><span class="hljs-keyword">package</span> idv.david.basic;
+
+<span class="hljs-comment">// userName = 1&apos; OR &apos;1&apos;=&apos;1</span>
+<span class="hljs-comment">// userPassword = 1&apos; OR &apos;1&apos;=&apos;1;</span>
+
+<span class="hljs-keyword">import</span> java.sql.Connection;
+<span class="hljs-keyword">import</span> java.sql.DriverManager;
+<span class="hljs-keyword">import</span> java.sql.ResultSet;
+<span class="hljs-keyword">import</span> java.sql.SQLException;
+<span class="hljs-keyword">import</span> java.sql.Statement;
+<span class="hljs-keyword">import</span> java.util.Scanner;
+
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">TestSQLInjection</span> </span>{
+  <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> String URL = <span class="hljs-string">&quot;jdbc:oracle:thin:@localhost:1521:xe&quot;</span>;
+  <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> String USER = <span class="hljs-string">&quot;david&quot;</span>;
+  <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> String PASSWORD = <span class="hljs-string">&quot;123456&quot;</span>;
+
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
+    Connection con = <span class="hljs-keyword">null</span>;
+    Statement stat = <span class="hljs-keyword">null</span>;
+    ResultSet rs = <span class="hljs-keyword">null</span>;
+
+    String userName = <span class="hljs-string">&quot;&quot;</span>, userPassword = <span class="hljs-string">&quot;&quot;</span>;
+
+    Scanner sc = <span class="hljs-keyword">new</span> Scanner(System.in);
+    System.out.println(<span class="hljs-string">&quot;&#x8ACB;&#x8F38;&#x5165;&#x540D;&#x7A31;: &quot;</span>);
+    userName = sc.nextLine();
+    System.out.println(<span class="hljs-string">&quot;&#x8ACB;&#x8F38;&#x5165;&#x5BC6;&#x78BC;: &quot;</span>);
+    userPassword = sc.nextLine();
+
+    <span class="hljs-keyword">try</span> {
+      Class.forName(<span class="hljs-string">&quot;oracle.jdbc.driver.OracleDriver&quot;</span>);
+      con = DriverManager.getConnection(URL, USER, PASSWORD);
+      System.out.println(<span class="hljs-string">&quot;Connecting to database successfully! (&#x9023;&#x7DDA;&#x6210;&#x529F;&#xFF01;)&quot;</span>);
+
+      stat = con.createStatement();
+      rs = stat.executeQuery(
+          <span class="hljs-string">&quot;SELECT * FROM MEMBER WHERE (NAME = &apos;&quot;</span> + userName + <span class="hljs-string">&quot;&apos;) AND (PASSWORD = &apos;&quot;</span> + userPassword + <span class="hljs-string">&quot;&apos;)&quot;</span>);
+
+      <span class="hljs-comment">// &#x99ED;&#x5BA2;&#x5011;&#x6240;&#x7A31;&#x547C;&#x7684;&quot;&#x586B;&#x7A7A;&#x904A;&#x6232;&quot;</span>
+      <span class="hljs-comment">// &#x5C07;&#x9375;&#x76E4;&#x8F38;&#x5165;&#x8CC7;&#x6599;&#x7576;&#x505A;&#x8B8A;&#x6578;&#x6240;&#x7D44;&#x5408;&#x6210;&#x7684;SQL&#x53E5;&#x5B50;&#xFF1A;</span>
+      <span class="hljs-comment">// SELECT * FROM MEMBER WHERE (NAME = &apos;1&apos; OR &apos;1&apos;=&apos;1&apos;) and (PASSWORD = &apos;1&apos; OR &apos;1&apos;=&apos;1&apos;);</span>
+
+      <span class="hljs-keyword">while</span> (rs.next()) {
+        System.out.println(<span class="hljs-string">&quot;User ID: &quot;</span> + rs.getInt(<span class="hljs-string">&quot;ID&quot;</span>));
+        System.out.println(<span class="hljs-string">&quot;User name: &quot;</span> + rs.getString(<span class="hljs-string">&quot;NAME&quot;</span>));
+        System.out.println(<span class="hljs-string">&quot;User password: &quot;</span> + rs.getString(<span class="hljs-string">&quot;PASSWORD&quot;</span>));
+        System.out.println();
+      }
+
+    } <span class="hljs-keyword">catch</span> (ClassNotFoundException ce) {
+      System.out.println(ce);
+    } <span class="hljs-keyword">catch</span> (SQLException se) {
+      System.out.println(se);
+    } <span class="hljs-keyword">finally</span> {
+      <span class="hljs-comment">// &#x4F9D;&#x5EFA;&#x7ACB;&#x9806;&#x5E8F;&#x95DC;&#x9589;&#x8CC7;&#x6E90; (&#x8D8A;&#x665A;&#x5EFA;&#x7ACB;&#x8D8A;&#x65E9;&#x95DC;&#x9589;)</span>
+      <span class="hljs-keyword">if</span> (stat != <span class="hljs-keyword">null</span>) {
+        <span class="hljs-keyword">try</span> {
+          stat.close();
+        } <span class="hljs-keyword">catch</span> (SQLException se) {
+          System.out.println(se);
+        }
+      }
+
+      <span class="hljs-keyword">if</span> (con != <span class="hljs-keyword">null</span>) {
+        <span class="hljs-keyword">try</span> {
+          con.close();
+        } <span class="hljs-keyword">catch</span> (SQLException se) {
+          System.out.println(se);
+        }
+      }
+      sc.close();
+    }
+  }
+}
+</code></pre>
+<h1 id="preparedstatement-&#x5C0D;&#x8C61;-&#x6700;&#x5E38;&#x7528;&#x9700;&#x8A18;&#x4F4F;">PreparedStatement &#x5C0D;&#x8C61; (&#x6700;&#x5E38;&#x7528;&#x9700;&#x8A18;&#x4F4F;)</h1>
+<ul>
+<li><p>&#x8CC7;&#x6599;&#x5EAB;&#x6703;&#x5C07; SQL &#x6307;&#x4EE4;&#x9810;&#x5148;&#x7DE8;&#x8B6F;,&#x53EF;&#x907F;&#x514D;&#x8CC7;&#x6599;&#x5EAB;&#x91CD;&#x8986;&#x89E3;&#x6790;&#x540C;&#x4E00;&#x500B; SQL &#x6307;&#x4EE4;,<code>&#x57F7;&#x884C;&#x6548;&#x80FD;&#x8F03;&#x597D;</code>,<code>&#x56E0;&#x70BA;&#x53EF;&#x4EE5;&#x52D5;&#x614B;&#x8655;&#x7406; SQL &#x6307;&#x4EE4;,&#x53EF;&#x907F;&#x514D; SQL Injection &#x653B;&#x64CA;</code></p>
+</li>
+<li><p>&#x63D0;&#x4F9B;&#x53C3;&#x6578;&#x5728;&#x6BCF;&#x6B21;&#x57F7;&#x884C;&#x6642;&#x7F6E;&#x5165;&#x4E0D;&#x540C;&#x7684;&#x503C;,&#x900F;&#x904E; <code>setType(int idx, Type value)</code> &#x63D0;&#x4F9B;&#x53C3;&#x6578;&#x503C;</p>
+<ul>
+<li><code>int idx</code>&#xFF0C;&#x7B2C;&#x5E7E;&#x500B;&#x554F;&#x865F;(&#x7531; 1 &#x958B;&#x59CB;)</li>
+<li><code>Type value</code>&#xFF0C;&#x554F;&#x865F;&#x7684;&#x503C;</li>
+</ul>
+</li>
+<li><p>&#x57F7;&#x884C; PreparedStatement &#x5169;&#x500B;&#x65B9;&#x6CD5;</p>
+<ul>
+<li><p>&#x57F7;&#x884C;&#x6642;&#x4E0D;&#x9700;&#x8981;&#x518D;&#x63D0;&#x4F9B;&#x6307;&#x4EE4;(&#x5728;&#x5275;&#x5EFA; PreparedStatement &#x6642;&#x6307;&#x4EE4;&#x5DF2;&#x7D93;&#x5148;&#x4EA4;&#x7D66;&#x8CC7;&#x6599;&#x5EAB;&#x4E86;)</p>
+</li>
+<li><p><code>ResultSet executeQuery()</code></p>
+</li>
+<li><code>int executeUpdate()</code></li>
+<li><code>boolean excute()</code>: &#x57F7;&#x884C;&quot;&#x672A;&#x77E5;&quot;&#x7684; SQL &#x6307;&#x4EE4;(&#x5982;&#x9810;&#x5B58;&#x7A0B;&#x5E8F;)<ul>
+<li>&#x56DE;&#x50B3; true &#x8868;&#x793A;&#x525B;&#x525B;&#x57F7;&#x884C;&#x7684;&#x52D5;&#x4F5C;&#x662F;&#x67E5;&#x8A62;&#xFF0C;false &#x8868;&#x793A;&#x66F4;&#x65B0;</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>&#x554F;&#x865F;&#x662F;&#x91DD;&#x5C0D;<code>&#x8CC7;&#x6599;</code>&#xFF0C;<code>&#x4E0D;&#x91DD;&#x5C0D;&#x6B04;&#x4F4D;&#x8207;&#x8868;&#x683C;</code>(&#x8981;&#x505A;&#x7684;&#x8A71;&#x9084;&#x662F;&#x8981;&#x7528;&#x5B57;&#x4E32;&#x4E32;&#x63A5;)</p>
+</li>
+</ul>
+<h1 id="preparedstatement-&#x5C0D;&#x8C61;&#x7BC4;&#x4F8B;">PreparedStatement &#x5C0D;&#x8C61;&#x7BC4;&#x4F8B;</h1>
+<ul>
+<li>&#x7C21;&#x6613;&#x6539;&#x5BEB;&#xFF0C;&#x53EF;&#x4EE5;&#x7528;&#x9019;&#x7A2E;&#x65B9;&#x5F0F;&#x52D5;&#x614B;&#x65B0;&#x589E;&#x8CC7;&#x6599;</li>
+</ul>
+<pre><code class="lang-cs">&#x7BC4;&#x4F8B;&#x7A0B;&#x5F0F;: <span class="hljs-string">&quot;/JavaTest/src/jdbctest/HelloJDBC.java&quot;</span>
+</code></pre>
+<pre><code class="lang-java"><span class="hljs-keyword">package</span> jdbctest;
+
+<span class="hljs-keyword">import</span> java.sql.Connection;
+<span class="hljs-keyword">import</span> java.sql.DriverManager;
+<span class="hljs-keyword">import</span> java.sql.PreparedStatement;
+<span class="hljs-keyword">import</span> java.sql.ResultSet;
+<span class="hljs-keyword">import</span> java.sql.SQLException;
+<span class="hljs-keyword">import</span> java.sql.Statement;
+<span class="hljs-keyword">import</span> java.util.Scanner;
+
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">HelloJDBC</span> </span>{
+  <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> String DRIVER = <span class="hljs-string">&quot;oracle.jdbc.driver.OracleDriver&quot;</span>;
+  <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> String URL = <span class="hljs-string">&quot;jdbc:oracle:thin:@localhost:1521:xe&quot;</span>;
+  <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> String USER = <span class="hljs-string">&quot;DAVID&quot;</span>;
+  <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> String PASSWORD = <span class="hljs-string">&quot;123456&quot;</span>;
+  <span class="hljs-comment">// JDBC &#x53EF;&#x4EE5;&#x7528; ? &#x8868;&#x793A;&#x52D5;&#x614B;&#x6539;&#x5BEB;&#x7684;&#x8CC7;&#x6599;</span>
+  <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> String INSERT_STMT = <span class="hljs-string">&quot;INSERT INTO DEPARTMENT (DEPTNO, DNAME, LOC) VALUES (?, ?, ?)&quot;</span>;
+
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
+    <span class="hljs-comment">// &#x70BA;&#x4E86;&#x642D;&#x914D;&#x8CC7;&#x6E90;&#x95DC;&#x9589;&#xFF0C;&#x6545;&#x9700;&#x81EA;&#x884C;&#x8A2D;&#x5B9A; try-catch</span>
+    Connection con = <span class="hljs-keyword">null</span>;
+    Statement stmt = <span class="hljs-keyword">null</span>;
+    ResultSet rs = <span class="hljs-keyword">null</span>;
+    PreparedStatement pstmt = <span class="hljs-keyword">null</span>;
+
+    Scanner sc = <span class="hljs-keyword">new</span> Scanner(System.in);
+    System.out.println(<span class="hljs-string">&quot;&#x8ACB;&#x8F38;&#x5165;&#x90E8;&#x9580;&#x7DE8;&#x865F;&quot;</span>);
+    <span class="hljs-keyword">int</span> deptno = sc.nextInt();
+    System.out.println(<span class="hljs-string">&quot;&#x8ACB;&#x8F38;&#x5165;&#x90E8;&#x9580;&#x540D;&#x7A31;&quot;</span>);
+    String dname = sc.next();
+    System.out.println(<span class="hljs-string">&quot;&#x8ACB;&#x8F38;&#x5165;&#x6240;&#x5728;&#x5730;&quot;</span>);
+    String loc = sc.next();
+
+    sc.close();
+
+    <span class="hljs-keyword">try</span> {
+      <span class="hljs-comment">// step 1: &#x8F09;&#x5165;&#x9A45;&#x52D5;</span>
+      Class.forName(DRIVER);
+      System.out.println(<span class="hljs-string">&quot;&#x8F09;&#x5165;&#x6210;&#x529F;&quot;</span>);
+
+      <span class="hljs-comment">// step 2: &#x5EFA;&#x7ACB;&#x9023;&#x7DDA;</span>
+      con = DriverManager.getConnection(URL, USER, PASSWORD);
+      System.out.println(<span class="hljs-string">&quot;&#x9023;&#x7DDA;&#x6210;&#x529F;&quot;</span>);
+
+      <span class="hljs-comment">// step 3: &#x57F7;&#x884C;SQL&#x6307;&#x4EE4;(&#x642D;&#x914D;PreparedStatement)</span>
+      <span class="hljs-comment">// &#x5DF2;&#x5148;&#x5C07;&#x90E8;&#x5206;SQL&#x6307;&#x4EE4;&#x63D0;&#x4EA4;&#x7D66;&#x8CC7;&#x6599;&#x5EAB;&#xFF0C;&#x7B49;&#x5F85;&#x5F8C;&#x7E8C;&#x9808;&#x67E5;&#x8A62;&#x7684;&#x8CC7;&#x6599;&#x6CE8;&#x5165;</span>
+      pstmt = con.prepareStatement(INSERT_STMT);
+
+      <span class="hljs-comment">// &#x57F7;&#x884C;&#x524D;&#x8981;&#x5C07;&#x6307;&#x4EE4;&#x4E2D;&#x5404;&#x500B;&#x554F;&#x865F;&#x5C0D;&#x61C9;&#x7684;&#x503C;&#x8A2D;&#x5B9A;&#x597D;</span>
+      pstmt.setInt(<span class="hljs-number">1</span>, deptno);
+      pstmt.setString(<span class="hljs-number">2</span>, dname);
+      pstmt.setString(<span class="hljs-number">3</span>, loc);
+
+      pstmt.executeUpdate();
+
+    } <span class="hljs-keyword">catch</span> (ClassNotFoundException e) {
+      e.printStackTrace();
+    } <span class="hljs-keyword">catch</span> (SQLException e) {
+      e.printStackTrace();
+    } <span class="hljs-keyword">finally</span> {
+      <span class="hljs-comment">// &#x8D8A;&#x665A;&#x5EFA;&#x7ACB;&#x7684;&#x8D8A;&#x65E9;&#x95DC;&#x9589;</span>
+      <span class="hljs-keyword">if</span> (rs != <span class="hljs-keyword">null</span>) {
+        <span class="hljs-keyword">try</span> {
+          rs.close();
+        } <span class="hljs-keyword">catch</span> (SQLException e) {
+          e.printStackTrace();
+        }
+      }
+      <span class="hljs-keyword">if</span> (stmt != <span class="hljs-keyword">null</span>) {
+        <span class="hljs-keyword">try</span> {
+          stmt.close();
+        } <span class="hljs-keyword">catch</span> (SQLException e) {
+          e.printStackTrace();
+        }
+      }
+      <span class="hljs-comment">// &#x9023;&#x7DDA;&#x4E0D;&#x70BA;&#x7A7A; &#x95DC;&#x9589;&#x9023;&#x7DDA;</span>
+      <span class="hljs-keyword">if</span> (con != <span class="hljs-keyword">null</span>) {
+        <span class="hljs-keyword">try</span> {
+          con.close();
+        } <span class="hljs-keyword">catch</span> (SQLException e) {
+          e.printStackTrace();
+        }
+      }
+    }
+  }
+}
+</code></pre>
+<ul>
+<li>&#x4E5F;&#x53EF;&#x6CE8;&#x5165;&#x591A;&#x500B;&#x503C;</li>
+</ul>
+<pre><code class="lang-cs">&#x7BC4;&#x4F8B;&#x7A0B;&#x5F0F;: <span class="hljs-string">&quot;/JavaEx_JDBC_Oracle/src/idv/david/basic/Test_INSERT_PreparedStatement.java&quot;</span>
+</code></pre>
+<pre><code class="lang-java"><span class="hljs-keyword">package</span> idv.david.basic;
+
+<span class="hljs-keyword">import</span> java.sql.Connection;
+<span class="hljs-keyword">import</span> java.sql.DriverManager;
+<span class="hljs-keyword">import</span> java.sql.PreparedStatement;
+<span class="hljs-keyword">import</span> java.sql.SQLException;
+
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Test_INSERT_PreparedStatement</span> </span>{
+  <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> String URL = <span class="hljs-string">&quot;jdbc:oracle:thin:@localhost:1521:xe&quot;</span>;
+  <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> String USER = <span class="hljs-string">&quot;david&quot;</span>;
+  <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> String PASSWORD = <span class="hljs-string">&quot;123456&quot;</span>;
+  <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> String SQL = <span class="hljs-string">&quot;INSERT INTO EMPLOYEE(EMPNO, ENAME, JOB, HIREDATE, SAL, COMM, DEPTNO)&quot;</span>
+      + <span class="hljs-string">&quot;VALUES(?, ?, ?, ?, ?, ?, ?)&quot;</span>;
+
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
+    Connection con = <span class="hljs-keyword">null</span>;
+    PreparedStatement pstmt = <span class="hljs-keyword">null</span>;
+
+    <span class="hljs-keyword">try</span> {
+      Class.forName(<span class="hljs-string">&quot;oracle.jdbc.driver.OracleDriver&quot;</span>);
+      con = DriverManager.getConnection(URL, USER, PASSWORD);
+      System.out.println(<span class="hljs-string">&quot;Connecting to database successfully! (&#x9023;&#x7DDA;&#x6210;&#x529F;&#xFF01;)&quot;</span>);
+
+      pstmt = con.prepareStatement(SQL);
+      pstmt.setInt(<span class="hljs-number">1</span>, <span class="hljs-number">7015</span>);
+      pstmt.setString(<span class="hljs-number">2</span>, <span class="hljs-string">&quot;DAVID&quot;</span>);
+      pstmt.setString(<span class="hljs-number">3</span>, <span class="hljs-string">&quot;MANAGER&quot;</span>);
+      pstmt.setDate(<span class="hljs-number">4</span>, java.sql.Date.valueOf(<span class="hljs-string">&quot;2016-01-01&quot;</span>));
+      pstmt.setDouble(<span class="hljs-number">5</span>, <span class="hljs-number">2500</span>);
+      pstmt.setDouble(<span class="hljs-number">6</span>, <span class="hljs-number">0.0</span>);
+      pstmt.setInt(<span class="hljs-number">7</span>, <span class="hljs-number">40</span>);
+
+      <span class="hljs-keyword">int</span> rowCount = pstmt.executeUpdate();
+      System.out.println(<span class="hljs-string">&quot;&#x65B0;&#x589E; &quot;</span> + rowCount + <span class="hljs-string">&quot; &#x7B46;&#x8CC7;&#x6599;&quot;</span>);
+
+    } <span class="hljs-keyword">catch</span> (ClassNotFoundException ce) {
+      System.out.println(ce);
+    } <span class="hljs-keyword">catch</span> (SQLException se) {
+      System.out.println(se);
+    } <span class="hljs-keyword">finally</span> {
+
+      <span class="hljs-comment">// &#x4F9D;&#x5EFA;&#x7ACB;&#x9806;&#x5E8F;&#x95DC;&#x9589;&#x8CC7;&#x6E90; (&#x8D8A;&#x665A;&#x5EFA;&#x7ACB;&#x8D8A;&#x65E9;&#x95DC;&#x9589;)</span>
+      <span class="hljs-keyword">if</span> (pstmt != <span class="hljs-keyword">null</span>) {
+        <span class="hljs-keyword">try</span> {
+          pstmt.close();
+        } <span class="hljs-keyword">catch</span> (SQLException se) {
+          System.out.println(se);
+        }
+      }
+
+      <span class="hljs-keyword">if</span> (con != <span class="hljs-keyword">null</span>) {
+        <span class="hljs-keyword">try</span> {
+          con.close();
+        } <span class="hljs-keyword">catch</span> (SQLException se) {
+          System.out.println(se);
+        }
+      }
+    }
+  }
+}
+</code></pre>
+<h1 id="&#x7D50;&#x5408;-preparedstatement-&#x907F;&#x514D;-sql-injection-&#x6CE8;&#x5165;&#x653B;&#x64CA;">&#x7D50;&#x5408; PreparedStatement &#x907F;&#x514D; SQL Injection &#x6CE8;&#x5165;&#x653B;&#x64CA;</h1>
+<ul>
+<li>&#x4ECD;&#x53EF;&#x6210;&#x529F;&#x9023;&#x7DDA;&#xFF0C;&#x4F46;&#x8CC7;&#x6599;&#x4E0D;&#x6703;&#x66DD;&#x5149;&#x3002;&#x4E14;&#x6548;&#x80FD;&#x66F4;&#x4F73;</li>
+</ul>
+<pre><code class="lang-cs">&#x7BC4;&#x4F8B;&#x7A0B;&#x5F0F;: <span class="hljs-string">&quot;/JavaEx_JDBC_Oracle/src/idv/david/basic/TestSQLInjectionPrevent.java&quot;</span>
+</code></pre>
+<pre><code class="lang-java"><span class="hljs-keyword">package</span> idv.david.basic;
+
+<span class="hljs-keyword">import</span> java.sql.Connection;
+<span class="hljs-keyword">import</span> java.sql.DriverManager;
+<span class="hljs-keyword">import</span> java.sql.PreparedStatement;
+<span class="hljs-keyword">import</span> java.sql.ResultSet;
+<span class="hljs-keyword">import</span> java.sql.SQLException;
+<span class="hljs-keyword">import</span> java.util.Scanner;
+
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">TestSQLInjectionPrevent</span> </span>{
+  <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> String URL = <span class="hljs-string">&quot;jdbc:oracle:thin:@localhost:1521:xe&quot;</span>;
+  <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> String USER = <span class="hljs-string">&quot;david&quot;</span>;
+  <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> String PASSWORD = <span class="hljs-string">&quot;123456&quot;</span>;
+  <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> String SQL = <span class="hljs-string">&quot;SELECT * FROM MEMBER WHERE NAME = ? AND PASSWORD = ?&quot;</span>;
+
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
+    Connection con = <span class="hljs-keyword">null</span>;
+    PreparedStatement pstmt = <span class="hljs-keyword">null</span>;
+    ResultSet rs = <span class="hljs-keyword">null</span>;
+
+    String userName = <span class="hljs-string">&quot;&quot;</span>, userPassword = <span class="hljs-string">&quot;&quot;</span>;
+
+    Scanner sc = <span class="hljs-keyword">new</span> Scanner(System.in);
+    System.out.println(<span class="hljs-string">&quot;&#x8ACB;&#x8F38;&#x5165;&#x540D;&#x7A31;: &quot;</span>);
+    userName = sc.nextLine();
+    System.out.println(<span class="hljs-string">&quot;&#x8ACB;&#x8F38;&#x5165;&#x5BC6;&#x78BC;: &quot;</span>);
+    userPassword = sc.nextLine();
+
+    <span class="hljs-keyword">try</span> {
+      Class.forName(<span class="hljs-string">&quot;oracle.jdbc.driver.OracleDriver&quot;</span>);
+      con = DriverManager.getConnection(URL, USER, PASSWORD);
+      System.out.println(<span class="hljs-string">&quot;Connecting to database successfully! (&#x9023;&#x7DDA;&#x6210;&#x529F;&#xFF01;)&quot;</span>);
+
+      <span class="hljs-comment">// SQL&#x6307;&#x4EE4;&#x9810;&#x5148;&#x8655;&#x7406;</span>
+      pstmt = con.prepareStatement(SQL);
+      <span class="hljs-comment">// &#x5C0D;&#x554F;&#x865F;&#x9032;&#x884C;&#x64CD;&#x4F5C;</span>
+      pstmt.setString(<span class="hljs-number">1</span>, userName);
+      pstmt.setString(<span class="hljs-number">2</span>, userPassword);
+
+      rs = pstmt.executeQuery();
+
+      <span class="hljs-keyword">while</span> (rs.next()) {
+        System.out.println(<span class="hljs-string">&quot;User ID: &quot;</span> + rs.getInt(<span class="hljs-string">&quot;ID&quot;</span>));
+        System.out.println(<span class="hljs-string">&quot;User name: &quot;</span> + rs.getString(<span class="hljs-string">&quot;NAME&quot;</span>));
+        System.out.println(<span class="hljs-string">&quot;User password: &quot;</span> + rs.getString(<span class="hljs-string">&quot;PASSWORD&quot;</span>));
+        System.out.println();
+      }
+
+    } <span class="hljs-keyword">catch</span> (ClassNotFoundException ce) {
+      System.out.println(ce);
+    } <span class="hljs-keyword">catch</span> (SQLException se) {
+      System.out.println(se);
+    } <span class="hljs-keyword">finally</span> {
+      <span class="hljs-comment">// &#x4F9D;&#x5EFA;&#x7ACB;&#x9806;&#x5E8F;&#x95DC;&#x9589;&#x8CC7;&#x6E90; (&#x8D8A;&#x665A;&#x5EFA;&#x7ACB;&#x8D8A;&#x65E9;&#x95DC;&#x9589;)</span>
+      <span class="hljs-keyword">if</span> (pstmt != <span class="hljs-keyword">null</span>) {
+        <span class="hljs-keyword">try</span> {
+          pstmt.close();
+        } <span class="hljs-keyword">catch</span> (SQLException se) {
+          System.out.println(se);
+        }
+      }
+
+      <span class="hljs-keyword">if</span> (con != <span class="hljs-keyword">null</span>) {
+        <span class="hljs-keyword">try</span> {
+          con.close();
+        } <span class="hljs-keyword">catch</span> (SQLException se) {
+          System.out.println(se);
+        }
+      }
+      sc.close();
+    }
+  }
+}
+</code></pre>
+<h1 id="&#x8CC7;&#x6599;&#x5EAB;&#x6210;&#x672C;">&#x8CC7;&#x6599;&#x5EAB;&#x6210;&#x672C;</h1>
+<ul>
+<li>&#x6210;&#x672C;&#x539F;&#x56E0;<ul>
+<li>&#x8CC7;&#x6599;&#x5EAB;&#x7248;&#x672C;</li>
+<li>&#x8CC7;&#x6599;&#x5EAB;&#x529F;&#x80FD;</li>
+<li>&#x8CC7;&#x6599;&#x5EAB;&#x4E00;&#x6B21;&#x9023;&#x7DDA;&#x6578;&#x91CF;</li>
+</ul>
+</li>
+<li>&#x6CE8;&#x610F;<ul>
+<li>&#x6240;&#x4EE5;&#x5FC5;&#x9808;&#x8981;&#x4F7F;&#x7528;<code>try{}catch{}</code>&#x95DC;&#x9589;&#x4F7F;&#x7528;<code>&#x8CC7;&#x6E90;</code></li>
+</ul>
+</li>
+</ul>
+<h1 id="callablestatement-&#x5C0D;&#x8C61;">CallableStatement &#x5C0D;&#x8C61;</h1>
+<ul>
+<li><p>&#x7E7C;&#x627F; PreparedStatement &#x4ECB;&#x9762;,&#x7528;&#x4F86;&#x547C;&#x53EB;<code>&#x8CC7;&#x6599;&#x5EAB;&#x9810;&#x5B58;&#x7A0B;&#x5E8F;</code></p>
+</li>
+<li><p>&#x9810;&#x5B58;&#x7A0B;&#x5E8F;(stored procedure)&#x5728;&#x61C9;&#x7528;&#x7A0B;&#x5F0F;&#x57F7;&#x884C;&#x524D;,&#x5DF2;&#x4E8B;&#x5148;&#x7DE8;&#x8B6F;&#x597D;&#x5728;&#x8CC7;&#x6599;&#x5EAB;&#x88E1;,&#x56E0;&#x6B64;&#x9810;&#x5B58;&#x7A0B;&#x5E8F;&#x7684;&#x6548;&#x80FD;&#x4E00;&#x822C;&#x6BD4;&#x9810;&#x5148;&#x7DE8;&#x8B6F;&#x7684;&#x6558;&#x8FF0;&#x5FEB;</p>
+</li>
+<li><p>&#x7A0B;&#x5F0F;&#x8A2D;&#x8A08;&#x5E2B;&#x53EA;&#x9700;&#x77E5;&#x9053;&#x9810;&#x5B58;&#x7A0B;&#x5E8F;&#x7684;&#x540D;&#x7A31;&#x8207;&#x8F38;&#x5165;&#x8F38;&#x51FA;&#x7684;&#x53C3;&#x6578;,&#x7121;&#x9700;&#x66B8;&#x89E3; SQL
+&#x6307;&#x4EE4;</p>
+</li>
+<li><p>&#x4E0D;&#x540C;&#x7684;&#x8CC7;&#x6599;&#x5EAB;&#x6709;&#x4E0D;&#x540C;&#x7684;&#x9810;&#x5B58;&#x7A0B;&#x5E8F;&#x8A9E;&#x6CD5;;&#x5C0D;&#x4E09;&#x968E;&#x958B;&#x767C;&#x4EBA;&#x54E1;(&#x524D;&#x7AEF;&#x3001;&#x5F8C;&#x7AEF;&#x3001;&#x8CC7;&#x6599;&#x7AEF;)&#x4F86;&#x8AAA;,&#x610F;&#x7FA9;&#x4E0D;&#x5927;</p>
+</li>
+</ul>
+<h1 id="callablestatement-&#x7BC4;&#x4F8B;">CallableStatement &#x7BC4;&#x4F8B;</h1>
+<ul>
+<li>&#x5BEB;&#x5165;&#x8CC7;&#x6599;: <code>&#x63D2;&#x5165;&#x8CC7;&#x6599;</code></li>
+</ul>
+<pre><code class="lang-cs">&#x7BC4;&#x4F8B;&#x7A0B;&#x5F0F;: <span class="hljs-string">&quot;/JavaEx_JDBC_Oracle/items/procedure.txt&quot;</span>
+</code></pre>
+<pre><code class="lang-sql"><span class="hljs-keyword">CREATE</span> <span class="hljs-keyword">OR</span> <span class="hljs-keyword">REPLACE</span> <span class="hljs-keyword">PROCEDURE</span> INSERT_EMP
+(
+  EMPNO <span class="hljs-keyword">in</span> <span class="hljs-built_in">INTEGER</span>,
+  ENAME <span class="hljs-keyword">in</span> VARCHAR2,
+  JOB <span class="hljs-keyword">in</span> VARCHAR2,
+  HIREDATE <span class="hljs-keyword">in</span> <span class="hljs-built_in">DATE</span>,
+  SAL <span class="hljs-keyword">in</span> <span class="hljs-built_in">FLOAT</span>,
+  COMM <span class="hljs-keyword">in</span> <span class="hljs-built_in">FLOAT</span>,
+  DEPTNO <span class="hljs-keyword">in</span> <span class="hljs-built_in">INTEGER</span>
+)
+<span class="hljs-keyword">IS</span>
+<span class="hljs-keyword">BEGIN</span>
+<span class="hljs-keyword">INSERT</span> <span class="hljs-keyword">INTO</span> EMPLOYEE (EMPNO, ENAME, JOB, HIREDATE, SAL, COMM, DEPTNO)
+<span class="hljs-keyword">VALUES</span> (EMPNO, ENAME, JOB, HIREDATE, SAL, COMM, DEPTNO);
+<span class="hljs-keyword">END</span>;
+</code></pre>
+<pre><code class="lang-cs">&#x7BC4;&#x4F8B;&#x7A0B;&#x5F0F;: <span class="hljs-string">&quot;/JavaEx_JDBC_Oracle/src/idv/david/basic/Test_StoredProcedureIN.java&quot;</span>
+</code></pre>
+<pre><code class="lang-java"><span class="hljs-keyword">package</span> idv.david.basic;
+
+<span class="hljs-keyword">import</span> java.sql.CallableStatement;
+<span class="hljs-keyword">import</span> java.sql.Connection;
+<span class="hljs-keyword">import</span> java.sql.Date;
+<span class="hljs-keyword">import</span> java.sql.DriverManager;
+<span class="hljs-keyword">import</span> java.sql.SQLException;
+<span class="hljs-keyword">import</span> java.util.Calendar;
+<span class="hljs-keyword">import</span> java.util.GregorianCalendar;
+
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Test_StoredProcedureIN</span> </span>{
+  <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> String URL = <span class="hljs-string">&quot;jdbc:oracle:thin:@localhost:1521:xe&quot;</span>;
+  <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> String USER = <span class="hljs-string">&quot;david&quot;</span>;
+  <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> String PASSWORD = <span class="hljs-string">&quot;123456&quot;</span>;
+
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
+    Connection con = <span class="hljs-keyword">null</span>;
+    CallableStatement cstmt = <span class="hljs-keyword">null</span>;
+
+    <span class="hljs-keyword">try</span> {
+      Class.forName(<span class="hljs-string">&quot;oracle.jdbc.driver.OracleDriver&quot;</span>);
+      con = DriverManager.getConnection(URL, USER, PASSWORD);
+
+      cstmt = con.prepareCall(<span class="hljs-string">&quot;{call INSERT_EMP(?, ?, ?, ?, ?, ?, ?)}&quot;</span>);
+      cstmt.setInt(<span class="hljs-number">1</span>, <span class="hljs-number">7015</span>);
+      cstmt.setString(<span class="hljs-number">2</span>, <span class="hljs-string">&quot;DAVID&quot;</span>);
+      cstmt.setString(<span class="hljs-number">3</span>, <span class="hljs-string">&quot;MANAGER&quot;</span>);
+
+      <span class="hljs-comment">// &#x5229;&#x7528;GregorianCalendar&#x6307;&#x5B9A;&#x65E5;&#x671F;&#x518D;&#x8F49;&#x63DB;&#x6210;java.sql.Date&#x8CC7;&#x6599;</span>
+      GregorianCalendar cal = <span class="hljs-keyword">new</span> GregorianCalendar(<span class="hljs-number">2016</span>, Calendar.JANUARY, <span class="hljs-number">1</span>);
+      Date date = <span class="hljs-keyword">new</span> Date(cal.getTimeInMillis());
+      cstmt.setDate(<span class="hljs-number">4</span>, date);
+
+      cstmt.setFloat(<span class="hljs-number">5</span>, <span class="hljs-number">2500</span>);
+      cstmt.setFloat(<span class="hljs-number">6</span>, <span class="hljs-number">0.0f</span>);
+      cstmt.setInt(<span class="hljs-number">7</span>, <span class="hljs-number">40</span>);
+
+      cstmt.execute();
+
+    } <span class="hljs-keyword">catch</span> (ClassNotFoundException ce) {
+      System.out.println(ce);
+    } <span class="hljs-keyword">catch</span> (SQLException se) {
+      System.out.println(se);
+    } <span class="hljs-keyword">finally</span> {
+      <span class="hljs-keyword">if</span> (cstmt != <span class="hljs-keyword">null</span>) {
+        <span class="hljs-keyword">try</span> {
+          cstmt.close();
+        } <span class="hljs-keyword">catch</span> (SQLException se) {
+          System.out.println(se);
+        }
+      }
+
+      <span class="hljs-keyword">if</span> (con != <span class="hljs-keyword">null</span>) {
+        <span class="hljs-keyword">try</span> {
+          con.close();
+        } <span class="hljs-keyword">catch</span> (SQLException se) {
+          System.out.println(se);
+        }
+      }
+    }
+  }
+}
+</code></pre>
+<ul>
+<li>&#x8B80;&#x53D6;&#x8CC7;&#x6599;: <code>&#x8B80;&#x53D6;&#x5E73;&#x5747;&#x503C;</code></li>
+</ul>
+<pre><code class="lang-cs">&#x7BC4;&#x4F8B;&#x7A0B;&#x5F0F;: <span class="hljs-string">&quot;/JavaEx_JDBC_Oracle/items/procedure.txt&quot;</span>
+</code></pre>
+<pre><code class="lang-sql"><span class="hljs-keyword">CREATE</span> <span class="hljs-keyword">OR</span> <span class="hljs-keyword">REPLACE</span> <span class="hljs-keyword">PROCEDURE</span> GET_SAL_AVG(val <span class="hljs-keyword">IN</span> <span class="hljs-built_in">FLOAT</span>, average <span class="hljs-keyword">OUT</span> <span class="hljs-built_in">FLOAT</span>)
+<span class="hljs-keyword">IS</span>
+temp_avg <span class="hljs-built_in">FLOAT</span>;
+<span class="hljs-keyword">BEGIN</span>
+<span class="hljs-keyword">SELECT</span> <span class="hljs-keyword">avg</span>(SAL) <span class="hljs-keyword">INTO</span> temp_avg <span class="hljs-keyword">FROM</span> EMPLOYEE <span class="hljs-keyword">WHERE</span> SAL &lt;= val;
+<span class="hljs-comment">-- := &#x8868;&#x793A; temp_avg &#x6307;&#x5B9A;&#x7D66; average&#xFF0C;&#x5373; Java &#x7684; =</span>
+average := temp_avg;
+RETURN;
+<span class="hljs-keyword">END</span>;
+</code></pre>
+<pre><code class="lang-cs">&#x7BC4;&#x4F8B;&#x7A0B;&#x5F0F;: <span class="hljs-string">&quot;/JavaEx_JDBC_Oracle/src/idv/david/basic/Test_StoredProcedureOUT.java&quot;</span>
+</code></pre>
+<pre><code class="lang-java"><span class="hljs-keyword">package</span> idv.david.basic;
+
+<span class="hljs-keyword">import</span> java.sql.CallableStatement;
+<span class="hljs-keyword">import</span> java.sql.Connection;
+<span class="hljs-keyword">import</span> java.sql.DriverManager;
+<span class="hljs-keyword">import</span> java.sql.SQLException;
+<span class="hljs-keyword">import</span> java.sql.Types;
+
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Test_StoredProcedureOUT</span> </span>{
+  <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> String URL = <span class="hljs-string">&quot;jdbc:oracle:thin:@localhost:1521:xe&quot;</span>;
+  <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> String USER = <span class="hljs-string">&quot;david&quot;</span>;
+  <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> String PASSWORD = <span class="hljs-string">&quot;123456&quot;</span>;
+
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
+    Connection con = <span class="hljs-keyword">null</span>;
+    CallableStatement cstmt = <span class="hljs-keyword">null</span>;
+
+    <span class="hljs-keyword">try</span> {
+      Class.forName(<span class="hljs-string">&quot;oracle.jdbc.driver.OracleDriver&quot;</span>);
+      con = DriverManager.getConnection(URL, USER, PASSWORD);
+      System.out.println(<span class="hljs-string">&quot;Connecting to database successfully! (&#x9023;&#x7DDA;&#x6210;&#x529F;&#xFF01;)&quot;</span>);
+
+      <span class="hljs-comment">// ? &#x9810;&#x8A2D;&#x6703;&#x88AB;&#x7576;&#x4F5C;&#x8F38;&#x5165;(IN)&#x7684;&#x53C3;&#x6578;</span>
+      cstmt = con.prepareCall(<span class="hljs-string">&quot;{call get_sal_avg(?,?)}&quot;</span>);
+      cstmt.setFloat(<span class="hljs-number">1</span>, <span class="hljs-number">1000</span>);
+      <span class="hljs-comment">// registerOutParameter &#x8A2D;&#x5B9A;&#x70BA;&#x8F38;&#x51FA;(OUT)&#x53C3;&#x6578;</span>
+      <span class="hljs-comment">// Types.FLOAT &#x8A2D;&#x5B9A;&#x8CC7;&#x6599;&#x985E;&#x578B;</span>
+      cstmt.registerOutParameter(<span class="hljs-number">2</span>, Types.FLOAT);
+      cstmt.execute();
+
+      <span class="hljs-comment">// &#x53D6;&#x5F97;&#x7B2C;&#x4E8C;&#x500B;&#x554F;&#x865F;&#x7684;&#x8CC7;&#x6599;</span>
+      <span class="hljs-keyword">float</span> avg = cstmt.getFloat(<span class="hljs-number">2</span>);
+      System.out.println(<span class="hljs-string">&quot;Average is &quot;</span> + avg);
+
+    } <span class="hljs-keyword">catch</span> (ClassNotFoundException ce) {
+      System.out.println(ce);
+    } <span class="hljs-keyword">catch</span> (SQLException se) {
+      System.out.println(se);
+    } <span class="hljs-keyword">finally</span> {
+
+      <span class="hljs-comment">// &#x4F9D;&#x5EFA;&#x7ACB;&#x9806;&#x5E8F;&#x95DC;&#x9589;&#x8CC7;&#x6E90; (&#x8D8A;&#x665A;&#x5EFA;&#x7ACB;&#x8D8A;&#x65E9;&#x95DC;&#x9589;)</span>
+      <span class="hljs-keyword">if</span> (cstmt != <span class="hljs-keyword">null</span>) {
+        <span class="hljs-keyword">try</span> {
+          cstmt.close();
+        } <span class="hljs-keyword">catch</span> (SQLException se) {
+          System.out.println(se);
+        }
+      }
+
+      <span class="hljs-keyword">if</span> (con != <span class="hljs-keyword">null</span>) {
+        <span class="hljs-keyword">try</span> {
+          con.close();
+        } <span class="hljs-keyword">catch</span> (SQLException se) {
+          System.out.println(se);
+        }
+      }
+    }
+  }
+}
+</code></pre>
+<h1 id="resultset-advanced&#x52A0;&#x5F37;">ResultSet Advanced(&#x52A0;&#x5F37;)</h1>
+<ul>
+<li><p><code>JDBC 2.0</code> &#x5C0D; ResultSet &#x505A;&#x4E86;&#x8A31;&#x591A;&#x52A0;&#x5F37;,&#x5141;&#x8A31;&#x66F4;&#x5F48;&#x6027;&#x7684;&#x79FB;&#x52D5;&#x6E38;&#x6A19;&#x8207;&#x8CC7;&#x6599;&#x66F4;&#x65B0;&#x7B49;&#x9032;&#x968E;&#x64CD;&#x4F5C;</p>
+</li>
+<li><p>&#x5EFA;&#x7ACB; Statement &#x7269;&#x4EF6;&#x6642;&#x9032;&#x884C;&#x8A2D;&#x5B9A;:</p>
+<ul>
+<li>Statement createStatement(int resultSetType, int resultSetConcurrency)</li>
+<li>PreparedStatement prepareStatement(String sql, int resultSetType, int resultSetConcurrency)</li>
+</ul>
+</li>
+<li><p>&#x9A45;&#x52D5;&#x7A0B;&#x5F0F;&#x5FC5;&#x9808;&#x80FD;&#x5920;&#x652F;&#x63F4;,&#x5426;&#x5247;&#x6703;&#x7522;&#x751F; Runtime Exception</p>
+</li>
+<li><p><code>&#x4E0D;&#x662F;&#x6240;&#x6709;&#x9A45;&#x52D5;&#x7A0B;&#x5F0F;&#x90FD;&#x652F;&#x63F4;</code></p>
+</li>
+<li><p>&#x76F8;&#x95DC;&#x53C3;&#x6578; (&#x90FD;&#x662F;&#x5728; ResultSet &#x4ECB;&#x9762;&#x5DF2;&#x5B9A;&#x7FA9;&#x597D;&#x7684; static final &#x7684;&#x6574;&#x6578;&#x5E38;&#x6578;):</p>
+<ul>
+<li><p>ResultSetType</p>
+<ul>
+<li>TYPE_FORWARD_ONLY (&#x53EA;&#x80FD;&#x524D;&#x9032;)</li>
+<li>TYPE_SCROLL_INSENSITIVE (<code>&#x53EF;&#x524D;&#x5F8C;&#x79FB;&#x52D5;</code>,<code>&#x4E0D;&#x53CD;&#x61C9;&#x8CC7;&#x6599;&#x4FEE;&#x6539;</code>)</li>
+<li>TYPE_SCROLL_SENSITIVE (<code>&#x53EF;&#x524D;&#x5F8C;&#x79FB;&#x52D5;</code>,<code>&#x53CD;&#x61C9;&#x8CC7;&#x6599;&#x4FEE;&#x6539;</code>)</li>
+</ul>
+</li>
+<li><p>ResultSetConcurrency</p>
+<ul>
+<li>CONCUR_READ_ONLY (<code>&#x8CC7;&#x6599;</code> <code>&#x70BA;&#x552F;&#x8B80;</code>)</li>
+<li>CONCUR_UPDATABLE (<code>&#x8CC7;&#x6599;</code> <code>&#x53EF;&#x7570;&#x52D5;</code>,&#x5982;&#x65B0;&#x589E;&#x3001;&#x4FEE;&#x6539;&#x8207;&#x522A;&#x9664;)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>&#x8A3B;: &#x82E5;&#x6C92;&#x8A2D;&#x5B9A;,&#x9810;&#x8A2D;&#x70BA; TYPE_FORWARD_ONLY &amp; CONCUR_READ_ONLY</p>
+<ol>
+<li><code>&#x6E38;&#x6A19;&#x53EA;&#x80FD;&#x4E00;&#x76F4;&#x5F80;&#x524D;(&#x5411;&#x4E0B;)&#x79FB;&#x52D5;&#x7121;&#x6CD5;&#x8FD4;&#x56DE;</code></li>
+<li><code>&#x53EA;&#x80FD;&#x552F;&#x8B80;&#xFF0C;&#x7121;&#x6CD5;&#x900F;&#x904E; ResultSet &#x505A;&#x8CC7;&#x6599;&#x66F4;&#x65B0;&#x7684;&#x64CD;&#x4F5C;</code></li>
+</ol>
+</li>
+</ul>
+<pre><code class="lang-java"><span class="hljs-keyword">package</span> idv.david.advanced;
+
+<span class="hljs-keyword">import</span> java.sql.Connection;
+<span class="hljs-keyword">import</span> java.sql.DriverManager;
+<span class="hljs-keyword">import</span> java.sql.ResultSet;
+<span class="hljs-keyword">import</span> java.sql.SQLException;
+<span class="hljs-keyword">import</span> java.sql.Statement;
+
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Test_ResultSet_Cursor</span> </span>{
+  <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> String URL = <span class="hljs-string">&quot;jdbc:oracle:thin:@localhost:1521:xe&quot;</span>;
+  <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> String USER = <span class="hljs-string">&quot;david&quot;</span>;
+  <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> String PASSWORD = <span class="hljs-string">&quot;123456&quot;</span>;
+  <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> String SQL = <span class="hljs-string">&quot;SELECT * FROM EMPLOYEE&quot;</span>;
+
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
+    Connection con = <span class="hljs-keyword">null</span>;
+    Statement stmt = <span class="hljs-keyword">null</span>;
+    ResultSet rs = <span class="hljs-keyword">null</span>;
+
+    <span class="hljs-keyword">try</span> {
+      Class.forName(<span class="hljs-string">&quot;oracle.jdbc.driver.OracleDriver&quot;</span>);
+      con = DriverManager.getConnection(URL, USER, PASSWORD);
+
+      stmt = con.createStatement(); <span class="hljs-comment">// SQLException: Oracle - &#x7121;&#x6548;&#x7684;&#x50C5;&#x8F49;&#x9001;&#x7D50;&#x679C;&#x96C6;&#x4F5C;&#x696D;: beforeFirst</span>
+                      <span class="hljs-comment">// SQLException: Microsoft SQL Server 2008 - &#x4E0D;&#x652F;&#x63F4;&#x5728;&#x9806;&#x5411;&#x7D50;&#x679C;&#x96C6;&#x4E0A;&#x57F7;&#x884C;&#x8981;&#x6C42;&#x7684;&#x4F5C;&#x696D;&#x3002;</span>
+
+      <span class="hljs-comment">// &#x5C0D;&#x6E38;&#x6A19;&#x7684;&#x8A2D;&#x5B9A;</span>
+<span class="hljs-comment">//      stmt = con.createStatement(ResultSet.TYPE_FORWARD_ONLY, ResultSet.CONCUR_READ_ONLY);</span>
+<span class="hljs-comment">//      stmt = con.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_UPDATABLE); // Microsoft SQL Server 2008 &#x4E0D;&#x652F;&#x63F4;&#x6B64;&#x7A2E;&#x7D44;&#x5408;</span>
+      stmt = con.createStatement(ResultSet.TYPE_SCROLL_SENSITIVE, ResultSet.CONCUR_READ_ONLY);
+<span class="hljs-comment">//      stmt = con.createStatement(ResultSet.TYPE_SCROLL_SENSITIVE, ResultSet.CONCUR_UPDATABLE);</span>
+
+      rs = stmt.executeQuery(SQL);
+
+      System.out.println(<span class="hljs-string">&quot;&#x8D77;&#x59CB;&#x4F4D;&#x7F6E;=&quot;</span> + rs.getRow());
+      rs.next(); <span class="hljs-comment">// &#x4E0D;&#x53EF;&#x907A;&#x6F0F; rs.next();</span>
+      System.out.print(rs.getRow() + <span class="hljs-string">&quot; &quot;</span>);
+      System.out.print(<span class="hljs-string">&quot; EMPNO = &quot;</span> + rs.getInt(<span class="hljs-number">1</span>));
+      System.out.print(<span class="hljs-string">&quot; ENAME = &quot;</span> + rs.getString(<span class="hljs-number">2</span>) + <span class="hljs-string">&quot;\n&quot;</span>);
+      rs.beforeFirst();
+
+      System.out.println(<span class="hljs-string">&quot;----------------1----------------&quot;</span>);
+
+      <span class="hljs-keyword">while</span> (rs.next()) {
+        System.out.print(rs.getRow() + <span class="hljs-string">&quot; &quot;</span>);
+        System.out.print(<span class="hljs-string">&quot; EMPNO = &quot;</span> + rs.getInt(<span class="hljs-number">1</span>));
+        System.out.print(<span class="hljs-string">&quot; ENAME = &quot;</span> + rs.getString(<span class="hljs-number">2</span>) + <span class="hljs-string">&quot;\n&quot;</span>);
+      }
+
+      System.out.println(<span class="hljs-string">&quot;----------------2----------------&quot;</span>);
+
+      <span class="hljs-keyword">while</span> (rs.previous()) {
+        System.out.print(rs.getRow() + <span class="hljs-string">&quot; &quot;</span>);
+        System.out.print(<span class="hljs-string">&quot; EMPNO = &quot;</span> + rs.getInt(<span class="hljs-number">1</span>));
+        System.out.print(<span class="hljs-string">&quot; ENAME = &quot;</span> + rs.getString(<span class="hljs-number">2</span>) + <span class="hljs-string">&quot;\n&quot;</span>);
+      }
+
+      System.out.println(<span class="hljs-string">&quot;----------------3----------------&quot;</span>);
+
+      <span class="hljs-comment">// &#x7D55;&#x5C0D;&#x4F4D;&#x7F6E;</span>
+      rs.absolute(<span class="hljs-number">10</span>);
+
+      <span class="hljs-comment">// &#x76F8;&#x5C0D;&#x4F4D;&#x7F6E;</span>
+      rs.relative(-<span class="hljs-number">3</span>);
+
+      rs.first();
+
+      System.out.print(rs.getRow() + <span class="hljs-string">&quot; &quot;</span>);
+      System.out.print(<span class="hljs-string">&quot; EMPNO = &quot;</span> + rs.getInt(<span class="hljs-number">1</span>));
+      System.out.print(<span class="hljs-string">&quot; ENAME = &quot;</span> + rs.getString(<span class="hljs-number">2</span>) + <span class="hljs-string">&quot;\n&quot;</span>);
+
+      System.out.println(<span class="hljs-string">&quot;----------------4----------------&quot;</span>);
+
+      <span class="hljs-comment">// &#x79FB;&#x52D5;&#x6E38;&#x6A19;(last) + &#x5217;&#x7DE8;&#x865F; (getRow)</span>
+      rs.last();
+      <span class="hljs-keyword">int</span> len = rs.getRow();
+      System.out.println(<span class="hljs-string">&quot;&#x8CC7;&#x6599;&#x5171;&quot;</span> + len + <span class="hljs-string">&quot;&#x7B46;&quot;</span> + <span class="hljs-string">&quot; [&#x4F7F;&#x7528;ResultSet&#x6E38;&#x6A19;&#x79FB;&#x52D5;&#x7684;&#x65B9;&#x5F0F;]&quot;</span>);
+      rs.beforeFirst();
+
+      System.out.println(<span class="hljs-string">&quot;----------------5----------------&quot;</span>);
+
+      ResultSet rs2 = stmt.executeQuery(<span class="hljs-string">&quot;SELECT count(*) AS count FROM EMPLOYEE&quot;</span>);
+      rs2.next();
+      <span class="hljs-keyword">int</span> len2 = rs2.getInt(<span class="hljs-string">&quot;count&quot;</span>);
+      System.out.println(<span class="hljs-string">&quot;&#x8CC7;&#x6599;&#x5171;&quot;</span> + len2 + <span class="hljs-string">&quot;&#x7B46;&quot;</span> + <span class="hljs-string">&quot; [&#x76F4;&#x63A5;&#x4E0B;SQL&#x6307;&#x4EE4;&#x7684;&#x65B9;&#x5F0F;]&quot;</span>);
+      rs2.close();
+
+    } <span class="hljs-keyword">catch</span> (ClassNotFoundException ce) {
+      System.out.println(ce);
+    } <span class="hljs-keyword">catch</span> (SQLException se) {
+      System.out.println(se);
+    } <span class="hljs-keyword">finally</span> {
+      <span class="hljs-comment">// &#x4F9D;&#x5EFA;&#x7ACB;&#x9806;&#x5E8F;&#x95DC;&#x9589;&#x8CC7;&#x6E90; (&#x8D8A;&#x665A;&#x5EFA;&#x7ACB;&#x8D8A;&#x65E9;&#x95DC;&#x9589;)</span>
+      <span class="hljs-keyword">if</span> (rs != <span class="hljs-keyword">null</span>) {
+        <span class="hljs-keyword">try</span> {
+          rs.close();
+        } <span class="hljs-keyword">catch</span> (SQLException se) {
+          System.out.println(se);
+        }
+      }
+
+      <span class="hljs-keyword">if</span> (stmt != <span class="hljs-keyword">null</span>) {
+        <span class="hljs-keyword">try</span> {
+          stmt.close();
+        } <span class="hljs-keyword">catch</span> (SQLException se) {
+          System.out.println(se);
+        }
+      }
+
+      <span class="hljs-keyword">if</span> (con != <span class="hljs-keyword">null</span>) {
+        <span class="hljs-keyword">try</span> {
+          con.close();
+        } <span class="hljs-keyword">catch</span> (SQLException se) {
+          System.out.println(se);
+        }
+      }
+    }
+  }
+}
+</code></pre>
+<h1 id="metadata-&#x8CC7;&#x6599;&#x7684;&#x8CC7;&#x6599;">MetaData (&#x8CC7;&#x6599;&#x7684;&#x8CC7;&#x6599;)</h1>
+<ul>
+<li><p><code>JDBC &#x63D0;&#x4F9B;&#x67E5;&#x8A62;&#x7D50;&#x679C;&#x8207;&#x8CC7;&#x6599;&#x5EAB;&#x5169;&#x7A2E; MetaData</code>,DatabaseMetaData <code>&#x53D6;&#x5F97;</code>&#x8CC7;&#x6599;&#x5EAB;&#x76F8;&#x95DC;<code>&#x8CC7;&#x8A0A;</code>,&#x70BA;&#x7814;&#x767C;&#x4EBA;&#x54E1;&#x7528;&#x4F86;&#x5BEB;&#x7368;&#x7ACB;&#x65BC;&#x8CC7;&#x6599;&#x5EAB;&#x7684;&#x9A45;&#x52D5;&#x7A0B;&#x5F0F;&#x548C;&#x958B;&#x767C;&#x5DE5;&#x5177;</p>
+</li>
+<li><p>&#x900F;&#x904E;<code>ResultSet &#x7684; getMetaData &#x65B9;&#x6CD5;</code>&#x5373;&#x53EF;&#x53D6;&#x5F97; ResultSetMetaData <sup><bikao>&#x2605;</bikao></sup> &#x7269;&#x4EF6;,&#x800C;&#x900F;&#x904E;<code>Connection &#x7684; getMetaData &#x65B9;&#x6CD5;</code>&#x53D6;&#x5F97; DatabaseMetaData &#x7269;&#x4EF6;</p>
+</li>
+<li><p>ResultSetMetaData &#x5E38;&#x7528;&#x65B9;&#x6CD5;:</p>
+<ul>
+<li>int getColumnCount():&#x53D6;&#x5F97;&#x6B04;&#x4F4D;&#x6578;</li>
+<li>String getColumnName(int col):&#x53D6;&#x5F97;&#x6B04;&#x4F4D;&#x540D;</li>
+<li>String getColumnTypeName(int col):&#x53D6;&#x5F97;&#x6B04;&#x4F4D;&#x5728; DBMS &#x6240;&#x4F7F;&#x7528;&#x7684; SQL type &#x7684;&#x540D;&#x7A31;</li>
+<li>String getTableName(int col):&#x53D6;&#x5F97;&#x6B04;&#x4F4D;&#x6240;&#x5C6C;&#x7684;&#x8868;&#x683C;&#x540D;&#x7A31;</li>
+<li>boolean isNullable(int col):&#x6B04;&#x4F4D;&#x80FD;&#x5426;&#x70BA; null</li>
+</ul>
+</li>
+</ul>
+<h1 id="metadata-&#x7BC4;&#x4F8B;">MetaData &#x7BC4;&#x4F8B;</h1>
+<ul>
+<li>RSMetaData: &#x8B80;&#x53D6;&#x7576;&#x4E0B;&#x4F60;&#x81EA;&#x5DF1;&#x8868;&#x683C;&#x7684;&#x8868;&#x683C;&#x540D;&#x7A31;&#x7684;&#x8A71;&#xFF0C;Oracle &#x65B9;&#x6CD5;&#x6703;&#x56DE;&#x50B3;&#x7A7A;&#x503C;</li>
+</ul>
+<pre><code class="lang-cs">&#x7BC4;&#x4F8B;&#x7A0B;&#x5F0F;: <span class="hljs-string">&quot;/JavaEx_JDBC_Oracle/src/idv/david/advanced/Test_SELECT_RSMetaData.java&quot;</span>
+</code></pre>
+<pre><code class="lang-java"><span class="hljs-keyword">package</span> idv.david.advanced;
+
+<span class="hljs-keyword">import</span> java.sql.Connection;
+<span class="hljs-keyword">import</span> java.sql.DriverManager;
+<span class="hljs-keyword">import</span> java.sql.PreparedStatement;
+<span class="hljs-keyword">import</span> java.sql.ResultSet;
+<span class="hljs-keyword">import</span> java.sql.ResultSetMetaData;
+<span class="hljs-keyword">import</span> java.sql.SQLException;
+
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Test_SELECT_RSMetaData</span> </span>{
+  <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> String URL = <span class="hljs-string">&quot;jdbc:oracle:thin:@localhost:1521:xe&quot;</span>;
+  <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> String USER = <span class="hljs-string">&quot;david&quot;</span>;
+  <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> String PASSWORD = <span class="hljs-string">&quot;123456&quot;</span>;
+  <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> String SQL = <span class="hljs-string">&quot;SELECT * FROM EMPLOYEE&quot;</span>;
+
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
+    Connection con = <span class="hljs-keyword">null</span>;
+    PreparedStatement pstmt = <span class="hljs-keyword">null</span>;
+    ResultSet rs = <span class="hljs-keyword">null</span>;
+    ResultSetMetaData rsmd = <span class="hljs-keyword">null</span>;
+
+    <span class="hljs-keyword">try</span> {
+      Class.forName(<span class="hljs-string">&quot;oracle.jdbc.driver.OracleDriver&quot;</span>);
+      con = DriverManager.getConnection(URL, USER, PASSWORD);
+      System.out.println(<span class="hljs-string">&quot;Connecting to database successfully! (&#x9023;&#x7DDA;&#x6210;&#x529F;&#xFF01;)&quot;</span>);
+
+      pstmt = con.prepareStatement(SQL);
+      rs = pstmt.executeQuery();
+      rsmd = rs.getMetaData();
+
+      <span class="hljs-keyword">int</span> numberOfColumns = rsmd.getColumnCount();
+      <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">1</span>; i &lt;= numberOfColumns; i++) {
+        String colName = rsmd.getColumnName(i);
+        String tableName = rsmd.getTableName(i);
+        String name = rsmd.getColumnTypeName(i);
+        <span class="hljs-keyword">boolean</span> caseSen = rsmd.isCaseSensitive(i);
+        <span class="hljs-keyword">boolean</span> writable = rsmd.isWritable(i);
+        System.out.println(<span class="hljs-string">&quot;Information for column &quot;</span> + colName);
+        System.out.println(<span class="hljs-string">&quot;    Column is in table &quot;</span> + tableName);
+        System.out.println(<span class="hljs-string">&quot;    DBMS name for type is &quot;</span> + name);
+        System.out.println(<span class="hljs-string">&quot;    Is case sensitive:  &quot;</span> + caseSen);
+        System.out.println(<span class="hljs-string">&quot;    Is possibly writable:  &quot;</span> + writable);
+        System.out.println();
+      }
+
+      <span class="hljs-keyword">while</span> (rs.next()) {
+        <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">1</span>; i &lt;= numberOfColumns; i++) {
+          String s = rs.getString(i);
+          System.out.print(s + <span class="hljs-string">&quot;  &quot;</span>);
+        }
+        System.out.println();
+      }
+
+      rs.close();
+      pstmt.close();
+      con.close();
+
+    } <span class="hljs-keyword">catch</span>(ClassNotFoundException ce) {
+      ce.printStackTrace();
+    } <span class="hljs-keyword">catch</span>(SQLException se) {
+      se.printStackTrace();
+    }
+
+  }
+}
+</code></pre>
+<ul>
+<li>DBMetaData: &#x8B80;&#x8CC7;&#x6599;&#x5EAB;&#x7684; MetaData</li>
+</ul>
+<pre><code class="lang-cs">&#x7BC4;&#x4F8B;&#x7A0B;&#x5F0F;: <span class="hljs-string">&quot;/JavaEx_JDBC_Oracle/src/idv/david/advanced/Test_SELECT_DBMetaData.java&quot;</span>
+</code></pre>
+<pre><code class="lang-java"><span class="hljs-keyword">package</span> idv.david.advanced;
+
+<span class="hljs-keyword">import</span> java.sql.Connection;
+<span class="hljs-keyword">import</span> java.sql.DatabaseMetaData;
+<span class="hljs-keyword">import</span> java.sql.DriverManager;
+<span class="hljs-keyword">import</span> java.sql.ResultSet;
+<span class="hljs-keyword">import</span> java.sql.SQLException;
+
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Test_SELECT_DBMetaData</span> </span>{
+  <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> String DRIVER = <span class="hljs-string">&quot;oracle.jdbc.driver.OracleDriver&quot;</span>;
+  <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> String URL = <span class="hljs-string">&quot;jdbc:oracle:thin:@localhost:1521:xe&quot;</span>;
+  <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> String USER = <span class="hljs-string">&quot;david&quot;</span>;
+  <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> String PASSWORD = <span class="hljs-string">&quot;123456&quot;</span>;
+
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
+    Connection con = <span class="hljs-keyword">null</span>;
+    ResultSet rs = <span class="hljs-keyword">null</span>, rs2 = <span class="hljs-keyword">null</span>;
+    <span class="hljs-keyword">try</span> {
+      Class.forName(DRIVER);
+      con = DriverManager.getConnection(URL, USER, PASSWORD);
+      DatabaseMetaData dbmd = con.getMetaData();
+      String dbmsName = dbmd.getDatabaseProductName();
+      rs = dbmd.getTableTypes();
+      System.out.print(<span class="hljs-string">&quot;The following types of tables are &quot;</span>);
+      System.out.println(<span class="hljs-string">&quot;available in &quot;</span> + dbmsName + <span class="hljs-string">&quot;:  &quot;</span>);
+
+      <span class="hljs-keyword">while</span> (rs.next()) {
+        String tableType = rs.getString(<span class="hljs-string">&quot;TABLE_TYPE&quot;</span>);
+        System.out.println(<span class="hljs-string">&quot;    &quot;</span> + tableType);
+      }
+
+      System.out.println(<span class="hljs-string">&quot;=======================&quot;</span>);
+
+      rs2 = dbmd.getTypeInfo();
+      <span class="hljs-keyword">while</span> (rs2.next()) {
+        <span class="hljs-comment">// &#x5F9E;API&#x6587;&#x4EF6;&#x67E5;&#x8A62;DATA_TYPE...&#x7B49;&#x8CC7;&#x8A0A;&#xFF0C;&#x5C31;&#x80FD;&#x53D6;&#x5F97;&#x76F8;&#x61C9;&#x8CC7;&#x6599;</span>
+        <span class="hljs-keyword">int</span> codeNumber = rs2.getInt(<span class="hljs-string">&quot;DATA_TYPE&quot;</span>);
+        String typeName = rs2.getString(<span class="hljs-string">&quot;TYPE_NAME&quot;</span>);
+        String createParams = rs2.getString(<span class="hljs-string">&quot;CREATE_PARAMS&quot;</span>);
+
+        System.out.println(<span class="hljs-string">&quot;DATA_TYPE = &quot;</span> + codeNumber);
+        System.out.println(<span class="hljs-string">&quot;TYPE_NAME = &quot;</span> + typeName);
+        System.out.println(<span class="hljs-string">&quot;CREATE_PARAMS = &quot;</span> + createParams);
+        System.out.println(<span class="hljs-string">&quot;==================&quot;</span>);
+      }
+
+    } <span class="hljs-keyword">catch</span> (ClassNotFoundException ce) {
+      ce.printStackTrace();
+    } <span class="hljs-keyword">catch</span> (SQLException se) {
+      se.printStackTrace();
+    } <span class="hljs-keyword">finally</span> {
+      <span class="hljs-keyword">if</span> (rs2 != <span class="hljs-keyword">null</span>) {
+        <span class="hljs-keyword">try</span> {
+          rs2.close();
+        } <span class="hljs-keyword">catch</span> (SQLException se) {
+          se.printStackTrace();
+        }
+      }
+
+      <span class="hljs-keyword">if</span> (rs != <span class="hljs-keyword">null</span>) {
+        <span class="hljs-keyword">try</span> {
+          rs.close();
+        } <span class="hljs-keyword">catch</span> (SQLException se) {
+          se.printStackTrace();
+        }
+      }
+
+      <span class="hljs-keyword">if</span> (con != <span class="hljs-keyword">null</span>) {
+        <span class="hljs-keyword">try</span> {
+          con.close();
+        } <span class="hljs-keyword">catch</span> (SQLException se) {
+          se.printStackTrace();
+        }
+      }
+    }
+  }
+}
+</code></pre>
+<h1 id="object---relational-mapping">Object - Relational Mapping</h1>
+<ul>
+<li><p>&#x7269;&#x4EF6; &#x2013; &#x95DC;&#x806F;&#x5F0F;&#x8CC7;&#x6599;&#x5EAB;&#x5C0D;&#x6620;(Object-Relational Mapping)</p>
+<ul>
+<li>&#x7C21;&#x7A31; ORM &#x6216;&#x662F; O/R Mapping</li>
+<li>&#x662F;&#x4E00;&#x7A2E;&#x5E38;&#x898B;&#x7684;&#x8EDF;&#x9AD4;&#x8A2D;&#x8A08;&#x6A21;&#x5F0F;(design pattern)</li>
+</ul>
+</li>
+<li><p><code>&#x4E00;&#x500B;&#x8CC7;&#x6599;&#x5EAB;&#x8868;&#x683C;&#x5C0D;&#x61C9;&#x4E00;&#x500B; Java &#x985E;&#x5225;</code> (&#x985E;&#x5225;&#x5148;&#x7522;&#x751F;&#xFF0C;&#x624D;&#x6709;&#x7269;&#x4EF6;)</p>
+<ul>
+<li><code>&#x6BCF;&#x500B;&#x6B04;&#x4F4D;&#x5C0D;&#x61C9;&#x5230;&#x8A72;&#x985E;&#x5225;&#x7684;&#x5C6C;&#x6027;(&#x5BE6;&#x9AD4;&#x8B8A;&#x6578;)</code></li>
+<li>&#x6B64; Java &#x985E;&#x5225;&#x7A31;&#x70BA; <code>Value Object(VO)</code> &#x6216; <code>Data Transfer Object(DTO)</code>,&#x7528;&#x4F86;&#x5728; client &#x7AEF;&#x8207; server &#x7AEF;&#x4E4B;&#x9593;&#x50B3;&#x905E;&#x8CC7;&#x6599;</li>
+<li>&#x4EA6;&#x5373;&#x61C9;&#x7528;&#x7A0B;&#x5F0F;&#x7684; Domain Object &#x5C0D;&#x61C9;&#x5230;&#x8CC7;&#x6599;&#x5EAB;&#x7684; business entity</li>
+<li><p>&#x672C;&#x8B1B;&#x7FA9;&#x4EE5; <code>Java Bean</code> &#x4F86;&#x5BE6;&#x4F5C; business entity</p>
+<ul>
+<li><p>Java Bean &#x610F;&#x601D;</p>
+<ul>
+<li><code>&#x5305;&#x88DD;&#x8CC7;&#x6599;&#x3001;&#x91CD;&#x8907;&#x4F7F;&#x7528;</code></li>
+</ul>
+</li>
+<li><p>Java Bean &#x7684;&#x4E09;&#x500B;&#x8981;&#x6C42; <sup><bikao>&#x2605;</bikao></sup></p>
+<ul>
+<li><code>&#x5C0D;&#x6BCF;&#x4E00;&#x500B; private &#x6B04;&#x4F4D;&#x5206;&#x5225;&#x8A2D;&#x8A08;&#x4E00;&#x7D44; getter/setter</code></li>
+<li><code>&#x6B64;&#x985E;&#x5225;&#x5BE6;&#x4F5C; Serializable &#x4ECB;&#x9762;</code></li>
+<li><code>&#x6B64;&#x985E;&#x5225;&#x64C1;&#x6709;&#x4E00;&#x500B;&#x4E0D;&#x5E36;&#x53C3;&#x6578;&#x7684;&#x5EFA;&#x69CB;&#x5B50;</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>&#x91DD;&#x5C0D;&#x8CC7;&#x6599;&#x5EAB;&#x8868;&#x683C;&#x5B58;&#x53D6;<code>&#x6703;&#x8A2D;&#x8A08;&#x4E00;&#x500B; Data Access Object(DAO)&#x985E;&#x5225;&#x4F86;&#x5C0D;&#x61C9;</code></p>
+<ul>
+<li><p>&#x6B64; DAO &#x985E;&#x5225;&#x5C01;&#x88DD; JDBC &#x7684;&#x8CC7;&#x6599;&#x5EAB;&#x5B58;&#x53D6;&#x7A0B;&#x5F0F;&#x78BC;&#x7684;&#x5BE6;&#x4F5C;,&#x61C9;&#x7528;&#x7A0B;&#x5F0F;&#x82E5;&#x9700;&#x8981;&#x5B58;&#x53D6;&#x8CC7;&#x6599;&#x5EAB;&#x6642;,&#x4E00;&#x5F8B;&#x900F;&#x904E;&#x6B64; DAO &#x4F86;&#x8655;&#x7406;</p>
+<ul>
+<li>&#x901A;&#x5E38;&#x4E0D;&#x540C;&#x5EE0;&#x5546;&#x63D0;&#x4F9B;&#x7684;&#x8CC7;&#x6599;&#x5EAB;,&#x9664;&#x4E86;&#x6A19;&#x6E96;&#x7684; SQL &#x6307;&#x4EE4;&#x5916;,&#x6709;&#x4E9B;&#x5B58;&#x53D6;&#x6703;&#x4F9D;&#x8CC7;&#x6599;&#x5EAB;&#x7684;&#x4E0D;&#x540C;&#x800C;&#x6709;&#x6240;&#x4E0D;&#x540C;</li>
+</ul>
+</li>
+<li><p>&#x8A2D;&#x8A08;&#x76EE;&#x7684;&#x662F;&#x82E5;&#x66F4;&#x63DB;&#x8CC7;&#x6599;&#x5EAB;&#x6642;,&#x53EA;&#x9700;&#x66F4;&#x63DB; DAO &#x5373;&#x53EF;,&#x800C;&#x61C9;&#x7528;&#x7A0B;&#x5F0F;&#x7121;&#x9700;&#x8B8A;&#x66F4;</p>
+</li>
+</ul>
+</li>
+<li><p><code>&#x91DD;&#x5C0D;&#x6BCF;&#x4E00;&#x500B; DAO &#x985E;&#x5225;&#x8A2D;&#x8A08;&#x4E00;&#x500B; DAO &#x4ECB;&#x9762;&#x4F86;&#x5C0D;&#x61C9;</code></p>
+<ul>
+<li>&#x6B64; DAO &#x4ECB;&#x9762;&#x8CA0;&#x8CAC;&#x5B9A;&#x7FA9;&#x65B9;&#x6CD5;(<code>&#x5B9A;&#x7FA9;&#x8A72;&#x8868;&#x683C;&#x7684;&#x5404;&#x7A2E;&#x5B58;&#x53D6;&#x65B9;&#x6CD5;</code>)(<code>&#x964D;&#x4F4E;&#x76F8;&#x4F9D;&#x6027;</code>)</li>
+</ul>
+</li>
+</ul>
+<h1 id="java-&#x578B;&#x614B;&#x8207;-sql-&#x578B;&#x614B;">JAVA &#x578B;&#x614B;&#x8207; SQL &#x578B;&#x614B;</h1>
+<table>
+<thead>
+<tr>
+<th>Java &#x578B;&#x614B;</th>
+<th>SQL &#x578B;&#x614B;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>boolean</td>
+<td>BIT</td>
+</tr>
+<tr>
+<td>byte</td>
+<td>TINYINT</td>
+</tr>
+<tr>
+<td>short</td>
+<td>SMALLINT</td>
+</tr>
+<tr>
+<td>int</td>
+<td>INTEGER</td>
+</tr>
+<tr>
+<td>long</td>
+<td>BIGINT</td>
+</tr>
+<tr>
+<td>float</td>
+<td>FLOAT</td>
+</tr>
+<tr>
+<td>double</td>
+<td>DOUBLE</td>
+</tr>
+<tr>
+<td>byte[]</td>
+<td>BINARY, VARBINARY, LONGBINARY, <code>BLOB</code></td>
+</tr>
+<tr>
+<td>java.lang.String</td>
+<td>CHAR, VARCHAR, LONGVARCHAR, <code>CLOB</code></td>
+</tr>
+<tr>
+<td>java.math.BigDecimal</td>
+<td>DECIMAL, NUMERIC</td>
+</tr>
+<tr>
+<td>java.sql.Date</td>
+<td>DATE</td>
+</tr>
+<tr>
+<td>java.sql.Time</td>
+<td>TIME</td>
+</tr>
+<tr>
+<td>java.sql.Timestamp</td>
+<td>TIMESTAMP</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>BLOB &#x8207;&#x7A0B;&#x5F0F;&#x7AEF; byte[] &#x5C0D;&#x61C9;</li>
+<li>CLOB &#x8207;&#x7A0B;&#x5F0F;&#x7AEF; String &#x5C0D;&#x61C9;</li>
+</ul>
+<h1 id="object---relational-mappingorm-&#x5BE6;&#x4F5C;">Object - Relational Mapping(ORM) &#x5BE6;&#x4F5C;</h1>
+<ul>
+<li>&#x7BC4;&#x4F8B; 1: &#x4F7F;&#x7528;&#x54E1;&#x5DE5;&#x8868;&#x683C;&#x8AAA;&#x660E;<code>&#x589E;&#x522A;&#x6539;&#x67E5;</code></li>
+</ul>
+<pre><code class="lang-cs">&#x7BC4;&#x4F8B;&#x7A0B;&#x5F0F;: <span class="hljs-string">&quot;idv.david.dao&quot;</span>
+</code></pre>
+<ul>
+<li>&#x7BC4;&#x4F8B; 2: ArrayList &#x53D6;&#x5F97; txt &#x7684;&#x8CC7;&#x6599;</li>
+</ul>
+<pre><code class="lang-cs">&#x7BC4;&#x4F8B;&#x7A0B;&#x5F0F;: <span class="hljs-string">&quot;idv.david.additional.iocollection&quot;</span>
+</code></pre>
+<ul>
+<li>&#x4E0A;&#x8AB2;&#x5BE6;&#x4F5C;: &#x4EE5;&#x4E0B;&#x7A0B;&#x5F0F;<code>&#x6C92;&#x6709;&#x5C0D;&#x522A;&#x9664;/&#x53D6;&#x5F97;&#x8CC7;&#x6599;&#x70BA;&#x7A7A;</code>&#x7B49;&#x7B49;&#x7684;&#x72C0;&#x614B;&#x505A;&#x8655;&#x7406;</li>
+</ul>
+<pre><code class="lang-cs">&#x7BC4;&#x4F8B;&#x7A0B;&#x5F0F;: <span class="hljs-string">&quot;/JavaTest/src/orm/Dept.java&quot;</span>
+</code></pre>
+<pre><code class="lang-java"><span class="hljs-keyword">package</span> orm;
+
+<span class="hljs-keyword">import</span> java.io.Serializable;
+
+<span class="hljs-meta">@SuppressWarnings</span>(<span class="hljs-string">&quot;serial&quot;</span>)
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Dept</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">Serializable</span> </span>{
+  <span class="hljs-keyword">private</span> <span class="hljs-keyword">int</span> deptno;
+  <span class="hljs-keyword">private</span> String dname;
+  <span class="hljs-keyword">private</span> String loc;
+  <span class="hljs-keyword">private</span> String query;
+
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Dept</span><span class="hljs-params">()</span> </span>{
+    <span class="hljs-keyword">super</span>();
+  }
+
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Dept</span><span class="hljs-params">(<span class="hljs-keyword">int</span> deptno, String dname, String loc, String query)</span> </span>{
+    <span class="hljs-keyword">super</span>();
+    <span class="hljs-keyword">this</span>.deptno = deptno;
+    <span class="hljs-keyword">this</span>.dname = dname;
+    <span class="hljs-keyword">this</span>.loc = loc;
+    <span class="hljs-keyword">this</span>.query = query;
+  }
+
+  <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">getQuery</span><span class="hljs-params">()</span> </span>{
+    <span class="hljs-keyword">return</span> query;
+  }
+
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setQuery</span><span class="hljs-params">(String query)</span> </span>{
+    <span class="hljs-keyword">this</span>.query = query;
+  }
+
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">getDeptno</span><span class="hljs-params">()</span> </span>{
+    <span class="hljs-keyword">return</span> deptno;
+  }
+
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setDeptno</span><span class="hljs-params">(<span class="hljs-keyword">int</span> deptno)</span> </span>{
+    <span class="hljs-keyword">this</span>.deptno = deptno;
+  }
+
+  <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">getDname</span><span class="hljs-params">()</span> </span>{
+    <span class="hljs-keyword">return</span> dname;
+  }
+
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setDname</span><span class="hljs-params">(String dname)</span> </span>{
+    <span class="hljs-keyword">this</span>.dname = dname;
+  }
+
+  <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">getLoc</span><span class="hljs-params">()</span> </span>{
+    <span class="hljs-keyword">return</span> loc;
+  }
+
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setLoc</span><span class="hljs-params">(String loc)</span> </span>{
+    <span class="hljs-keyword">this</span>.loc = loc;
+  }
+}
+</code></pre>
+<pre><code class="lang-cs">&#x7BC4;&#x4F8B;&#x7A0B;&#x5F0F;: <span class="hljs-string">&quot;/JavaTest/src/orm/DeptDAO.java&quot;</span>
+</code></pre>
+<pre><code class="lang-java"><span class="hljs-keyword">package</span> orm;
+
+<span class="hljs-keyword">import</span> java.util.List;
+
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">DeptDAO</span> </span>{
+  <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">add</span><span class="hljs-params">(Dept dept)</span></span>;
+
+  <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">update</span><span class="hljs-params">(Dept dept)</span></span>;
+
+  <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">delete</span><span class="hljs-params">(<span class="hljs-keyword">int</span> deptno)</span></span>;
+
+  <span class="hljs-function">Dept <span class="hljs-title">findByPK</span><span class="hljs-params">(<span class="hljs-keyword">int</span> deptno)</span></span>;
+
+  <span class="hljs-function">List&lt;Dept&gt; <span class="hljs-title">getAll</span><span class="hljs-params">()</span></span>;
+}
+</code></pre>
+<pre><code class="lang-cs">&#x7BC4;&#x4F8B;&#x7A0B;&#x5F0F;: <span class="hljs-string">&quot;/JavaTest/src/orm/DeptDAOImpl.java&quot;</span>
+</code></pre>
+<pre><code class="lang-java"><span class="hljs-keyword">package</span> orm;
+
+<span class="hljs-keyword">import</span> java.sql.Connection;
+<span class="hljs-keyword">import</span> java.sql.DriverManager;
+<span class="hljs-keyword">import</span> java.sql.PreparedStatement;
+<span class="hljs-keyword">import</span> java.sql.ResultSet;
+<span class="hljs-keyword">import</span> java.sql.SQLException;
+<span class="hljs-keyword">import</span> java.util.ArrayList;
+<span class="hljs-keyword">import</span> java.util.List;
+
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">DeptDAOImpl</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">DeptDAO</span> </span>{
+  <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> String DRIVER = <span class="hljs-string">&quot;oracle.jdbc.driver.OracleDriver&quot;</span>;
+  <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> String URL = <span class="hljs-string">&quot;jdbc:oracle:thin:@localhost:1521:xe&quot;</span>;
+  <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> String USER = <span class="hljs-string">&quot;DAVID&quot;</span>;
+  <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> String PASSWORD = <span class="hljs-string">&quot;123456&quot;</span>;
+
+  <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> String INSERT_STMT = <span class="hljs-string">&quot;INSERT INTO DEPARTMENT (DEPTNO, DNAME, LOC) VALUES (?, ?, ?)&quot;</span>;
+  <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> String UPDATE_STMT = <span class="hljs-string">&quot;UPDATE DEPARTMENT SET DNAME = ?, LOC = ? WHERE DEPTNO = ? &quot;</span>;
+  <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> String FIND_BY_PK = <span class="hljs-string">&quot;SELECT * FROM DEPARTMENT WHERE DEPTNO = ?&quot;</span>;
+  <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> String FIND_ALL = <span class="hljs-string">&quot;SELECT * FROM DEPARTMENT&quot;</span>;
+  <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> String DELETE_STMT = <span class="hljs-string">&quot;DELETE FROM DEPARTMENT WHERE DEPTNO = ?&quot;</span>;
+
+  <span class="hljs-keyword">static</span> {
+    <span class="hljs-keyword">try</span> {
+      Class.forName(DRIVER);
+    } <span class="hljs-keyword">catch</span> (ClassNotFoundException e) {
+      e.printStackTrace();
+    }
+  }
+
+  <span class="hljs-meta">@Override</span>
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">add</span><span class="hljs-params">(Dept dept)</span> </span>{
+    Connection con = <span class="hljs-keyword">null</span>;
+    PreparedStatement pstmt = <span class="hljs-keyword">null</span>;
+    <span class="hljs-keyword">try</span> {
+
+      <span class="hljs-comment">// &#x5EFA;&#x7ACB;&#x9023;&#x7DDA;</span>
+      con = DriverManager.getConnection(URL, USER, PASSWORD);
+      <span class="hljs-comment">// SQL&#x8A9E;&#x6CD5;</span>
+      pstmt = con.prepareStatement(INSERT_STMT);
+
+      <span class="hljs-comment">// &#x8A2D;&#x5B9A;&#x5C07;&#x9001;&#x5165;&#x7684;&#x8CC7;&#x6599;</span>
+      pstmt.setInt(<span class="hljs-number">1</span>, dept.getDeptno());
+      pstmt.setString(<span class="hljs-number">2</span>, dept.getDname());
+      pstmt.setString(<span class="hljs-number">3</span>, dept.getLoc());
+
+      <span class="hljs-comment">// &#x5C07;&#x8CC7;&#x6599;&#x9001;&#x5165;&#x8CC7;&#x6599;&#x5EAB;</span>
+      pstmt.executeUpdate();
+
+    } <span class="hljs-keyword">catch</span> (SQLException e) {
+      e.printStackTrace();
+    } <span class="hljs-keyword">finally</span> {
+      <span class="hljs-keyword">if</span> (pstmt != <span class="hljs-keyword">null</span>) {
+        <span class="hljs-keyword">try</span> {
+          pstmt.close();
+        } <span class="hljs-keyword">catch</span> (SQLException e) {
+          e.printStackTrace();
+        }
+      }
+      <span class="hljs-keyword">if</span> (con != <span class="hljs-keyword">null</span>) {
+        <span class="hljs-keyword">try</span> {
+          con.close();
+        } <span class="hljs-keyword">catch</span> (SQLException e) {
+          e.printStackTrace();
+        }
+      }
+    }
+  }
+
+  <span class="hljs-meta">@Override</span>
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">update</span><span class="hljs-params">(Dept dept)</span> </span>{
+    Connection con = <span class="hljs-keyword">null</span>;
+    PreparedStatement pstmt = <span class="hljs-keyword">null</span>;
+    <span class="hljs-keyword">try</span> {
+
+      <span class="hljs-comment">// &#x5EFA;&#x7ACB;&#x9023;&#x7DDA;</span>
+      con = DriverManager.getConnection(URL, USER, PASSWORD);
+      <span class="hljs-comment">// SQL&#x8A9E;&#x6CD5;</span>
+      pstmt = con.prepareStatement(UPDATE_STMT);
+
+      <span class="hljs-comment">// &#x8A2D;&#x5B9A;&#x5C07;&#x9001;&#x5165;&#x7684;&#x8CC7;&#x6599;</span>
+      pstmt.setString(<span class="hljs-number">1</span>, dept.getDname());
+      pstmt.setString(<span class="hljs-number">2</span>, dept.getLoc());
+      pstmt.setInt(<span class="hljs-number">3</span>, dept.getDeptno());
+
+      <span class="hljs-comment">// &#x5C07;&#x8CC7;&#x6599;&#x9001;&#x5165;&#x8CC7;&#x6599;&#x5EAB;</span>
+      pstmt.executeUpdate();
+
+    } <span class="hljs-keyword">catch</span> (SQLException e) {
+      e.printStackTrace();
+    } <span class="hljs-keyword">finally</span> {
+      <span class="hljs-keyword">if</span> (pstmt != <span class="hljs-keyword">null</span>) {
+        <span class="hljs-keyword">try</span> {
+          pstmt.close();
+        } <span class="hljs-keyword">catch</span> (SQLException e) {
+          e.printStackTrace();
+        }
+      }
+      <span class="hljs-keyword">if</span> (con != <span class="hljs-keyword">null</span>) {
+        <span class="hljs-keyword">try</span> {
+          con.close();
+        } <span class="hljs-keyword">catch</span> (SQLException e) {
+          e.printStackTrace();
+        }
+      }
+    }
+  }
+
+  <span class="hljs-meta">@Override</span>
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">delete</span><span class="hljs-params">(<span class="hljs-keyword">int</span> deptno)</span> </span>{
+    Connection con = <span class="hljs-keyword">null</span>;
+    PreparedStatement pstmt = <span class="hljs-keyword">null</span>;
+    <span class="hljs-keyword">try</span> {
+
+      <span class="hljs-comment">// &#x5EFA;&#x7ACB;&#x9023;&#x7DDA;</span>
+      con = DriverManager.getConnection(URL, USER, PASSWORD);
+      <span class="hljs-comment">// SQL&#x8A9E;&#x6CD5;</span>
+      pstmt = con.prepareStatement(DELETE_STMT);
+
+      <span class="hljs-comment">// &#x8A2D;&#x5B9A;&#x5C07;&#x9001;&#x5165;&#x7684;&#x8CC7;&#x6599;</span>
+      pstmt.setInt(<span class="hljs-number">1</span>, deptno);
+
+      <span class="hljs-comment">// &#x5C07;&#x8CC7;&#x6599;&#x9001;&#x5165;&#x8CC7;&#x6599;&#x5EAB;</span>
+      pstmt.executeUpdate();
+
+    } <span class="hljs-keyword">catch</span> (SQLException e) {
+      e.printStackTrace();
+    } <span class="hljs-keyword">finally</span> {
+      <span class="hljs-keyword">if</span> (pstmt != <span class="hljs-keyword">null</span>) {
+        <span class="hljs-keyword">try</span> {
+          pstmt.close();
+        } <span class="hljs-keyword">catch</span> (SQLException e) {
+          e.printStackTrace();
+        }
+      }
+      <span class="hljs-keyword">if</span> (con != <span class="hljs-keyword">null</span>) {
+        <span class="hljs-keyword">try</span> {
+          con.close();
+        } <span class="hljs-keyword">catch</span> (SQLException e) {
+          e.printStackTrace();
+        }
+      }
+    }
+  }
+
+  <span class="hljs-meta">@Override</span>
+  <span class="hljs-function"><span class="hljs-keyword">public</span> Dept <span class="hljs-title">findByPK</span><span class="hljs-params">(<span class="hljs-keyword">int</span> deptno)</span> </span>{
+    Connection con = <span class="hljs-keyword">null</span>;
+    PreparedStatement pstmt = <span class="hljs-keyword">null</span>;
+    ResultSet rs = <span class="hljs-keyword">null</span>;
+    Dept dept = <span class="hljs-keyword">null</span>;
+
+    <span class="hljs-keyword">try</span> {
+
+      <span class="hljs-comment">// &#x5EFA;&#x7ACB;&#x9023;&#x7DDA;</span>
+      con = DriverManager.getConnection(URL, USER, PASSWORD);
+      <span class="hljs-comment">// SQL&#x8A9E;&#x6CD5;</span>
+      pstmt = con.prepareStatement(FIND_BY_PK);
+
+      pstmt.setInt(<span class="hljs-number">1</span>, deptno);
+      rs = pstmt.executeQuery();
+
+      <span class="hljs-comment">// &#x53D6;&#x8CC7;&#x6599;&#x4E00;&#x5B9A;&#x8981;next()</span>
+      <span class="hljs-keyword">while</span> (rs.next()) {
+        <span class="hljs-comment">// &#x7528;Dept&#x5305;&#x88DD;&#x8457;&#x67E5;&#x8A62;&#x51FA;&#x4F86;&#x7684;&#x8CC7;&#x6599;</span>
+        dept = <span class="hljs-keyword">new</span> Dept();
+        dept.setDeptno(rs.getInt(<span class="hljs-string">&quot;DEPTNO&quot;</span>));
+        dept.setDname(rs.getString(<span class="hljs-string">&quot;DNAME&quot;</span>));
+        dept.setLoc(rs.getString(<span class="hljs-string">&quot;LOC&quot;</span>));
+      }
+      <span class="hljs-comment">// &#x5C07;&#x8CC7;&#x6599;&#x9001;&#x5165;&#x8CC7;&#x6599;&#x5EAB;</span>
+      pstmt.executeUpdate();
+
+    } <span class="hljs-keyword">catch</span> (SQLException e) {
+      e.printStackTrace();
+    } <span class="hljs-keyword">finally</span> {
+      <span class="hljs-keyword">if</span> (rs != <span class="hljs-keyword">null</span>) {
+        <span class="hljs-keyword">try</span> {
+          rs.close();
+        } <span class="hljs-keyword">catch</span> (SQLException e) {
+          e.printStackTrace();
+        }
+      }
+      <span class="hljs-keyword">if</span> (pstmt != <span class="hljs-keyword">null</span>) {
+        <span class="hljs-keyword">try</span> {
+          pstmt.close();
+        } <span class="hljs-keyword">catch</span> (SQLException e) {
+          e.printStackTrace();
+        }
+      }
+      <span class="hljs-keyword">if</span> (con != <span class="hljs-keyword">null</span>) {
+        <span class="hljs-keyword">try</span> {
+          con.close();
+        } <span class="hljs-keyword">catch</span> (SQLException e) {
+          e.printStackTrace();
+        }
+      }
+    }
+
+    <span class="hljs-keyword">return</span> dept;
+  }
+
+  <span class="hljs-meta">@Override</span>
+  <span class="hljs-function"><span class="hljs-keyword">public</span> List&lt;Dept&gt; <span class="hljs-title">getAll</span><span class="hljs-params">()</span> </span>{
+    Connection con = <span class="hljs-keyword">null</span>;
+    PreparedStatement pstmt = <span class="hljs-keyword">null</span>;
+    ResultSet rs = <span class="hljs-keyword">null</span>;
+    List&lt;Dept&gt; deptList = <span class="hljs-keyword">new</span> ArrayList&lt;&gt;();
+
+    <span class="hljs-keyword">try</span> {
+
+      <span class="hljs-comment">// &#x5EFA;&#x7ACB;&#x9023;&#x7DDA;</span>
+      con = DriverManager.getConnection(URL, USER, PASSWORD);
+      <span class="hljs-comment">// SQL&#x8A9E;&#x6CD5;</span>
+      pstmt = con.prepareStatement(FIND_ALL);
+
+      rs = pstmt.executeQuery();
+
+      <span class="hljs-keyword">while</span> (rs.next()) {
+        <span class="hljs-comment">// &#x6BCF;&#x4E00;&#x6B21;&#x57F7;&#x884C;&#x5C31;&#x7528;&#x65B0;&#x7684;Dept&#x7269;&#x4EF6;&#x5305;&#x88DD;&#x8457;&#x67E5;&#x8A62;&#x51FA;&#x4F86;&#x7684;&#x8CC7;&#x6599;</span>
+        Dept dept = <span class="hljs-keyword">new</span> Dept();
+        dept.setDeptno(rs.getInt(<span class="hljs-string">&quot;DEPTNO&quot;</span>));
+        dept.setDname(rs.getString(<span class="hljs-string">&quot;DNAME&quot;</span>));
+        dept.setLoc(rs.getString(<span class="hljs-string">&quot;LOC&quot;</span>));
+        <span class="hljs-comment">// &#x7528;&#x96C6;&#x5408;&#x6536;&#x96C6;&#x5305;&#x88DD;&#x597D;&#x7684;&#x90E8;&#x9580;&#x7269;&#x4EF6;&#xFF0C;&#x6700;&#x5F8C;&#x4E00;&#x6B21;&#x56DE;&#x50B3;</span>
+        deptList.add(dept);
+      }
+      <span class="hljs-comment">// &#x5C07;&#x8CC7;&#x6599;&#x9001;&#x5165;&#x8CC7;&#x6599;&#x5EAB;</span>
+      pstmt.executeUpdate();
+
+    } <span class="hljs-keyword">catch</span> (SQLException e) {
+      e.printStackTrace();
+    } <span class="hljs-keyword">finally</span> {
+      <span class="hljs-keyword">if</span> (rs != <span class="hljs-keyword">null</span>) {
+        <span class="hljs-keyword">try</span> {
+          rs.close();
+        } <span class="hljs-keyword">catch</span> (SQLException e) {
+          e.printStackTrace();
+        }
+      }
+      <span class="hljs-keyword">if</span> (pstmt != <span class="hljs-keyword">null</span>) {
+        <span class="hljs-keyword">try</span> {
+          pstmt.close();
+        } <span class="hljs-keyword">catch</span> (SQLException e) {
+          e.printStackTrace();
+        }
+      }
+      <span class="hljs-keyword">if</span> (con != <span class="hljs-keyword">null</span>) {
+        <span class="hljs-keyword">try</span> {
+          con.close();
+        } <span class="hljs-keyword">catch</span> (SQLException e) {
+          e.printStackTrace();
+        }
+      }
+    }
+
+    <span class="hljs-keyword">return</span> deptList;
+  }
+}
+</code></pre>
+<pre><code class="lang-cs">&#x7BC4;&#x4F8B;&#x7A0B;&#x5F0F;: <span class="hljs-string">&quot;/JavaTest/src/orm/DeptTest.java&quot;</span>
+</code></pre>
+<pre><code class="lang-java"><span class="hljs-keyword">package</span> orm;
+
+<span class="hljs-keyword">import</span> java.util.List;
+<span class="hljs-keyword">import</span> java.util.Scanner;
+
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">DeptTest</span> </span>{
+  <span class="hljs-meta">@SuppressWarnings</span>(<span class="hljs-string">&quot;resource&quot;</span>)
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
+
+    <span class="hljs-keyword">int</span> deptno;
+    String dname, loc;
+    <span class="hljs-keyword">while</span> (<span class="hljs-keyword">true</span>) {
+      <span class="hljs-comment">// &#x8F38;&#x5165;&#x503C;</span>
+      Scanner sc = <span class="hljs-keyword">new</span> Scanner(System.in);
+      System.out.println(<span class="hljs-string">&quot;======= &#x76EE;&#x9304; =======&quot;</span>);
+      System.out.println(<span class="hljs-string">&quot;&#x3010;&#x65B0;&#x589E;&#x8CC7;&#x6599;&#x3011;&#x8ACB;&#x8F38;&#x5165; 1 &quot;</span>);
+      System.out.println(<span class="hljs-string">&quot;&#x3010;&#x4FEE;&#x6539;&#x8CC7;&#x6599;&#x3011;&#x8ACB;&#x8F38;&#x5165; 2 &quot;</span>);
+      System.out.println(<span class="hljs-string">&quot;&#x3010;&#x522A;&#x9664;&#x8CC7;&#x6599;&#x3011;&#x8ACB;&#x8F38;&#x5165; 3 &quot;</span>);
+      System.out.println(<span class="hljs-string">&quot;&#x3010;&#x67E5;&#x8A62;&#x55AE;&#x7B46;&#x8CC7;&#x6599;&#x3011;&#x8ACB;&#x8F38;&#x5165; 4 &quot;</span>);
+      System.out.println(<span class="hljs-string">&quot;&#x3010;&#x67E5;&#x8A62;&#x6240;&#x6709;&#x8CC7;&#x6599;&#x3011;&#x8ACB;&#x8F38;&#x5165; 5 &quot;</span>);
+      System.out.println(<span class="hljs-string">&quot;&#x8F38;&#x5165; 1~5 &#x5916;&#x7684;&#x6578;&#x5B57;&#x7D50;&#x675F;&#x6B64;&#x6B21;&#x67E5;&#x8A62; &quot;</span>);
+      System.out.println(<span class="hljs-string">&quot;==================&quot;</span>);
+      System.out.print(<span class="hljs-string">&quot;&#x8F38;&#x5165;: &quot;</span>);
+      <span class="hljs-keyword">int</span> action = sc.nextInt();
+
+      <span class="hljs-keyword">if</span> (action == <span class="hljs-number">1</span>) {
+        System.out.println(<span class="hljs-string">&quot;&#x8ACB;&#x8F38;&#x5165;&#x90E8;&#x9580;&#x7DE8;&#x865F;&quot;</span>);
+        deptno = sc.nextInt();
+        System.out.println(<span class="hljs-string">&quot;&#x8ACB;&#x8F38;&#x5165;&#x90E8;&#x9580;&#x540D;&#x7A31;&quot;</span>);
+        dname = sc.next();
+        System.out.println(<span class="hljs-string">&quot;&#x8ACB;&#x8F38;&#x5165;&#x6240;&#x5728;&#x5730;&quot;</span>);
+        loc = sc.next();
+
+        <span class="hljs-comment">// &#x65B0;&#x589E;</span>
+        addData(deptno, dname, loc);
+        <span class="hljs-keyword">continue</span>;
+      } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (action == <span class="hljs-number">2</span>) {
+        System.out.println(<span class="hljs-string">&quot;&#x8ACB;&#x8F38;&#x5165;&#x90E8;&#x9580;&#x7DE8;&#x865F;&quot;</span>);
+        deptno = sc.nextInt();
+        System.out.println(<span class="hljs-string">&quot;&#x8ACB;&#x8F38;&#x5165;&#x3010;&#x65B0;&#x7684;&#x3011;&#x90E8;&#x9580;&#x540D;&#x7A31;&quot;</span>);
+        dname = sc.next();
+        System.out.println(<span class="hljs-string">&quot;&#x8ACB;&#x8F38;&#x5165;&#x3010;&#x65B0;&#x7684;&#x3011;&#x6240;&#x5728;&#x5730;&quot;</span>);
+        loc = sc.next();
+
+        <span class="hljs-comment">// &#x4FEE;&#x6539;</span>
+        updateData(deptno, dname, loc);
+      } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (action == <span class="hljs-number">3</span>) {
+        System.out.println(<span class="hljs-string">&quot;&#x8ACB;&#x8F38;&#x5165;&#x3010;&#x8981;&#x522A;&#x9664;&#x7684;&#x3011;&#x90E8;&#x9580;&#x7DE8;&#x865F;&quot;</span>);
+        deptno = sc.nextInt();
+
+        <span class="hljs-comment">// &#x522A;&#x9664;</span>
+        deleteData(deptno);
+      } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (action == <span class="hljs-number">4</span>) {
+        System.out.println(<span class="hljs-string">&quot;&#x8ACB;&#x8F38;&#x5165;&#x3010;&#x8981;&#x67E5;&#x8A62;&#x7684;&#x3011;&#x90E8;&#x9580;&#x7DE8;&#x865F;&quot;</span>);
+        deptno = sc.nextInt();
+
+        <span class="hljs-comment">// &#x67E5;&#x8A62;</span>
+        findByPKData(deptno);
+      } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (action == <span class="hljs-number">5</span>) {
+        System.out.println(<span class="hljs-string">&quot;&#x986F;&#x793A;&#x6240;&#x6709;&#x8CC7;&#x6599;:&quot;</span>);
+
+        <span class="hljs-comment">// &#x6240;&#x6709;</span>
+        findAllData();
+      } <span class="hljs-keyword">else</span> {
+        System.out.println(<span class="hljs-string">&quot;&#x7D50;&#x675F;&#x67E5;&#x8A62;&quot;</span>);
+        sc.close();
+        <span class="hljs-keyword">break</span>;
+      }
+    }
+  }
+
+  <span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">addData</span><span class="hljs-params">(<span class="hljs-keyword">int</span> deptno, String... arr)</span> </span>{
+    <span class="hljs-comment">// &#x5305;&#x88DD;&#x8457;&#x8981;&#x65B0;&#x589E;&#x7684;&#x90E8;&#x9580;&#x8CC7;&#x6599;</span>
+    Dept dept = <span class="hljs-keyword">new</span> Dept(deptno, arr[<span class="hljs-number">0</span>], arr[<span class="hljs-number">1</span>]);
+    <span class="hljs-comment">// &#x5275;&#x5EFA;dao&#x7269;&#x4EF6;&#xFF0C;&#x6E96;&#x5099;&#x90E8;&#x9580;&#x8868;&#x683C;&#x505A;&#x65B0;&#x589E;&#x8CC7;&#x6599;&#x7684;&#x64CD;&#x4F5C;</span>
+    DeptDAO dao = <span class="hljs-keyword">new</span> DeptDAOImpl();
+    dao.add(dept);
+    System.out.println(<span class="hljs-string">&quot;&#x66F4;&#x65B0;&#x6210;&#x529F;&quot;</span>);
+  }
+
+  <span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">updateData</span><span class="hljs-params">(<span class="hljs-keyword">int</span> deptno, String... arr)</span> </span>{
+    Dept dept = <span class="hljs-keyword">new</span> Dept(deptno, arr[<span class="hljs-number">0</span>], arr[<span class="hljs-number">1</span>]);
+    DeptDAO dao = <span class="hljs-keyword">new</span> DeptDAOImpl();
+    dao.update(dept);
+    System.out.println(<span class="hljs-string">&quot;&#x4FEE;&#x6539;&#x6210;&#x529F;&quot;</span>);
+  }
+
+  <span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">deleteData</span><span class="hljs-params">(<span class="hljs-keyword">int</span> deptno)</span> </span>{
+    DeptDAO dao = <span class="hljs-keyword">new</span> DeptDAOImpl();
+    dao.delete(deptno);
+    System.out.println(<span class="hljs-string">&quot;&#x522A;&#x9664;&#x6210;&#x529F;&quot;</span>);
+  }
+
+  <span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">findByPKData</span><span class="hljs-params">(<span class="hljs-keyword">int</span> query)</span> </span>{
+    DeptDAO dao = <span class="hljs-keyword">new</span> DeptDAOImpl();
+    Dept dept = dao.findByPK(query);
+
+    System.out.println(<span class="hljs-string">&quot;DEPTNO = &quot;</span> + dept.getDeptno());
+    System.out.println(<span class="hljs-string">&quot;DNAME = &quot;</span> + dept.getDname());
+    System.out.println(<span class="hljs-string">&quot;LOC = &quot;</span> + dept.getLoc());
+
+  }
+
+  <span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">findAllData</span><span class="hljs-params">()</span> </span>{
+    DeptDAO dao = <span class="hljs-keyword">new</span> DeptDAOImpl();
+    List&lt;Dept&gt; deptList = dao.getAll();
+
+    <span class="hljs-keyword">for</span> (Dept dept : deptList) {
+      System.out.println(<span class="hljs-string">&quot;DEPTNO = &quot;</span> + dept.getDeptno());
+      System.out.println(<span class="hljs-string">&quot;DNAME = &quot;</span> + dept.getDname());
+      System.out.println(<span class="hljs-string">&quot;LOC = &quot;</span> + dept.getLoc());
+      System.out.println();
+    }
+  }
+}
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="01.JDBC新手村.html" class="navigation navigation-prev " aria-label="Previous page: 01.JDBC 新手村">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="03.JDBC新手等級LV2.html" class="navigation navigation-next " aria-label="Next page: 03.JDBC 新手等級 LV2">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"02.JDBC 新手等級 LV1","level":"1.6.4.2","depth":3,"next":{"title":"03.JDBC 新手等級 LV2","level":"1.6.4.3","depth":3,"path":"3.JAVA/04.JDBC與資料庫的連接/03.JDBC新手等級LV2.md","ref":"3.JAVA/04.JDBC與資料庫的連接/03.JDBC新手等級LV2.md","articles":[]},"previous":{"title":"01.JDBC 新手村","level":"1.6.4.1","depth":3,"path":"3.JAVA/04.JDBC與資料庫的連接/01.JDBC新手村.md","ref":"3.JAVA/04.JDBC與資料庫的連接/01.JDBC新手村.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["-search","search-pro","disqus","back-to-top-button","code","pageview-count"],"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"gitbookuse"},"search-pro":{"cutWordLib":"nodejieba","defineWord":["小需求","基础建设"]},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"back-to-top-button":{},"pageview-count":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"3.JAVA/04.JDBC與資料庫的連接/02.JDBC新手等級LV1.md","mtime":"2020-05-22T11:21:35.471Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-06-05T16:01:00.802Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-pageview-count/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

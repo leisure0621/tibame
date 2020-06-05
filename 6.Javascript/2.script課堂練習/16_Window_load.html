@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Window Load Event的概念</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      function init() {
+        // 1. 抓取DOM元素
+        var myBtn = document.getElementById('myBtn');
+
+        // 2. console.log()印一下是否有抓對？
+        console.log(myBtn);
+
+        // 3. 註冊click事件
+        myBtn.addEventListener('click', function () {
+          alert('我被點了！！');
+        });
+
+        // 4. 嘗試將這一整段javascript程式碼搬到button之上試試？
+
+        // 5. 在window物件上註冊load事件並監聽  window.addEventListener('load', init);
+        // window Load 事件：DOM 結構被完整的讀取跟解析＋第三方的外部資源讀取完成後，才被觸發的事件
+
+        // 6. 以init函式包起來，再試試看步驟4？
+      }
+      window.addEventListener('load', init);
+    </script>
+    <button id="myBtn">按我</button>
+  </body>
+</html>

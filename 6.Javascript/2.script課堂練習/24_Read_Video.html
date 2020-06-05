@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <title>影片上傳預覽</title>
+    <style type="text/css">
+      .container {
+        padding: 10px;
+        border: 1px black solid;
+        width: 600px;
+      }
+      .row {
+        padding: 4px;
+      }
+      .row label {
+        font-weight: 500;
+      }
+      .row textarea {
+        width: 97%;
+        height: 500px;
+        color: blue;
+      }
+      .row span {
+        color: blue;
+      }
+      .hidden {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <label>請上傳圖片檔案: </label>
+        <!-- 這裡一定要有一個<input type="file">的元素，當上傳點 -->
+        <input type="file" id="myFile" />
+      </div>
+      <div class="row">
+        <label>檔案名稱：</label>
+        <input type="text" name="filename" id="filename" />
+      </div>
+      <div class="row">
+        <label>檔案內容: </label>
+        <div id="preview"></div>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+      // 題目： 請製作可以上傳圖片到前端預覽的功能
+      // 學習重點：
+      // 1. File API – Read as Data URL
+
+      function init() {
+        // 1. 抓取DOM元素
+        var myFile = document.getElementById('myFile');
+        var filename = document.getElementById('filename');
+        var preview = document.getElementById('preview');
+
+        // 2. 對myFile物件註冊change事件 - 改變選擇的檔案時觸發
+        myFile.addEventListener('change', function (e) {
+          // 取得檔案物件的兩種方式
+          // 1. 直接從myFile物件上取得檔案物件 (因為非同步，一樣，多個classname註冊時會有問題)
+          // var files = myFile.files;
+          // 2. 從event物件中取得他的soure target，也就是myFile物件，再取得檔案物件
+          // 檔案的基本資訊，包括：檔案的名稱、大小與文件型態
+          // console.log(files[0])
+          let files = e.srcElement.files;
+          console.log(files);
+          // 判斷files物件是否存在
+          if (files) {
+            // 取出files物件的第一個
+            let file = files[0];
+            // 判斷file.type的型別是否包含'image'
+            if (file.type.indexOf('video') > -1) {
+              // 填入檔名
+              filename.value = file.name;
+              // new a FileReader
+              let reader = new FileReader();
+              // 在FileReader物件上註冊load事件 - 載入檔案的意思
+              reader.addEventListener('load', function (e) {
+                // 取得結果 提示：從e.target.result取得讀取到結果
+                // console.log(result) 確認讀取到結果
+                let result = e.target.result;
+                // 新增img元素
+                let video = document.createElement('video');
+                video.setAttribute('loop', true);
+                video.setAttribute('autoplay', 'autoplay');
+                video.setAttribute('muted', true);
+                video.style.height = '500px';
+                let source = document.createElement('source');
+                source.setAttribute('type', 'video/mp4');
+                source.setAttribute('src', result);
+                video.append(source);
+                // 放到div裡面
+                preview.append(video);
+              });
+              // 使用FileReader物件上的 readAsDataURL(file) 的方法，傳入要讀取的檔案，並開始進行讀取
+              reader.readAsDataURL(file);
+            } else {
+              // 彈出警告視窗 alert('請上傳圖片！');
+              alert('請上傳圖片！');
+            }
+          }
+        });
+      }
+
+      window.onload = init;
+    </script>
+  </body>
+</html>

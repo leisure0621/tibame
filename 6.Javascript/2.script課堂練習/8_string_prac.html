@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>句子駝峰化</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      // 題目：請寫出一個函式，將一段句子駝峰式命名，首字小寫，其他名詞變大寫，並列印出結果。例如: Hello Javascript World  -> helloJavascriptWorld
+
+      // 1. 範例文字
+      var str = 'Hello Javascript World';
+
+      procStr(str);
+      // 2. 寫出一個函式，處理字串並回傳
+      function procStr(str) {
+        // 以空白鍵切割字串
+        let sp = str.split(' ');
+        // 宣告新陣列
+        let newArr = [];
+        // 將每個word，除了第一個首字是小寫，其他的首字都要變成大寫
+        for (let i = 0; i < sp.length; i++) {
+          let word = sp[i];
+          let firstWord = word.slice(0, 1);
+          let secondWord = word.slice(1);
+          if (i === 0) {
+            newArr.push(`${firstWord.toLowerCase()}${secondWord.slice(1)}`);
+          } else {
+            newArr.push(`${firstWord.toUpperCase()}${secondWord.slice(1)}`);
+          }
+        }
+        return newArr.join('');
+      }
+
+      // 3. 執行函式
+      console.log(procStr(str));
+    </script>
+  </body>
+</html>

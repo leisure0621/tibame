@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <title>HTML5-影音多媒體-插入影片</title>
+  </head>
+  <body>
+    <!-- 方法1: 針對mp4 -->
+    <!-- 使用 autoplay 需搭配 muted 就可在google自動撥放 -->
+    <video src="movie.mp4" autoplay loop controls muted></video>
+
+    <!-- 方法2 -->
+    <video autoplay loop controls muted poster="v1.jpg">
+      <source src="movie.mp4" />
+      <source src="movie.ogg" />
+      <source src="movie.webm" />
+    </video>
+
+    <!-- 方法3 -->
+    <embed src="movie.mp4" type="" />
+  </body>
+</html>
+<!-- 將影片插入至頁面上的方法很多,除了video標籤外,embed標籤也是可以將影音檔案連結至頁面中的 -->

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <title>Canvas</title>
+    <style type="text/css">
+      #demo {
+        border: 1px solid brown;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas id="demo" width="700" height="700">
+      您的瀏覽器不支援Canvas，請升級您的瀏覽器或使用Chrome。
+    </canvas>
+
+    <script type="text/javascript">
+      // 題目： 請利用Canvas進行繪製各種圖形
+      // 學習重點：
+      // 1. Canvas繪製圖形
+
+      function init() {
+        // 1. 抓取DOM元素
+        var demo = document.getElementById('demo');
+        // 2. 取得2D context 提示：getContext('2d')
+        var ctx = demo.getContext('2d');
+
+        // 3. 決定填滿的顏色或線條粗細、顏色
+        // 填滿的顏色 提示：fillStyle = "red"
+
+        // 線條的顏色 提示：strokeStyle = "blue"
+
+        // 線條的粗細 提示：lineWidth = 5
+
+        // 4. 繪製矩形 (Rectangular)
+        // 開始填滿矩形 提示：fillRect(x, y, width, height)
+
+        // 開始繪製矩形 提示：strokeRect(x, y, width, height)
+
+        // 5. 繪製路徑 (Path)
+        // 新建一條Path 提示：beginPath()
+
+        // 將畫筆移動到起點位置 提示：moveTo(x,y)
+
+        // 拉一條線到到位置 提示：lineTo(x,y)
+
+        // 拉一條線到到位置 提示：lineTo(x,y)
+
+        // // 閉合路徑，從起點到最後一個點 提示：closePath()
+        // ctx.closePath();
+        // 開始繪製路徑 提示：stroke()
+
+        // 開始填滿路徑所包圍的區域 (會自動閉合路徑)
+
+        // 6. 繪製圓弧(Arc) - 1
+        // 新建一條Path 提示：beginPath()
+
+        // 拉一條圓弧 提示：arc(x, y, r, startAngle, endAngle, anticlockwise)
+        // 範例：arc(50, 50, 40, 0, Math.PI / 2, false)
+        // 註1: 以(x, y)為圓心，r為半徑，從startAngle弧度開始，到endAngle弧度結束
+        //        ， anticlockwise是布林值，true是逆時鐘，false是順時鐘
+        // 註2: 0弧度代表x軸的正方向
+        // 註3: 角度轉成弧度：radians = (Maht.PI/180) * degrees
+
+        // 開始繪製路徑 提示：stroke()
+
+        // ---- 控制點範例 ---- //
+        // 起始點 (x0, y0)
+        var x0 = 300,
+          y0 = 300;
+        // 控制點1 (x1, y1)
+        var x1 = 400,
+          y1 = 300;
+        // 控制點2 (x2, y2)
+        var x2 = 400,
+          y2 = 400;
+        // 控制點3 (x3, y3)
+        var x3 = 500,
+          y3 = 250;
+        // 半徑 r
+        // 繪製控制點當作標記
+        var r = 90;
+        ctx.fillRect(x0, y0, 5, 5); // 起始點
+        ctx.fillRect(x1, y1, 5, 5); // 控制點1
+        ctx.fillRect(x2, y2, 5, 5); // 控制點2
+        ctx.fillRect(x3, y3, 5, 5); // 控制點3
+
+        // 7. 繪製圓弧(Arc) - 2
+        // 新建一條Path 提示：beginPath()
+
+        // 將畫筆移動到起點位置 提示：moveTo(x,y)
+
+        // 拉一條圓弧 提示：arcTo(x1, y1, x2, y2, radius)
+        // 註1: 控制點1：(x1, y1)。控制點2：(x2, y2) 。半徑：r
+        // 註2: 第一條切線: 起點到控制點1；第二條切線: 控制點1到控制點2
+        // 註3: 其實就是繪製與這兩條切線的圓弧
+
+        // 拉一條線到到位置 提示：lineTo(x,y)
+
+        // 開始繪製路徑 提示：stroke()
+
+        // 8. 繪製三次貝茲曲線
+        // 新建一條Path 提示：beginPath()
+
+        // 將畫筆移動到起點位置 提示：moveTo(x,y)
+
+        // 繪製二次貝茲曲線 提示：bezierCurveTo(x1, y1, x2, y2, x3, y3)
+
+        // 開始繪製路徑 提示：stroke()
+      }
+
+      window.onload = init;
+    </script>
+  </body>
+</html>

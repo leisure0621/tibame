@@ -55,7 +55,7 @@ h1#top + ul li {
   color: #333;
 }
 .markdown-section code {
-  background: rgb(89, 255, 179);
+  background: rgba(255, 235, 59, 0.8);
   color: black;
 }
 bikao {

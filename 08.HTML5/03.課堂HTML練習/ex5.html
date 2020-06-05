@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <title>HTML5-表單</title>
+    <style>
+      p {
+        word-break: break-all;
+        display: flex;
+      }
+      p:nth-last-child(2) {
+        display: block;
+      }
+      label {
+        width: 200px;
+        display: block;
+      }
+      select {
+        margin-right: 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>表單也是有增加許多的標籤與屬性喔!請參考圖片 form.jpg 在頁面中完成!</h1>
+
+    <form oninput="datainfo.innerText=satesfied.value">
+      <fieldset>
+        <legend>contact US</legend>
+        <p>
+          <label for="name">Name:</label>
+          <input
+            type="text"
+            id="name"
+            placeholder="請輸入正確姓名"
+            required
+            autocomplete="off"
+          />
+        </p>
+        <p>
+          <label for="email">Email:</label>
+          <input
+            type="text"
+            id="email"
+            placeholder="請輸入正確格式"
+            required
+            autocomplete="off"
+          />
+        </p>
+        <p>
+          <label for="phone">Phone:</label>
+          <input
+            type="text"
+            id="phone"
+            placeholder="請輸入電話10碼數字"
+            required
+          />
+        </p>
+        <p>
+          <label for="web">Web:</label>
+          <input type="text" id="web" placeholder="請輸入網址" required />
+        </p>
+        <p>
+          <label for="birthday">Birthday:</label>
+          <input type="date" id="birthday" />
+        </p>
+        <p>
+          <label for="order">Order:</label>
+          <input type="number" id="order" min="1" max="10" step="1" />
+        </p>
+        <p>
+          <label for="product">Product:</label>
+          <!-- 寫法1 -->
+          <select name="" id="">
+            <option value="">AA</option>
+            <option value="">BB</option>
+            <option value="">CC</option>
+          </select>
+          <!-- 寫法2 -->
+          <input type="text" id="product" list="product-info" />
+          <datalist id="product-info">
+            <option value="AA"></option>
+            <option value="BB"></option>
+            <option value="CC"></option>
+          </datalist>
+        </p>
+        <p>
+          <label for="satesfied">
+            Satesfied: <br />
+            OK | GOOK | PERFECT <br />
+          </label>
+          <input
+            type="range"
+            id="satesfied"
+            min="1"
+            max="3"
+            step="1"
+            name="satesfied"
+          />
+          <output id="datainfo" name="datainfo">請拖曳拉桿選擇</output>
+        </p>
+        <p>
+          <input type="submit" value="送出" />&nbsp;
+          <input type="reset" value="清除" />
+        </p>
+      </fieldset>
+    </form>
+  </body>
+</html>
+<!-- 在HTML5規範中表單欄位有了許多可以讓瀏覽器精確讀取欄位資料的屬性
+大家在本頁面中的練習將會有所認識 -->

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <title>23_Location</title>
+    <style type="text/css">
+      table {
+        border-collapse: collapse;
+      }
+      table td,
+      table th {
+        border: 1px solid #ddd;
+        padding: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <th>說明</th>
+        <th>結果</th>
+      </tr>
+      <tr>
+        <td>hostname</td>
+        <td id="hostname"></td>
+      </tr>
+      <tr>
+        <td>port</td>
+        <td id="port"></td>
+      </tr>
+      <tr>
+        <td>host</td>
+        <td id="host"></td>
+      </tr>
+      <tr>
+        <td>pathname</td>
+        <td id="pathname"></td>
+      </tr>
+      <tr>
+        <td>search</td>
+        <td id="search"></td>
+      </tr>
+      <tr>
+        <td>href</td>
+        <td id="href"></td>
+      </tr>
+      <tr>
+        <td>reload</td>
+        <td><button id="reload">reload</button></td>
+      </tr>
+      <tr>
+        <td>replace</td>
+        <td>
+          <button id="replace">replace with Google</button>
+          <p>瀏覽器不會紀錄連結的歷史紀錄! ( 瀏覽器將無瀏覽歷史紀錄 )</p>
+        </td>
+      </tr>
+      <tr>
+        <td>location.href</td>
+        <td>
+          <button id="location_href">location href to Google</button>
+          <p>
+            瀏覽器會紀錄連結的歷史紀錄 ( 好讓瀏覽器的 上一頁 、 下一頁
+            按鈕可以運作 )
+          </p>
+        </td>
+      </tr>
+    </table>
+    <script type="text/javascript">
+      console.log('====================================');
+      console.log('Location 物件');
+      console.log(location);
+      for (i = 0; i < 1000; i++) {
+        console.log(i);
+      }
+      document.getElementById('hostname').innerHTML = location.hostname;
+      document.getElementById('port').innerHTML = location.port;
+      document.getElementById('host').innerHTML = location.host;
+      document.getElementById('pathname').innerHTML = location.pathname;
+      document.getElementById('search').innerHTML = location.search;
+      document.getElementById('href').innerHTML = location.href;
+      document.getElementById('reload').addEventListener(
+        'click',
+        function () {
+          location.reload();
+        },
+        false
+      );
+      document.getElementById('replace').addEventListener(
+        'click',
+        function () {
+          location.replace('http://www.google.com');
+        },
+        false
+      );
+      document.getElementById('location_href').addEventListener(
+        'click',
+        function () {
+          location.href = 'http://www.google.com';
+        },
+        false
+      );
+    </script>
+  </body>
+</html>
