@@ -24,7 +24,7 @@ h1#top + ul li {
   section.normal
   pre::-webkit-scrollbar,
 .book.with-summary .book-summary::-webkit-scrollbar {
-  width: 5px;
+  width: 8px;
   background-color: transparent;
 }
 .book
@@ -92,6 +92,9 @@ bikao {
 }
 sup.footnote-ref a {
   font-size: 0.75rem;
+}
+.gray-block {
+  background: #ddd;
 }
 /* 主體色 */
 .book-summary ul.summary li.active > a,

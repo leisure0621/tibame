@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style></style>
+    <script>
+      function init() {
+        let ctx = app.getContext('2d');
+        // 腮紅-左
+        ctx.strokeStyle = 'pink';
+        ctx.fillStyle = 'pink';
+        ctx.beginPath();
+        ctx.arc(86, 122, 6, 0, (Math.PI / 2) * 360, false);
+        ctx.stroke();
+        ctx.fill();
+        // 腮紅-右
+        ctx.beginPath();
+        ctx.arc(157, 123, 6, 0, (Math.PI / 2) * 360, false);
+        ctx.stroke();
+        ctx.fill();
+
+        // 眼睛-左
+        ctx.strokeStyle = 'black';
+        ctx.fillStyle = 'black';
+        ctx.beginPath();
+        ctx.lineWidth = 1;
+        ctx.arc(100, 107, 5, 0, (Math.PI / 2) * 360, false);
+        ctx.stroke();
+        ctx.fill();
+        ctx.clearRect(101, 106, 2, 2); // 挖空
+        // 眼睛-右
+        ctx.beginPath();
+        ctx.arc(141, 107, 5, 0, (Math.PI / 2) * 360, false);
+        ctx.stroke();
+        ctx.fill();
+        ctx.clearRect(140, 106, 2, 2); // 挖空
+        // 鼻子
+        ctx.beginPath();
+        ctx.arc(120, 115, 1, 0, (Math.PI / 2) * 360, false);
+        ctx.stroke();
+        ctx.fill();
+        // 嘴
+        ctx.beginPath();
+        ctx.moveTo(112, 120);
+        ctx.quadraticCurveTo(113, 123, 115, 124);
+        ctx.moveTo(115, 124);
+        ctx.quadraticCurveTo(117, 124, 120, 122);
+        ctx.moveTo(120, 122);
+        ctx.quadraticCurveTo(124, 123, 126, 124);
+        ctx.moveTo(126, 124);
+        ctx.quadraticCurveTo(128, 124, 131, 123);
+        ctx.moveTo(131, 123);
+        ctx.quadraticCurveTo(130, 122, 130, 120);
+        ctx.stroke();
+        ctx.fill();
+
+        // 身體
+        ctx.beginPath(); // 開始路徑
+        ctx.moveTo(74, 89);
+        ctx.quadraticCurveTo(62, 70, 50, 54);
+        ctx.moveTo(50, 54);
+        ctx.quadraticCurveTo(70, 61, 91, 73);
+        ctx.moveTo(91, 73);
+        ctx.quadraticCurveTo(114, 69, 144, 77);
+        ctx.moveTo(144, 77);
+        ctx.quadraticCurveTo(167, 63, 190, 59);
+        ctx.moveTo(190, 59);
+        ctx.quadraticCurveTo(175, 72, 163, 87);
+        ctx.moveTo(163, 87);
+        ctx.quadraticCurveTo(176, 113, 175, 141);
+        ctx.moveTo(175, 141);
+        ctx.quadraticCurveTo(186, 147, 186, 156);
+        ctx.moveTo(186, 156);
+        ctx.quadraticCurveTo(180, 162, 174, 163);
+        ctx.moveTo(174, 163);
+        ctx.quadraticCurveTo(172, 160, 172, 157);
+        ctx.moveTo(172, 157);
+        ctx.quadraticCurveTo(176, 154, 176, 152);
+        ctx.moveTo(176, 152);
+        ctx.quadraticCurveTo(175, 150, 173, 148);
+        // 下半身
+        ctx.moveTo(174, 163);
+        ctx.quadraticCurveTo(175, 182, 164, 195);
+        ctx.moveTo(164, 195);
+        ctx.quadraticCurveTo(159, 203, 155, 208);
+        ctx.moveTo(155, 208);
+        ctx.quadraticCurveTo(150, 210, 148, 204);
+        ctx.moveTo(148, 204);
+        ctx.quadraticCurveTo(150, 201, 153, 197);
+        ctx.moveTo(153, 197);
+        ctx.quadraticCurveTo(121, 203, 94, 201);
+        ctx.moveTo(94, 201);
+        ctx.quadraticCurveTo(90, 207, 86, 210);
+        ctx.moveTo(86, 210);
+        ctx.quadraticCurveTo(82, 209, 81, 205);
+        ctx.moveTo(81, 205);
+        ctx.quadraticCurveTo(84, 200, 86, 197);
+        ctx.moveTo(86, 197);
+        ctx.quadraticCurveTo(81, 190, 72, 176);
+        // 尾巴 (下半)
+        ctx.moveTo(79, 187);
+        ctx.quadraticCurveTo(66, 187, 58, 184);
+        ctx.moveTo(58, 184);
+        ctx.quadraticCurveTo(58, 182, 60, 177);
+        ctx.moveTo(60, 177);
+        ctx.quadraticCurveTo(59, 181, 61, 176);
+        ctx.moveTo(61, 176);
+        ctx.quadraticCurveTo(53, 176, 47, 173);
+        ctx.moveTo(47, 173);
+        ctx.quadraticCurveTo(47, 168, 58, 155);
+        // 左手
+        ctx.moveTo(66, 158);
+        ctx.quadraticCurveTo(71, 162, 72, 167);
+        ctx.moveTo(72, 167);
+        ctx.quadraticCurveTo(68, 168, 63, 169);
+        ctx.moveTo(63, 169);
+        ctx.quadraticCurveTo(54, 155, 63, 148);
+        // 左臉
+        ctx.moveTo(63, 148);
+        ctx.quadraticCurveTo(62, 112, 74, 89);
+        // 尾巴(上)
+        ctx.moveTo(65, 113);
+        ctx.quadraticCurveTo(47, 106, 33, 105);
+        ctx.moveTo(33, 105);
+        ctx.quadraticCurveTo(29, 123, 29, 142);
+        ctx.moveTo(29, 142);
+        ctx.quadraticCurveTo(40, 145, 59, 151);
+
+        ctx.closePath(); // 結束路徑
+        ctx.stroke();
+        ctx.fill();
+
+        // 左邊耳朵-黑
+        ctx.beginPath();
+        ctx.moveTo(51, 54);
+        ctx.quadraticCurveTo(62, 70, 50, 54);
+        ctx.moveTo(50, 54);
+        ctx.quadraticCurveTo(62, 58, 71, 62);
+        ctx.moveTo(71, 62);
+        ctx.quadraticCurveTo(65, 65, 61, 71);
+        ctx.moveTo(61, 71);
+        ctx.quadraticCurveTo(57, 63, 51, 54);
+        ctx.closePath(); // 結束路徑
+        ctx.stroke();
+        ctx.fill();
+        // 右邊耳朵-黑
+        ctx.beginPath();
+        ctx.moveTo(189, 59);
+        ctx.quadraticCurveTo(178, 61, 171, 64);
+        ctx.moveTo(171, 64);
+        ctx.quadraticCurveTo(174, 68, 176, 72);
+        ctx.moveTo(176, 72);
+        ctx.quadraticCurveTo(182, 65, 189, 59);
+        ctx.closePath(); // 結束路徑
+        ctx.stroke();
+        ctx.fill();
+
+        app.addEventListener('click', function (e) {
+          console.log(`${e.offsetX}, ${e.offsetY}`);
+        });
+      }
+      window.onload = init;
+    </script>
+  </head>
+  <body>
+    <canvas id="app" width="500px" height="500px"></canvas>
+  </body>
+</html>

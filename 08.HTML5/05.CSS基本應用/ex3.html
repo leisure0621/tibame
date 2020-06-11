@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CSS基本應用-使用CSS美化表格</title>
+    <style>
+      * {
+        font-family: Microsoft jhenghei;
+      }
+      table {
+        width: 800px;
+        margin: 50px auto;
+        border: 2px #333 solid;
+        text-align: center;
+        border-collapse: collapse;
+      }
+      td,
+      th {
+        border: 2px #333 solid;
+      }
+      caption {
+        background-color: #63c;
+        color: cyan;
+        font-size: 2em;
+      }
+      th {
+        color: brown;
+        background-color: darkorange;
+      }
+      a:link {
+        color: #333;
+        text-decoration: none;
+      }
+      a:visited {
+        color: pink;
+        font-weight: bold;
+      }
+      a:hover {
+        color: #93c;
+      }
+      a:active {
+        color: red;
+      }
+      a {
+        color: green;
+      }
+      a:hover {
+        color: brown;
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <caption>
+        員工資料表
+      </caption>
+      <tr>
+        <th>NO</th>
+        <th>NAME</th>
+        <th>DEPT</th>
+        <th>SEX</th>
+      </tr>
+      <tr>
+        <td>001</td>
+        <td><a href="">John</a></td>
+        <td>RD</td>
+        <td>Male</td>
+      </tr>
+      <tr>
+        <td>02</td>
+        <td>Mary</td>
+        <td>SR</td>
+        <td>Female</td>
+      </tr>
+    </table>
+  </body>
+</html>
