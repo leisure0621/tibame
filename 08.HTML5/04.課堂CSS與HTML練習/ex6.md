@@ -1,0 +1,49 @@
+# 題目
+
+- 照片牆
+
+# 作法
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>照片牆</title>
+    <style>
+      body {
+        background-color: #333;
+      }
+      div {
+        display: flex;
+        max-width: 750px;
+        margin: auto;
+        flex-wrap: wrap;
+      }
+      img {
+        max-width: calc(100% / 4 - 40px);
+        margin: 20px;
+        box-sizing: border-box;
+        padding: 2px;
+        border: 2px solid #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <img src="images/p1.jpg" alt="" />
+      <img src="images/p2.jpg" alt="" />
+      <img src="images/p3.jpg" alt="" />
+      <img src="images/p4.jpg" alt="" />
+      <img src="images/p5.jpg" alt="" />
+      <img src="images/p6.jpg" alt="" />
+      <img src="images/p7.jpg" alt="" />
+      <img src="images/p8.jpg" alt="" />
+      <img src="images/p9.jpg" alt="" />
+      <img src="images/p10.jpg" alt="" />
+      <img src="images/p11.jpg" alt="" />
+      <img src="images/p12.jpg" alt="" />
+    </div>
+  </body>
+</html>
+```

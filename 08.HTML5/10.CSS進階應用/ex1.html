@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CSS進階應用-基本屬性認識</title>
+    <style type="text/css" media="screen">
+      /* 英文字型網站: dafon.com */
+      /* 英文字型網站: fonts2u.com */
+      /* 中文字型網站: fonts.google.com */
+      /* 中文字型網站: www.fonts.net.cn */
+
+      body {
+        background-color: pink;
+        margin: 0;
+        font-size: 100%;
+      }
+      div {
+        width: 200px;
+        text-align: center;
+        height: 60px;
+        line-height: 60px;
+        background-color: #c39;
+        color: #fff;
+        margin: 50px 8%;
+      }
+      p {
+        float: right;
+        width: 45%;
+        height: auto;
+        margin-right: 10%;
+        margin-top: -550px;
+        line-height: 26px;
+        letter-spacing: 1px;
+        font-family: qfont, Arial;
+        padding-left: 8%;
+        box-sizing: border-box;
+        column-count: 2;
+        column-gap: 20px;
+        opacity: 0.3;
+      }
+      #s1 {
+        border-radius: 8px 0 12px 20px;
+      }
+      #s2 {
+        box-shadow: 2px 2px 2px #333, 4px 4px 2px #ff0, -2px -2px 2px cyan inset,
+          2px 2px 4px rgb(0, 0, 0) inset;
+      }
+      #s3 {
+        border: 20px solid #630;
+        border-image: url('images/img1.jpg');
+        border-image-slice: 25;
+        border-image-repeat: round;
+      }
+      #s4 {
+        background-image: url('images/b1.jpg');
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+      }
+      #s5 {
+        text-shadow: 0 0 2px #000;
+      }
+      @font-face {
+        font-family: 'qfont';
+        src: url('fonts/qfont.otf');
+      }
+    </style>
+  </head>
+  <body>
+    <div id="s1">border-radius</div>
+    <div id="s2">box-shadow</div>
+    <div id="s3">border-image</div>
+    <div id="s4">background-size</div>
+    <div id="s5">text-shadow</div>
+    <p>
+      Responsive website design is a new trend in web design. It is made up of
+      multiple layouts and combined application technologies to ensure that
+      computers, tablets, mobile phones and other flat devices can achieve the
+      same visual and functional effects.The web version of Google Translate has
+      also been updated, and the layout adjustment, RWD, and new features have
+      been added. It can be seen that the RWD responsive website is a basic
+      requirement for all enterprises. esponsive website design is a new trend
+      in web design. It is made up of multiple layouts and combined application
+      technologies to ensure that computers, tablets, mobile phones and other
+      flat devices can achieve the same visual and functional effects.The web
+      version of Google Translate has also been updated, and the layout
+      adjustment, RWD, and new features have been added. It can be seen that the
+      RWD responsive website is a basic requirement for all enterprises.
+    </p>
+  </body>
+</html>
+<!-- 
+css進階設定  再也不需要影像處理囉!
+border-radius:圓角
+box-shadow:區塊陰影
+border-image:邊框影像
+background-size:背景影像縮放
+@font-face:導入字型
+text-shadow:文字陰影
+column...:多欄顯示
+opacity:不透明度
+ -->

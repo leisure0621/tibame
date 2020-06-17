@@ -1,0 +1,51 @@
+# 題目
+
+1. 請將頁面上的 h2 標題文字色彩設定為藍色
+2. 請將頁面上的段落文字色彩設定為綠色
+
+# 作法
+
+- html
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>頁面美化:HTML與CSS的差異比較--行內樣式的用法</title>
+    <link rel="stylesheet" href="ex1.css" />
+  </head>
+  <body>
+    <h2>網頁設計</h2>
+    <h3>不再使用表格排版，使用DIV+CSS。</h3>
+    <p>
+      使用表格排版造成標籤層太多。<br />
+      DIV區塊可以完全取代表格，減少標籤層數。<br />
+      搭配CSS樣式設計外觀。
+    </p>
+
+    <h3>使用js製作網頁特效。</h3>
+    <p>
+      以往都有使用JavaScript進行頁面特效。<br />
+      將搭配函式庫方式輕易建立。
+    </p>
+
+    <h3>搭配HTML5新架構標籤。</h3>
+    <p>
+      新的HTML5新的標籤設計。<br />
+      可以輕易繪圖與製作動畫效果。
+    </p>
+  </body>
+</html>
+```
+
+- css
+
+```css
+h2 {
+  color: blue;
+}
+
+p {
+  color: green;
+}
+```

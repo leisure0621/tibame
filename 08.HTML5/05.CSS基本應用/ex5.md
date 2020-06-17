@@ -1,0 +1,46 @@
+# 題目
+
+- CSS 基本應用-區塊重疊順序操作
+
+# 作法
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CSS基本應用-區塊重疊順序操作</title>
+    <style>
+      body {
+        width: 500px;
+        height: auto;
+        background-color: #330;
+        color: #333;
+        font-family: '微軟正黑體';
+        margin: 0 auto;
+        text-align: center;
+      }
+      body img {
+        width: 85%;
+        height: auto;
+      }
+      div {
+        width: 230px;
+        height: 5em;
+        background-color: #669;
+        border-radius: 10px;
+        color: #fff;
+        padding-top: 15px;
+        box-sizing: border-box;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <img src="pepole.jpg" alt="" />
+    <div>一個美好的天氣,最適合出遊了!<br />有機會一定要造訪這個小鎮喔!</div>
+  </body>
+</html>
+```
