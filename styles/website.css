@@ -1,3 +1,8 @@
+:root {
+  --code-highlight: rgba(255, 235, 59, 0.8);
+  --code-public: #525252;
+  --theme-green: #42b983;
+}
 * {
   font-family: 微软正黑体, 微软雅黑;
 }
@@ -55,7 +60,7 @@ h1#top + ul li {
   color: #333;
 }
 .markdown-section code {
-  background: rgba(255, 235, 59, 0.8);
+  background: var(--code-highlight);
   color: black;
 }
 bikao {
@@ -86,6 +91,12 @@ bikao {
 .markdown-section ul {
   margin-bottom: 1em;
 }
+/* Table 設定*/
+@media screen and (max-width: 768px) {
+  .markdown-section table {
+    display: block !important;
+  }
+}
 /* Theme 設定 */
 .markdown-section hr {
   height: 1px;
@@ -99,8 +110,8 @@ sup.footnote-ref a {
 /* 主體色 */
 .book-summary ul.summary li.active > a,
 .markdown-section a {
-  color: #42b983;
-  color: var(--theme-color, #42b983);
+  color: var(--theme-green);
+  color: var(--theme-color, --theme-green);
   font-weight: 600;
 }
 .book .book-body .page-wrapper .page-inner section.normal pre .hljs-variable,
@@ -238,11 +249,11 @@ sup.footnote-ref a {
   code
   .xml
   .hljs-cdata {
-  color: #42b983;
+  color: var(--theme-green);
 }
 .book-summary ul.summary li span,
 #book-search-results .search-results .has-results .search-results-item a {
-  color: #42b983;
+  color: var(--theme-green);
 }
 .book .book-body .page-wrapper .page-inner section.normal pre .hljs-keyword,
 .book .book-body .page-wrapper .page-inner section.normal code .hljs-keyword,
@@ -268,7 +279,7 @@ sup.footnote-ref a {
 .book .book-body .page-wrapper .page-inner section.normal code .hljs-comment, */
 .book .book-body .page-wrapper .page-inner section.normal pre .hljs-title,
 .book .book-body .page-wrapper .page-inner section.normal code .hljs-title {
-  color: #525252;
+  color: var(--code-public);
 }
 .book .book-body .page-wrapper .page-inner section.normal pre .hljs-number,
 .book .book-body .page-wrapper .page-inner section.normal code .hljs-number,
@@ -296,5 +307,5 @@ sup.footnote-ref a {
 .book .book-body .page-wrapper .page-inner section.normal code .hljs-params,
 .book .book-body .page-wrapper .page-inner section.normal pre .hljs-constant,
 .book .book-body .page-wrapper .page-inner section.normal code .hljs-constant {
-  color: #525252;
+  color: var(--code-public);
 }
