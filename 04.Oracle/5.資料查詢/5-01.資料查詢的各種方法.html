@@ -2050,6 +2050,19 @@
             
         </li>
     
+        <li class="chapter " data-level="1.5.5.16" data-path="../../03.JAVA/05.JAVA程式設計/16.Forward/16.Forward.html">
+            
+                <a href="../../03.JAVA/05.JAVA程式設計/16.Forward/16.Forward.html">
+            
+                    
+                    16.Forward
+            
+                </a>
+            
+
+            
+        </li>
+    
 
             </ul>
             
@@ -2102,6 +2115,19 @@
             
                     
                     02.JavaServlet_JSP 解決方案
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6.1.3" data-path="../../03.JAVA/06.JAVA程式設計-影片/01.Servlet基礎篇/03.JavaServlet的優勢/03.JavaServlet的優勢.html">
+            
+                <a href="../../03.JAVA/06.JAVA程式設計-影片/01.Servlet基礎篇/03.JavaServlet的優勢/03.JavaServlet的優勢.html">
+            
+                    
+                    03.JavaServlet 的優勢
             
                 </a>
             
@@ -2918,6 +2944,19 @@
             
                     
                     10.驗收測試
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.10" data-path="../../07.資料庫設計與敏捷開發/11.發布規劃/11.發布規劃.html">
+            
+                <a href="../../07.資料庫設計與敏捷開發/11.發布規劃/11.發布規劃.html">
+            
+                    
+                    11.發布規劃
             
                 </a>
             
@@ -3797,6 +3836,19 @@
             
         </li>
     
+        <li class="chapter " data-level="1.11.4" data-path="../../09.JQuery/04.jQueryUI/04.jQueryUI.html">
+            
+                <a href="../../09.JQuery/04.jQueryUI/04.jQueryUI.html">
+            
+                    
+                    04.jQueryUI
+            
+                </a>
+            
+
+            
+        </li>
+    
 
             </ul>
             
@@ -3847,7 +3899,21 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="select">SELECT</h1>
+                                <h1 id="top">&#x76EE;&#x9304;</h1>
+
+<ul>
+<li><a href="#s1">1. SELECT &#x7528;&#x6CD5;</a></li>
+<li><a href="#s2">2. SELECT &#x7DF4;&#x7FD2;</a></li>
+<li><a href="#s3">3. WHERE &#x7528;&#x6CD5;</a></li>
+<li><a href="#s4">4. WHERE &#x7DF4;&#x7FD2;</a></li>
+<li><a href="#s5">5. AND|OR|NOT|BETWEEN &#x7528;&#x6CD5;</a></li>
+<li><a href="#s6">6. AND|OR|NOT|BETWEEN &#x7DF4;&#x7FD2;</a></li>
+<li><a href="#s7">7. IN|ANY|ALL &#x7528;&#x6CD5;</a></li>
+<li><a href="#s8">8. SUM|AVG|COUNT|MAX|MIN &#x805A;&#x96C6;&#x51FD;&#x5F0F;</a></li>
+<li><a href="#s9">9. &#x805A;&#x96C6;&#x51FD;&#x5F0F;&#x7DF4;&#x7FD2;</a></li>
+</ul>
+<hr>
+<h1 id="1-select-&#x7528;&#x6CD5;"><a id="s1" class="md-title" href="#top">1. SELECT &#x7528;&#x6CD5;</a></h1>
 <ul>
 <li><p>&#x6B04;&#x4F4D;&#x5225;&#x540D;</p>
 <ul>
@@ -3891,7 +3957,7 @@
 <pre><code class="lang-sql"><span class="hljs-comment">-- &#x5148;&#x5C07;&#x4EFB;&#x4E00;price&#x6539;&#x70BA;null&#xFF0C;NULLS FIRST&#x6703;&#x5C07;null&#x503C;&#x6392;&#x5728;&#x524D;</span>
 <span class="hljs-keyword">SELECT</span> * <span class="hljs-keyword">FROM</span> BOOK <span class="hljs-keyword">ORDER</span> <span class="hljs-keyword">BY</span> PRICE <span class="hljs-keyword">NULLS</span> <span class="hljs-keyword">FIRST</span>;
 </code></pre>
-<h1 id="select-&#x7DF4;&#x7FD2;">SELECT &#x7DF4;&#x7FD2;</h1>
+<h1 id="2-select-&#x7DF4;&#x7FD2;"><a id="s2" class="md-title" href="#top">2. SELECT &#x7DF4;&#x7FD2;</a></h1>
 <ul>
 <li>&#x5C07; CUSTOMER &#x8868;&#x683C;&#x7684; CUSTOMER_NAME (&#x5225;&#x540D;&#x70BA; NAME), PHONE, ADDRESS &#x6B04;&#x4F4D;&#x8CC7;&#x6599;&#x5217;&#x51FA;</li>
 </ul>
@@ -3902,7 +3968,7 @@
 </ul>
 <pre><code class="lang-sql"><span class="hljs-keyword">select</span> * <span class="hljs-keyword">from</span> customer;
 </code></pre>
-<h1 id="where">WHERE</h1>
+<h1 id="3-where-&#x7528;&#x6CD5;"><a id="s3" class="md-title" href="#top">3. WHERE &#x7528;&#x6CD5;</a></h1>
 <ul>
 <li>&#x5224;&#x65B7;<code>&#x6587;&#x5B57;</code></li>
 </ul>
@@ -3963,7 +4029,7 @@
 <span class="hljs-keyword">SELECT</span> * <span class="hljs-keyword">FROM</span> BOOK
 <span class="hljs-keyword">WHERE</span> <span class="hljs-keyword">upper</span>(BOOK_NAME) <span class="hljs-keyword">LIKE</span> <span class="hljs-keyword">upper</span>(<span class="hljs-string">&apos;%JAVA%&apos;</span>);
 </code></pre>
-<h1 id="where-&#x7DF4;&#x7FD2;">WHERE &#x7DF4;&#x7FD2;</h1>
+<h1 id="4-where-&#x7DF4;&#x7FD2;"><a id="s4" class="md-title" href="#top">4. WHERE &#x7DF4;&#x7FD2;</a></h1>
 <ul>
 <li>&#x67E5;&#x8A62;&#x5BA2;&#x6236; ID &#x70BA; C001 &#x7684;&#x8CC7;&#x6599;</li>
 </ul>
@@ -4002,7 +4068,7 @@
 <span class="hljs-keyword">from</span> customer
 <span class="hljs-keyword">where</span> <span class="hljs-keyword">upper</span>(address) <span class="hljs-keyword">like</span> <span class="hljs-keyword">upper</span>(<span class="hljs-string">&apos;%Taipei%&apos;</span>);
 </code></pre>
-<h1 id="andornotbetween">AND|OR|NOT|BETWEEN</h1>
+<h1 id="5-andornotbetween-&#x7528;&#x6CD5;"><a id="s5" class="md-title" href="#top">5. AND|OR|NOT|BETWEEN &#x7528;&#x6CD5;</a></h1>
 <ul>
 <li><code>AND</code></li>
 </ul>
@@ -4032,7 +4098,7 @@
 <span class="hljs-keyword">SELECT</span> * <span class="hljs-keyword">FROM</span> BOOK
 <span class="hljs-keyword">WHERE</span> PRICE <span class="hljs-keyword">BETWEEN</span> <span class="hljs-number">550</span> <span class="hljs-keyword">AND</span> <span class="hljs-number">935</span>;
 </code></pre>
-<h1 id="andornotbetween-&#x7DF4;&#x7FD2;">AND|OR|NOT|BETWEEN &#x7DF4;&#x7FD2;</h1>
+<h1 id="6-andornotbetween-&#x7DF4;&#x7FD2;"><a id="s6" class="md-title" href="#top">6. AND|OR|NOT|BETWEEN &#x7DF4;&#x7FD2;</a></h1>
 <ul>
 <li>&#x67E5;&#x8A62;&#x51FA;&#x7248;&#x65E5;&#x671F;&#x4ECB;&#x65BC; 2016/01/01~2016/12/31 &#x4E4B;&#x9593;&#x7684;&#x66F8;&#x7C4D;,&#x800C;&#x4E14;&#x4F9D;&#x7167;&#x66F8;&#x50F9;&#x964D;&#x51AA;&#x6392;&#x5E8F;</li>
 </ul>
@@ -4051,7 +4117,7 @@
 <span class="hljs-keyword">where</span> <span class="hljs-keyword">upper</span>(address) <span class="hljs-keyword">like</span> <span class="hljs-keyword">upper</span>(<span class="hljs-string">&apos;%Taipei%&apos;</span>) <span class="hljs-keyword">or</span>
       <span class="hljs-keyword">upper</span>(address) <span class="hljs-keyword">like</span> <span class="hljs-keyword">upper</span>(<span class="hljs-string">&apos;%Taoyuan%&apos;</span>);
 </code></pre>
-<h1 id="inanyall">IN|ANY|ALL</h1>
+<h1 id="7-inanyall-&#x7528;&#x6CD5;"><a id="s7" class="md-title" href="#top">7. IN|ANY|ALL &#x7528;&#x6CD5;</a></h1>
 <ul>
 <li><p><code>IN</code></p>
 <ul>
@@ -4145,7 +4211,7 @@
 <span class="hljs-keyword">SELECT</span> * <span class="hljs-keyword">FROM</span> BOOK
 <span class="hljs-keyword">WHERE</span> PRICE &gt; ALL (<span class="hljs-number">500</span>, <span class="hljs-number">1000</span>);
 </code></pre>
-<h1 id="sumavgcountmaxmin-&#x805A;&#x96C6;&#x51FD;&#x5F0F;">SUM|AVG|COUNT|MAX|MIN &#x805A;&#x96C6;&#x51FD;&#x5F0F;</h1>
+<h1 id="8-sumavgcountmaxmin-&#x805A;&#x96C6;&#x51FD;&#x5F0F;"><a id="s8" class="md-title" href="#top">8. SUM|AVG|COUNT|MAX|MIN &#x805A;&#x96C6;&#x51FD;&#x5F0F;</a></h1>
 <ul>
 <li><p><code>SUM</code> &#x8A08;&#x7B97;&#x52A0;&#x7E3D;</p>
 <ul>
@@ -4197,7 +4263,7 @@
 <span class="hljs-keyword">SELECT</span> <span class="hljs-keyword">SUM</span>(PRICE), <span class="hljs-keyword">MAX</span>(PRICE) <span class="hljs-keyword">AS</span> BOOK_MAX_PRICE, <span class="hljs-keyword">MIN</span>(PRICE) <span class="hljs-keyword">AS</span> BOOK_MIN_PRICE
 <span class="hljs-keyword">FROM</span> BOOK;
 </code></pre>
-<h1 id="&#x805A;&#x96C6;&#x51FD;&#x5F0F;&#x7DF4;&#x7FD2;">&#x805A;&#x96C6;&#x51FD;&#x5F0F;&#x7DF4;&#x7FD2;</h1>
+<h1 id="9-&#x805A;&#x96C6;&#x51FD;&#x5F0F;&#x7DF4;&#x7FD2;"><a id="s9" class="md-title" href="#top">9. &#x805A;&#x96C6;&#x51FD;&#x5F0F;&#x7DF4;&#x7FD2;</a></h1>
 <ul>
 <li>&#x7D71;&#x8A08;&#x5C45;&#x4F4F;&#x5728;&#x53F0;&#x5317;&#x7684;&#x5BA2;&#x6236;&#x7E3D;&#x6578;&#x91CF;</li>
 </ul>
@@ -4259,7 +4325,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"5-01.資料查詢的各種方法","level":"1.6.6.1","depth":3,"next":{"title":"6.進階查詢","level":"1.6.7","depth":2,"ref":"","articles":[{"title":"6-01.進階查詢","level":"1.6.7.1","depth":3,"path":"04.Oracle/6.進階查詢/6-01.進階查詢.md","ref":"04.Oracle/6.進階查詢/6-01.進階查詢.md","articles":[]}]},"previous":{"title":"5.資料查詢","level":"1.6.6","depth":2,"ref":"","articles":[{"title":"5-01.資料查詢的各種方法","level":"1.6.6.1","depth":3,"path":"04.Oracle/5.資料查詢/5-01.資料查詢的各種方法.md","ref":"04.Oracle/5.資料查詢/5-01.資料查詢的各種方法.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["-search","search-pro","back-to-top-button","code","pageview-count"],"pluginsConfig":{"disqus":{"shortName":"gitbookuse"},"search-pro":{"cutWordLib":"nodejieba","defineWord":["小需求","基础建设"]},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"back-to-top-button":{},"pageview-count":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"04.Oracle/5.資料查詢/5-01.資料查詢的各種方法.md","mtime":"2020-05-15T05:53:12.290Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-07-04T18:41:42.265Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"5-01.資料查詢的各種方法","level":"1.6.6.1","depth":3,"next":{"title":"6.進階查詢","level":"1.6.7","depth":2,"ref":"","articles":[{"title":"6-01.進階查詢","level":"1.6.7.1","depth":3,"path":"04.Oracle/6.進階查詢/6-01.進階查詢.md","ref":"04.Oracle/6.進階查詢/6-01.進階查詢.md","articles":[]}]},"previous":{"title":"5.資料查詢","level":"1.6.6","depth":2,"ref":"","articles":[{"title":"5-01.資料查詢的各種方法","level":"1.6.6.1","depth":3,"path":"04.Oracle/5.資料查詢/5-01.資料查詢的各種方法.md","ref":"04.Oracle/5.資料查詢/5-01.資料查詢的各種方法.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["-search","search-pro","back-to-top-button","code","pageview-count"],"pluginsConfig":{"disqus":{"shortName":"gitbookuse"},"search-pro":{"cutWordLib":"nodejieba","defineWord":["小需求","基础建设"]},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"back-to-top-button":{},"pageview-count":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"04.Oracle/5.資料查詢/5-01.資料查詢的各種方法.md","mtime":"2020-07-07T15:29:57.953Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-07-07T18:27:11.592Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
