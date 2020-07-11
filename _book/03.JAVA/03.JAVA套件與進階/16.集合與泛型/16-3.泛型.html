@@ -1,0 +1,5339 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>16-3.泛型 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-pageview-count/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../../../styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="16-2.Map介面.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../../">
+            
+                <a href="../../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    00.資料總節
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" >
+            
+                <span>
+            
+                    
+                    01.開課注意
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.1" data-path="../../../00.資料總節/01.開課注意/01.上課要注意的地方.html">
+            
+                <a href="../../../00.資料總節/01.開課注意/01.上課要注意的地方.html">
+            
+                    
+                    01.上課要注意的地方
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" >
+            
+                <span>
+            
+                    
+                    03.JAVA
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.1" data-path="../../../00.資料總節/03.JAVA/java题目.html">
+            
+                <a href="../../../00.資料總節/03.JAVA/java题目.html">
+            
+                    
+                    java 题目
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2" data-path="../../../00.資料總節/03.JAVA/第14到18張筆記用總結.html">
+            
+                <a href="../../../00.資料總節/03.JAVA/第14到18張筆記用總結.html">
+            
+                    
+                    第 14 到 18 張筆記用總結
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3" data-path="../../../00.資料總節/03.JAVA/第1到6章筆記用總節.html">
+            
+                <a href="../../../00.資料總節/03.JAVA/第1到6章筆記用總節.html">
+            
+                    
+                    第 1 到 6 章筆記用總節
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.4" data-path="../../../00.資料總節/03.JAVA/第6到13章筆記用總節.html">
+            
+                <a href="../../../00.資料總節/03.JAVA/第6到13章筆記用總節.html">
+            
+                    
+                    第 6 到 13 章筆記用總節
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.5" data-path="../../../00.資料總節/03.JAVA/第6到13章考試用總節.html">
+            
+                <a href="../../../00.資料總節/03.JAVA/第6到13章考試用總節.html">
+            
+                    
+                    第 6 到 13 章考試用總節
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" >
+            
+                <span>
+            
+                    
+                    04.雲端概論
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.3.1" data-path="../../../00.資料總節/04.雲端概論/第1至6章總結.html">
+            
+                <a href="../../../00.資料總節/04.雲端概論/第1至6章總結.html">
+            
+                    
+                    第 1 至 6 章總結
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    01.雲端應用
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../../../01.雲端應用/1-1.雲端應用與介紹.html">
+            
+                <a href="../../../01.雲端應用/1-1.雲端應用與介紹.html">
+            
+                    
+                    1-1.雲端應用與介紹
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    02.Html
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../../../02.Html/1.初階學習.html">
+            
+                <a href="../../../02.Html/1.初階學習.html">
+            
+                    
+                    1.初階學習
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../../../02.Html/2.表格的變化-含合併欄位的表格.html">
+            
+                <a href="../../../02.Html/2.表格的變化-含合併欄位的表格.html">
+            
+                    
+                    2.表格的變化-含合併欄位的表格
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../../../02.Html/3.播放視訊與音訊檔.html">
+            
+                <a href="../../../02.Html/3.播放視訊與音訊檔.html">
+            
+                    
+                    3.播放視訊與音訊檔
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../../../02.Html/4.form標籤.html">
+            
+                <a href="../../../02.Html/4.form標籤.html">
+            
+                    
+                    4.form 標籤
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../../../02.Html/5.HTML5.html">
+            
+                <a href="../../../02.Html/5.HTML5.html">
+            
+                    
+                    5.HTML5
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="../../../02.Html/6.CSS.html">
+            
+                <a href="../../../02.Html/6.CSS.html">
+            
+                    
+                    6.CSS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="../../../02.Html/7.HTML課後練習.html">
+            
+                <a href="../../../02.Html/7.HTML課後練習.html">
+            
+                    
+                    7.HTML 課後練習
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    03.JAVA
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" >
+            
+                <span>
+            
+                    
+                    01.JAVA 基礎學習
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1.1" >
+            
+                <span>
+            
+                    
+                    01.JAVA 導論
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1.1.1" data-path="../../01.JAVA基礎學習/01.JAVA導論/1-1.JAVA開課介紹與起源.html">
+            
+                <a href="../../01.JAVA基礎學習/01.JAVA導論/1-1.JAVA開課介紹與起源.html">
+            
+                    
+                    1-1.JAVA 開課介紹與起源
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.2" >
+            
+                <span>
+            
+                    
+                    02.JAVA 開發環境建立
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1.2.1" data-path="../../01.JAVA基礎學習/02.JAVA開發環境建立/2-1.JAVA開發環境建立.html">
+            
+                <a href="../../01.JAVA基礎學習/02.JAVA開發環境建立/2-1.JAVA開發環境建立.html">
+            
+                    
+                    2-1.JAVA 開發環境建立
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.2.2" data-path="../../01.JAVA基礎學習/02.JAVA開發環境建立/2-2.TXT撰寫第一隻JAVA.html">
+            
+                <a href="../../01.JAVA基礎學習/02.JAVA開發環境建立/2-2.TXT撰寫第一隻JAVA.html">
+            
+                    
+                    2-2.TXT 撰寫第一隻 JAVA
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.2.3" data-path="../../01.JAVA基礎學習/02.JAVA開發環境建立/2-3.Eclipse各種操作.html">
+            
+                <a href="../../01.JAVA基礎學習/02.JAVA開發環境建立/2-3.Eclipse各種操作.html">
+            
+                    
+                    2-3.Eclipse 各種操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.2.4" data-path="../../01.JAVA基礎學習/02.JAVA開發環境建立/2-4.JAVA基本形式.html">
+            
+                <a href="../../01.JAVA基礎學習/02.JAVA開發環境建立/2-4.JAVA基本形式.html">
+            
+                    
+                    2-4.JAVA 基本形式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.2.5" data-path="../../01.JAVA基礎學習/02.JAVA開發環境建立/2-5.創建Eclipse項目.html">
+            
+                <a href="../../01.JAVA基礎學習/02.JAVA開發環境建立/2-5.創建Eclipse項目.html">
+            
+                    
+                    2-5.創建 Eclipse 項目
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.3" >
+            
+                <span>
+            
+                    
+                    03.定數、變數、常數與運算子
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1.3.1" data-path="../../01.JAVA基礎學習/03.定數、變數、常數與運算子/3-01.JAVA變量.html">
+            
+                <a href="../../01.JAVA基礎學習/03.定數、變數、常數與運算子/3-01.JAVA變量.html">
+            
+                    
+                    3-01.JAVA 變量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.3.2" data-path="../../01.JAVA基礎學習/03.定數、變數、常數與運算子/3-02.變數種類與有效範圍.html">
+            
+                <a href="../../01.JAVA基礎學習/03.定數、變數、常數與運算子/3-02.變數種類與有效範圍.html">
+            
+                    
+                    3-02.變數種類與有效範圍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.3.3" data-path="../../01.JAVA基礎學習/03.定數、變數、常數與運算子/3-03.JAVA常數與命名方式.html">
+            
+                <a href="../../01.JAVA基礎學習/03.定數、變數、常數與運算子/3-03.JAVA常數與命名方式.html">
+            
+                    
+                    3-03.JAVA 常數與命名方式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.3.4" data-path="../../01.JAVA基礎學習/03.定數、變數、常數與運算子/3-04.算術運算子.html">
+            
+                <a href="../../01.JAVA基礎學習/03.定數、變數、常數與運算子/3-04.算術運算子.html">
+            
+                    
+                    3-04.算術運算子
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.3.5" data-path="../../01.JAVA基礎學習/03.定數、變數、常數與運算子/3-05.遞增遞減運算子.html">
+            
+                <a href="../../01.JAVA基礎學習/03.定數、變數、常數與運算子/3-05.遞增遞減運算子.html">
+            
+                    
+                    3-05.遞增遞減運算子
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.3.6" data-path="../../01.JAVA基礎學習/03.定數、變數、常數與運算子/3-06.指定運算子.html">
+            
+                <a href="../../01.JAVA基礎學習/03.定數、變數、常數與運算子/3-06.指定運算子.html">
+            
+                    
+                    3-06.指定運算子
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.3.7" data-path="../../01.JAVA基礎學習/03.定數、變數、常數與運算子/3-07.關係運算子.html">
+            
+                <a href="../../01.JAVA基礎學習/03.定數、變數、常數與運算子/3-07.關係運算子.html">
+            
+                    
+                    3-07.關係運算子
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.3.8" data-path="../../01.JAVA基礎學習/03.定數、變數、常數與運算子/3-08.條件運算子.html">
+            
+                <a href="../../01.JAVA基礎學習/03.定數、變數、常數與運算子/3-08.條件運算子.html">
+            
+                    
+                    3-08.條件運算子
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.3.9" data-path="../../01.JAVA基礎學習/03.定數、變數、常數與運算子/3-09.位元運算子.html">
+            
+                <a href="../../01.JAVA基礎學習/03.定數、變數、常數與運算子/3-09.位元運算子.html">
+            
+                    
+                    3-09.位元運算子
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.3.10" data-path="../../01.JAVA基礎學習/03.定數、變數、常數與運算子/3-10.移位運算子.html">
+            
+                <a href="../../01.JAVA基礎學習/03.定數、變數、常數與運算子/3-10.移位運算子.html">
+            
+                    
+                    3-10.移位運算子
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.3.11" data-path="../../01.JAVA基礎學習/03.定數、變數、常數與運算子/3-11.三元運算子.html">
+            
+                <a href="../../01.JAVA基礎學習/03.定數、變數、常數與運算子/3-11.三元運算子.html">
+            
+                    
+                    3-11.三元運算子
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.3.12" data-path="../../01.JAVA基礎學習/03.定數、變數、常數與運算子/3-12.晉升與型別轉換.html">
+            
+                <a href="../../01.JAVA基礎學習/03.定數、變數、常數與運算子/3-12.晉升與型別轉換.html">
+            
+                    
+                    3-12.晉升與型別轉換
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.4" >
+            
+                <span>
+            
+                    
+                    04.流程控制
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1.4.1" data-path="../../01.JAVA基礎學習/04.流程控制/4-1.if...else.html">
+            
+                <a href="../../01.JAVA基礎學習/04.流程控制/4-1.if...else.html">
+            
+                    
+                    4-1.if...else
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.4.2" data-path="../../01.JAVA基礎學習/04.流程控制/4-2.課堂練習.html">
+            
+                <a href="../../01.JAVA基礎學習/04.流程控制/4-2.課堂練習.html">
+            
+                    
+                    4-2.課堂練習
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.4.3" data-path="../../01.JAVA基礎學習/04.流程控制/4-3.巢狀結構.html">
+            
+                <a href="../../01.JAVA基礎學習/04.流程控制/4-3.巢狀結構.html">
+            
+                    
+                    4-3.巢狀結構
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.4.4" data-path="../../01.JAVA基礎學習/04.流程控制/4-4.switch.html">
+            
+                <a href="../../01.JAVA基礎學習/04.流程控制/4-4.switch.html">
+            
+                    
+                    4-4.switch
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.5" >
+            
+                <span>
+            
+                    
+                    05.迴圈
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1.5.1" data-path="../../01.JAVA基礎學習/05.迴圈/5-1.迴圈敘述.html">
+            
+                <a href="../../01.JAVA基礎學習/05.迴圈/5-1.迴圈敘述.html">
+            
+                    
+                    5-1.迴圈敘述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.5.2" data-path="../../01.JAVA基礎學習/05.迴圈/5-2.課堂作業.html">
+            
+                <a href="../../01.JAVA基礎學習/05.迴圈/5-2.課堂作業.html">
+            
+                    
+                    5-2.課堂作業
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.5.3" data-path="../../01.JAVA基礎學習/05.迴圈/5-3.迴圈練習與比較.html">
+            
+                <a href="../../01.JAVA基礎學習/05.迴圈/5-3.迴圈練習與比較.html">
+            
+                    
+                    5-3.迴圈練習與比較
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.5.4" data-path="../../01.JAVA基礎學習/05.迴圈/5-4.迴圈內的break與continue.html">
+            
+                <a href="../../01.JAVA基礎學習/05.迴圈/5-4.迴圈內的break與continue.html">
+            
+                    
+                    5-4.迴圈內的 break 與 continue
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.6" >
+            
+                <span>
+            
+                    
+                    06.方法的宣告與使用
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1.6.1" data-path="../../01.JAVA基礎學習/06.方法的宣告與使用/6-1.方法的建立與呼叫與傳值.html">
+            
+                <a href="../../01.JAVA基礎學習/06.方法的宣告與使用/6-1.方法的建立與呼叫與傳值.html">
+            
+                    
+                    6-1.方法的建立與呼叫與傳值
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.6.2" data-path="../../01.JAVA基礎學習/06.方法的宣告與使用/6-2.方法覆載.html">
+            
+                <a href="../../01.JAVA基礎學習/06.方法的宣告與使用/6-2.方法覆載.html">
+            
+                    
+                    6-2.方法覆載
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" >
+            
+                <span>
+            
+                    
+                    02.JAVA 物件導向
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.2.1" >
+            
+                <span>
+            
+                    
+                    07.物件導向概論
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.2.1.1" data-path="../../02.JAVA物件導向/07.物件導向概論/7-1.何為物件何為類別.html">
+            
+                <a href="../../02.JAVA物件導向/07.物件導向概論/7-1.何為物件何為類別.html">
+            
+                    
+                    7-1.何為物件何為類別
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.1.2" data-path="../../02.JAVA物件導向/07.物件導向概論/7-2.物件參考變數.html">
+            
+                <a href="../../02.JAVA物件導向/07.物件導向概論/7-2.物件參考變數.html">
+            
+                    
+                    7-2.物件參考變數
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.1.3" data-path="../../02.JAVA物件導向/07.物件導向概論/7-3.課堂練習.html">
+            
+                <a href="../../02.JAVA物件導向/07.物件導向概論/7-3.課堂練習.html">
+            
+                    
+                    7-3.課堂練習
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.2" >
+            
+                <span>
+            
+                    
+                    08.陣列與字串
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.2.2.1" data-path="../../02.JAVA物件導向/08.陣列與字串/8-1.陣列.html">
+            
+                <a href="../../02.JAVA物件導向/08.陣列與字串/8-1.陣列.html">
+            
+                    
+                    8-1.陣列
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.2.2" data-path="../../02.JAVA物件導向/08.陣列與字串/8-2.隨機亂數.html">
+            
+                <a href="../../02.JAVA物件導向/08.陣列與字串/8-2.隨機亂數.html">
+            
+                    
+                    8-2.隨機亂數
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.2.3" data-path="../../02.JAVA物件導向/08.陣列與字串/8-3.課堂練習.html">
+            
+                <a href="../../02.JAVA物件導向/08.陣列與字串/8-3.課堂練習.html">
+            
+                    
+                    8-3.課堂練習
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.2.4" data-path="../../02.JAVA物件導向/08.陣列與字串/8-4.陣列指定的敘述.html">
+            
+                <a href="../../02.JAVA物件導向/08.陣列與字串/8-4.陣列指定的敘述.html">
+            
+                    
+                    8-4.陣列指定的敘述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.2.5" data-path="../../02.JAVA物件導向/08.陣列與字串/8-5.static與其他物件關係.html">
+            
+                <a href="../../02.JAVA物件導向/08.陣列與字串/8-5.static與其他物件關係.html">
+            
+                    
+                    8-5.static 與其他物件關係
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.2.6" data-path="../../02.JAVA物件導向/08.陣列與字串/8-6.進階陣列操作.html">
+            
+                <a href="../../02.JAVA物件導向/08.陣列與字串/8-6.進階陣列操作.html">
+            
+                    
+                    8-6.進階陣列操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.2.7" data-path="../../02.JAVA物件導向/08.陣列與字串/8-7.String特性與常用方法.html">
+            
+                <a href="../../02.JAVA物件導向/08.陣列與字串/8-7.String特性與常用方法.html">
+            
+                    
+                    8-7.String 特性與常用方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.2.8" data-path="../../02.JAVA物件導向/08.陣列與字串/8-8.命令列參數.html">
+            
+                <a href="../../02.JAVA物件導向/08.陣列與字串/8-8.命令列參數.html">
+            
+                    
+                    8-8.命令列參數
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.2.9" data-path="../../02.JAVA物件導向/08.陣列與字串/8-9.不固定參數個數.html">
+            
+                <a href="../../02.JAVA物件導向/08.陣列與字串/8-9.不固定參數個數.html">
+            
+                    
+                    8-9.不固定參數個數
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.3" >
+            
+                <span>
+            
+                    
+                    09.使用封裝與建構子
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.2.3.1" data-path="../../02.JAVA物件導向/09.使用封裝與建構子/9-1.封裝的基本概念.html">
+            
+                <a href="../../02.JAVA物件導向/09.使用封裝與建構子/9-1.封裝的基本概念.html">
+            
+                    
+                    9-1.封裝的基本概念
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.3.2" data-path="../../02.JAVA物件導向/09.使用封裝與建構子/9-2.建構子的使用.html">
+            
+                <a href="../../02.JAVA物件導向/09.使用封裝與建構子/9-2.建構子的使用.html">
+            
+                    
+                    9-2.建構子的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.3.3" data-path="../../02.JAVA物件導向/09.使用封裝與建構子/9-3.建構子與方法.html">
+            
+                <a href="../../02.JAVA物件導向/09.使用封裝與建構子/9-3.建構子與方法.html">
+            
+                    
+                    9-3.建構子與方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.3.4" data-path="../../02.JAVA物件導向/09.使用封裝與建構子/9-4.static修飾子.html">
+            
+                <a href="../../02.JAVA物件導向/09.使用封裝與建構子/9-4.static修飾子.html">
+            
+                    
+                    9-4.static 修飾子
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.4" >
+            
+                <span>
+            
+                    
+                    10.繼承與多型
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.2.4.1" data-path="../../02.JAVA物件導向/10.繼承與多型/10-1.繼承基本概念.html">
+            
+                <a href="../../02.JAVA物件導向/10.繼承與多型/10-1.繼承基本概念.html">
+            
+                    
+                    10-1.繼承基本概念
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.4.2" data-path="../../02.JAVA物件導向/10.繼承與多型/10-2.多型.html">
+            
+                <a href="../../02.JAVA物件導向/10.繼承與多型/10-2.多型.html">
+            
+                    
+                    10-2.多型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.4.3" data-path="../../02.JAVA物件導向/10.繼承與多型/10-3.方法到與建構子的差異.html">
+            
+                <a href="../../02.JAVA物件導向/10.繼承與多型/10-3.方法到與建構子的差異.html">
+            
+                    
+                    10-3.方法到與建構子的差異
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.5" >
+            
+                <span>
+            
+                    
+                    11.介面與多型
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.2.5.1" data-path="../../02.JAVA物件導向/11.介面與多型/11-1.抽象類別.html">
+            
+                <a href="../../02.JAVA物件導向/11.介面與多型/11-1.抽象類別.html">
+            
+                    
+                    11-1.抽象類別
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.5.2" data-path="../../02.JAVA物件導向/11.介面與多型/11-2.介面與空介面.html">
+            
+                <a href="../../02.JAVA物件導向/11.介面與多型/11-2.介面與空介面.html">
+            
+                    
+                    11-2.介面與空介面
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" >
+            
+                <span>
+            
+                    
+                    03.JAVA 套件與進階
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.3.1" >
+            
+                <span>
+            
+                    
+                    12.套件、import 與類別路徑
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.3.1.1" data-path="../12.套件、import與類別路徑/12-1.Java原始檔案格式.html">
+            
+                <a href="../12.套件、import與類別路徑/12-1.Java原始檔案格式.html">
+            
+                    
+                    12-1.Java 原始檔案格式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.1.2" data-path="../12.套件、import與類別路徑/12-2.套件編譯與執行.html">
+            
+                <a href="../12.套件、import與類別路徑/12-2.套件編譯與執行.html">
+            
+                    
+                    12-2.套件編譯與執行
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.1.3" data-path="../12.套件、import與類別路徑/12-3.import套件或特定別.html">
+            
+                <a href="../12.套件、import與類別路徑/12-3.import套件或特定別.html">
+            
+                    
+                    12-3.import 套件或特定別
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.1.4" data-path="../12.套件、import與類別路徑/12-4.靜態套件.html">
+            
+                <a href="../12.套件、import與類別路徑/12-4.靜態套件.html">
+            
+                    
+                    12-4.靜態套件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.1.5" data-path="../12.套件、import與類別路徑/12-5.類別路徑.html">
+            
+                <a href="../12.套件、import與類別路徑/12-5.類別路徑.html">
+            
+                    
+                    12-5.類別路徑
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.2" >
+            
+                <span>
+            
+                    
+                    13.Object 類別與包裝類別
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.3.2.1" data-path="../13.Object類別與包裝類別/13-1.Object類別.html">
+            
+                <a href="../13.Object類別與包裝類別/13-1.Object類別.html">
+            
+                    
+                    13-1.Object 類別
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.2.2" data-path="../13.Object類別與包裝類別/13-2.包裝類別.html">
+            
+                <a href="../13.Object類別與包裝類別/13-2.包裝類別.html">
+            
+                    
+                    13-2.包裝類別
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.3" >
+            
+                <span>
+            
+                    
+                    14.例外處裡
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.3.3.1" data-path="../14.例外處裡/14-1.Exception物件.html">
+            
+                <a href="../14.例外處裡/14-1.Exception物件.html">
+            
+                    
+                    14-1.Exception 物件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.3.2" data-path="../14.例外處裡/14-2.throw.html">
+            
+                <a href="../14.例外處裡/14-2.throw.html">
+            
+                    
+                    14-2.throw
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.3.3" data-path="../14.例外處裡/14-3.例外練習.html">
+            
+                <a href="../14.例外處裡/14-3.例外練習.html">
+            
+                    
+                    14-3.例外練習
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.3.4" data-path="../14.例外處裡/14-4.Assertions.html">
+            
+                <a href="../14.例外處裡/14-4.Assertions.html">
+            
+                    
+                    14-4.Assertions
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.4" >
+            
+                <span>
+            
+                    
+                    15.資料輸入與輸出
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.3.4.1" data-path="../15.資料輸入與輸出/15-1.File類別.html">
+            
+                <a href="../15.資料輸入與輸出/15-1.File類別.html">
+            
+                    
+                    15-1.File 類別
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.4.2" data-path="../15.資料輸入與輸出/15-2.資料流類別.html">
+            
+                <a href="../15.資料輸入與輸出/15-2.資料流類別.html">
+            
+                    
+                    15-2.資料流類別
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.4.3" data-path="../15.資料輸入與輸出/15-3.其它特殊方法與功能補充.html">
+            
+                <a href="../15.資料輸入與輸出/15-3.其它特殊方法與功能補充.html">
+            
+                    
+                    15-3.其它特殊方法與功能補充
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.4.4" data-path="../15.資料輸入與輸出/15-4.物件的輸入輸出.html">
+            
+                <a href="../15.資料輸入與輸出/15-4.物件的輸入輸出.html">
+            
+                    
+                    15-4.物件的輸入輸出
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.4.5" data-path="../15.資料輸入與輸出/15-5.Java的節點資料流.html">
+            
+                <a href="../15.資料輸入與輸出/15-5.Java的節點資料流.html">
+            
+                    
+                    15-5.Java 的節點資料流
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.5" >
+            
+                <span>
+            
+                    
+                    16.集合與泛型
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.3.5.1" data-path="16-1.集合與陣列.html">
+            
+                <a href="16-1.集合與陣列.html">
+            
+                    
+                    16-1.集合與陣列
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.5.2" data-path="16-2.Map介面.html">
+            
+                <a href="16-2.Map介面.html">
+            
+                    
+                    16-2.Map 介面
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.5.3.5.3" data-path="16-3.泛型.html">
+            
+                <a href="16-3.泛型.html">
+            
+                    
+                    16-3.泛型
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.6" >
+            
+                <span>
+            
+                    
+                    17.多執行緒
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.3.6.1" data-path="../17.多執行緒/17-1.執行緒.html">
+            
+                <a href="../17.多執行緒/17-1.執行緒.html">
+            
+                    
+                    17-1.執行緒
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.7" >
+            
+                <span>
+            
+                    
+                    18.常用資料類型與相關
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.3.7.1" data-path="../18.常用資料類型與相關/18-1.常用資料類型與相關.html">
+            
+                <a href="../18.常用資料類型與相關/18-1.常用資料類型與相關.html">
+            
+                    
+                    18-1.常用資料類型與相關
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" >
+            
+                <span>
+            
+                    
+                    04.JDBC 與資料庫的連接
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.4.1" data-path="../../04.JDBC與資料庫的連接/01.JDBC新手村.html">
+            
+                <a href="../../04.JDBC與資料庫的連接/01.JDBC新手村.html">
+            
+                    
+                    01.JDBC 新手村
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4.2" data-path="../../04.JDBC與資料庫的連接/02.JDBC新手等級LV1.html">
+            
+                <a href="../../04.JDBC與資料庫的連接/02.JDBC新手等級LV1.html">
+            
+                    
+                    02.JDBC 新手等級 LV1
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4.3" data-path="../../04.JDBC與資料庫的連接/03.JDBC新手等級LV2.html">
+            
+                <a href="../../04.JDBC與資料庫的連接/03.JDBC新手等級LV2.html">
+            
+                    
+                    03.JDBC 新手等級 LV2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4.4" data-path="../../04.JDBC與資料庫的連接/04.JDBC連線池.html">
+            
+                <a href="../../04.JDBC與資料庫的連接/04.JDBC連線池.html">
+            
+                    
+                    04.JDBC 連線池
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4.5" data-path="../../04.JDBC與資料庫的連接/05.JDBC之SQLException.html">
+            
+                <a href="../../04.JDBC與資料庫的連接/05.JDBC之SQLException.html">
+            
+                    
+                    05.JDBC 之 SQLException
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4.6" data-path="../../04.JDBC與資料庫的連接/06.uesetup11_4安裝.html">
+            
+                <a href="../../04.JDBC與資料庫的連接/06.uesetup11_4安裝.html">
+            
+                    
+                    06.uesetup11_4 安裝
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" >
+            
+                <span>
+            
+                    
+                    05.JAVA 程式設計
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.5.1" data-path="../../05.JAVA程式設計/01.ServletJSP/01.ServletJSP.html">
+            
+                <a href="../../05.JAVA程式設計/01.ServletJSP/01.ServletJSP.html">
+            
+                    
+                    01.ServletJSP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5.2" data-path="../../05.JAVA程式設計/02.HelloWorld/02.HelloWorld.html">
+            
+                <a href="../../05.JAVA程式設計/02.HelloWorld/02.HelloWorld.html">
+            
+                    
+                    02.HelloWorld
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5.3" data-path="../../05.JAVA程式設計/03.BeforeAPI/03.BeforeAPI.html">
+            
+                <a href="../../05.JAVA程式設計/03.BeforeAPI/03.BeforeAPI.html">
+            
+                    
+                    03.BeforeAPI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5.4" data-path="../../05.JAVA程式設計/04.ServletAPI/04.ServletAPI.html">
+            
+                <a href="../../05.JAVA程式設計/04.ServletAPI/04.ServletAPI.html">
+            
+                    
+                    04.ServletAPI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5.5" data-path="../../05.JAVA程式設計/05.動態web專案/05.動態web專案.html">
+            
+                <a href="../../05.JAVA程式設計/05.動態web專案/05.動態web專案.html">
+            
+                    
+                    05.動態 web 專案
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5.6" data-path="../../05.JAVA程式設計/06.InitParameter/06.InitParameter.html">
+            
+                <a href="../../05.JAVA程式設計/06.InitParameter/06.InitParameter.html">
+            
+                    
+                    06.InitParameter
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5.7" data-path="../../05.JAVA程式設計/07.Servlet的生命週期/07.Servlet的生命週期.html">
+            
+                <a href="../../05.JAVA程式設計/07.Servlet的生命週期/07.Servlet的生命週期.html">
+            
+                    
+                    07.Servlet 的生命週期
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5.8" data-path="../../05.JAVA程式設計/08.HttpSession介面/08.HttpSession介面.html">
+            
+                <a href="../../05.JAVA程式設計/08.HttpSession介面/08.HttpSession介面.html">
+            
+                    
+                    08.HttpSession 介面
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5.9" data-path="../../05.JAVA程式設計/09.取得Client的資訊/09.取得Client的資訊.html">
+            
+                <a href="../../05.JAVA程式設計/09.取得Client的資訊/09.取得Client的資訊.html">
+            
+                    
+                    09.取得 Client 的資訊
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5.10" data-path="../../05.JAVA程式設計/10.取得Client資訊之七/10.取得Client資訊之七.html">
+            
+                <a href="../../05.JAVA程式設計/10.取得Client資訊之七/10.取得Client資訊之七.html">
+            
+                    
+                    10.取得 Client 資訊之七
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5.11" data-path="../../05.JAVA程式設計/11.狀態碼設定/11.狀態碼設定.html">
+            
+                <a href="../../05.JAVA程式設計/11.狀態碼設定/11.狀態碼設定.html">
+            
+                    
+                    11.狀態碼設定
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5.12" data-path="../../05.JAVA程式設計/12.回應標頭設定/12.回應標頭設定.html">
+            
+                <a href="../../05.JAVA程式設計/12.回應標頭設定/12.回應標頭設定.html">
+            
+                    
+                    12.回應標頭設定
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5.13" data-path="../../05.JAVA程式設計/13.HttpsSession介面/13.HttpsSession介面.html">
+            
+                <a href="../../05.JAVA程式設計/13.HttpsSession介面/13.HttpsSession介面.html">
+            
+                    
+                    13.HttpsSession 介面
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5.14" data-path="../../05.JAVA程式設計/14.DataSouce/14.DataSouce.html">
+            
+                <a href="../../05.JAVA程式設計/14.DataSouce/14.DataSouce.html">
+            
+                    
+                    14.DataSouce
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5.15" data-path="../../05.JAVA程式設計/15.JavaServerPage/15.JavaServerPage.html">
+            
+                <a href="../../05.JAVA程式設計/15.JavaServerPage/15.JavaServerPage.html">
+            
+                    
+                    15.JavaServerPage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5.16" data-path="../../05.JAVA程式設計/16.Forward/16.Forward.html">
+            
+                <a href="../../05.JAVA程式設計/16.Forward/16.Forward.html">
+            
+                    
+                    16.Forward
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5.17" data-path="../../05.JAVA程式設計/17.sendRedirect/17.sendRedirect.html">
+            
+                <a href="../../05.JAVA程式設計/17.sendRedirect/17.sendRedirect.html">
+            
+                    
+                    17.sendRedirect
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" >
+            
+                <span>
+            
+                    
+                    06.JAVA 程式設計-影片
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.6.1" >
+            
+                <span>
+            
+                    
+                    01.Servlet 基礎篇
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.6.1.1" >
+            
+                <span>
+            
+                    
+                    01.環境準備
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.6.1.1.1" data-path="../../06.JAVA程式設計-影片/01.Servlet基礎篇/01.環境準備/01.設定tomcat.html">
+            
+                <a href="../../06.JAVA程式設計-影片/01.Servlet基礎篇/01.環境準備/01.設定tomcat.html">
+            
+                    
+                    01.設定 tomcat
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6.1.1.2" data-path="../../06.JAVA程式設計-影片/01.Servlet基礎篇/01.環境準備/02.程式開發工具.html">
+            
+                <a href="../../06.JAVA程式設計-影片/01.Servlet基礎篇/01.環境準備/02.程式開發工具.html">
+            
+                    
+                    02.程式開發工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6.1.1.3" data-path="../../06.JAVA程式設計-影片/01.Servlet基礎篇/01.環境準備/03.Eclipse之TomcatEmbedded.html">
+            
+                <a href="../../06.JAVA程式設計-影片/01.Servlet基礎篇/01.環境準備/03.Eclipse之TomcatEmbedded.html">
+            
+                    
+                    03.Eclipse 之 TomcatEmbedded
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6.1.1.4" data-path="../../06.JAVA程式設計-影片/01.Servlet基礎篇/01.環境準備/04.Servlet範例war檔匯入.html">
+            
+                <a href="../../06.JAVA程式設計-影片/01.Servlet基礎篇/01.環境準備/04.Servlet範例war檔匯入.html">
+            
+                    
+                    04.Servlet 範例 war 檔匯入
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6.1.2" >
+            
+                <span>
+            
+                    
+                    02.WebApplication 概觀
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.6.1.2.1" data-path="../../06.JAVA程式設計-影片/01.Servlet基礎篇/02.WebApplication概觀/01.WebApplication概觀.html">
+            
+                <a href="../../06.JAVA程式設計-影片/01.Servlet基礎篇/02.WebApplication概觀/01.WebApplication概觀.html">
+            
+                    
+                    01.WebApplication 概觀
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6.1.3" >
+            
+                <span>
+            
+                    
+                    03.JavaServlet_JSP 解決方案
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.6.1.3.1" data-path="../../06.JAVA程式設計-影片/01.Servlet基礎篇/03.JavaServlet_JSP解決方案/01.JavaServlet_JSP解決方案.html">
+            
+                <a href="../../06.JAVA程式設計-影片/01.Servlet基礎篇/03.JavaServlet_JSP解決方案/01.JavaServlet_JSP解決方案.html">
+            
+                    
+                    01.JavaServlet_JSP 解決方案
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6.1.4" >
+            
+                <span>
+            
+                    
+                    04.JavaServlet 的優勢
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.6.1.4.1" data-path="../../06.JAVA程式設計-影片/01.Servlet基礎篇/04.JavaServlet的優勢/01.JavaServlet的優勢.html">
+            
+                <a href="../../06.JAVA程式設計-影片/01.Servlet基礎篇/04.JavaServlet的優勢/01.JavaServlet的優勢.html">
+            
+                    
+                    01.JavaServlet 的優勢
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6.1.4.2" data-path="../../06.JAVA程式設計-影片/01.Servlet基礎篇/04.JavaServlet的優勢/02.測試與練習.html">
+            
+                <a href="../../06.JAVA程式設計-影片/01.Servlet基礎篇/04.JavaServlet的優勢/02.測試與練習.html">
+            
+                    
+                    02.測試與練習
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6.1.5" >
+            
+                <span>
+            
+                    
+                    05.JavaEE
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.6.1.5.1" data-path="../../06.JAVA程式設計-影片/01.Servlet基礎篇/05.JavaEE/01.JavaEE.html">
+            
+                <a href="../../06.JAVA程式設計-影片/01.Servlet基礎篇/05.JavaEE/01.JavaEE.html">
+            
+                    
+                    01.JavaEE
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6.1.6" >
+            
+                <span>
+            
+                    
+                    06.HTTP 基礎
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.6.1.6.1" data-path="../../06.JAVA程式設計-影片/01.Servlet基礎篇/06.HTTP基礎/01.HTTP基礎.html">
+            
+                <a href="../../06.JAVA程式設計-影片/01.Servlet基礎篇/06.HTTP基礎/01.HTTP基礎.html">
+            
+                    
+                    01.HTTP 基礎
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    04.Oracle
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" >
+            
+                <span>
+            
+                    
+                    0.Oracle 淺談
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1.1" data-path="../../../04.Oracle/0.Oracle淺談/0-1.淺入Oracle.html">
+            
+                <a href="../../../04.Oracle/0.Oracle淺談/0-1.淺入Oracle.html">
+            
+                    
+                    0-1.淺入 Oracle
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" >
+            
+                <span>
+            
+                    
+                    1.Oracle 安裝
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.2.1" data-path="../../../04.Oracle/1.Oracle安裝/1-1.Oracle安裝與各種設定.html">
+            
+                <a href="../../../04.Oracle/1.Oracle安裝/1-1.Oracle安裝與各種設定.html">
+            
+                    
+                    1-1.Oracle 安裝與各種設定
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" >
+            
+                <span>
+            
+                    
+                    2.資料庫介紹
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.3.1" data-path="../../../04.Oracle/2.資料庫介紹/2-01.資料庫介紹.html">
+            
+                <a href="../../../04.Oracle/2.資料庫介紹/2-01.資料庫介紹.html">
+            
+                    
+                    2-01.資料庫介紹
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3.2" data-path="../../../04.Oracle/2.資料庫介紹/2-02.ACID規則.html">
+            
+                <a href="../../../04.Oracle/2.資料庫介紹/2-02.ACID規則.html">
+            
+                    
+                    2-02.ACID 規則
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3.3" data-path="../../../04.Oracle/2.資料庫介紹/2-03.為什麼要採用關聯式資料庫.html">
+            
+                <a href="../../../04.Oracle/2.資料庫介紹/2-03.為什麼要採用關聯式資料庫.html">
+            
+                    
+                    2-03.為什麼要採用關聯式資料庫
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3.4" data-path="../../../04.Oracle/2.資料庫介紹/2-07.主鍵與外來鍵.html">
+            
+                <a href="../../../04.Oracle/2.資料庫介紹/2-07.主鍵與外來鍵.html">
+            
+                    
+                    2-07.主鍵與外來鍵
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3.5" data-path="../../../04.Oracle/2.資料庫介紹/2-10.資料庫正規化.html">
+            
+                <a href="../../../04.Oracle/2.資料庫介紹/2-10.資料庫正規化.html">
+            
+                    
+                    2-10.資料庫正規化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3.6" data-path="../../../04.Oracle/2.資料庫介紹/2-13.違反正規化.html">
+            
+                <a href="../../../04.Oracle/2.資料庫介紹/2-13.違反正規化.html">
+            
+                    
+                    2-13.違反正規化
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" >
+            
+                <span>
+            
+                    
+                    3.建立資料庫
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.4.1" data-path="../../../04.Oracle/3.建立資料庫/3-01.視覺化建立表格.html">
+            
+                <a href="../../../04.Oracle/3.建立資料庫/3-01.視覺化建立表格.html">
+            
+                    
+                    3-01.視覺化建立表格
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4.2" data-path="../../../04.Oracle/3.建立資料庫/3-02.建立表格.html">
+            
+                <a href="../../../04.Oracle/3.建立資料庫/3-02.建立表格.html">
+            
+                    
+                    3-02.建立表格
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4.3" data-path="../../../04.Oracle/3.建立資料庫/3-03.建立表格練習.html">
+            
+                <a href="../../../04.Oracle/3.建立資料庫/3-03.建立表格練習.html">
+            
+                    
+                    3-03.建立表格練習
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4.4" data-path="../../../04.Oracle/3.建立資料庫/3-04.SQL種類.html">
+            
+                <a href="../../../04.Oracle/3.建立資料庫/3-04.SQL種類.html">
+            
+                    
+                    3-04.SQL 種類
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4.5" data-path="../../../04.Oracle/3.建立資料庫/3-10.Browser設定.html">
+            
+                <a href="../../../04.Oracle/3.建立資料庫/3-10.Browser設定.html">
+            
+                    
+                    3-10.Browser 設定
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4.6" data-path="../../../04.Oracle/3.建立資料庫/3-11.常用指令.html">
+            
+                <a href="../../../04.Oracle/3.建立資料庫/3-11.常用指令.html">
+            
+                    
+                    3-11.常用指令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4.7" data-path="../../../04.Oracle/3.建立資料庫/3-12.新增修改刪除練習.html">
+            
+                <a href="../../../04.Oracle/3.建立資料庫/3-12.新增修改刪除練習.html">
+            
+                    
+                    3-12.新增修改刪除練習
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" >
+            
+                <span>
+            
+                    
+                    4.資料交易處理
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.5.1" data-path="../../../04.Oracle/4.資料交易處理/4-01.新增資料.html">
+            
+                <a href="../../../04.Oracle/4.資料交易處理/4-01.新增資料.html">
+            
+                    
+                    4-01.新增資料
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5.2" data-path="../../../04.Oracle/4.資料交易處理/4-02.新增資料練習.html">
+            
+                <a href="../../../04.Oracle/4.資料交易處理/4-02.新增資料練習.html">
+            
+                    
+                    4-02.新增資料練習
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5.3" data-path="../../../04.Oracle/4.資料交易處理/4-03.修改資料.html">
+            
+                <a href="../../../04.Oracle/4.資料交易處理/4-03.修改資料.html">
+            
+                    
+                    4-03.修改資料
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5.4" data-path="../../../04.Oracle/4.資料交易處理/4-04.修改資料練習.html">
+            
+                <a href="../../../04.Oracle/4.資料交易處理/4-04.修改資料練習.html">
+            
+                    
+                    4-04.修改資料練習
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5.5" data-path="../../../04.Oracle/4.資料交易處理/4-05.刪除資料.html">
+            
+                <a href="../../../04.Oracle/4.資料交易處理/4-05.刪除資料.html">
+            
+                    
+                    4-05.刪除資料
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5.6" data-path="../../../04.Oracle/4.資料交易處理/4-06.指定回退資料的時間點.html">
+            
+                <a href="../../../04.Oracle/4.資料交易處理/4-06.指定回退資料的時間點.html">
+            
+                    
+                    4-06.指定回退資料的時間點
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5.7" data-path="../../../04.Oracle/4.資料交易處理/4-07.回退資料練習.html">
+            
+                <a href="../../../04.Oracle/4.資料交易處理/4-07.回退資料練習.html">
+            
+                    
+                    4-07.回退資料練習
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5.8" data-path="../../../04.Oracle/4.資料交易處理/4-08.匯入匯出資料.html">
+            
+                <a href="../../../04.Oracle/4.資料交易處理/4-08.匯入匯出資料.html">
+            
+                    
+                    4-08.匯入匯出資料
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" >
+            
+                <span>
+            
+                    
+                    5.資料查詢
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.6.1" data-path="../../../04.Oracle/5.資料查詢/5-01.資料查詢的各種方法.html">
+            
+                <a href="../../../04.Oracle/5.資料查詢/5-01.資料查詢的各種方法.html">
+            
+                    
+                    5-01.資料查詢的各種方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.7" >
+            
+                <span>
+            
+                    
+                    6.進階查詢
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.7.1" data-path="../../../04.Oracle/6.進階查詢/6-01.進階查詢.html">
+            
+                <a href="../../../04.Oracle/6.進階查詢/6-01.進階查詢.html">
+            
+                    
+                    6-01.進階查詢
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.8" >
+            
+                <span>
+            
+                    
+                    7.查詢結果建立表格與 View
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.8.1" data-path="../../../04.Oracle/7.查詢結果建立表格與View/01.SELECT與VIEW.html">
+            
+                <a href="../../../04.Oracle/7.查詢結果建立表格與View/01.SELECT與VIEW.html">
+            
+                    
+                    01.SELECT 與 VIEW
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.9" >
+            
+                <span>
+            
+                    
+                    8.使用者授權
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.9.1" data-path="../../../04.Oracle/8.使用者授權/01.權限相關.html">
+            
+                <a href="../../../04.Oracle/8.使用者授權/01.權限相關.html">
+            
+                    
+                    01.權限相關
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" >
+            
+                <span>
+            
+                    
+                    05.雲端概論及技術
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../../../05.雲端概論及技術/1-1.什麼是雲端計算.html">
+            
+                <a href="../../../05.雲端概論及技術/1-1.什麼是雲端計算.html">
+            
+                    
+                    1-1.什麼是雲端計算
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../../../05.雲端概論及技術/1-2.雲端運算的基本特性.html">
+            
+                <a href="../../../05.雲端概論及技術/1-2.雲端運算的基本特性.html">
+            
+                    
+                    1-2.雲端運算的基本特性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../../../05.雲端概論及技術/1-3.雲端運算的服務模式.html">
+            
+                <a href="../../../05.雲端概論及技術/1-3.雲端運算的服務模式.html">
+            
+                    
+                    1-3.雲端運算的服務模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="../../../05.雲端概論及技術/1-4.雲端運算的部屬模型.html">
+            
+                <a href="../../../05.雲端概論及技術/1-4.雲端運算的部屬模型.html">
+            
+                    
+                    1-4.雲端運算的部屬模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5" data-path="../../../05.雲端概論及技術/1-5.雲端運算的關鍵技術.html">
+            
+                <a href="../../../05.雲端概論及技術/1-5.雲端運算的關鍵技術.html">
+            
+                    
+                    1-5.雲端運算的關鍵技術
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.6" data-path="../../../05.雲端概論及技術/1-6.雲端概論的資料讀取.html">
+            
+                <a href="../../../05.雲端概論及技術/1-6.雲端概論的資料讀取.html">
+            
+                    
+                    1-6.雲端概論的資料讀取
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" >
+            
+                <span>
+            
+                    
+                    06.Javascript
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../../../06.Javascript/01.Javascript新手村.html">
+            
+                <a href="../../../06.Javascript/01.Javascript新手村.html">
+            
+                    
+                    01.Javascript 新手村
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" >
+            
+                <span>
+            
+                    
+                    07.資料庫設計與敏捷開發
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../../../07.資料庫設計與敏捷開發/01.資料庫設計概念/01.資料庫設計概念.html">
+            
+                <a href="../../../07.資料庫設計與敏捷開發/01.資料庫設計概念/01.資料庫設計概念.html">
+            
+                    
+                    01.資料庫設計概念
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../../../07.資料庫設計與敏捷開發/02.資料庫設計/02.資料庫設計.html">
+            
+                <a href="../../../07.資料庫設計與敏捷開發/02.資料庫設計/02.資料庫設計.html">
+            
+                    
+                    02.資料庫設計
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="../../../07.資料庫設計與敏捷開發/03.敏捷軟體開發/03.敏捷軟體開發.html">
+            
+                <a href="../../../07.資料庫設計與敏捷開發/03.敏捷軟體開發/03.敏捷軟體開發.html">
+            
+                    
+                    03.敏捷軟體開發
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4" data-path="../../../07.資料庫設計與敏捷開發/04.敏捷開發特性/04.敏捷開發特性.html">
+            
+                <a href="../../../07.資料庫設計與敏捷開發/04.敏捷開發特性/04.敏捷開發特性.html">
+            
+                    
+                    04.敏捷開發特性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.5" data-path="../../../07.資料庫設計與敏捷開發/05.看板原則/05.看板原則.html">
+            
+                <a href="../../../07.資料庫設計與敏捷開發/05.看板原則/05.看板原則.html">
+            
+                    
+                    05.看板原則
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.6" data-path="../../../07.資料庫設計與敏捷開發/06.UML活動圖/06.UML活動圖.html">
+            
+                <a href="../../../07.資料庫設計與敏捷開發/06.UML活動圖/06.UML活動圖.html">
+            
+                    
+                    06.UML 活動圖
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.7" data-path="../../../07.資料庫設計與敏捷開發/07.UML是什麼/07.UML是什麼.html">
+            
+                <a href="../../../07.資料庫設計與敏捷開發/07.UML是什麼/07.UML是什麼.html">
+            
+                    
+                    07.UML 是什麼
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.8" data-path="../../../07.資料庫設計與敏捷開發/09.使用案例/09.使用案例.html">
+            
+                <a href="../../../07.資料庫設計與敏捷開發/09.使用案例/09.使用案例.html">
+            
+                    
+                    09.使用案例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.9" data-path="../../../07.資料庫設計與敏捷開發/10.驗收測試/10.驗收測試.html">
+            
+                <a href="../../../07.資料庫設計與敏捷開發/10.驗收測試/10.驗收測試.html">
+            
+                    
+                    10.驗收測試
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.10" data-path="../../../07.資料庫設計與敏捷開發/11.發布規劃/11.發布規劃.html">
+            
+                <a href="../../../07.資料庫設計與敏捷開發/11.發布規劃/11.發布規劃.html">
+            
+                    
+                    11.發布規劃
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" >
+            
+                <span>
+            
+                    
+                    08.HTML5
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../../../08.HTML5/01.sublime外掛/01.sublime外掛.html">
+            
+                <a href="../../../08.HTML5/01.sublime外掛/01.sublime外掛.html">
+            
+                    
+                    01.sublime 外掛
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="../../../08.HTML5/02.html第一堂課/02.html第一堂課.html">
+            
+                <a href="../../../08.HTML5/02.html第一堂課/02.html第一堂課.html">
+            
+                    
+                    02.html 第一堂課
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" >
+            
+                <span>
+            
+                    
+                    03.課堂 HTML 練習
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.3.1" data-path="../../../08.HTML5/03.課堂HTML練習/ex1.html">
+            
+                <a href="../../../08.HTML5/03.課堂HTML練習/ex1.html">
+            
+                    
+                    Ex 1
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3.2" data-path="../../../08.HTML5/03.課堂HTML練習/ex2.html">
+            
+                <a href="../../../08.HTML5/03.課堂HTML練習/ex2.html">
+            
+                    
+                    Ex 2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3.3" data-path="../../../08.HTML5/03.課堂HTML練習/ex3.html">
+            
+                <a href="../../../08.HTML5/03.課堂HTML練習/ex3.html">
+            
+                    
+                    Ex 3
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3.4" data-path="../../../08.HTML5/03.課堂HTML練習/ex4.html">
+            
+                <a href="../../../08.HTML5/03.課堂HTML練習/ex4.html">
+            
+                    
+                    Ex 4
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3.5" data-path="../../../08.HTML5/03.課堂HTML練習/ex5.html">
+            
+                <a href="../../../08.HTML5/03.課堂HTML練習/ex5.html">
+            
+                    
+                    Ex 5
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3.6" data-path="../../../08.HTML5/03.課堂HTML練習/ex6.html">
+            
+                <a href="../../../08.HTML5/03.課堂HTML練習/ex6.html">
+            
+                    
+                    Ex 6
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4" >
+            
+                <span>
+            
+                    
+                    04.課堂 CSS 與 HTML 練習
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.4.1" data-path="../../../08.HTML5/04.課堂CSS與HTML練習/ex1.html">
+            
+                <a href="../../../08.HTML5/04.課堂CSS與HTML練習/ex1.html">
+            
+                    
+                    Ex 1
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4.2" data-path="../../../08.HTML5/04.課堂CSS與HTML練習/ex2.html">
+            
+                <a href="../../../08.HTML5/04.課堂CSS與HTML練習/ex2.html">
+            
+                    
+                    Ex 2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4.3" data-path="../../../08.HTML5/04.課堂CSS與HTML練習/ex3.html">
+            
+                <a href="../../../08.HTML5/04.課堂CSS與HTML練習/ex3.html">
+            
+                    
+                    Ex 3
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4.4" data-path="../../../08.HTML5/04.課堂CSS與HTML練習/ex4.html">
+            
+                <a href="../../../08.HTML5/04.課堂CSS與HTML練習/ex4.html">
+            
+                    
+                    Ex 4
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4.5" data-path="../../../08.HTML5/04.課堂CSS與HTML練習/ex5.html">
+            
+                <a href="../../../08.HTML5/04.課堂CSS與HTML練習/ex5.html">
+            
+                    
+                    Ex 5
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4.6" data-path="../../../08.HTML5/04.課堂CSS與HTML練習/ex6.html">
+            
+                <a href="../../../08.HTML5/04.課堂CSS與HTML練習/ex6.html">
+            
+                    
+                    Ex 6
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4.7" data-path="../../../08.HTML5/04.課堂CSS與HTML練習/ex7.html">
+            
+                <a href="../../../08.HTML5/04.課堂CSS與HTML練習/ex7.html">
+            
+                    
+                    Ex 7
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.5" >
+            
+                <span>
+            
+                    
+                    05.CSS 基本應用
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.5.1" data-path="../../../08.HTML5/05.CSS基本應用/ex1.html">
+            
+                <a href="../../../08.HTML5/05.CSS基本應用/ex1.html">
+            
+                    
+                    Ex 1
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.5.2" data-path="../../../08.HTML5/05.CSS基本應用/ex2.html">
+            
+                <a href="../../../08.HTML5/05.CSS基本應用/ex2.html">
+            
+                    
+                    Ex 2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.5.3" data-path="../../../08.HTML5/05.CSS基本應用/ex3.html">
+            
+                <a href="../../../08.HTML5/05.CSS基本應用/ex3.html">
+            
+                    
+                    Ex 3
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.5.4" data-path="../../../08.HTML5/05.CSS基本應用/ex4.html">
+            
+                <a href="../../../08.HTML5/05.CSS基本應用/ex4.html">
+            
+                    
+                    Ex 4
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.5.5" data-path="../../../08.HTML5/05.CSS基本應用/ex5.html">
+            
+                <a href="../../../08.HTML5/05.CSS基本應用/ex5.html">
+            
+                    
+                    Ex 5
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.5.6" data-path="../../../08.HTML5/05.CSS基本應用/ex6.html">
+            
+                <a href="../../../08.HTML5/05.CSS基本應用/ex6.html">
+            
+                    
+                    Ex 6
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.5.7" data-path="../../../08.HTML5/05.CSS基本應用/ex7.html">
+            
+                <a href="../../../08.HTML5/05.CSS基本應用/ex7.html">
+            
+                    
+                    Ex 7
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.6" >
+            
+                <span>
+            
+                    
+                    06.版面設計
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.6.1" data-path="../../../08.HTML5/06.版面設計/draft1.html">
+            
+                <a href="../../../08.HTML5/06.版面設計/draft1.html">
+            
+                    
+                    Draft 1
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.6.2" data-path="../../../08.HTML5/06.版面設計/draft2.html">
+            
+                <a href="../../../08.HTML5/06.版面設計/draft2.html">
+            
+                    
+                    Draft 2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.6.3" data-path="../../../08.HTML5/06.版面設計/draft3.html">
+            
+                <a href="../../../08.HTML5/06.版面設計/draft3.html">
+            
+                    
+                    Draft 3
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.7" >
+            
+                <span>
+            
+                    
+                    07.指定練習
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.7.1" data-path="../../../08.HTML5/07.指定練習/work1.html">
+            
+                <a href="../../../08.HTML5/07.指定練習/work1.html">
+            
+                    
+                    Work 1
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.7.2" data-path="../../../08.HTML5/07.指定練習/work2.html">
+            
+                <a href="../../../08.HTML5/07.指定練習/work2.html">
+            
+                    
+                    Work 2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.7.3" data-path="../../../08.HTML5/07.指定練習/work3.html">
+            
+                <a href="../../../08.HTML5/07.指定練習/work3.html">
+            
+                    
+                    Work 3
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.7.4" data-path="../../../08.HTML5/07.指定練習/work4.html">
+            
+                <a href="../../../08.HTML5/07.指定練習/work4.html">
+            
+                    
+                    Work 4
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.7.5" data-path="../../../08.HTML5/07.指定練習/work5.html">
+            
+                <a href="../../../08.HTML5/07.指定練習/work5.html">
+            
+                    
+                    Work 5
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.7.6" data-path="../../../08.HTML5/07.指定練習/work6.html">
+            
+                <a href="../../../08.HTML5/07.指定練習/work6.html">
+            
+                    
+                    Work 6
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.8" >
+            
+                <span>
+            
+                    
+                    08.作業 1
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.8.1" data-path="../../../08.HTML5/08.作業1/HK1.html">
+            
+                <a href="../../../08.HTML5/08.作業1/HK1.html">
+            
+                    
+                    HK 1
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.9" >
+            
+                <span>
+            
+                    
+                    09.指定版面練習
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.9.1" data-path="../../../08.HTML5/09.指定版面練習/w1.html">
+            
+                <a href="../../../08.HTML5/09.指定版面練習/w1.html">
+            
+                    
+                    W 1
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.9.2" data-path="../../../08.HTML5/09.指定版面練習/w2.html">
+            
+                <a href="../../../08.HTML5/09.指定版面練習/w2.html">
+            
+                    
+                    W 2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.9.3" data-path="../../../08.HTML5/09.指定版面練習/w3.html">
+            
+                <a href="../../../08.HTML5/09.指定版面練習/w3.html">
+            
+                    
+                    W 3
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.10" >
+            
+                <span>
+            
+                    
+                    10.CSS 進階應用
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.10.1" data-path="../../../08.HTML5/10.CSS進階應用/ex01.html">
+            
+                <a href="../../../08.HTML5/10.CSS進階應用/ex01.html">
+            
+                    
+                    Ex 01
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.10.2" data-path="../../../08.HTML5/10.CSS進階應用/ex02.html">
+            
+                <a href="../../../08.HTML5/10.CSS進階應用/ex02.html">
+            
+                    
+                    Ex 02
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.10.3" data-path="../../../08.HTML5/10.CSS進階應用/ex03.html">
+            
+                <a href="../../../08.HTML5/10.CSS進階應用/ex03.html">
+            
+                    
+                    Ex 03
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.10.4" data-path="../../../08.HTML5/10.CSS進階應用/ex04.html">
+            
+                <a href="../../../08.HTML5/10.CSS進階應用/ex04.html">
+            
+                    
+                    Ex 04
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.10.5" data-path="../../../08.HTML5/10.CSS進階應用/ex05.html">
+            
+                <a href="../../../08.HTML5/10.CSS進階應用/ex05.html">
+            
+                    
+                    Ex 05
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.10.6" data-path="../../../08.HTML5/10.CSS進階應用/ex06.html">
+            
+                <a href="../../../08.HTML5/10.CSS進階應用/ex06.html">
+            
+                    
+                    Ex 06
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.10.7" data-path="../../../08.HTML5/10.CSS進階應用/ex07.html">
+            
+                <a href="../../../08.HTML5/10.CSS進階應用/ex07.html">
+            
+                    
+                    Ex 07
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.10.8" data-path="../../../08.HTML5/10.CSS進階應用/ex08-1.html">
+            
+                <a href="../../../08.HTML5/10.CSS進階應用/ex08-1.html">
+            
+                    
+                    Ex 08 1
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.10.9" data-path="../../../08.HTML5/10.CSS進階應用/ex08-2.html">
+            
+                <a href="../../../08.HTML5/10.CSS進階應用/ex08-2.html">
+            
+                    
+                    Ex 08 2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.10.10" data-path="../../../08.HTML5/10.CSS進階應用/ex09.html">
+            
+                <a href="../../../08.HTML5/10.CSS進階應用/ex09.html">
+            
+                    
+                    Ex 09
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.10.11" data-path="../../../08.HTML5/10.CSS進階應用/ex10.html">
+            
+                <a href="../../../08.HTML5/10.CSS進階應用/ex10.html">
+            
+                    
+                    Ex 10
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.11" >
+            
+                <span>
+            
+                    
+                    11.CSS 進階應用
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.11.1" data-path="../../../08.HTML5/11.CSS進階應用/work1.html">
+            
+                <a href="../../../08.HTML5/11.CSS進階應用/work1.html">
+            
+                    
+                    Work 1
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.11.2" data-path="../../../08.HTML5/11.CSS進階應用/work2.html">
+            
+                <a href="../../../08.HTML5/11.CSS進階應用/work2.html">
+            
+                    
+                    Work 2
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" >
+            
+                <span>
+            
+                    
+                    09.JQuery
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../../../09.JQuery/01.eclipse第一隻html創建過程/01.eclipse第一隻html創建過程.html">
+            
+                <a href="../../../09.JQuery/01.eclipse第一隻html創建過程/01.eclipse第一隻html創建過程.html">
+            
+                    
+                    01.eclipse 第一隻 html 創建過程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../../../09.JQuery/02.JQuery的第一步/02.JQuery的第一步.html">
+            
+                <a href="../../../09.JQuery/02.JQuery的第一步/02.JQuery的第一步.html">
+            
+                    
+                    02.JQuery 的第一步
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="../../../09.JQuery/03.特效與動畫/03.特效與動畫.html">
+            
+                <a href="../../../09.JQuery/03.特效與動畫/03.特效與動畫.html">
+            
+                    
+                    03.特效與動畫
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="../../../09.JQuery/04.jQueryUI/04.jQueryUI.html">
+            
+                <a href="../../../09.JQuery/04.jQueryUI/04.jQueryUI.html">
+            
+                    
+                    04.jQueryUI
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../.." >16-3.泛型</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="top">&#x76EE;&#x9304;</h1>
+
+<ul>
+<li><a href="#s1">1. &#x6CDB;&#x578B;(Generic Type)</a></li>
+<li><a href="#s2">2. &#x6CDB;&#x578B;&#x751F;&#x6D3B;&#x5316;&#x89E3;&#x91CB;</a></li>
+<li><a href="#s3">3. &#x6CDB;&#x578B;(Generic Type)&#x8209;&#x4F8B;</a></li>
+<li><a href="#s4">4. &#x6CDB;&#x578B;&#x7684;&#x5EF6;&#x4F38;&#xFF0C;&#x81EA;&#x8A02;&#x6CDB;&#x578B;</a></li>
+<li><a href="#s5">5. &#x6CDB;&#x578B;&#x7684;&#x9032;&#x968E;&#x8A2D;&#x5B9A;</a></li>
+<li><a href="#s6">6. &#x57FA;&#x672C;&#x6CDB;&#x578B;&#x7E3D;&#x7D50;</a></li>
+<li><a href="#s7">7. Iterable &#x4ECB;&#x9762;</a></li>
+<li><a href="#s8">8. &#x589E;&#x5F37;&#x578B; for &#x8FF4;&#x5708; (for &#x2013; each)</a></li>
+<li><a href="#s9">9. Iterable &#x8207; for - each &#x7BC4;&#x4F8B;</a></li>
+<li><a href="#s10">10. &#x50B3;&#x7D71; for &#x8207; for-each</a></li>
+<li><a href="#s11">11. Collection &#x9032;&#x4E00;&#x6B65;&#x63A2;&#x8A0E;(&#x91CD;&#x9EDE;)</a></li>
+<li><a href="#s12">12. Collection &#x5EF6;&#x4F38;&#x7BC4;&#x4F8B;</a></li>
+<li><a href="#s13">13. ArrayList &#x8207; LinkedList &#x5DEE;&#x7570;</a></li>
+<li><a href="#s14">14. &#x81EA;&#x8A02;&#x6BD4;&#x8F03;&#x5668;&#x7684;&#x4E09;&#x7A2E;&#x65B9;&#x6CD5;</a></li>
+<li><a href="#s15">15. &#x5806;&#x758A;</a></li>
+</ul>
+<hr>
+<h1 id="1-&#x6CDB;&#x578B;generic-type"><a id="s1" class="md-title" href="#top">1. &#x6CDB;&#x578B;(Generic Type)</a></h1>
+<ul>
+<li><p>JDK1.5 &#x7684;&#x6CDB;&#x578B;&#x8A2D;&#x8A08;&#x6709;&#x4EE5;&#x4E0B;&#x512A;&#x9EDE;</p>
+<ul>
+<li><p><code>&#x53EF;&#x9810;&#x5148;&#x6307;&#x5B9A; Collection &#x4E2D;&#x6240;&#x542B;&#x7684;&#x7269;&#x4EF6;&#x985E;&#x5225;</code></p>
+<ul>
+<li><p>&#x6CDB;&#x578B;&#x7684;&#x4F7F;&#x7528; <code>&lt;&gt;</code>&#xFF0C;ex.<code>&lt;Integer&gt;</code></p>
+</li>
+<li><p>&#x7528;&#x4F86;&#x9650;&#x5236;&#x96C6;&#x5408;&#x7684;&#x4F7F;&#x7528;&#xFF0C;&#x9650;&#x5B9A;&#x8F38;&#x5165;&#x9663;&#x5217;&#x578B;&#x5225;</p>
+</li>
+</ul>
+</li>
+<li><p>&#x56E0;&#x6B64;&#x53EA;&#x8981;&#x4E0D;&#x5C0F;&#x5FC3;&#x52A0;&#x5165;&#x5176;&#x5B83;&#x985E;&#x5225;&#x7684;&#x7269;&#x4EF6;,&#x5728;<code>&#x7DE8;&#x8B6F;&#x968E;&#x6BB5;&#x5C31;&#x6703;&#x51FA;&#x73FE;&#x932F;&#x8AA4;</code>,&#x4F7F;&#x5F97;&#x539F;&#x672C;&#x653E;&#x5728;&#x57F7;&#x884C;&#x968E;&#x6BB5;&#x624D;&#x6703;&#x6AA2;&#x67E5;&#x51FA;&#x4F86;&#x7684;&#x554F;&#x984C;,&#x63D0;&#x6607;&#x5230;&#x4E86;&#x7DE8;&#x8B6F;&#x6642;&#x671F;</p>
+</li>
+<li><p>&#x907F;&#x514D; runtime &#x6642;&#x671F;&#x7684; java.lang.ClassCastException &#x7684;&#x932F;&#x8AA4;,&#x4E5F;&#x56E0;&#x70BA;&#x985E;&#x5225;&#x5DF2;&#x77E5;,&#x53D6;&#x51FA;&#x8CC7;&#x6599;&#x6642;<code>&#x53EF;&#x7701;&#x7565;&#x578B;&#x5225;&#x8F49;&#x63DB;</code>(Cast)&#x7684;&#x9EBB;&#x7169;<code>(&#x4E5F;&#x7701;&#x53BB;&#x4E86;instanceof&#x6AA2;&#x67E5;&#x7684;&#x9EBB;&#x7169;)</code></p>
+</li>
+<li><p>&#x53E6; Java &#x4F7F;&#x7528;&#x52D5;&#x614B;&#x9023;&#x7D50;&#x6280;&#x8853;,&#x4E26;&#x4E14;&#x6709;&#x5171;&#x540C;&#x7684; Object &#x7956;&#x5148;&#x505A;&#x70BA;&#x6700;&#x6839;&#x672C;&#x7684;&#x591A;&#x578B;</p>
+</li>
+</ul>
+</li>
+<li><p>&#x5728; JDK1.4 &#x4E4B;&#x524D;,&#x5BE6;&#x4F5C; Collection &#x4ECB;&#x9762;&#x6642;,&#x6211;&#x5011;&#x80FD;&#x5920;&#x8655;&#x7406; Object &#x7269;&#x4EF6;,&#x5982; add(Object o)&#x6216; remove(Object o)&#x65B9;&#x6CD5;</p>
+<ul>
+<li>&#x5982;&#x6B64;&#x96D6;&#x53EF;&#x8B93; Collection &#x4ECB;&#x9762;&#x8B8A;&#x5F97;<code>&#x4E00;&#x822C;&#x5316;</code>,&#x4F46;&#x662F;&#x56E0;&#x70BA;&#x5728;&#x5927;&#x90E8;&#x4EFD;&#x7684;&#x5BE6;&#x969B;&#x72C0;&#x6CC1;&#x4E0B;,&#x6211;&#x5011;&#x653E;&#x5728; Collection &#x4E2D;&#x7684;&#x7269;&#x4EF6;&#x901A;&#x5E38;&#x90FD;&#x5C6C;&#x540C;&#x4E00;&#x500B;&#x985E;&#x5225;,&#x53D6;&#x51FA;&#x6642;&#x578B;&#x5225;&#x70BA; Object &#x9084;&#x5F97;&#x4F5C;&#x578B;&#x5225;&#x8F49;&#x63DB;(Cast),&#x8F03;&#x70BA;&#x9EBB;&#x7169;&#x4E5F;&#x5BB9;&#x6613;&#x51FA;&#x932F;</li>
+</ul>
+</li>
+</ul>
+<h1 id="2-&#x6CDB;&#x578B;&#x751F;&#x6D3B;&#x5316;&#x89E3;&#x91CB;"><a id="s2" class="md-title" href="#top">2. &#x6CDB;&#x578B;&#x751F;&#x6D3B;&#x5316;&#x89E3;&#x91CB;</a></h1>
+<ul>
+<li><p>&#x6C92;&#x6CDB;&#x578B;</p>
+<ul>
+<li>&#x6E96;&#x5099;&#x8D85;&#x5927;&#x884C;&#x674E;&#x7BB1;&#xFF0C;&#x5728;&#x642C;&#x5BB6;&#x6642;&#x96A8;&#x4FBF;&#x653E;&#x9032;&#x53BB;&#x3002;&#x4F46;&#x8981;&#x958B;&#x59CB;&#x6574;&#x7406;&#xFF0C;&#x4E00;&#x500B;&#x500B;&#x62FF;&#x51FA;&#x4F86;&#x6642;&#x9700;&#x8981;&#x62FF;&#x51FA;&#x4F86;&#xFF0C;&#x662F;&#x8863;&#x670D;&#x5C31;&#x5728;&#x8D70;&#x5230;&#x8863;&#x6AC3;&#x653E;&#xFF0C;&#x662F;&#x4EC0;&#x9EBC;&#x5C31;&#x8981;&#x4F86;&#x56DE;&#x7684;&#x8D70;&#x4E00;&#x500B;&#x500B;&#x653E;&#x5230;&#x5C0D;&#x61C9;&#x7684;&#x5730;&#x65B9;(&#x524D;&#x671F;&#x958B;&#x5FC3;&#x5F8C;&#x671F;&#x9EBB;&#x7169;)</li>
+</ul>
+</li>
+<li><p>&#x6CDB;&#x578B;</p>
+<ul>
+<li>&#x6E96;&#x5099;&#x597D;&#x591A;&#x884C;&#x674E;&#x7BB1;&#xFF0C;&#x65E5;&#x7528;&#x54C1;&#x653E;&#x4E00;&#x8D77;&#x3001;&#x8863;&#x670D;&#x653E;&#x4E00;&#x8D77;...&#xFF0C;&#x96D6;&#x7136;&#x4E00;&#x958B;&#x59CB;&#x6574;&#x7406;&#x6703;&#x9EBB;&#x7169;&#xFF0C;&#x4F46;&#x4E4B;&#x5F8C;&#x6574;&#x7406;&#x6642;&#x6703;&#x65B9;&#x4FBF;&#x5F88;&#x591A;(&#x524D;&#x671F;&#x9EBB;&#x7169;&#x5F8C;&#x671F;&#x958B;&#x5FC3;)</li>
+</ul>
+</li>
+</ul>
+<h1 id="3-&#x6CDB;&#x578B;generic-type&#x8209;&#x4F8B;"><a id="s3" class="md-title" href="#top">3. &#x6CDB;&#x578B;(Generic Type)&#x8209;&#x4F8B;</a></h1>
+<pre><code class="lang-java">&#x7BC4;&#x4F8B;&#x7A0B;&#x5F0F;: <span class="hljs-string">&quot;/JavaEx_Part2/src/ch03/BeforeGenericList.java&quot;</span>
+
+<span class="hljs-keyword">package</span> ch03;
+
+<span class="hljs-keyword">import</span> java.util.ArrayList;
+<span class="hljs-keyword">import</span> java.util.Iterator;
+<span class="hljs-keyword">import</span> java.util.List;
+
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">BeforeGenericList</span> </span>{
+
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
+    <span class="hljs-comment">// &#x4F7F;&#x7528;ArrayList&#x65B9;&#x6CD5;&#x53D6;&#x5F97;&#x7684;&#x8CC7;&#x6599;&#x90FD;&#x662F;Object</span>
+    List data = <span class="hljs-keyword">new</span> ArrayList();
+    data.add(<span class="hljs-string">&quot;Hello&quot;</span>);
+    data.add(<span class="hljs-string">&quot;World&quot;</span>);
+    data.add(<span class="hljs-number">10</span>);
+
+    Iterator it = data.iterator();
+    <span class="hljs-keyword">while</span> (it.hasNext()) {
+      <span class="hljs-comment">/*
+      * &#x4EE5;&#x4E0B;&#x505A;&#x6CD5;&#x6703;&#x5931;&#x6557;&#xFF0C;&#x56E0;&#x70BA;Object&#x4E2D;&#x6C92;&#x6709;isEmpty()&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x6240;&#x4EE5;&#x8981;&#x5C07;&#x8CC7;&#x6599;&#x8F49;&#x578B;
+      * &#x4E0D;&#x8F49;&#x8CC7;&#x6599;&#x5C31;&#x4E0D;&#x6703;&#x6709;&#x76F8;&#x61C9;&#x7269;&#x4EF6;&#x7684;&#x7279;&#x6027;&#xFF0C;&#x4E5F;&#x6703;&#x8F49;&#x578B;&#x5931;&#x6557;
+      * Object str1 = it.next();
+      * str1.isEmpty();
+      */</span>
+      String str2 = (String) it.next(); <span class="hljs-comment">// &#x5F37;&#x5236;&#x8F49;&#x578B;</span>
+      System.out.println(str2);
+
+      <span class="hljs-comment">// &#x820A;&#x5BEB;&#x6CD5;: &#x8CC7;&#x6599;&#x76F8;&#x61C9;&#x8F49;&#x578B;</span>
+      Object obj = it.next();
+      <span class="hljs-keyword">if</span> (obj <span class="hljs-keyword">instanceof</span> String) {
+        String s = (String) obj;
+        System.out.println(s.isEmpty());
+      } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (obj <span class="hljs-keyword">instanceof</span> Integer) {
+        Integer i1 = (Integer) obj;
+        System.out.println(i1.intValue());
+      }
+    }
+  }
+}
+</code></pre>
+<pre><code class="lang-java">&#x7BC4;&#x4F8B;&#x7A0B;&#x5F0F;: <span class="hljs-string">&quot;/JavaEx_Part2/src/ch03/GenericList.java&quot;</span>
+
+<span class="hljs-keyword">package</span> ch03;
+
+<span class="hljs-keyword">import</span> java.util.ArrayList;
+<span class="hljs-keyword">import</span> java.util.Iterator;
+<span class="hljs-keyword">import</span> java.util.List;
+
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">GenericList</span> </span>{
+
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
+    <span class="hljs-comment">// &#x6CDB;&#x578B;&#x662F;String</span>
+    List&lt;String&gt; data = <span class="hljs-keyword">new</span> ArrayList&lt;String&gt;();
+    data.add(<span class="hljs-string">&quot;Hello&quot;</span>);
+    data.add(<span class="hljs-string">&quot;World&quot;</span>);
+
+    <span class="hljs-comment">// &#x8FED;&#x4EE3;&#x5668;&#x4E5F;&#x8981;&#x540C;&#x6CDB;&#x578B;&#xFF0C;String</span>
+    Iterator&lt;String&gt; it = data.iterator();
+    <span class="hljs-keyword">while</span> (it.hasNext()) {
+      <span class="hljs-comment">// next&#x56DE;&#x50B3;&#x7684;&#x4E5F;&#x662F;String</span>
+      <span class="hljs-comment">// &#x5F37;&#x5236;&#x8F49;&#x578B;,&#x4E0D;&#x518D;&#x9700;&#x8981;&#x4F7F;&#x7528;instanceof&#x5224;&#x65B7;&#x5F8C;&#x518D;&#x4F9D;&#x5E8F;&#x5F37;&#x5236;&#x8F49;&#x578B;</span>
+      String str = it.next();
+      System.out.println(str);
+    }
+  }
+}
+</code></pre>
+<pre><code class="lang-java">&#x7BC4;&#x4F8B;&#x7A0B;&#x5F0F;: <span class="hljs-string">&quot;/JavaEx_Part2/src/ch03/GenericMap.java&quot;</span>
+
+<span class="hljs-keyword">package</span> ch03;
+
+<span class="hljs-keyword">import</span> java.util.HashMap;
+<span class="hljs-keyword">import</span> java.util.Map;
+
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">GenericMap</span> </span>{
+
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
+    Map&lt;Integer, String&gt; map = <span class="hljs-keyword">new</span> HashMap&lt;Integer, String&gt;();
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">3</span>; i++) {
+      map.put(<span class="hljs-keyword">new</span> Integer(i), <span class="hljs-string">&quot;number&quot;</span> + i);
+    }
+    System.out.println(map.get(<span class="hljs-keyword">new</span> Integer(<span class="hljs-number">0</span>)));
+    System.out.println(map.get(<span class="hljs-keyword">new</span> Integer(<span class="hljs-number">1</span>)));
+    System.out.println(map.get(<span class="hljs-keyword">new</span> Integer(<span class="hljs-number">2</span>)));
+  }
+}
+</code></pre>
+<h1 id="4-&#x6CDB;&#x578B;&#x7684;&#x5EF6;&#x4F38;&#xFF0C;&#x81EA;&#x8A02;&#x6CDB;&#x578B;"><a id="s4" class="md-title" href="#top">4. &#x6CDB;&#x578B;&#x7684;&#x5EF6;&#x4F38;&#xFF0C;&#x81EA;&#x8A02;&#x6CDB;&#x578B;</a></h1>
+<pre><code class="lang-java"><span class="hljs-keyword">package</span> ch03;
+
+<span class="hljs-keyword">import</span> java.util.*;
+
+<span class="hljs-comment">// &#x81EA;&#x8A02;&#x6CDB;&#x578B;</span>
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MyGenericType</span>&lt;<span class="hljs-title">Type</span>&gt; </span>{
+
+  <span class="hljs-keyword">private</span> List&lt;Type&gt; list;
+
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">MyGenericType</span><span class="hljs-params">()</span> </span>{
+    list = <span class="hljs-keyword">new</span> Vector&lt;Type&gt;();
+  }
+
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">add</span><span class="hljs-params">(Type t)</span> </span>{
+    list.add(t);
+  }
+
+  <span class="hljs-function"><span class="hljs-keyword">public</span> Type <span class="hljs-title">get</span><span class="hljs-params">(<span class="hljs-keyword">int</span> i)</span> </span>{
+    <span class="hljs-keyword">return</span> list.get(i);
+  }
+}
+
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MyGeneric</span> </span>{
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
+    <span class="hljs-comment">// &#x771F;&#x6B63;&#x6C7A;&#x5B9A;&#x6CDB;&#x578B;</span>
+    MyGenericType&lt;String&gt; myGeneric = <span class="hljs-keyword">new</span> MyGenericType&lt;String&gt;();
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">3</span>; i++) {
+      myGeneric.add(<span class="hljs-string">&quot;number&quot;</span> + i);
+      System.out.println(myGeneric.get(i));
+    }
+  }
+}
+</code></pre>
+<h1 id="5-&#x6CDB;&#x578B;&#x7684;&#x9032;&#x968E;&#x8A2D;&#x5B9A;"><a id="s5" class="md-title" href="#top">5. &#x6CDB;&#x578B;&#x7684;&#x9032;&#x968E;&#x8A2D;&#x5B9A;</a></h1>
+<ul>
+<li><p>&#x6CDB;&#x578B;&#x7684;&#x8A2D;&#x5B9A;&#x53EF;&#x4F7F;&#x7528;&#x300C;<code>?</code>&#x300D;&#x642D;&#x914D;&#x300C;<code>extends</code>&#x300D;&#x6216;&#x300C;<code>super</code>&#x300D;&#x4F86;&#x589E;&#x52A0;&#x6CDB;&#x578B;&#x7684;&#x5F48;&#x6027;(<code>&#x6CDB;&#x578B;&#x4E0A;&#x4E0B;&#x908A;&#x754C;&#x8A2D;&#x5B9A;</code>)</p>
+<ul>
+<li><code>?</code>: <code>Any Type</code></li>
+</ul>
+</li>
+<li><p>&#x5982;:</p>
+<ul>
+<li><p><code>&lt;? extends Number&gt;</code>: &#x4EE3;&#x8868;&#x53EF;&#x4EE5;&#x662F; Number &#x6216; Number &#x7684;&#x5B50;&#x985E;&#x5225;</p>
+</li>
+<li><p><code>&lt;? super Number&gt;</code>: &#x4EE3;&#x8868;&#x53EF;&#x4EE5;&#x662F; Number &#x7684;&#x7236;&#x985E;&#x5225;</p>
+</li>
+</ul>
+</li>
+</ul>
+<pre><code class="lang-cs">&#x7BC4;&#x4F8B;&#x7A0B;&#x5F0F;: <span class="hljs-string">&quot;/JavaEx_Part2/src/ch03/GenericAdv.java&quot;</span>
+</code></pre>
+<pre><code class="lang-java"><span class="hljs-keyword">package</span> ch03;
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Book</span>&lt;<span class="hljs-title">T</span>&gt;</span>{
+  T price;
+  <span class="hljs-comment">// &#x9650;&#x5236;&#x81EA;&#x8A02;&#x6CDB;&#x578B;&#x7684;&#x7BC4;&#x570D;&#xFF0C;&#x9700;&#x5728;&#x6578;&#x5B57;&#x6709;&#x95DC;&#x7684;&#x985E;&#x578B;</span>
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">show</span><span class="hljs-params">(Book&lt;? extends Number&gt; b)</span></span>{
+    System.out.println(<span class="hljs-string">&quot;&#x66F8;&#x7C4D;&#x5B9A;&#x50F9;&#x70BA;&#xFF1A;&quot;</span> + b.price);
+  }
+}
+
+
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">GenericAdv</span> </span>{
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span></span>{
+    Book&lt;Integer&gt; book = <span class="hljs-keyword">new</span> Book&lt;Integer&gt;();
+    book.price = <span class="hljs-number">580</span>;
+    Book.show(book);
+  }
+}
+</code></pre>
+<h1 id="6-&#x57FA;&#x672C;&#x6CDB;&#x578B;&#x7E3D;&#x7D50;"><a id="s6" class="md-title" href="#top">6. &#x57FA;&#x672C;&#x6CDB;&#x578B;&#x7E3D;&#x7D50;</a></h1>
+<ul>
+<li><p>&#x8ACB;&#x990A;&#x6210;&#x5728;&#x4F7F;&#x7528; ArrayList &#x7B49;&#x96C6;&#x5408;&#x6642;&#xFF0C;&#x90FD;&#x8981;&#x52A0;&#x4E0A;<code>&#x6CDB;&#x578B;</code>&#x7684;&#x597D;&#x7FD2;&#x6163;</p>
+</li>
+<li><p>List/Set &#x53EA;&#x80FD;&#x653E;&#x55AE;&#x4E00;&#x7269;&#x4EF6;&#xFF0C;&#x6240;&#x4EE5;&#x4E0D;&#x80FD;&#x653E;&#x5169;&#x7A2E;&#x8CC7;&#x6599;&#x578B;&#x614B;</p>
+</li>
+</ul>
+<pre><code class="lang-java"><span class="hljs-comment">// &#x6B63;&#x78BA;</span>
+List&lt;String&gt; data = <span class="hljs-keyword">new</span> ArrayList&lt;String&gt;
+<span class="hljs-comment">// &#x932F;&#x8AA4;</span>
+List&lt;String, Integer&gt; data = <span class="hljs-keyword">new</span> ArrayList&lt;String, Integer&gt;
+</code></pre>
+<ul>
+<li>Map &#x53EF;&#x4EE5;&#x653E;&#x5169;&#x7A2E;&#x578B;&#x614B;&#xFF0C;&#x56E0;&#x70BA;&#x88CF;&#x982D;&#x5305;&#x542B; key&#x3001;val</li>
+</ul>
+<pre><code class="lang-java"><span class="hljs-comment">// &#x6B63;&#x78BA;</span>
+Map&lt;Integer, String&gt; map = <span class="hljs-keyword">new</span> HashMap&lt;Integer, String&gt;();
+</code></pre>
+<ul>
+<li><code>&lt;T,K,E,V&gt;</code><sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup><ul>
+<li>T type</li>
+<li>K key</li>
+<li>E element</li>
+<li>V value</li>
+</ul>
+</li>
+</ul>
+<h1 id="7-iterable-&#x4ECB;&#x9762;"><a id="s7" class="md-title" href="#top">7. Iterable &#x4ECB;&#x9762;</a></h1>
+<ul>
+<li><p>&#x5F9E; JDK1-5 &#x958B;&#x59CB;,Collection &#x4ECB;&#x9762;&#x589E;&#x52A0;&#x4E86;&#x65B0;&#x7684;&#x6CDB;&#x578B;(Generic Type)&#x529F;&#x80FD;
+&#x8A2D;&#x8A08;,&#x4E26;&#x7E7C;&#x627F; JDK1-5 &#x7684;&#x65B0;&#x4ECB;&#x9762; Iterable</p>
+</li>
+<li><p>&#x4ECB;&#x9762; Iterable(JDK1-5):</p>
+<ul>
+<li>&#x6B64;&#x4ECB;&#x9762;&#x53EA;&#x6709;&#x4E00;&#x500B; iterator()&#x65B9;&#x6CD5;,&#x56DE;&#x50B3; iterable &#x4ECB;&#x9762;</li>
+<li><code>Iterable&lt;T&gt; iterator()</code></li>
+</ul>
+</li>
+<li><p>&#x5BE6;&#x4F5C; Iterable &#x4ECB;&#x9762;,&#x5176;&#x76EE;&#x7684;&#x662F;&#x70BA;&#x4E86;&#x5141;&#x8A31;&#x7269;&#x4EF6;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; JDK1-5 &#x7684;&#x300C;&#x589E;&#x5F37;
+&#x578B; for &#x8FF4;&#x5708;(for-each)&#x300D;&#x8A9E;&#x6CD5;</p>
+</li>
+<li><p>Implementing this interface allows an object to be the target of the
+&quot;foreach&quot; statement</p>
+</li>
+<li><p>&#x7576;&#x4F7F;&#x7528; JDK1-5 &#x7684; for-each &#x4F86;&#x8D70;&#x8A2A;&#x96C6;&#x5408;&#x7684;&#x5143;&#x7D20;&#x5167;&#x5BB9;&#x6642;,&#x4E00;&#x5207;&#x5C07;&#x986F;&#x5F97;&#x683C;&#x5916;&#x8F15;&#x9B06;!</p>
+</li>
+</ul>
+<h1 id="8-&#x589E;&#x5F37;&#x578B;-for-&#x8FF4;&#x5708;-for-&#x2013;-each"><a id="s8" class="md-title" href="#top">8. &#x589E;&#x5F37;&#x578B; for &#x8FF4;&#x5708; (for &#x2013; each)</a></h1>
+<ul>
+<li><p>&#x589E;&#x5F37;&#x578B;&#x7684; for &#x8FF4;&#x5708; (Enhanced for Loop) &#x2013; for each:</p>
+<ul>
+<li><p>&#x5728; JDK1-5 &#x4E2D;,&#x91DD;&#x5C0D; for &#x8FF4;&#x5708;&#x4F5C;&#x4E86;&#x4E00;&#x4E9B;&#x52A0;&#x5F37;,&#x8B93;&#x6211;&#x5011;&#x7121;&#x9700;&#x77E5;&#x9053;&#x9663;&#x5217;
+(array) &#x6216;&#x96C6;&#x5408;(collection)&#x7684;&#x9577;&#x5EA6;,&#x751A;&#x81F3;&#x4E5F;&#x4E0D;&#x7528;&#x8FED;&#x4EE3;&#x5668;(iterator),&#x4FBF;
+&#x53EF;&#x4EE5;&#x5C07;&#x5176;&#x4E2D;&#x7684;&#x5143;&#x7D20;&#x4E00;&#x4E00;&#x53D6;&#x51FA;</p>
+</li>
+<li><p><code>&#x4F7F;&#x7528; for &#x2013; each &#x4F86;&#x8D70;&#x8A2A;&#x96C6;&#x5408;&#x7684;&#x5143;&#x7D20;&#x6703;&#x683C;&#x5916;&#x8F15;&#x9B06;</code></p>
+</li>
+</ul>
+</li>
+<li><p>&#x8A9E;&#x6CD5;:</p>
+<ul>
+<li><p><code>for (&lt;&#x8CC7;&#x6599;&#x578B;&#x614B;&gt; &lt;&#x8B8A;&#x6578;&#x5BA3;&#x544A;&gt; : &lt;&#x9663;&#x5217;&#x6216;&#x96C6;&#x5408;&gt;)</code></p>
+</li>
+<li><p><code>for (Type varName : listName)</code></p>
+<ul>
+<li><p>&#x5373;&#x53EF;&#x5C07; listName &#x88E1;&#x7684;&#x5143;&#x7D20;&#x4F9D;&#x9806;&#x5E8F;,&#x7531;&#x578B;&#x5225;&#x70BA; Type &#x7684;&#x8B8A;&#x6578; varName &#x5B58;&#x53D6;</p>
+</li>
+<li><p>&#x9663;&#x5217;&#x6216;&#x96C6;&#x5408;&#x4E2D;&#x5143;&#x7D20;&#x7684;&#x578B;&#x5225;&#x5FC5;&#x9808;&#x662F;&#x53EF;&#x4EE5;&#x8F49;&#x578B;&#x70BA; Type &#x7684;&#x578B;&#x5225;</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h1 id="9-iterable-&#x8207;-for---each-&#x7BC4;&#x4F8B;"><a id="s9" class="md-title" href="#top">9. Iterable &#x8207; for - each &#x7BC4;&#x4F8B;</a></h1>
+<pre><code class="lang-cs">&#x7BC4;&#x4F8B;&#x7A0B;&#x5F0F;: <span class="hljs-string">&quot;/JavaEx_Part2/src/ch03/EnhanceForCollection.java&quot;</span>
+</code></pre>
+<pre><code class="lang-java"><span class="hljs-keyword">package</span> ch03;
+
+<span class="hljs-keyword">import</span> java.util.ArrayList;
+<span class="hljs-keyword">import</span> java.util.Iterator;
+<span class="hljs-keyword">import</span> java.util.List;
+
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">EnhanceForCollection</span> </span>{
+
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
+    List&lt;String&gt; data = <span class="hljs-keyword">new</span> ArrayList&lt;String&gt;();
+    <span class="hljs-comment">// Set&lt;String&gt; data = new HashSet&lt;String&gt;();</span>
+    data.add(<span class="hljs-string">&quot;Hello&quot;</span>);
+    data.add(<span class="hljs-string">&quot;World&quot;</span>);
+
+    System.out.println(<span class="hljs-string">&quot;&#x50B3;&#x7D71;&#x7684;for &#x8FF4;&#x5708;&quot;</span>);
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; data.size(); i++)
+      System.out.println(data.get(i)); <span class="hljs-comment">// (&#x6CE8;&#x610F;:Set&#x4E0D;&#x80FD;&#x7528;&#x50B3;&#x7D71;&#x7684;for&#x8FF4;&#x5708;)</span>
+    System.out.println();
+
+    System.out.println(<span class="hljs-string">&quot;&#x4F7F;&#x7528;iterator&#x8FF4;&#x5708;&quot;</span>);
+    <span class="hljs-keyword">for</span> (Iterator it = data.iterator(); it.hasNext();)
+      System.out.println(it.next() + <span class="hljs-string">&quot; &quot;</span>);
+    System.out.println();
+
+    System.out.println(<span class="hljs-string">&quot;&#x589E;&#x5F37;&#x529F;&#x80FD;&#x7684; for &#x8FF4;&#x5708;(Using Enhanced foreach)&quot;</span>);
+    <span class="hljs-keyword">for</span> (String str : data)
+      System.out.println(str);
+    System.out.println();
+
+  }
+}
+</code></pre>
+<hr>
+<pre><code class="lang-cs">&#x7BC4;&#x4F8B;&#x7A0B;&#x5F0F;: <span class="hljs-string">&quot;/JavaEx_Part2/src/ch03/EnhanceForMap.java&quot;</span>
+</code></pre>
+<pre><code class="lang-java">
+<span class="hljs-keyword">package</span> ch03;
+
+<span class="hljs-keyword">import</span> java.util.HashMap;
+<span class="hljs-keyword">import</span> java.util.Map;
+
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">EnhanceForMap</span> </span>{
+
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
+    Map&lt;Integer, String&gt; map = <span class="hljs-keyword">new</span> HashMap&lt;Integer, String&gt;();
+
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">6</span>; i++) {
+      map.put(i, <span class="hljs-string">&quot;David&quot;</span> + i);
+    }
+    <span class="hljs-keyword">for</span> (String val : map.values()) {
+      System.out.println(val);
+    }
+    <span class="hljs-keyword">for</span> (Integer val : map.keySet()) {
+      System.out.println(val);
+    }
+  }
+}
+</code></pre>
+<h1 id="10-&#x50B3;&#x7D71;-for-&#x8207;-for-each"><a id="s10" class="md-title" href="#top">10. &#x50B3;&#x7D71; for &#x8207; for-each</a></h1>
+<ul>
+<li>&#x50B3;&#x7D71; for &#x8FF4;&#x5708;&#x6548;&#x7387;&#x6BD4; for-each &#x5FEB;&#xFF0C;&#x6240;&#x4EE5; for-each &#x4E5F;&#x662F;&#x500B; suger &#x7528;&#x6CD5;</li>
+</ul>
+<h1 id="11-collection-&#x9032;&#x4E00;&#x6B65;&#x63A2;&#x8A0E;&#x91CD;&#x9EDE;"><a id="s11" class="md-title" href="#top">11. Collection &#x9032;&#x4E00;&#x6B65;&#x63A2;&#x8A0E;(&#x91CD;&#x9EDE;)</a></h1>
+<ul>
+<li><p><code>HashSet</code>:</p>
+<ul>
+<li><p>&#x81EA;&#x8A02;&#x7269;&#x4EF6;&#x8981;&#x5BE6;&#x73FE;&#x4E0D;&#x91CD;&#x8907;&#xFF0C;&#x9700;&#x8981;&#x4E3B;&#x52D5;&#x53BB; override Object &#x985E;&#x5225;&#x7684;&#x5169;&#x500B;&#x65B9;&#x6CD5; <code>equals()</code> &#x8207; <code>hashCode()</code></p>
+<ul>
+<li>hashCode &#x53EF;&#x4EE5;&#x7576;&#x4F5C;&#x7269;&#x4EF6;&#x7DE8;&#x865F;&#xFF0C;&#x4F46;&#x6703;&#x56E0;&#x70BA;&#x4E0D;&#x540C;&#x7684;&#x5C6C;&#x6027;&#x800C;&#x4E0D;&#x76F8;&#x540C;</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><code>TreeSet</code>:</p>
+<ul>
+<li>&#x81EA;&#x8A02;&#x7269;&#x4EF6;&#x8981;&#x5BE6;&#x73FE;&#x4E0D;&#x91CD;&#x8907;&#xFF0C;&#x9700;&#x8981;&#x5728;&#x5BE6;&#x4F5C; <code>compareTo()</code> &#x65B9;&#x6CD5;&#x88E1;&#x52A0;&#x4E0A;<code>&#x56DE;&#x50B3; 0</code>(zero) &#x7684;&#x8A2D;&#x8A08;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x4E00;&#x6A23;&#x5927;&#x7684;&#x610F;&#x601D;</li>
+</ul>
+</li>
+<li><p>&#x4EE5;&#x4E0A;&#x5169;&#x9EDE;&#x9808;&#x8A18;&#x4E0B;&#xFF0C;&#x4E26;&#x80CC;&#x8D77;&#x4F86;&#x3002;&#x4E0D;&#x7136;&#x5BE6;&#x969B;&#x64CD;&#x4F5C;&#x4E2D;&#x5BB9;&#x6613;&#x51FA;&#x932F;&#x4E14;&#x627E;&#x4E0D;&#x5230;&#x554F;&#x984C;&#x767C;&#x751F;&#x7684;&#x539F;&#x56E0;</p>
+</li>
+<li><p><code>ArrayList</code>&#x3001;<code>HashSet</code>&#x3001;<code>HashMap</code> &#x70BA;&#x6B64;&#x7AE0;&#x7BC0;&#x91CD;&#x9EDE;</p>
+</li>
+<li><p>Collection &#x5728;&#x5B98;&#x65B9;&#x88AB;&#x7A31;&#x4F5C;&#x662F; Framework&#x3002;Framewor&#xFF0C;&#x4E5F;&#x7A31;&#x4F5C;&#x6846;&#x67B6;&#xFF0C;&#x4E5F;&#x53EF;&#x7576;&#x4F5C;&#x5DE5;&#x5177;</p>
+</li>
+</ul>
+<h1 id="12-collection-&#x5EF6;&#x4F38;&#x7BC4;&#x4F8B;"><a id="s12" class="md-title" href="#top">12. Collection &#x5EF6;&#x4F38;&#x7BC4;&#x4F8B;</a></h1>
+<ul>
+<li>&#x57FA;&#x790E;&#x7684;&#x4F9D;&#x5927;&#x5C0F;&#x6392;&#x5E8F;,&#x898B;&#x7BC4;&#x4F8B;:</li>
+</ul>
+<pre><code class="lang-cs">&#x7BC4;&#x4F8B;&#x7A0B;&#x5F0F;: <span class="hljs-string">&quot;/JavaEx_Part2/src/ch03/TestCollectionsForList.java&quot;</span>
+</code></pre>
+<pre><code class="lang-java"><span class="hljs-keyword">package</span> ch03;
+
+<span class="hljs-keyword">import</span> java.util.ArrayList;
+<span class="hljs-keyword">import</span> java.util.Collections;
+<span class="hljs-keyword">import</span> java.util.List;
+
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">TestCollectionsForList</span> </span>{
+
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String args[])</span> </span>{
+    List list = <span class="hljs-keyword">new</span> ArrayList();
+    list.add(<span class="hljs-string">&quot;5&quot;</span>);
+    list.add(<span class="hljs-string">&quot;2&quot;</span>);
+    list.add(<span class="hljs-string">&quot;3&quot;</span>);
+    list.add(<span class="hljs-string">&quot;4&quot;</span>);
+    list.add(<span class="hljs-string">&quot;1&quot;</span>);
+
+    <span class="hljs-comment">// &#x6392;&#x5E8F;&#x5F8C;&#x653E;&#x5165;</span>
+    Collections.sort(list);<span class="hljs-comment">// &#x6392;&#x5E8F;</span>
+    Collections.reverse(list); <span class="hljs-comment">// &#x5012;&#x5E8F;</span>
+
+    Object obj;
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; list.size(); i++) {
+      obj = list.get(i);
+      System.out.println(obj);
+    }
+  }
+}
+</code></pre>
+<hr>
+<pre><code class="lang-cs">&#x7BC4;&#x4F8B;&#x7A0B;&#x5F0F;: <span class="hljs-string">&quot;TestArraysForArray.java&quot;</span>
+</code></pre>
+<pre><code class="lang-java"><span class="hljs-keyword">package</span> ch03;
+
+<span class="hljs-keyword">import</span> java.util.*;
+
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">TestArraysForArray</span> </span>{
+
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String args[])</span> </span>{
+
+    String strArray[] = { <span class="hljs-string">&quot;5&quot;</span>, <span class="hljs-string">&quot;2&quot;</span>, <span class="hljs-string">&quot;3&quot;</span>, <span class="hljs-string">&quot;4&quot;</span>, <span class="hljs-string">&quot;1&quot;</span> };
+
+    Arrays.sort(strArray);
+
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; strArray.length; i++) {
+      System.out.println(strArray[i]);
+    }
+  }
+}
+</code></pre>
+<hr>
+<ul>
+<li>Map &#x4EE5; key &#x7684;&#x8CC7;&#x6599;&#x9032;&#x884C;&#x5927;&#x5C0F;&#x6392;&#x5E8F;&#xFF0C;&#x6240;&#x4EE5; key &#x7684;&#x8CC7;&#x6599;&#x5F97;&#x662F;&#x76F8;&#x540C;&#x578B;&#x5225;&#x7684;&#x8CC7;&#x6599;</li>
+</ul>
+<pre><code class="lang-cs">&#x7BC4;&#x4F8B;&#x7A0B;&#x5F0F;: <span class="hljs-string">&quot;/JavaEx_Part2/src/ch03/TestTreeSet.java&quot;</span>
+</code></pre>
+<pre><code class="lang-java"><span class="hljs-keyword">package</span> ch03;
+
+<span class="hljs-keyword">import</span> java.util.Iterator;
+<span class="hljs-keyword">import</span> java.util.Set;
+<span class="hljs-keyword">import</span> java.util.TreeSet;
+
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">TestTreeSet</span> </span>{
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String args[])</span> </span>{
+    Set set = <span class="hljs-keyword">new</span> TreeSet();
+    set.add(<span class="hljs-keyword">new</span> Integer(<span class="hljs-number">56</span>));
+    set.add(<span class="hljs-keyword">new</span> Integer(<span class="hljs-number">34</span>));
+    set.add(<span class="hljs-keyword">new</span> Integer(<span class="hljs-number">12</span>));
+    set.add(<span class="hljs-string">&quot;Hello&quot;</span>);
+
+    <span class="hljs-comment">// TreeSet &#x53EA;&#x80FD;&#x5C07;&#x76F8;&#x540C;&#x985E;&#x578B;&#x7684;&#x8CC7;&#x6599;&#x4F86;&#x6BD4;&#x8F03;</span>
+    Iterator objs = set.iterator();
+    <span class="hljs-keyword">while</span> (objs.hasNext())
+      System.out.println(objs.next());
+  }
+}
+</code></pre>
+<pre><code class="lang-cs">&#x7BC4;&#x4F8B;&#x7A0B;&#x5F0F;: <span class="hljs-string">&quot;/JavaEx_Part2/src/ch03/TestTreeMap.java&quot;</span>
+</code></pre>
+<pre><code class="lang-java"><span class="hljs-keyword">package</span> ch03;
+
+<span class="hljs-keyword">import</span> java.util.HashMap;
+<span class="hljs-keyword">import</span> java.util.Map;
+<span class="hljs-keyword">import</span> java.util.TreeMap;
+
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">TestTreeMap</span> </span>{
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
+
+    <span class="hljs-comment">// HashMap &#x4E0D;&#x4FDD;&#x8B49;key&#x7684;&#x9806;&#x5E8F;&#x6027;&#xFF0C;&#x6709;&#x6392;&#x5E8F;&#x53EA;&#x662F;&#x525B;&#x597D;&#xFF0C;&#x6C92;&#x6392;&#x5E8F;&#x53EA;&#x662F;&#x6B63;&#x5E38;</span>
+    Map&lt;Integer, String&gt; map1 = <span class="hljs-keyword">new</span> HashMap&lt;Integer, String&gt;();
+    <span class="hljs-comment">// TreeMap &#x6703;&#x4FDD;&#x8B49;key&#x7684;&#x9806;&#x5E8F;&#x6027;</span>
+    Map&lt;Integer, String&gt; map2 = <span class="hljs-keyword">new</span> TreeMap&lt;Integer, String&gt;(); <span class="hljs-comment">// TreeMap&#x7684;Key&#x503C;&#x8981;&#x540C;&#x4E00;&#x7A2E;&#x8CC7;&#x6599;&#x578B;&#x5225;</span>
+
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">10</span>; i++) {
+      map1.put(i, <span class="hljs-string">&quot;David&quot;</span> + i);
+    }
+    <span class="hljs-keyword">for</span> (String val : map1.values()) {
+      System.out.println(val);
+    }
+
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">10</span>; i++) {
+      map2.put(i, <span class="hljs-string">&quot;David&quot;</span> + i);
+    }
+    <span class="hljs-keyword">for</span> (String val : map2.values()) {
+      System.out.println(val);
+    }
+  }
+}
+</code></pre>
+<hr>
+<ul>
+<li>&#x7269;&#x4EF6;&#x5927;&#x5C0F;&#x6392;&#x5E8F;(<code>&#x5BE6;&#x4F5C; Comparable &#x4ECB;&#x9762;</code>)&#x898B;&#x7BC4;&#x4F8B;:</li>
+</ul>
+<pre><code class="lang-cs">&#x7BC4;&#x4F8B;&#x7A0B;&#x5F0F;: <span class="hljs-string">&quot;Employee.java&quot;</span>
+</code></pre>
+<pre><code class="lang-java"><span class="hljs-keyword">package</span> ch03;
+
+<span class="hljs-comment">// Comparable&lt;T&gt;&#x8981;&#x6BD4;&#x8F03;&#x7684;&#x7269;&#x4EF6;&#x985E;&#x578B;</span>
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Employee</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">Comparable</span>&lt;<span class="hljs-title">Employee</span>&gt; </span>{
+  <span class="hljs-keyword">private</span> <span class="hljs-keyword">int</span> empno;
+  <span class="hljs-keyword">private</span> String ename;
+
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setEmpno</span><span class="hljs-params">(<span class="hljs-keyword">int</span> empno)</span> </span>{
+    <span class="hljs-keyword">this</span>.empno = empno;
+  }
+
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">getEmpno</span><span class="hljs-params">()</span> </span>{
+    <span class="hljs-keyword">return</span> empno;
+  }
+
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setEname</span><span class="hljs-params">(String ename)</span> </span>{
+    <span class="hljs-keyword">this</span>.ename = ename;
+  }
+
+  <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">getEname</span><span class="hljs-params">()</span> </span>{
+    <span class="hljs-keyword">return</span> ename;
+  }
+
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Employee</span><span class="hljs-params">(<span class="hljs-keyword">int</span> empno, String ename)</span> </span>{
+    <span class="hljs-keyword">this</span>.empno = empno;
+    <span class="hljs-keyword">this</span>.ename = ename;
+  }
+
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Employee</span><span class="hljs-params">(<span class="hljs-keyword">int</span> empno)</span> </span>{
+    <span class="hljs-keyword">this</span>(empno, <span class="hljs-string">&quot;-&quot;</span>);
+  }
+
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Employee</span><span class="hljs-params">(String ename)</span> </span>{
+    <span class="hljs-keyword">this</span>(<span class="hljs-number">0</span>, ename);
+  }
+
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Employee</span><span class="hljs-params">()</span> </span>{
+    <span class="hljs-keyword">this</span>(<span class="hljs-number">0</span>, <span class="hljs-string">&quot;-&quot;</span>); <span class="hljs-comment">// &#x6216; empno = 0; ename = &quot;-&quot;</span>
+  }
+
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">display</span><span class="hljs-params">()</span> </span>{
+    System.out.println(<span class="hljs-string">&quot;empno=&quot;</span> + empno);
+    System.out.println(<span class="hljs-string">&quot;ename=&quot;</span> + ename);
+  }
+
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">compareTo</span><span class="hljs-params">(Employee aEmployee)</span> </span>{
+    <span class="hljs-comment">// &#x7528;&#x9019;&#x6A23;&#x53EF;&#x80FD;&#x6709;&#x6EA2;&#x4F4D;&#x554F;&#x984C;&#xFF0C;&#x6240;&#x4EE5;&#x4E0D;&#x5EFA;&#x8B70;&#x4F7F;&#x7528;</span>
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.empno - aEmployee.empno;
+    <span class="hljs-comment">// &#x5EFA;&#x8B70;&#x4F5C;&#x6CD5;&#xFF0C;&#x6B64;&#x505A;&#x6CD5;&#x4E5F;&#x5B89;&#x5168;&#x3001;&#x8B39;&#x614E;</span>
+    <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>.empno &gt; aEmployee.empno) {
+      <span class="hljs-keyword">return</span> <span class="hljs-number">1</span>;
+    } <span class="hljs-keyword">else</span> {
+      <span class="hljs-keyword">return</span> -<span class="hljs-number">1</span>;
+    }
+  }
+}
+</code></pre>
+<pre><code class="lang-cs">&#x7BC4;&#x4F8B;&#x7A0B;&#x5F0F;: <span class="hljs-string">&quot;TestCollectionsForListEmp.java&quot;</span>
+</code></pre>
+<pre><code class="lang-java"><span class="hljs-keyword">package</span> ch03;
+
+<span class="hljs-keyword">import</span> java.util.*;
+
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">TestCollectionsForListEmp</span> </span>{
+
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String args[])</span> </span>{
+    List&lt;Employee&gt; list = <span class="hljs-keyword">new</span> ArrayList&lt;Employee&gt;();
+    Employee e1 = <span class="hljs-keyword">new</span> Employee(<span class="hljs-number">7001</span>, <span class="hljs-string">&quot;king1&quot;</span>);
+    Employee e2 = <span class="hljs-keyword">new</span> Employee(<span class="hljs-number">7002</span>, <span class="hljs-string">&quot;king2&quot;</span>);
+    Employee e3 = <span class="hljs-keyword">new</span> Employee(<span class="hljs-number">7003</span>, <span class="hljs-string">&quot;king3&quot;</span>);
+    Employee e4 = <span class="hljs-keyword">new</span> Employee(<span class="hljs-number">7004</span>, <span class="hljs-string">&quot;king4&quot;</span>);
+    Employee e5 = <span class="hljs-keyword">new</span> Employee(<span class="hljs-number">7005</span>, <span class="hljs-string">&quot;king5&quot;</span>);
+
+    list.add(e5);
+    list.add(e2);
+    list.add(e3);
+    list.add(e4);
+    list.add(e1);
+
+    Collections.sort(list);
+    <span class="hljs-comment">// Collections.reverse(list);</span>
+
+    <span class="hljs-keyword">for</span> (Employee aEmp : list) {
+      System.out.println(aEmp.getEmpno() + <span class="hljs-string">&quot;-&quot;</span> + aEmp.getEname());
+    }
+  }
+}
+</code></pre>
+<hr>
+<pre><code class="lang-cs">&#x7BC4;&#x4F8B;&#x7A0B;&#x5F0F;: <span class="hljs-string">&quot;Employee.java&quot;</span>
+</code></pre>
+<pre><code class="lang-java"><span class="hljs-keyword">package</span> ch03;
+
+<span class="hljs-comment">// Comparable&lt;T&gt;&#x8981;&#x6BD4;&#x8F03;&#x7684;&#x7269;&#x4EF6;&#x985E;&#x578B;</span>
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Employee</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">Comparable</span>&lt;<span class="hljs-title">Employee</span>&gt; </span>{
+  <span class="hljs-keyword">private</span> <span class="hljs-keyword">int</span> empno;
+  <span class="hljs-keyword">private</span> String ename;
+
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setEmpno</span><span class="hljs-params">(<span class="hljs-keyword">int</span> empno)</span> </span>{
+    <span class="hljs-keyword">this</span>.empno = empno;
+  }
+
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">getEmpno</span><span class="hljs-params">()</span> </span>{
+    <span class="hljs-keyword">return</span> empno;
+  }
+
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setEname</span><span class="hljs-params">(String ename)</span> </span>{
+    <span class="hljs-keyword">this</span>.ename = ename;
+  }
+
+  <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">getEname</span><span class="hljs-params">()</span> </span>{
+    <span class="hljs-keyword">return</span> ename;
+  }
+
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Employee</span><span class="hljs-params">(<span class="hljs-keyword">int</span> empno, String ename)</span> </span>{
+    <span class="hljs-keyword">this</span>.empno = empno;
+    <span class="hljs-keyword">this</span>.ename = ename;
+  }
+
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Employee</span><span class="hljs-params">(<span class="hljs-keyword">int</span> empno)</span> </span>{
+    <span class="hljs-keyword">this</span>(empno, <span class="hljs-string">&quot;-&quot;</span>);
+  }
+
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Employee</span><span class="hljs-params">(String ename)</span> </span>{
+    <span class="hljs-keyword">this</span>(<span class="hljs-number">0</span>, ename);
+  }
+
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Employee</span><span class="hljs-params">()</span> </span>{
+    <span class="hljs-keyword">this</span>(<span class="hljs-number">0</span>, <span class="hljs-string">&quot;-&quot;</span>); <span class="hljs-comment">// &#x6216; empno = 0; ename = &quot;-&quot;</span>
+  }
+
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">display</span><span class="hljs-params">()</span> </span>{
+    System.out.println(<span class="hljs-string">&quot;empno=&quot;</span> + empno);
+    System.out.println(<span class="hljs-string">&quot;ename=&quot;</span> + ename);
+  }
+
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">compareTo</span><span class="hljs-params">(Employee aEmployee)</span> </span>{
+    <span class="hljs-comment">// &#x5BE6;&#x4F5C;&#x54E1;&#x5DE5;&#x600E;&#x9EBC;&#x6BD4;&#x5927;&#x5C0F;</span>
+    <span class="hljs-comment">// &#x7269;&#x4EF6;&#x672C;&#x8EAB;&#x8207; aEmployee &#x76F8;&#x6BD4;&#x8F03;&#xFF0C;&#x5982;&#x679C; retrun &#x6B63;&#x503C;&#xFF0C;&#x5C31;&#x8868;&#x793A;&#x6BD4; aEmployee &#x5927;</span>
+    <span class="hljs-comment">// &#x6B63;&#x8CA0;&#x503C;&#x4EE3;&#x8868;&#x7684;&#x662F;&quot;&#x5DE6;&#x53F3;&quot;&#x7684;&#x610F;&#x601D;</span>
+    <span class="hljs-comment">// &#x5F88;&#x591A;&#x6642;&#x5019;&#x5728;&#x53D6;&#x8CC7;&#x6599;&#x5EAB;&#x8CC7;&#x6599;&#x6642;&#x5DF2;&#x6392;&#x5E8F;(Order by)&#x5B8C;&#x7562;&#xFF0C;&#x6240;&#x4EE5;&#x76EE;&#x524D;&#x4F5C;&#x6CD5;&#x662F;&#x505A;&#x66F4;&#x8907;&#x96DC;&#x7684;&#x81EA;&#x8A02;&#x6392;&#x5E8F;</span>
+    <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>.empno &gt; aEmployee.empno) {
+      <span class="hljs-keyword">return</span> <span class="hljs-number">1</span>;
+    } <span class="hljs-keyword">else</span> {
+      <span class="hljs-keyword">return</span> -<span class="hljs-number">1</span>;
+    }
+  }
+
+}
+</code></pre>
+<pre><code class="lang-cs">&#x7BC4;&#x4F8B;&#x7A0B;&#x5F0F;: <span class="hljs-string">&quot;TestArraysForArrayEmp.java&quot;</span>
+</code></pre>
+<pre><code class="lang-java"><span class="hljs-keyword">package</span> ch03;
+
+<span class="hljs-keyword">import</span> java.util.Arrays;
+
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">TestArraysForArrayEmp</span> </span>{
+
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String args[])</span> </span>{
+
+    Employee e[] = <span class="hljs-keyword">new</span> Employee[<span class="hljs-number">5</span>];
+    Employee e1 = <span class="hljs-keyword">new</span> Employee(<span class="hljs-number">7001</span>, <span class="hljs-string">&quot;king1&quot;</span>);
+    Employee e2 = <span class="hljs-keyword">new</span> Employee(<span class="hljs-number">7002</span>, <span class="hljs-string">&quot;king2&quot;</span>);
+    Employee e3 = <span class="hljs-keyword">new</span> Employee(<span class="hljs-number">7003</span>, <span class="hljs-string">&quot;king3&quot;</span>);
+    Employee e4 = <span class="hljs-keyword">new</span> Employee(<span class="hljs-number">7004</span>, <span class="hljs-string">&quot;king4&quot;</span>);
+    Employee e5 = <span class="hljs-keyword">new</span> Employee(<span class="hljs-number">7005</span>, <span class="hljs-string">&quot;king5&quot;</span>);
+
+    e[<span class="hljs-number">0</span>] = e5;
+    e[<span class="hljs-number">1</span>] = e2;
+    e[<span class="hljs-number">2</span>] = e3;
+    e[<span class="hljs-number">3</span>] = e4;
+    e[<span class="hljs-number">4</span>] = e1;
+
+    <span class="hljs-comment">// sort&#x65B9;&#x6CD5;&#x6703;&#x81EA;&#x5DF1;&#x53BB;&#x547C;&#x53EB;Employee&#x7684;compareTo&#x65B9;&#x6CD5;&#xFF0C;&#x53D6;&#x5F97;&#x6392;&#x5E8F;&#x7D50;&#x679C;</span>
+    Arrays.sort(e);
+
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; e.length; i++) {
+      Employee aEmp = e[i];
+      System.out.println(aEmp.getEmpno() + <span class="hljs-string">&quot;-&quot;</span> + aEmp.getEname());
+    }
+  }
+}
+</code></pre>
+<ul>
+<li><code>Employee.java</code> + <code>TestTreeSetEmp.java</code>, <code>TestTreeMapEmp.java</code></li>
+</ul>
+<pre><code class="lang-java"><span class="hljs-keyword">package</span> ch03;
+
+<span class="hljs-comment">// Comparable&lt;T&gt;&#x8981;&#x6BD4;&#x8F03;&#x7684;&#x7269;&#x4EF6;&#x985E;&#x578B;</span>
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Employee</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">Comparable</span>&lt;<span class="hljs-title">Employee</span>&gt; </span>{
+  <span class="hljs-keyword">private</span> <span class="hljs-keyword">int</span> empno;
+  <span class="hljs-keyword">private</span> String ename;
+
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setEmpno</span><span class="hljs-params">(<span class="hljs-keyword">int</span> empno)</span> </span>{
+    <span class="hljs-keyword">this</span>.empno = empno;
+  }
+
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">getEmpno</span><span class="hljs-params">()</span> </span>{
+    <span class="hljs-keyword">return</span> empno;
+  }
+
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">setEname</span><span class="hljs-params">(String ename)</span> </span>{
+    <span class="hljs-keyword">this</span>.ename = ename;
+  }
+
+  <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">getEname</span><span class="hljs-params">()</span> </span>{
+    <span class="hljs-keyword">return</span> ename;
+  }
+
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Employee</span><span class="hljs-params">(<span class="hljs-keyword">int</span> empno, String ename)</span> </span>{
+    <span class="hljs-keyword">this</span>.empno = empno;
+    <span class="hljs-keyword">this</span>.ename = ename;
+  }
+
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Employee</span><span class="hljs-params">(<span class="hljs-keyword">int</span> empno)</span> </span>{
+    <span class="hljs-keyword">this</span>(empno, <span class="hljs-string">&quot;-&quot;</span>);
+  }
+
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Employee</span><span class="hljs-params">(String ename)</span> </span>{
+    <span class="hljs-keyword">this</span>(<span class="hljs-number">0</span>, ename);
+  }
+
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Employee</span><span class="hljs-params">()</span> </span>{
+    <span class="hljs-keyword">this</span>(<span class="hljs-number">0</span>, <span class="hljs-string">&quot;-&quot;</span>); <span class="hljs-comment">// &#x6216; empno = 0; ename = &quot;-&quot;</span>
+  }
+
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">display</span><span class="hljs-params">()</span> </span>{
+    System.out.println(<span class="hljs-string">&quot;empno=&quot;</span> + empno);
+    System.out.println(<span class="hljs-string">&quot;ename=&quot;</span> + ename);
+  }
+
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">compareTo</span><span class="hljs-params">(Employee aEmployee)</span> </span>{
+    <span class="hljs-comment">// &#x5BE6;&#x4F5C;&#x54E1;&#x5DE5;&#x600E;&#x9EBC;&#x6BD4;&#x5927;&#x5C0F;</span>
+    <span class="hljs-comment">// &#x7269;&#x4EF6;&#x672C;&#x8EAB;&#x8207; aEmployee &#x76F8;&#x6BD4;&#x8F03;&#xFF0C;&#x5982;&#x679C; retrun &#x6B63;&#x503C;&#xFF0C;&#x5C31;&#x8868;&#x793A;&#x6BD4; aEmployee &#x5927;</span>
+    <span class="hljs-comment">// &#x6B63;&#x8CA0;&#x503C;&#x4EE3;&#x8868;&#x7684;&#x662F;&quot;&#x5DE6;&#x53F3;&quot;&#x7684;&#x610F;&#x601D;</span>
+    <span class="hljs-comment">// &#x5F88;&#x591A;&#x6642;&#x5019;&#x5728;&#x53D6;&#x8CC7;&#x6599;&#x5EAB;&#x8CC7;&#x6599;&#x6642;&#x5DF2;&#x6392;&#x5E8F;(Order by)&#x5B8C;&#x7562;&#xFF0C;&#x6240;&#x4EE5;&#x76EE;&#x524D;&#x4F5C;&#x6CD5;&#x662F;&#x505A;&#x66F4;&#x8907;&#x96DC;&#x7684;&#x81EA;&#x8A02;&#x6392;&#x5E8F;</span>
+    <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>.empno &gt; aEmployee.empno) {
+      <span class="hljs-keyword">return</span> <span class="hljs-number">1</span>;
+    } <span class="hljs-keyword">else</span> {
+      <span class="hljs-keyword">return</span> -<span class="hljs-number">1</span>;
+    }
+  }
+
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">boolean</span> <span class="hljs-title">equals</span><span class="hljs-params">(Object obj)</span> </span>{
+    <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span> == obj)
+      <span class="hljs-keyword">return</span> <span class="hljs-keyword">true</span>;
+
+    <span class="hljs-keyword">if</span> (obj != <span class="hljs-keyword">null</span> &amp;&amp; getClass() == obj.getClass()) {
+      Employee e = (Employee) obj;
+      <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>.empno == e.empno &amp;&amp; <span class="hljs-keyword">this</span>.ename.equals(e.ename)) {
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">true</span>;
+      }
+    }
+
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">false</span>;
+  }
+
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">hashCode</span><span class="hljs-params">()</span> </span>{
+    <span class="hljs-comment">// &#x4F9D;&#x7167;&#x5C6C;&#x6027;&#x4F5C;&#x6BD4;&#x5C0D;</span>
+    <span class="hljs-keyword">final</span> <span class="hljs-keyword">int</span> prime = <span class="hljs-number">31</span>;
+    <span class="hljs-keyword">int</span> sum = <span class="hljs-number">1</span>;
+    sum = prime * empno;
+    sum = prime * ename.hashCode();
+    <span class="hljs-keyword">return</span> sum;
+  }
+
+}
+</code></pre>
+<pre><code class="lang-java"><span class="hljs-comment">/*
+ TreeMap&#x7684;Key&#x503C;&#x8981;&#x540C;&#x4E00;&#x7A2E;&#x8CC7;&#x6599;&#x578B;&#x5225;
+ */</span>
+
+<span class="hljs-keyword">package</span> ch03;
+
+<span class="hljs-keyword">import</span> java.util.*;
+
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">TestTreeMapEmp</span> </span>{
+
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
+
+    <span class="hljs-comment">// Map&lt;Employee , String&gt; map = new HashMap&lt;Employee , String&gt;();</span>
+    Map&lt;Employee, String&gt; map = <span class="hljs-keyword">new</span> TreeMap&lt;Employee, String&gt;(); <span class="hljs-comment">// TreeMap&#x7684;Key&#x503C;&#x8981;&#x540C;&#x4E00;&#x7A2E;&#x8CC7;&#x6599;&#x578B;&#x5225;</span>
+
+    Employee e1 = <span class="hljs-keyword">new</span> Employee(<span class="hljs-number">7001</span>, <span class="hljs-string">&quot;king1&quot;</span>);
+    Employee e2 = <span class="hljs-keyword">new</span> Employee(<span class="hljs-number">7002</span>, <span class="hljs-string">&quot;king2&quot;</span>);
+    Employee e3 = <span class="hljs-keyword">new</span> Employee(<span class="hljs-number">7003</span>, <span class="hljs-string">&quot;king3&quot;</span>);
+    Employee e4 = <span class="hljs-keyword">new</span> Employee(<span class="hljs-number">7004</span>, <span class="hljs-string">&quot;king4&quot;</span>);
+    Employee e5 = <span class="hljs-keyword">new</span> Employee(<span class="hljs-number">7005</span>, <span class="hljs-string">&quot;king5&quot;</span>);
+
+    map.put(e5, e5.getEname());
+    map.put(e2, e2.getEname());
+    map.put(e3, e3.getEname());
+    map.put(e4, e4.getEname());
+    map.put(e1, e1.getEname());
+
+    <span class="hljs-keyword">for</span> (String ename : map.values()) {
+      System.out.println(ename);
+    }
+
+    System.out.println();
+
+    <span class="hljs-keyword">for</span> (Employee aEmployee : map.keySet()) {
+      System.out.println(aEmployee.getEmpno());
+    }
+  }
+}
+</code></pre>
+<h1 id="13-arraylist-&#x8207;-linkedlist-&#x5DEE;&#x7570;"><a id="s13" class="md-title" href="#top">13. ArrayList &#x8207; LinkedList &#x5DEE;&#x7570;</a></h1>
+<ul>
+<li>ArrayList: &#x9023;&#x7E8C;&#x7DDA;&#x6027;&#x65B9;&#x5F0F;&#x5B58;&#x653E;&#x5143;&#x7D20;<ul>
+<li>&#x642D;&#x914D;&#x7D22;&#x5F15;&#x503C;&#x5B58;&#x53D6;&#x5143;&#x7D20;&#xFF0C;&#x6548;&#x7387;&#x597D;&#x3002;</li>
+<li>&#x5E38;&#x5C0D;&#x5143;&#x7D20;&#x63D2;&#x5165;&#x79FB;&#x9664;&#x7684;&#x64CD;&#x4F5C;&#x6548;&#x7387;&#x5DEE;</li>
+</ul>
+</li>
+</ul>
+<pre><code>&#x2460; &#x2461; &#x2462; &#x2463; &#x2464; &#x2465;
+</code></pre><ul>
+<li>LinkedList: &#x512A;&#x7F3A;&#x9EDE;&#x8DDF; ArrayList &#x76F8;&#x53CD;</li>
+</ul>
+<pre><code>   &#x2461;      &#x2463;
+  /   \   /
+&#x2460;     &#x2462;
+</code></pre><ul>
+<li><p>&#x66F4;&#x9032;&#x968E;&#x7684;&#x6392;&#x5E8F;,&#x5982; FIFO,LIFO...&#x7B49;,&#x8ACB;&#x53C3;&#x8003;&#x7BC4;&#x4F8B;&#x88DC;&#x5145;&#x5206;&#x4EAB;</p>
+<ul>
+<li>&#x4F9D;&#x52A0;&#x5165;&#x9806;&#x5E8F;: <code>TestLinkedList.java</code>, <code>TestLinkedHashSet.java,</code> <code>TestLinkedHashMap.java</code></li>
+</ul>
+</li>
+</ul>
+<pre><code class="lang-cs">&#x7BC4;&#x4F8B;&#x7A0B;&#x5F0F;: <span class="hljs-string">&quot;/JavaEx_Part2/src/idv/david/additional/sort/TestLinkedList.java&quot;</span>
+</code></pre>
+<pre><code class="lang-java"><span class="hljs-comment">/* *
+*  LinkedList &#x4E5F;&#x662F;&#x4E00;&#x53EF;&#x7F6E;&#x5165;&quot;&#x4EFB;&#x610F;&#x7269;&#x4EF6;&quot;&#x7684;&quot;&#x52D5;&#x614B;&#x9663;&#x5217;&quot;(&#x53EF;&#x96A8;&#x5167;&#x542B;&#x7269;&#x591A;&#x5BE1;&#x589E;&#x6E1B;&#x5176;&#x9577;&#x5EA6;)
+*  &#x5982;&#x679C;&#x4F60;&#x9700;&#x8981;&#x7D93;&#x5E38;&#x5C07;&#x5143;&#x7D20;&#x63D2;&#x5165;&#x548C;&#x522A;&#x9664;&#x7684;&#x8A71; , &#x90A3;&#x9EBC; LinkedList &#x53EF;&#x4EE5;&#x6709;&#x66F4;&#x4F73;&#x7684;&#x6548;&#x7387;
+*  LinkedList &#x591A;&#x4E86;
+*     void addFirst(Object o);
+*     void addLast(Object o);
+*     Object getFirst();
+*     Object getLast();
+*   &#x7B49;&#x65B9;&#x6CD5;
+*/</span>
+
+<span class="hljs-keyword">package</span> idv.david.additional.sort;
+
+<span class="hljs-keyword">import</span> java.util.*;
+
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">TestLinkedList</span> </span>{
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String args[])</span> </span>{
+
+    LinkedList list = <span class="hljs-keyword">new</span> LinkedList();
+    list.add(<span class="hljs-keyword">new</span> Integer(<span class="hljs-number">12</span>));
+    list.add(<span class="hljs-keyword">new</span> Long(<span class="hljs-number">34L</span>));
+    list.add(<span class="hljs-keyword">new</span> Double(<span class="hljs-number">5.6</span>));
+    list.add(<span class="hljs-string">&quot;Hello&quot;</span>);
+    list.add(<span class="hljs-string">&quot;Hello&quot;</span>); <span class="hljs-comment">// duplicate, is added</span>
+
+    System.out.println(<span class="hljs-string">&quot;toString()=&quot;</span> + list);
+    System.out.println(<span class="hljs-string">&quot;&#x5143;&#x7D20;&#x500B;&#x6578;=&quot;</span> + list.size());
+
+    Iterator objs = list.iterator();
+    <span class="hljs-keyword">while</span> (objs.hasNext())
+      System.out.println(objs.next());
+
+    <span class="hljs-comment">// List&#x5BB6;&#x65CF;&#x53EF;&#x4EE5;&#x7528;Iterator&#x6216;for&#x8FF4;&#x5708;&#x53D6;&#x503C;</span>
+    System.out.println();
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; list.size(); i++) {
+      Object obj = list.get(i);
+      System.out.println(obj);
+    }
+
+    <span class="hljs-comment">// &#x5176;&#x5B83;&#x65B9;&#x6CD5;&#x53D6;&#x503C;1 -&gt; toArray()</span>
+    System.out.println();
+    Object a[] = list.toArray();
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; a.length; i++)
+      System.out.println(a[i]);
+
+    <span class="hljs-comment">// &#x53EA;&#x6709; LinkedList &#x624D;&#x6709;&#x6B64;addFirst()...&#x7B49;method, &#x6545;&#x547C;&#x53EB;&#x6B64;&#x7B49;method&#x6642;&#x4E0D;&#x80FD;&#x7528;&#x591A;&#x578B;&#x7684;&#x5BEB;&#x6CD5;</span>
+    System.out.println();
+    list.addFirst(<span class="hljs-string">&quot;first&quot;</span>);
+    list.addLast(<span class="hljs-string">&quot;last&quot;</span>);
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; list.size(); i++)
+      System.out.println(list.get(i));
+
+  }
+}
+</code></pre>
+<pre><code class="lang-cs">&#x7BC4;&#x4F8B;&#x7A0B;&#x5F0F;: <span class="hljs-string">&quot;/JavaEx_Part2/src/idv/david/additional/sort/TestLinkedHashSet.java&quot;</span>
+</code></pre>
+<pre><code class="lang-java"><span class="hljs-keyword">package</span> idv.david.additional.sort;
+
+<span class="hljs-keyword">import</span> java.util.*;
+
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">TestLinkedHashSet</span> </span>{
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String args[])</span> </span>{
+    Set set = <span class="hljs-keyword">new</span> LinkedHashSet();
+    set.add(<span class="hljs-keyword">new</span> Integer(<span class="hljs-number">56</span>));
+    set.add(<span class="hljs-keyword">new</span> Integer(<span class="hljs-number">34</span>));
+    set.add(<span class="hljs-keyword">new</span> Integer(<span class="hljs-number">12</span>));
+
+    Iterator objs = set.iterator();
+    <span class="hljs-keyword">while</span> (objs.hasNext())
+      System.out.println(objs.next());
+
+    System.out.println(<span class="hljs-string">&quot;===========&quot;</span>);
+
+    Set set2 = <span class="hljs-keyword">new</span> HashSet();
+    set2.add(<span class="hljs-keyword">new</span> Integer(<span class="hljs-number">56</span>));
+    set2.add(<span class="hljs-keyword">new</span> Integer(<span class="hljs-number">34</span>));
+    set2.add(<span class="hljs-keyword">new</span> Integer(<span class="hljs-number">12</span>));
+
+    Iterator objs2 = set2.iterator();
+    <span class="hljs-keyword">while</span>(objs2.hasNext())
+        System.out.println(objs2.next());
+  }
+}
+</code></pre>
+<pre><code class="lang-cs">&#x7BC4;&#x4F8B;&#x7A0B;&#x5F0F;: <span class="hljs-string">&quot;/JavaEx_Part2/src/idv/david/additional/sort/TestLinkedHashMap.java&quot;</span>
+</code></pre>
+<pre><code class="lang-java"><span class="hljs-keyword">package</span> idv.david.additional.sort;
+
+<span class="hljs-keyword">import</span> java.util.*;
+
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">TestLinkedHashMap</span> </span>{
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
+
+<span class="hljs-comment">//     Map&lt;Integer , String&gt; map = new HashMap&lt;Integer , String&gt;();</span>
+<span class="hljs-comment">//     Map&lt;Integer, String&gt; map = new TreeMap&lt;Integer, String&gt;(); // TreeMap&#x7684;Key&#x503C;&#x8981;&#x540C;&#x4E00;&#x7A2E;&#x8CC7;&#x6599;&#x578B;&#x5225;</span>
+    Map&lt;Integer , String&gt; map = <span class="hljs-keyword">new</span> LinkedHashMap&lt;Integer , String&gt;();
+
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">6</span> ; i &gt; <span class="hljs-number">0</span> ; i--) {
+      map.put(i, <span class="hljs-string">&quot;David&quot;</span> + i);
+    }
+    <span class="hljs-keyword">for</span> (String val : map.values()) {
+      System.out.println(val);
+    }
+  }
+}
+</code></pre>
+<hr>
+<ul>
+<li>&#x4F9D;&#x5927;&#x5C0F;&#x9806;&#x5E8F;: <code>TestQueue.java</code>, <code>TestPriorityQueue1.java</code>, <code>TestPriorityQueue2.java</code></li>
+</ul>
+<pre><code class="lang-cs">&#x7BC4;&#x4F8B;&#x7A0B;&#x5F0F;: <span class="hljs-string">&quot;/JavaEx_Part2/src/idv/david/additional/sort/TestQueue.java&quot;</span>
+</code></pre>
+<pre><code class="lang-java"><span class="hljs-keyword">package</span> idv.david.additional.sort;
+
+<span class="hljs-keyword">import</span> java.util.*;
+
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">TestQueue</span> </span>{
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
+    <span class="hljs-comment">// &#x99D0;&#x5217;:</span>
+    <span class="hljs-comment">// &#x884C;&#x4E8B;&#x66C6;&#x4EE3;&#x8FA6;&#x4E8B;&#x9805;&#x7684;&#x6982;&#x5FF5;&#xFF0C;&#x505A;&#x5B8C;&#x4E86;&#x5C31;&#x4E0D;&#x7528;&#x5728;&#x88E1;&#x9762;&#x5B58;&#x5728;</span>
+    <span class="hljs-comment">// &#x9910;&#x5EF3;&#x7684;&#x6392;&#x968A;&#x7CFB;&#x7D71;&#xFF0C;&#x4F7F;&#x7528;&#x99D0;&#x5217;&#x7684;&#x6392;&#x968A;&#x65B9;&#x5F0F;(&#x982D;&#x5C3E;&#x8655;&#x7406;)</span>
+    Queue q = <span class="hljs-keyword">new</span> LinkedList();
+    q.offer(<span class="hljs-string">&quot;First&quot;</span>);
+    q.offer(<span class="hljs-string">&quot;Second&quot;</span>);
+    q.offer(<span class="hljs-string">&quot;Third&quot;</span>);
+    Object o;
+    System.out.println(q.toString());
+    <span class="hljs-keyword">while</span> ((o = q.poll()) != <span class="hljs-keyword">null</span>) {
+      String s = (String) o;
+      System.out.println(s);
+    }
+    System.out.println(q.toString());
+  }
+}
+</code></pre>
+<pre><code class="lang-cs">&#x7BC4;&#x4F8B;&#x7A0B;&#x5F0F;: <span class="hljs-string">&quot;/JavaEx_Part2/src/idv/david/additional/sort/TestPriorityQueue1.java&quot;</span>
+</code></pre>
+<pre><code class="lang-java"><span class="hljs-keyword">package</span> idv.david.additional.sort;
+
+<span class="hljs-keyword">import</span> java.util.PriorityQueue;
+
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">TestPriorityQueue1</span> </span>{
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
+    <span class="hljs-comment">// &#x4FDD;&#x8B49;&#x8CC7;&#x6599;&#x662F;&#x7528;&#x5927;&#x5C0F;&#x9806;&#x5E8F;&#x53D6;&#x51FA;&#xFF0C;&#x53D6;&#x5B8C;&#x5F8C;&#x8CC7;&#x6599;&#x4E5F;&#x6703;&#x70BA;&#x7A7A;</span>
+    PriorityQueue&lt;String&gt; pq = <span class="hljs-keyword">new</span> PriorityQueue&lt;String&gt;();
+    pq.offer(<span class="hljs-string">&quot;c&quot;</span>);
+    pq.offer(<span class="hljs-string">&quot;a&quot;</span>);
+    pq.offer(<span class="hljs-string">&quot;b&quot;</span>);
+    String s;
+    <span class="hljs-keyword">while</span> ((s = pq.poll()) != <span class="hljs-keyword">null</span>) {
+      System.out.print(s + <span class="hljs-string">&quot;, &quot;</span>);
+    }
+    System.out.print(pq); <span class="hljs-comment">// a, b, c, []</span>
+  }
+}
+</code></pre>
+<h1 id="14-&#x81EA;&#x8A02;&#x6BD4;&#x8F03;&#x5668;&#x7684;&#x4E09;&#x7A2E;&#x65B9;&#x6CD5;"><a id="s14" class="md-title" href="#top">14. &#x81EA;&#x8A02;&#x6BD4;&#x8F03;&#x5668;&#x7684;&#x4E09;&#x7A2E;&#x65B9;&#x6CD5;</a></h1>
+<pre><code class="lang-cs">&#x7BC4;&#x4F8B;&#x7A0B;&#x5F0F;: <span class="hljs-string">&quot;/JavaEx_Part2/src/idv/david/additional/sort/TestPriorityQueue2.java&quot;</span>
+</code></pre>
+<ul>
+<li>&#x65B9;&#x6CD5; 1</li>
+</ul>
+<pre><code class="lang-java"><span class="hljs-keyword">package</span> idv.david.additional.sort;
+
+<span class="hljs-keyword">import</span> java.util.Comparator;
+<span class="hljs-keyword">import</span> java.util.PriorityQueue;
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MyComparator</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">Comparator</span>&lt;<span class="hljs-title">String</span>&gt; </span>{
+  <span class="hljs-meta">@Override</span>
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">compare</span><span class="hljs-params">(String s1, String s2)</span> </span>{
+    <span class="hljs-comment">// &#x4F7F;&#x7528;java&#x672C;&#x8EAB;&#x63D0;&#x4F9B;&#x7684;&#x5B57;&#x4E32;&#x9806;&#x5E8F;&#x6BD4;&#x8F03;&#xFF0C;&#x7528;&#x4E58;(-1)&#x7684;&#x65B9;&#x5F0F;&#x5C07;&#x8CC7;&#x6599;&#x6392;&#x5E8F;&#x898F;&#x5247;&#x5012;&#x904E;&#x4F86;(&#x53CD;&#x8F49;)</span>
+    <span class="hljs-keyword">return</span> s1.compareTo(s2) * -<span class="hljs-number">1</span>;
+  }
+
+}
+
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">TestPriorityQueue2</span> </span>{
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
+
+    MyComparator c = <span class="hljs-keyword">new</span> MyComparator();
+    <span class="hljs-comment">// 3 &#x96C6;&#x5408;&#x521D;&#x59CB;&#x5927;&#x5C0F;&#xFF0C;&#x5982;&#x679C;&#x8D85;&#x904E;&#x5F8C;&#x7E8C;&#x6703;&#x52D5;&#x614B;&#x64F4;&#x589E;</span>
+    <span class="hljs-comment">// c &#x4F7F;&#x7528;&#x81EA;&#x8A02;&#x7684;&#x6392;&#x5E8F;&#x898F;&#x5247;</span>
+    PriorityQueue&lt;String&gt; pq = <span class="hljs-keyword">new</span> PriorityQueue&lt;String&gt;(<span class="hljs-number">3</span>, c);
+    pq.offer(<span class="hljs-string">&quot;c&quot;</span>);
+    pq.offer(<span class="hljs-string">&quot;a&quot;</span>);
+    pq.offer(<span class="hljs-string">&quot;b&quot;</span>);
+    String s;
+    <span class="hljs-keyword">while</span> ((s = pq.poll()) != <span class="hljs-keyword">null</span>) {
+      System.out.print(s + <span class="hljs-string">&quot;, &quot;</span>);
+    }
+  }
+}
+</code></pre>
+<ul>
+<li>&#x65B9;&#x6CD5; 2</li>
+</ul>
+<pre><code class="lang-java"><span class="hljs-keyword">package</span> idv.david.additional.sort;
+
+<span class="hljs-keyword">import</span> java.util.Comparator;
+<span class="hljs-keyword">import</span> java.util.PriorityQueue;
+
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">TestPriorityQueue2</span> </span>{
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
+    <span class="hljs-comment">// &#x6BD4;&#x8F03;&#x5668;(&#x533F;&#x540D;&#x985E;&#x5225;&#x8A9E;&#x6CD5;)</span>
+    Comparator&lt;String&gt; c = <span class="hljs-keyword">new</span> Comparator&lt;String&gt;() {
+      <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">compare</span><span class="hljs-params">(String a, String b)</span> </span>{
+        <span class="hljs-keyword">return</span> a.compareTo(b) * -<span class="hljs-number">1</span>;
+      }
+    };
+
+    MyComparator c = <span class="hljs-keyword">new</span> MyComparator();
+
+    <span class="hljs-comment">// 3 &#x96C6;&#x5408;&#x521D;&#x59CB;&#x5927;&#x5C0F;&#xFF0C;&#x5982;&#x679C;&#x8D85;&#x904E;&#x5F8C;&#x7E8C;&#x6703;&#x52D5;&#x614B;&#x64F4;&#x589E;</span>
+    <span class="hljs-comment">// c &#x4F7F;&#x7528;&#x81EA;&#x8A02;&#x7684;&#x6392;&#x5E8F;&#x898F;&#x5247;</span>
+    PriorityQueue&lt;String&gt; pq = <span class="hljs-keyword">new</span> PriorityQueue&lt;String&gt;(<span class="hljs-number">3</span>, c);
+    pq.offer(<span class="hljs-string">&quot;c&quot;</span>);
+    pq.offer(<span class="hljs-string">&quot;a&quot;</span>);
+    pq.offer(<span class="hljs-string">&quot;b&quot;</span>);
+    String s;
+    <span class="hljs-keyword">while</span> ((s = pq.poll()) != <span class="hljs-keyword">null</span>) {
+      System.out.print(s + <span class="hljs-string">&quot;, &quot;</span>);
+    }
+  }
+}
+</code></pre>
+<ul>
+<li>&#x65B9;&#x6CD5; 3: Java8 &#x7C21;&#x5316;</li>
+</ul>
+<pre><code class="lang-java"><span class="hljs-keyword">package</span> idv.david.additional.sort;
+
+<span class="hljs-keyword">import</span> java.util.Comparator;
+<span class="hljs-keyword">import</span> java.util.PriorityQueue;
+
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">TestPriorityQueue2</span> </span>{
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
+    PriorityQueue&lt;String&gt; pq = <span class="hljs-keyword">new</span> PriorityQueue&lt;String&gt;(<span class="hljs-number">3</span>, (a, b) -&gt; a.compareTo(b) * -<span class="hljs-number">1</span>);
+    pq.offer(<span class="hljs-string">&quot;c&quot;</span>);
+    pq.offer(<span class="hljs-string">&quot;a&quot;</span>);
+    pq.offer(<span class="hljs-string">&quot;b&quot;</span>);
+    String s;
+    <span class="hljs-keyword">while</span> ((s = pq.poll()) != <span class="hljs-keyword">null</span>) {
+      System.out.print(s + <span class="hljs-string">&quot;, &quot;</span>);
+    }
+  }
+}
+</code></pre>
+<h1 id="15-&#x5806;&#x758A;"><a id="s15" class="md-title" href="#top">15. &#x5806;&#x758A;</a></h1>
+<ul>
+<li>&#x4F9D;&#x52A0;&#x5165;&#x9806;&#x5E8F;(<code>FIFO</code>, <code>LIFO</code>): <code>Test_FIFO_List.java</code>, <code>Test_LIFO_Stack.java</code><ul>
+<li><code>FIFO</code> &#x5148;&#x9032;&#x5148;&#x51FA;</li>
+<li><code>LIFO</code> &#x5F8C;&#x9032;&#x5148;&#x51FA;(<code>&#x5806;&#x758A;</code>)&#xFF0C;<code>&#x51FA;</code>&#x8868;&#x793A;&#x79FB;&#x9664;<ul>
+<li>&#x96FB;&#x68AF;: &#x5148;&#x9032;&#x53BB;&#x7684;&#x88AB;&#x64E0;&#x5728;&#x88CF;&#x982D;&#xFF0C;&#x6700;&#x5F8C;&#x9032;&#x4F86;&#x7684;&#x5148;&#x51FA;&#x9580;</li>
+<li>&#x81EA;&#x52A9;&#x9910;: &#x4E0A;&#x9762;&#x7684;&#x76E4;&#x5B50;&#x6700;&#x5F8C;&#x653E;&#x4E0A;&#xFF0C;&#x4F46;&#x62FF;&#x76E4;&#x5B50;&#x6642;&#x4E5F;&#x662F;&#x7531;&#x4E0A;&#x9762;&#x5148;&#x62FF;&#x8D70;</li>
+<li>&#x8863;&#x670D;&#x7A7F;&#x591A;&#x5C64;: &#x8D8A;&#x665A;&#x7A7F;&#x7684;&#x8D8A;&#x65E9;&#x812B;</li>
+<li>FilSterm: &#x6700;&#x5F8C;&#x63A5;&#x7684;&#x6C34;&#x7BA1;&#x6700;&#x65E9; close()</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<pre><code class="lang-cs">&#x7BC4;&#x4F8B;&#x7A0B;&#x5F0F;: <span class="hljs-string">&quot;/JavaEx_Part2/src/idv/david/additional/sort/Test_LIFO_Stack.java&quot;</span>
+</code></pre>
+<pre><code class="lang-java"><span class="hljs-keyword">package</span> idv.david.additional.sort;
+
+<span class="hljs-keyword">import</span> java.util.Stack;
+
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Test_LIFO_Stack</span> </span>{
+  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
+    Stack list = <span class="hljs-keyword">new</span> Stack();
+    list.add(<span class="hljs-string">&quot;c&quot;</span>);
+    list.add(<span class="hljs-string">&quot;a&quot;</span>);
+    list.add(<span class="hljs-string">&quot;b&quot;</span>);
+    list.add(<span class="hljs-string">&quot;a&quot;</span>);
+    System.out.println(list.toString());
+
+    <span class="hljs-comment">// stack &#x662F;&#x4F7F;&#x7528;&#x5F8C;&#x9032;&#x5148;&#x51FA;&#x7684;&#x65B9;&#x5F0F;&#x62FF;&#xFF0C;&#x90A3;&#x5C31;&#x4E0D;&#x61C9;&#x8A72;&#x4F9D;&#x7167;index(&#x7D22;&#x5F15;&#x503C;)&#x65B9;&#x5F0F;&#x53D6;&#x503C;</span>
+    <span class="hljs-comment">// for (int i = 0; i &lt; list.size(); i++)</span>
+    <span class="hljs-comment">// System.out.println(list.get(i));</span>
+
+    System.out.println();
+
+    <span class="hljs-comment">// stack&#x53D6;&#x503C;&#x65B9;&#x5F0F;&#x61C9;&#x8A72;&#x4F7F;&#x7528;&#x9019;&#x500B;</span>
+    <span class="hljs-comment">// &#x5224;&#x65B7;list&#x4E0D;&#x70BA;&#x7A7A;&#x624D;pop&#x8CC7;&#x6599;&#x51FA;&#x4F86;</span>
+    <span class="hljs-keyword">while</span> (!list.empty())
+      System.out.println(list.pop());
+
+  }
+}
+</code></pre>
+<hr>
+<section class="footnotes">
+<ol class="footnotes-list">
+<li id="fn1" class="footnote-item"><p><a href="https://blog.csdn.net/mrzhangzifu/article/details/76285702" target="_blank">Java &#x6CDB;&#x578B;&#x901A;&#x914D;&#x7B26; T E K V &#x7684;&#x533A;&#x522B;&#xFF0C;&#x4EE5;&#x53CA; class &#x4E0E; class &#x7684;&#x533A;&#x522B;</a> <a href="#fnref1" class="footnote-backref">&#x21A9;&#xFE0E;</a></p>
+</li>
+</ol>
+</section>
+
+<script>console.log("plugin-popup....");document.onclick = function(e){ e.target.tagName === "IMG" && window.open(e.target.src,e.target.src)}</script><style>img{cursor:pointer}</style>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="16-2.Map介面.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 16-2.Map 介面">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"16-3.泛型","level":"1.5.3.5.3","depth":4,"next":{"title":"17.多執行緒","level":"1.5.3.6","depth":3,"ref":"","articles":[{"title":"17-1.執行緒","level":"1.5.3.6.1","depth":4,"path":"03.JAVA/03.JAVA套件與進階/17.多執行緒/17-1.執行緒.md","ref":"03.JAVA/03.JAVA套件與進階/17.多執行緒/17-1.執行緒.md","articles":[]}]},"previous":{"title":"16-2.Map 介面","level":"1.5.3.5.2","depth":4,"path":"03.JAVA/03.JAVA套件與進階/16.集合與泛型/16-2.Map介面.md","ref":"03.JAVA/03.JAVA套件與進階/16.集合與泛型/16-2.Map介面.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["-search","search-pro","back-to-top-button","code","pageview-count","popup"],"pluginsConfig":{"disqus":{"shortName":"gitbookuse"},"search-pro":{"cutWordLib":"nodejieba","defineWord":["小需求","基础建设"]},"popup":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"back-to-top-button":{},"pageview-count":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"03.JAVA/03.JAVA套件與進階/16.集合與泛型/16-3.泛型.md","mtime":"2020-05-12T11:14:42.358Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-07-11T14:59:38.428Z"},"basePath":"../../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../../gitbook/gitbook.js"></script>
+    <script src="../../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-pageview-count/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

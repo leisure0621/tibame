@@ -1,0 +1,93 @@
+# 題目
+
+- CSS 基本應用-美化文字-1
+
+# 作法
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CSS基本應用-美化文字-1</title>
+    <style>
+      h1 {
+        /* color: rgb(255, 198, 164);  */
+        color: rgb(
+          248,
+          238,
+          101
+        ); /* 256*256*256 全彩，網頁安全色: 0 3 6 9 c f */
+        font-family: Microsoft jhengHei;
+        /* 相對單位: % em rem ，絕對單位: px pt cm mm，16px = 1em = 100%*/
+        font-size: 24px;
+        font-weight: 400;
+        font-style: unset;
+        font-variant: small-caps;
+        background-color: green;
+        width: 200px;
+        height: auto;
+      }
+      p {
+        color: brown;
+        font-size: 0.9em;
+        font-family: Arial;
+        font-style: italic;
+        width: 900px;
+        height: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>RandomNews</h1>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente quo,
+      ipsam labore commodi ducimus reiciendis consequuntur, ipsa doloremque
+      earum ea vel sed aliquam quia. Ipsam asperiores non necessitatibus
+      recusandae ad error blanditiis et nihil eaque a nostrum, id temporibus
+      animi culpa labore placeat cupiditate eveniet maxime reiciendis rem
+      inventore veniam consectetur accusantium amet! Suscipit libero consectetur
+      eius sunt eum? Commodi, quis nihil ad quo ex esse, eligendi! Dolore nihil,
+      hic nobis nostrum quia culpa et neque mollitia quam voluptatum, doloribus
+      sit nulla, facilis quaerat blanditiis molestiae perspiciatis laudantium
+      modi minus a porro? Tempore, quisquam, dolores. Illo, hic eveniet,
+      perspiciatis sit reiciendis recusandae quis vitae est vero placeat saepe!
+      Deserunt aliquid, inventore laudantium mollitia, repellat suscipit labore
+      deleniti neque provident quasi eveniet ex, asperiores culpa quae possimus
+      voluptas impedit aperiam exercitationem ad? Repellendus vitae debitis quam
+      commodi in sapiente explicabo adipisci, tempore ex? Ea, dolores accusamus
+      totam animi repellat. Aspernatur tempore odit est itaque quisquam, harum
+      ex culpa pariatur minima saepe neque ratione temporibus ipsa, dolores
+      ipsum fugiat voluptatem totam. Neque nihil exercitationem quia, nam facere
+      praesentium, hic unde nesciunt rem eum explicabo vel molestiae quam
+      pariatur voluptatem? Sapiente, amet, veritatis? Debitis, possimus nemo.
+      Deleniti similique est, autem, eius vitae at.
+    </p>
+    <hr />
+    <h1>RandomNews</h1>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente quo,
+      ipsam labore commodi ducimus reiciendis consequuntur, ipsa doloremque
+      earum ea vel sed aliquam quia. Ipsam asperiores non necessitatibus
+      recusandae ad error blanditiis et nihil eaque a nostrum, id temporibus
+      animi culpa labore placeat cupiditate eveniet maxime reiciendis rem
+      inventore veniam consectetur accusantium amet! Suscipit libero consectetur
+      eius sunt eum? Commodi, quis nihil ad quo ex esse, eligendi! Dolore nihil,
+      hic nobis nostrum quia culpa et neque mollitia quam voluptatum, doloribus
+      sit nulla, facilis quaerat blanditiis molestiae perspiciatis laudantium
+      modi minus a porro? Tempore, quisquam, dolores. Illo, hic eveniet,
+      perspiciatis sit reiciendis recusandae quis vitae est vero placeat saepe!
+      Deserunt aliquid, inventore laudantium mollitia, repellat suscipit labore
+      deleniti neque provident quasi eveniet ex, asperiores culpa quae possimus
+      voluptas impedit aperiam exercitationem ad? Repellendus vitae debitis quam
+      commodi in sapiente explicabo adipisci, tempore ex? Ea, dolores accusamus
+      totam animi repellat. Aspernatur tempore odit est itaque quisquam, harum
+      ex culpa pariatur minima saepe neque ratione temporibus ipsa, dolores
+      ipsum fugiat voluptatem totam. Neque nihil exercitationem quia, nam facere
+      praesentium, hic unde nesciunt rem eum explicabo vel molestiae quam
+      pariatur voluptatem? Sapiente, amet, veritatis? Debitis, possimus nemo.
+      Deleniti similique est, autem, eius vitae at.
+    </p>
+  </body>
+</html>
+```

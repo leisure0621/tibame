@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+		<title>26_Input</title>
+		<style type="text/css">
+			table {
+				border-collapse: collapse;
+			}
+			table td, table th {
+			  border: 1px solid #ddd;
+			  padding: 8px;
+			}
+		</style>
+
+	</head>
+	<body>
+		<p>input 範例 (HTML5)</p>
+		<form id="myForm" name="myForm" action="http://www.google.com" method="GET">
+			<table>
+				<tr>
+					<th>欄位</th>
+					<th>資料</th>
+				</tr>
+				<tr>
+					<td>Email address</td>
+					<td>
+						<input type="email" name="myEmail" placeholder="Email" value="test@cc.ncu.edu.tw" required>
+					</td>
+				</tr>
+				<tr>
+					<td>Home page</td>
+					<td>
+						<input type="url" name="myUrl" placeholder="Homepage" value="http://test.com.tw" required>
+					</td>
+				</tr>
+				<tr>
+					<td>Points</td>
+					<td>
+						<input type="number" name="myPoint" min="1" max="10" value="3" required>
+					</td>
+				</tr>
+				<tr>
+					<td>Points</td>
+					<td>
+						<input type="range" name="myPoint2" min="1" max="10" value="3" required/>
+					</td>
+				</tr>
+				<tr>
+					<td>Date</td>
+					<td>
+						<input type="date" name="myDate" value="2019-05-02" required/>
+					</td>
+				</tr>
+				<tr>
+					<td>Month</td>
+					<td>
+						<input type="month" name="myMonth" value="2019-05" required/>
+					</td>
+				</tr>
+				<tr>
+					<td>Week</td>
+					<td>
+						<input type="week" name="myWeek" value="2019-W19" required/>
+					</td>
+				</tr>
+				<tr>
+					<td>Time</td>
+					<td>
+						<input type="time" name="myTime" value="13:04" required/>
+					</td>
+				</tr>
+				<tr>
+					<td>Datetime-local</td>
+					<td>
+						<input type="datetime-local" name="myDatetime_local" value="2019-05-22T13:00" required/>
+					</td>
+				</tr>
+				<tr>
+					<td>Telephone</td>
+					<td>
+						<input type="tel" name="myPhone" pattern="[0-9]{2}-[0-9]{3}-[0-9]{4}" placeholder="03-344-1234" required/>
+					</td>
+				</tr>
+				<tr>
+					<td>Favorite Color</td>
+					<td>
+						<input type="color" name="myColor" value="#ff0000" required/>
+						<button id="click_color">click</button>
+					</td>
+				</tr>
+				<tr>
+					<td>Photo</td>
+					<td>
+						<input type="file" name="myFile">
+					</td>
+				</tr>
+				<tr>
+					<td>Account</td>
+					<td>
+					<div>
+						<div>
+							<input type="text" name="myAccount" value="secret" required/>
+						</div>
+						<button id="disabled">disabled</button>
+						<button id="enabled">enabled</button>
+						<button id="focus">focus</button>
+						<button id="blur">blur</button>
+						<button id="select">select</button>
+						<button id="readOnly">readOnly</button>
+						<button id="readable">readable</button>
+						<button id="maxLength">max Length to 10 characters</button>
+						<button id="size">size to 5 characters</button>
+					</td>
+				</tr>
+				<tr>
+					<td>Password</td>
+					<td>
+						<input type="password" name="myPassword" value="secret" required/>
+					</td>
+				</tr>
+				<tr>
+					<td>Interest</td>
+					<td>
+						<div>
+							<button id="selectAll">Select All</button><button id="unselectAll">Unselect All</button>
+						</div>
+						<label>
+							<input type="checkbox" value="volleyball" name="interest" checked> 打排球 
+						</label><br>
+						<label>
+							<input type="checkbox" value="high_jump" name="interest"> 跳高
+						</label><br>
+						<label>
+							<input type="checkbox" value="javelin" name="interest"> 射標槍
+						</label><br>
+						<label>
+							<input type="checkbox" value="piano" name="interest" disabled> 彈鋼琴
+						</label><br>
+						<label>
+							<input type="checkbox" value="reading" name="interest"> 雜誌
+						</label><br>
+						<label>
+							<input type="checkbox" value="music" name="interest" checked> 聽音樂
+						</label><br>
+						<label>
+					</td>
+				</tr>
+				<tr>
+					<td>Order Pizza</td>
+					<td>
+						<label>
+							<input type="radio" name="size" value="10">10吋
+						</label><br>
+						<label>
+						    <input type="radio" name="size" value="12" disabled>12吋
+						</label><br>
+						<label>
+						    <input type="radio" name="size" value="14" checked>14吋
+						</label><br>
+						<label>
+						    <input type="radio" name="size" value="18">18吋
+						</label><br>
+						<label>
+					</td>
+				</tr>
+				<tr>
+					<td>Action</td>
+					<td>
+						<input type="hidden" name="custId" value="3487">
+					  	<input type="reset" class="btn btn-danger" value="Reset">
+					  	<input type="submit" class="btn btn-primary" value="Submit">
+					</td>
+				</tr>
+			</table>	
+		</form>
+		<script type="text/javascript">
+
+			// 學習重點：
+			// input物件
+			// 將以下問題(*)完成
+			function init(){
+				// 抓取DOM元素
+				var myForm = document.getElementById('myForm');
+				var myAccount = document.getElementsByName('myAccount')[0];
+				var myColor = document.getElementsByName('myColor')[0];
+				var disabledBtn = document.getElementById('disabled');
+				var enabledBtn = document.getElementById('enabled');
+				var focusBtn = document.getElementById('focus');
+				var blurBtn = document.getElementById('blur');
+				var selectBtn = document.getElementById('select');
+				var clickColor = document.getElementById('click_color');
+				var readOnlyBtn = document.getElementById('readOnly');
+				var readableBtn = document.getElementById('readable');
+				var maxLengthBtn = document.getElementById('maxLength');
+				var sizeBtn = document.getElementById('size');
+				var selectAllBtn = document.getElementById('selectAll');
+				var unselectAllBtn = document.getElementById('unselectAll');
+				var interest = document.getElementsByName('interest');
+
+				// * 問題1. disable myAccount input
+				disabledBtn.addEventListener('click', function(e){
+					// 注意: button在form表單裡，本身會帶有預設行為將其送出表單
+					e.preventDefault();
+					// 提示：DOM.disabled = true
+          myAccount.disabled = true;
+				});
+
+				// * 問題2. enable myAccount input
+				enabledBtn.addEventListener('click', function(e){
+					// 注意: button在form表單裡，本身會帶有預設行為將其送出表單
+					e.preventDefault();
+					// 提示：DOM.disabled = false
+          myAccount.disabled = false;
+				});
+
+				// * 問題3. focus myAccount input
+				focusBtn.addEventListener('click', function(e){
+					// 注意: button在form表單裡，本身會帶有預設行為將其送出表單
+					e.preventDefault();
+					// 提示：DOM.focus()
+          myAccount.focus();
+				});
+
+				// * 問題4. blur myAccount input
+				blurBtn.addEventListener('click', function(e){
+					// 注意: button在form表單裡，本身會帶有預設行為將其送出表單
+					e.preventDefault();
+					// 提示：DOM.blur()
+          myAccount.blur();
+				});
+
+				// * 問題5. select myAccount input words
+				selectBtn.addEventListener('click', function(e){
+					// 注意: button在form表單裡，本身會帶有預設行為將其送出表單
+					e.preventDefault();
+					// 提示：DOM.select()
+          myAccount.select();
+				});
+
+				// * 問題6. 開啟myColor顏色選單
+				clickColor.addEventListener('click', function(e){
+					// 注意: button在form表單裡，本身會帶有預設行為將其送出表單
+					e.preventDefault();
+					// 提示：DOM.click()
+          myColor.click();
+				});
+
+				// * 問題7. 讓myAccount裡的文字readonly
+				readOnlyBtn.addEventListener('click', function(e){
+					// 注意: button在form表單裡，本身會帶有預設行為將其送出表單
+					e.preventDefault();
+					// 提示：DOM.readOnly = true
+          myAccount.readOnly = true;
+				});
+
+				// * 問題8. 讓myAccount裡的文字readable
+				readableBtn.addEventListener('click', function(e){
+					// 注意: button在form表單裡，本身會帶有預設行為將其送出表單
+					e.preventDefault();
+					// 提示：DOM.readOnly = false
+          myAccount.readOnly = false;
+				});
+
+				// * 問題9. 讓myAccount裡的文字最多是10個字
+				maxLengthBtn.addEventListener('click', function(e){
+					// 注意: button在form表單裡，本身會帶有預設行為將其送出表單
+					e.preventDefault();
+					// 提示：DOM.maxLength = 10
+          myAccount.maxLength = 10;
+				});
+
+				// * 問題10. 讓myAccount裡的選單長度最多是5px
+				sizeBtn.addEventListener('click', function(e){
+					// 注意: button在form表單裡，本身會帶有預設行為將其送出表單
+					e.preventDefault();
+					// 提示：DOM.size = 5
+          myAccount.size = 5;
+				});
+
+				// * 問題11. 讓interest裡的checkbox全選中
+				selectAllBtn.addEventListener('click', function(e){
+					// 注意: button在form表單裡，本身會帶有預設行為將其送出表單
+					e.preventDefault();
+					for(var i = 0; i < interest.length; i++) {
+						// 提示：DOM.checked = true
+            interest[i].checked = true;
+					}
+				});
+
+				// * 問題11. 讓interest裡的checkbox全取消
+				unselectAllBtn.addEventListener('click', function(e){
+					// 注意: button在form表單裡，本身會帶有預設行為將其送出表單
+					e.preventDefault();
+					for(var i = 0; i < interest.length; i++) {
+						// 提示：DOM.checked = false
+            interest[i].checked = false;
+					}
+				});
+				
+			}
+			window.onload = init;
+		</script>
+	</body>
+</html>

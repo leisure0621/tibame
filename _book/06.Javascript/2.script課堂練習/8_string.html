@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>句子標題化</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      // 題目：請寫出一個函式，將一段句子所有的word的首字都變成大寫。例如: I love javascript, and i need to practice more. ==> I Love Javascript, And I Need To Practive More.
+
+      // 1. 範例文字
+      var str = 'I love javascript, and i need to practice more.';
+
+      // 2. 寫出一個函式，處理字串並回傳
+      function procStr(str) {
+        // 以空白鍵切割字串
+        let arr = str.split(' ');
+        // 宣告新陣列
+        let newArr = [];
+        // 將每個word的首字都變成大寫
+        for (let i = 0; i < arr.length; i++) {
+          // 取個別的字
+          let word = arr[i];
+          // 取首字 str.substring(0, 1)
+          let first = word.substring(0, 1);
+          // 取其他字 str.substring(1)
+          let rest = word.substring(1);
+          // 首字變大寫 str.toUpperCase()
+          first = first.toUpperCase();
+          // 最後串接起來
+          let newWorld = first + rest;
+          // 加到新陣列裡
+          newArr.push(newWorld);
+        }
+        // 將陣列轉回成字串，並用空白建分隔
+        let newStr = newArr.join(' ');
+        // 回傳結果
+        return newStr;
+      }
+
+      // 3. 執行函式
+      let newStr = procStr(str);
+      console.log(newStr);
+    </script>
+  </body>
+</html>

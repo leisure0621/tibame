@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        font-family: 微軟正黑體;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      身分證檢查:
+      <input type="text" />
+      <button>檢查</button>
+    </div>
+    <script>
+      let app = {
+        div: document.querySelector('#app'),
+        button: document.querySelector('button'),
+        input: document.querySelector('input'),
+        area: {
+          A: 10,
+          B: 11,
+          C: 12,
+          D: 13,
+          E: 14,
+          F: 15,
+          G: 16,
+          H: 17,
+          I: 34,
+          J: 18,
+          K: 39,
+          L: 20,
+          M: 21,
+          N: 22,
+          O: 35,
+          P: 23,
+          Q: 24,
+          R: 25,
+          S: 26,
+          T: 27,
+          U: 28,
+          V: 29,
+          W: 32,
+          X: 30,
+          Y: 31,
+          Z: 33,
+        },
+        isIdNo: function (IdNo) {
+          // 判斷輸入時不符合規則 結數此方法
+          if (!IdNo.trim() || !IdNo.match(/[A-Za-z]{1}[12]{1}[0-9]{8}/gi)) {
+            alert(false);
+            return;
+          }
+          let str = IdNo.split('');
+          let area = `${app.area[str[0].toUpperCase()]}`.split('');
+          let sum = area[0] * 1 + area[1] * 9;
+          for (let i = 1; i < str.length - 1; i++) {
+            sum += str[i] * (9 - i);
+          }
+          let rest = sum % 10;
+          let checkNum = rest > 0 ? 10 - rest : 0;
+          if (str[9] != checkNum) alert(false);
+          else alert(true);
+        },
+      };
+      app.button.addEventListener('click', function () {
+        app.isIdNo(app.input.value);
+      });
+    </script>
+  </body>
+</html>

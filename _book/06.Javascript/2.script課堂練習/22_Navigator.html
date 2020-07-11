@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <title>22_Navigator</title>
+    <style type="text/css">
+      table {
+        border-collapse: collapse;
+      }
+      table td,
+      table th {
+        border: 1px solid #ddd;
+        padding: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <th>說明</th>
+        <th>結果</th>
+      </tr>
+      <tr>
+        <td>appCodeName</td>
+        <td id="appCodeName"></td>
+      </tr>
+      <tr>
+        <td>appName</td>
+        <td id="appName"></td>
+      </tr>
+      <tr>
+        <td>appVersion</td>
+        <td id="appVersion"></td>
+      </tr>
+      <tr>
+        <td>userAgent</td>
+        <td id="userAgent"></td>
+      </tr>
+      <tr>
+        <td>platform</td>
+        <td id="platform"></td>
+      </tr>
+      <tr>
+        <td>language</td>
+        <td id="language"></td>
+      </tr>
+    </table>
+    <script type="text/javascript">
+      console.log('====================================');
+      console.log('Navigator 物件');
+      console.log(navigator);
+      document.getElementById('appCodeName').innerHTML = navigator.appCodeName;
+      document.getElementById('appName').innerHTML = navigator.appName;
+      document.getElementById('appVersion').innerHTML = navigator.appVersion;
+      document.getElementById('userAgent').innerHTML = navigator.userAgent;
+      document.getElementById('platform').innerHTML = navigator.platform;
+      document.getElementById('language').innerHTML = navigator.language;
+    </script>
+  </body>
+</html>

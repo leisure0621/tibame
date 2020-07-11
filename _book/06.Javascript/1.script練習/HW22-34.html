@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <title>Canvas</title>
+    <style type="text/css">
+      #demo {
+        border: 1px solid brown;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas id="demo" width="700" height="700">
+      您的瀏覽器不支援Canvas，請升級您的瀏覽器或使用Chrome。
+    </canvas>
+
+    <script type="text/javascript">
+      function init() {
+        let ctx = demo.getContext('2d');
+        let circle = (Math.PI / 2) * 360;
+        let radius = 60;
+        let coordinate = [
+          [150, 150],
+          [150, 300],
+          [300, 150],
+          [300, 300],
+        ];
+        let face = (axleX, axleY) => {
+          // 框架
+          ctx.beginPath();
+          ctx.strokeStyle = '#a52a2a';
+          ctx.lineWidth = 1;
+          ctx.arc(axleX, axleY, radius, 0, circle, false);
+          ctx.stroke();
+          ctx.fillStyle = '#fff8e4';
+          ctx.fill();
+          // 眼睛 左眼
+          ctx.beginPath();
+          ctx.strokeStyle = 'black';
+          ctx.lineWidth = 1;
+          ctx.arc(axleX - radius / 2, axleY - radius / 2, 5, 0, circle, false);
+          ctx.stroke();
+          ctx.fillStyle = 'black';
+          ctx.fill();
+          // 眼睛 右眼
+          ctx.beginPath();
+          ctx.strokeStyle = 'black';
+          ctx.lineWidth = 1;
+          ctx.arc(axleX + radius / 2, axleY - radius / 2, 5, 0, circle, false);
+          ctx.stroke();
+          ctx.fillStyle = 'black';
+          ctx.fill();
+        };
+        // 嘴形
+        let mouse = (isFill, ...arr) => {
+          ctx.strokeStyle = 'red';
+          ctx.beginPath();
+          ctx.moveTo(arr[0], arr[1]);
+          ctx.quadraticCurveTo(arr[2], arr[3], arr[4], arr[5]);
+          ctx.stroke();
+          if (isFill) {
+            ctx.fillStyle = 'red';
+            ctx.fill();
+          }
+        };
+        face(coordinate[0][0], coordinate[0][1]);
+        mouse(false, 135, 135, 150, 150, 165, 135);
+
+        face(coordinate[1][0], coordinate[1][1]);
+        mouse(false, 131, 293, 155, 279, 168, 293);
+
+        face(coordinate[2][0], coordinate[2][1]);
+        mouse(true, 277, 168, 300, 140, 323, 170);
+
+        face(coordinate[3][0], coordinate[3][1]);
+        mouse(true, 271, 299, 297, 324, 325, 295);
+      }
+
+      window.onload = init;
+    </script>
+  </body>
+</html>

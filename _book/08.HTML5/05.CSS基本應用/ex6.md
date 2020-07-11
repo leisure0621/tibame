@@ -1,0 +1,50 @@
+# 題目
+
+- 請將代表客服的圖示設計放在頁面的右下角且不隨頁面卷軸捲動!
+
+# 作法
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CSS基本應用-設計頁面的客服連結區塊</title>
+    <style type="text/css" media="screen">
+      body {
+        background-image: url('bg3.jpg');
+        background-position: center top;
+        background-size: cover;
+        background-attachment: fixed;
+        padding-top: 100%;
+      }
+      div {
+        color: #fff;
+        background-color: rgba(50, 50, 50, 0.5);
+        width: 600px;
+        height: auto;
+        margin: 200px auto;
+        text-align: center;
+        font-size: 60px;
+        border-radius: 8px;
+        box-shadow: 0 0 2px #666;
+        font-family: Arial;
+      }
+      img {
+        position: fixed;
+        top: 80%;
+        left: 85%;
+        transition: 0.3s;
+        width: 50px;
+      }
+      img:hover {
+        opacity: 0.7;
+      }
+    </style>
+  </head>
+  <body>
+    <img src="msn-icon.png" alt="" />
+    <div>We Care & Make it!</div>
+  </body>
+</html>
+```

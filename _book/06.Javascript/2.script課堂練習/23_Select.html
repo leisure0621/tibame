@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <title>27_Select</title>
+    <style type="text/css">
+      table {
+        border-collapse: collapse;
+      }
+      table td,
+      table th {
+        border: 1px solid #ddd;
+        padding: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <p>Select 範例</p>
+    <form id="myForm" name="myForm" action="http://www.google.com" method="GET">
+      <table>
+        <tr>
+          <th>欄位</th>
+          <th>資料</th>
+        </tr>
+        <tr>
+          <td>Which car is your favorite?</td>
+          <td>
+            <select name="mySelect">
+              <option value="-1"> == choose one == </option>
+              <option value="volvo">Volvo</option>
+              <option value="saab">Saab</option>
+              <option value="opel">Opel</option>
+              <option value="audi" selected>Audi</option>
+            </select>
+            <div>
+              <button id="disabled">disabled</button>
+              <button id="enabled">enabled</button>
+              <button id="select">select Volvo</button>
+              <button id="remove">remove</button>
+            </div>
+            <div>
+              Text: <input type="text" name="text" value="Mazda" /> Value:
+              <input type="text" name="value" value="mazda" />
+              <button id="add">add</button>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>Action</td>
+          <td>
+            <input type="reset" class="btn btn-danger" value="Reset" />
+            <input type="submit" class="btn btn-primary" value="Submit" />
+          </td>
+        </tr>
+      </table>
+    </form>
+    <script type="text/javascript">
+      // 學習重點：
+      // select物件
+      // 將以下問題(*)完成
+
+      function init() {
+        // 抓取DOM元素
+        var myForm = document.getElementById('myForm');
+        var mySelect = document.getElementsByName('mySelect')[0];
+        var myColor = document.getElementsByName('myColor')[0];
+        var disabledBtn = document.getElementById('disabled');
+        var enabledBtn = document.getElementById('enabled');
+        var selectBtn = document.getElementById('select');
+        var addBtn = document.getElementById('add');
+        var removeBtn = document.getElementById('remove');
+
+        console.log('====================================');
+        console.log('Option 物件');
+        console.log(mySelect.options[1].text);
+        console.log(mySelect.options[1].value);
+        console.log(mySelect.options[1].index);
+        console.log(mySelect.options[1].selected);
+        console.log(mySelect.options[1].defaultSelected);
+
+        // * 問題1. disable mySelect 選單
+        disabledBtn.addEventListener('click', function (e) {
+          e.preventDefault();
+          // 提示：DOM.disabled = true
+          mySelect.disabled = true;
+        });
+
+        // * 問題2. enable mySelect 選單
+        enabledBtn.addEventListener('click', function (e) {
+          e.preventDefault();
+          // 提示：DOM.disabled = false
+          mySelect.disabled = false;
+        });
+
+        // * 問題3. 選中 mySelect 選單裡的'volvo'
+        selectBtn.addEventListener('click', function (e) {
+          e.preventDefault();
+          // 提示：DOM.value = 'volvo'
+          mySelect.value = 'volvo';
+        });
+
+        // * 問題4. 新增 mySelect 選單裡的選項
+        addBtn.addEventListener('click', function (e) {
+          e.preventDefault();
+          // 抓取填入值
+          var text = document.getElementsByName('text')[0].value;
+          var value = document.getElementsByName('value')[0].value;
+          // 判斷是否有填入值？
+          if (text && value) {
+            // 新增option元素 提示： document.createElement('option')
+            let option = document.createElement('option');
+            // 給予text屬性
+            option.innerText = text;
+            // 給予value屬性
+            option.setAttribute('value', value);
+            // 加到選單上 提示：DOM.add(option物件, index)  index可省略
+            mySelect.add(option, 0);
+          } else {
+            alert('Please enter text and value first');
+          }
+        });
+
+        // * 問題5. 移除選單裡選中的選項
+        removeBtn.addEventListener('click', function (e) {
+          e.preventDefault();
+          // 選中的索引值
+          var index = mySelect.selectedIndex;
+          // 判斷選中的索引值是否存在？
+          if (index) {
+            // 移除選項 提示：DOM.remove(index)
+            mySelect.remove(index);
+          } else {
+            alert('Please select one car first');
+          }
+        });
+      }
+      window.onload = init;
+    </script>
+  </body>
+</html>

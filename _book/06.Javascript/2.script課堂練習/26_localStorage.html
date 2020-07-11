@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      localStorage.setItem('myName', 'Pikachu');
+      let myName = localStorage.getItem('myName');
+      console.log(myName);
+
+      let color = ['red', 'orange', 'yellow', 'green'];
+      localStorage.setItem('myName', JSON.stringify(color)); // 字串 = JSON.stringify(物件)
+      myName = JSON.parse(localStorage.getItem('myName')); // 物件 = JSON.parse(字串)
+      console.log(myName);
+
+      // 物件
+      let person = {
+        name: 'Fabian',
+        age: '18',
+        interest: ['vlog', 'god'],
+      };
+      localStorage.setItem('person', JSON.stringify(person));
+      let mypeople = JSON.parse(localStorage.getItem('person'));
+      console.log(mypeople);
+
+      console.log(localStorage.length);
+      localStorage.clear();
+    </script>
+  </body>
+</html>

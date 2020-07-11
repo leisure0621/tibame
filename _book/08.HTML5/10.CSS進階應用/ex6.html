@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>
+      綜合應用-請設計影像為褐色且模糊的濾鏡效果
+      滑鼠滑過之後影像恢復原本的彩色與清晰度並有有邊框與陰影效果
+    </title>
+    <style type="text/css">
+      body {
+        margin: 0px;
+        padding: 0px;
+        font-family: microsoft jhengHei;
+        width: 90%;
+        margin: 30px auto;
+      }
+      img {
+        width: 200px;
+        height: 150px;
+        filter: sepia() blur(2px);
+        transition: 0.3s;
+        border: 2px solid rgba(155, 76, 76, 0);
+        backface-visibility: hidden; /* 防動畫後畫面抖動 */
+      }
+      img:hover {
+        filter: sepia(0) blur(0) saturate(1.5) drop-shadow(2px 4px 2px #333);
+        border: 2px solid brown;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Tina Kitchen</h1>
+    <hr />
+    <img src="images/a1.jpg" alt="" />
+    <img src="images/a2.jpg" alt="" />
+    <img src="images/a3.jpg" alt="" />
+    <img src="images/a4.jpg" alt="" />
+    <img src="images/a5.jpg" alt="" />
+    <img src="images/a6.jpg" alt="" />
+    <img src="images/a7.jpg" alt="" />
+  </body>
+</html>

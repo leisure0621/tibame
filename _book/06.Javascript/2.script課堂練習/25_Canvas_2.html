@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <title>Canvas</title>
+    <style type="text/css">
+      #demo {
+        border: 1px solid brown;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas id="demo" width="700" height="700">
+      您的瀏覽器不支援Canvas，請升級您的瀏覽器或使用Chrome。
+    </canvas>
+
+    <script type="text/javascript">
+      function init() {
+        let ctx = demo.getContext('2d');
+        // 正方型
+        ctx.fillStyle = '#ffba52'; // 描述顏色
+        ctx.strokeStyle = '#2323323'; // 圖形繪製
+        ctx.strokeWidth = 5;
+        ctx.fillRect(50, 100, 50, 50); // 形狀
+        ctx.strokeRect(50, 100, 50, 50); // 邊框
+        ctx.clearRect(75, 125, 10, 10); // 挖空
+
+        // 三角型
+        ctx.strokeStyle = 'green'; // 圖形繪製
+        ctx.lineWidth = 10; // 線條
+        ctx.beginPath(); // 開始路徑
+        ctx.moveTo(100, 170);
+        ctx.lineTo(200, 170);
+        ctx.lineTo(200, 270);
+        ctx.closePath(); // 結束路徑
+        ctx.stroke(); // 繪製開始
+        ctx.fillStyle = 'lightgreen'; // 區域色
+        ctx.fill(); // 填滿
+
+        // 圓形
+        ctx.beginPath();
+        ctx.strokeStyle = 'brown';
+        ctx.lineWidth = 10;
+        ctx.arc(50, 50, 40, 0, (Math.PI / 2) * 360, false);
+        ctx.stroke();
+        ctx.fill();
+
+        let coordinate = [
+          [300, 300],
+          [400, 300],
+          [400, 500],
+          [500, 250],
+        ];
+        var r = 90;
+
+        // 點
+        ctx.fillRect(coordinate[0][0], coordinate[0][1], 5, 5); // 起始點
+        ctx.fillRect(coordinate[1][0], coordinate[1][1], 5, 5); // 控制點1
+        ctx.fillRect(coordinate[2][0], coordinate[2][1], 5, 5); // 控制點2
+        ctx.fillRect(coordinate[3][0], coordinate[3][1], 5, 5); // 控制點3
+
+        // 弧形
+        ctx.strokeStyle = 'green';
+        ctx.lineWidth = 1;
+        ctx.beginPath();
+        ctx.moveTo(coordinate[0][0], coordinate[0][1]); // 初始座標
+        ctx.arcTo(
+          coordinate[1][0],
+          coordinate[1][1],
+          coordinate[3][0],
+          coordinate[3][1],
+          r
+        ); // 弧度
+        ctx.stroke();
+
+        // 繪製三次貝茲曲線
+        ctx.strokeStyle = 'black';
+        ctx.lineWidth = 1;
+        ctx.beginPath();
+        ctx.moveTo(coordinate[0][0], coordinate[0][1]);
+        ctx.bezierCurveTo(
+          coordinate[1][0],
+          coordinate[1][1],
+          coordinate[2][0],
+          coordinate[2][1],
+          coordinate[3][0],
+          coordinate[3][1]
+        );
+        ctx.stroke();
+
+        // 繪製二次貝茲曲線
+        ctx.strokeStyle = 'green';
+        ctx.beginPath();
+        ctx.moveTo(coordinate[0][0], coordinate[0][1]);
+        ctx.quadraticCurveTo(
+          coordinate[1][0],
+          coordinate[1][1],
+          coordinate[2][0],
+          coordinate[2][1]
+        );
+        ctx.stroke();
+
+        // 繪製曲線並填滿區域
+        // ctx.strokeStyle = 'black';
+        // ctx.lineWidth = 1;
+        // ctx.beginPath();
+        // ctx.moveTo(coordinate[0][0], coordinate[0][1]);
+        // ctx.quadraticCurveTo(
+        //   coordinate[1][0],
+        //   coordinate[1][1],
+        //   coordinate[2][0],
+        //   coordinate[2][1]
+        // );
+        // ctx.bezierCurveTo(
+        //   coordinate[1][0],
+        //   coordinate[1][1],
+        //   coordinate[2][0],
+        //   coordinate[2][1],
+        //   coordinate[3][0],
+        //   coordinate[3][1]
+        // );
+        // ctx.stroke();
+        // ctx.fillStyle = 'black';
+        // ctx.fill();
+      }
+
+      window.onload = init;
+    </script>
+  </body>
+</html>

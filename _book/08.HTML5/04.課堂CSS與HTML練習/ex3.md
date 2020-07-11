@@ -1,0 +1,33 @@
+# 題目
+
+1. 請設定外部 CSS 檔案並讓頁面背景為黑色，頁面內容為水平置中 文字色彩為黃色
+
+# 作法
+
+- html
+
+```html
+<html>
+  <head>
+    <title>頁面美化:外部CSS的建立-</title>
+    <link rel="stylesheet" href="ex3.css" />
+  </head>
+  <body>
+    <h1>Cinemagraphs</h1>
+    <img src="images/Cake_Sugar.gif" alt="" />
+  </body>
+</html>
+```
+
+- css
+
+```css
+body {
+  background-color: black;
+}
+
+* {
+  color: yellow;
+  text-align: center;
+}
+```
