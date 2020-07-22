@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>JSON.stingify()</h2>
+    <script>
+      let emp = {
+        empno: 7001,
+        ename: 'king',
+        phone: {
+          O: '03-4257387',
+          H: '03-168168',
+          M: '0988888888',
+        },
+      };
+
+      document.write(JSON.stringify(emp), '<br>');
+    </script>
+    <h2>JSON.parse()</h2>
+    <script>
+      let json =
+        '{"empno":7001, "ename":"king", "phone":{"O":"03-4257387", "H":"03-168168", "M":"0988888888"}}';
+      let obj = JSON.parse(json);
+      document.write('obj.empno: ', obj.empno, '<br>');
+      document.write('obj.ename: ', obj.ename, '<br>');
+      document.write('obj.phone.O: ', obj.phone.O, '<br>');
+      document.write('obj.phone: ', obj.phone, '<br>');
+    </script>
+  </body>
+</html>
