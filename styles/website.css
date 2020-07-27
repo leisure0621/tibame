@@ -23,6 +23,14 @@ u {
 .md-title {
   text-decoration: none !important;
 }
+/* 備註區塊樣式 */
+.markdown-preview blockquote {
+  border-width: 1px 1px 1px 4px;
+  border-color: #ddd #ddd #ddd #42b983;
+  border-style: solid;
+  background-color: transparent;
+  color: black;
+}
 /* 目錄 */
 h1#top + ul {
   padding: 0;
