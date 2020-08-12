@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+      }
+      div.my_div1 {
+        border: 1px solid black;
+        box-sizing: border-box;
+        margin: auto;
+      }
+      img {
+        max-width: 100%;
+      }
+      @media screen and (min-width: 1200px) {
+        div.my_div1 {
+          width: 1140px;
+        }
+      }
+      @media screen and (min-width: 992px) and (max-width: 1199px) {
+        div.my_div1 {
+          width: 960px;
+        }
+      }
+      @media screen and (min-width: 768px) and (max-width: 991px) {
+        div.my_div1 {
+          width: 720px;
+        }
+      }
+      @media screen and (min-width: 576px) and (max-width: 767px) {
+        div.my_div1 {
+          width: 540px;
+        }
+      }
+      @media screen and (max-width: 575px) {
+        div.my_div1 {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="my_div1">
+      這是 my_div1 區塊<br />
+      <img src="https://alldata.sgp1.digitaloceanspaces.com/images/lion.jpg" />
+    </div>
+  </body>
+</html>
